@@ -1,0 +1,217 @@
+2025-07-02 06:15:19,688 ERROR [Fly Me To The Moon-DS]              IOUtils.java:278  | Unmapping is not supported.
+java.lang.reflect.InaccessibleObjectException: Unable to make public jdk.internal.ref.Cleaner java.nio.DirectByteBuffer.cleaner() accessible: module java.base does not "opens java.nio" to unnamed module @1a18644
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(Unknown Source)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(Unknown Source)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(Unknown Source)
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Unknown Source)
+	at java.base/java.lang.reflect.Method.setAccessible(Unknown Source)
+	at org.apache.pdfbox.io.IOUtils.unmapper(IOUtils.java:244)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at org.apache.pdfbox.io.IOUtils.<clinit>(IOUtils.java:69)
+	at org.apache.pdfbox.Loader.loadPDF(Loader.java:378)
+	at org.audiveris.omr.image.ImageLoading.getPdfLoader(ImageLoading.java:159)
+	at org.audiveris.omr.image.ImageLoading.getLoader(ImageLoading.java:209)
+	at org.audiveris.omr.sheet.Book.createStubs(Book.java:557)
+	at org.audiveris.omr.CLI$ProcessingTask.processBook(CLI.java:830)
+	at org.audiveris.omr.CLI$CliTask.call(CLI.java:504)
+	at org.audiveris.omr.Main.runBatchTasks(Main.java:371)
+	at org.audiveris.omr.Main.main(Main.java:260)
+	at Audiveris.main(Audiveris.java:50)
+2025-07-02 06:15:19,745 INFO [Fly Me To The Moon-DS]                 Book.java:562  | 4 sheets in C:\Users\alexa\Downloads\Fly Me To The Moon-DS.pdf
+2025-07-02 06:15:19,931 INFO []                 Book.java:2531 | Stored /book.xml
+2025-07-02 06:15:19,931 INFO []                 Book.java:2491 | Book stored as .\MXL\Fly Me To The Moon-DS\Fly Me To The Moon-DS.omr
+2025-07-02 06:15:19,938 INFO []                 Book.java:1933 | Book reaching PAGE on sheets:[#1#2#3#4]
+2025-07-02 06:15:19,940 INFO [Fly Me To The Moon-DS#1]       StepMonitoring.java:98   | LOAD
+2025-07-02 06:15:20,400 INFO [Fly Me To The Moon-DS#1]            SheetStub.java:1268 | Loaded image #1 2550x3299 from C:\Users\alexa\Downloads\Fly Me To The Moon-DS.pdf
+2025-07-02 06:15:20,405 INFO [Fly Me To The Moon-DS#1]       StepMonitoring.java:98   | BINARY
+2025-07-02 06:15:20,905 INFO [Fly Me To The Moon-DS#1]       StepMonitoring.java:98   | SCALE
+2025-07-02 06:15:20,936 INFO [Fly Me To The Moon-DS#1]         ScaleBuilder.java:241  | Beam  guessed height: 10 -- 0.50 of 21 interline
+2025-07-02 06:15:20,938 INFO [Fly Me To The Moon-DS#1]         ScaleBuilder.java:264  | Beam measured height: 11 -- 0.33 of [6..21] range at 177% of needed quorum
+2025-07-02 06:15:20,938 INFO [Fly Me To The Moon-DS#1]            ScaleStep.java:65   | Scale{ interline(20,21,21) line(2,2,3) beam(11)}
+2025-07-02 06:15:20,939 INFO [Fly Me To The Moon-DS#1]       StepMonitoring.java:98   | GRID
+2025-07-02 06:15:21,426 INFO [Fly Me To The Moon-DS#1]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-02 06:15:21,465 INFO [Fly Me To The Moon-DS#1]    ClustersRetriever.java:328  | Retrieved raw line clusters: 8 of sizes [5] with interline(20,21,21)
+2025-07-02 06:15:21,783 INFO [Fly Me To The Moon-DS#1]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8]
+2025-07-02 06:15:22,201 INFO [Fly Me To The Moon-DS#1]        SystemManager.java:779  | 1 part along 4 systems
+2025-07-02 06:15:22,203 INFO [Fly Me To The Moon-DS#1]                 Book.java:545  | Created scores: [{Score 1}]
+2025-07-02 06:15:22,205 INFO [Fly Me To The Moon-DS#1]       StepMonitoring.java:98   | HEADERS
+2025-07-02 06:15:22,776 INFO [Fly Me To The Moon-DS#1]      BasicClassifier.java:277  | Classifier loaded XML norms.
+2025-07-02 06:15:22,781 INFO [Fly Me To The Moon-DS#1]   AbstractClassifier.java:396  | Classifier data loaded from default uri jar:file:/C:/Users/alexa/OneDrive/Desktop/PDF_to_MIDI/Audiveris/app/audiveris.jar!/res/basic-classifier.zip
+2025-07-02 06:15:23,615 INFO [Fly Me To The Moon-DS#1]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-02 06:15:23,680 INFO [Fly Me To The Moon-DS#1]        StemSeedsStep.java:86   | stem(4 max:5)
+2025-07-02 06:15:23,755 INFO [Fly Me To The Moon-DS#1]       StepMonitoring.java:98   | BEAMS
+2025-07-02 06:15:27,378 INFO [Fly Me To The Moon-DS#1]       StepMonitoring.java:98   | LEDGERS
+2025-07-02 06:15:27,693 INFO [Fly Me To The Moon-DS#1]       StepMonitoring.java:98   | HEADS
+2025-07-02 06:15:31,606 INFO [Fly Me To The Moon-DS#1]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:0.4,R:-0.0] NOTEHEAD_BLACK[L:0.5,R:-0.1]}
+2025-07-02 06:15:31,607 INFO [Fly Me To The Moon-DS#1]       StepMonitoring.java:98   | STEMS
+2025-07-02 06:15:32,252 INFO [Fly Me To The Moon-DS#1]       StepMonitoring.java:98   | REDUCTION
+2025-07-02 06:15:32,425 INFO [Fly Me To The Moon-DS#1]        ReductionStep.java:105  | Stems free length median value: 72 pixels, 3.4 interlines
+2025-07-02 06:15:32,433 INFO [Fly Me To The Moon-DS#1]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-02 06:15:32,434 INFO [Fly Me To The Moon-DS#1]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-02 06:15:32,437 INFO [Fly Me To The Moon-DS#1]       StepMonitoring.java:98   | TEXTS
+2025-07-02 06:15:34,421 INFO [Fly Me To The Moon-DS#1]       StepMonitoring.java:98   | MEASURES
+2025-07-02 06:15:34,444 INFO [Fly Me To The Moon-DS#1]                 Page.java:307  | 16 raw measures: [4 in system#1, 4 in system#2, 4 in system#3, 4 in system#4]
+2025-07-02 06:15:34,445 INFO [Fly Me To The Moon-DS#1]       StepMonitoring.java:98   | CHORDS
+2025-07-02 06:15:34,463 INFO [Fly Me To The Moon-DS#1]       StepMonitoring.java:98   | CURVES
+2025-07-02 06:15:35,515 INFO [Fly Me To The Moon-DS#1]         SlursBuilder.java:240  | Slurs: 45
+2025-07-02 06:15:35,532 INFO [Fly Me To The Moon-DS#1]      SegmentsBuilder.java:155  | Segments: 19
+2025-07-02 06:15:35,545 INFO [Fly Me To The Moon-DS#1]       StepMonitoring.java:98   | SYMBOLS
+2025-07-02 06:15:36,358 INFO [Fly Me To The Moon-DS#1]       StepMonitoring.java:98   | LINKS
+2025-07-02 06:15:36,422 INFO [Fly Me To The Moon-DS#1]       StepMonitoring.java:98   | RHYTHMS
+2025-07-02 06:15:36,454 INFO [Fly Me To The Moon-DS#1]        MeasureRhythm.java:1277 | Measure{#1} Time inconsistency in {1/2=[HeadChordInter#3745{(0.960/0.960) staff:2 slot#5 off:1/2 dur:1/8}], 3/4=[HeadChordInter#3728{(0.944/0.944) staff:1 slot#5 off:3/4 dur:1/8}]}
+2025-07-02 06:15:36,455 INFO [Fly Me To The Moon-DS#1]        MeasureRhythm.java:1277 | Measure{#1} Time inconsistency in {5/8=[HeadChordInter#3746{(0.964/0.964) staff:2 slot#6 off:5/8 dur:1/8}], 7/8=[HeadChordInter#3729{(0.957/0.957) staff:1 slot#6 off:7/8 dur:1/8}]}
+2025-07-02 06:15:36,488 INFO [Fly Me To The Moon-DS#1]       StepMonitoring.java:98   | PAGE
+2025-07-02 06:15:36,496 INFO [Fly Me To The Moon-DS#1]                 Book.java:2550 | Book{Fly Me To The Moon-DS} storing
+2025-07-02 06:15:36,548 INFO [Fly Me To The Moon-DS#1]                 Book.java:2531 | Stored /book.xml
+2025-07-02 06:15:36,688 INFO [Fly Me To The Moon-DS#1]           DataHolder.java:348  | Stored /sheet#1/BINARY.png
+2025-07-02 06:15:37,388 INFO [Fly Me To The Moon-DS#1]                Sheet.java:1562 | Stored /sheet#1/sheet#1.xml
+2025-07-02 06:15:37,388 INFO [Fly Me To The Moon-DS#1]                 Book.java:2491 | Book stored as .\MXL\Fly Me To The Moon-DS\Fly Me To The Moon-DS.omr
+2025-07-02 06:15:37,395 INFO [Fly Me To The Moon-DS#1]            SheetStub.java:1644 | Disposed sheet#1
+2025-07-02 06:15:37,457 INFO [Fly Me To The Moon-DS#1]                 Book.java:2018 | End of Stub#1 memory: 38,963,232
+2025-07-02 06:15:37,459 INFO [Fly Me To The Moon-DS#2]       StepMonitoring.java:98   | LOAD
+2025-07-02 06:15:37,543 INFO [Fly Me To The Moon-DS#2]            SheetStub.java:1268 | Loaded image #2 2550x3299 from C:\Users\alexa\Downloads\Fly Me To The Moon-DS.pdf
+2025-07-02 06:15:37,543 INFO [Fly Me To The Moon-DS#2]       StepMonitoring.java:98   | BINARY
+2025-07-02 06:15:38,032 INFO [Fly Me To The Moon-DS#2]       StepMonitoring.java:98   | SCALE
+2025-07-02 06:15:38,062 INFO [Fly Me To The Moon-DS#2]         ScaleBuilder.java:241  | Beam  guessed height: 10 -- 0.50 of 21 interline
+2025-07-02 06:15:38,063 INFO [Fly Me To The Moon-DS#2]         ScaleBuilder.java:264  | Beam measured height: 11 -- 0.33 of [6..21] range at 189% of needed quorum
+2025-07-02 06:15:38,063 INFO [Fly Me To The Moon-DS#2]            ScaleStep.java:65   | Scale{ interline(20,21,21) line(2,2,2) beam(11)}
+2025-07-02 06:15:38,064 INFO [Fly Me To The Moon-DS#2]       StepMonitoring.java:98   | GRID
+2025-07-02 06:15:38,302 INFO [Fly Me To The Moon-DS#2]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-02 06:15:38,326 INFO [Fly Me To The Moon-DS#2]    ClustersRetriever.java:328  | Retrieved raw line clusters: 10 of sizes [5] with interline(20,21,21)
+2025-07-02 06:15:38,544 INFO [Fly Me To The Moon-DS#2]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8] #5[9, 10]
+2025-07-02 06:15:38,721 INFO [Fly Me To The Moon-DS#2]        SystemManager.java:779  | 1 part along 5 systems
+2025-07-02 06:15:38,722 INFO [Fly Me To The Moon-DS#2]       StepMonitoring.java:98   | HEADERS
+2025-07-02 06:15:38,876 INFO [Fly Me To The Moon-DS#2]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-02 06:15:38,907 INFO [Fly Me To The Moon-DS#2]        StemSeedsStep.java:86   | stem(2 max:3)
+2025-07-02 06:15:38,927 INFO [Fly Me To The Moon-DS#2]       StepMonitoring.java:98   | BEAMS
+2025-07-02 06:15:42,096 INFO [Fly Me To The Moon-DS#2]       StepMonitoring.java:98   | LEDGERS
+2025-07-02 06:15:42,253 INFO [Fly Me To The Moon-DS#2]       StepMonitoring.java:98   | HEADS
+2025-07-02 06:15:47,400 INFO [Fly Me To The Moon-DS#2]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:-0.5,R:-0.4] NOTEHEAD_BLACK[L:-0.5,R:-0.4]}
+2025-07-02 06:15:47,401 INFO [Fly Me To The Moon-DS#2]       StepMonitoring.java:98   | STEMS
+2025-07-02 06:15:47,743 INFO [Fly Me To The Moon-DS#2]       StepMonitoring.java:98   | REDUCTION
+2025-07-02 06:15:47,812 INFO [Fly Me To The Moon-DS#2]        ReductionStep.java:105  | Stems free length median value: 71 pixels, 3.4 interlines
+2025-07-02 06:15:47,815 INFO [Fly Me To The Moon-DS#2]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-02 06:15:47,815 INFO [Fly Me To The Moon-DS#2]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-02 06:15:47,815 INFO [Fly Me To The Moon-DS#2]       StepMonitoring.java:98   | TEXTS
+2025-07-02 06:15:48,639 INFO [Fly Me To The Moon-DS#2]       StepMonitoring.java:98   | MEASURES
+2025-07-02 06:15:48,641 INFO [Fly Me To The Moon-DS#2]                 Page.java:307  | 20 raw measures: [4 in system#1, 4 in system#2, 4 in system#3, 4 in system#4, 4 in system#5]
+2025-07-02 06:15:48,642 INFO [Fly Me To The Moon-DS#2]       StepMonitoring.java:98   | CHORDS
+2025-07-02 06:15:48,653 INFO [Fly Me To The Moon-DS#2]       StepMonitoring.java:98   | CURVES
+2025-07-02 06:15:49,421 INFO [Fly Me To The Moon-DS#2]         SlursBuilder.java:240  | Slurs: 51
+2025-07-02 06:15:49,433 INFO [Fly Me To The Moon-DS#2]      SegmentsBuilder.java:155  | Segments: 32
+2025-07-02 06:15:49,438 INFO [Fly Me To The Moon-DS#2]       StepMonitoring.java:98   | SYMBOLS
+2025-07-02 06:15:50,031 INFO [Fly Me To The Moon-DS#2]       StepMonitoring.java:98   | LINKS
+2025-07-02 06:15:50,051 INFO [Fly Me To The Moon-DS#2]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#5386{(0.162) staff:6 VENTIDUESIMA}
+2025-07-02 06:15:50,065 INFO [Fly Me To The Moon-DS#2]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#5413{(0.162) staff:7 VENTIDUESIMA}
+2025-07-02 06:15:50,088 INFO [Fly Me To The Moon-DS#2]       StepMonitoring.java:98   | RHYTHMS
+2025-07-02 06:15:50,089 INFO [Fly Me To The Moon-DS#2]           PageRhythm.java:199  | {Page#2.1} Time value reused from sheet#1
+2025-07-02 06:15:50,133 INFO [Fly Me To The Moon-DS#2]       StepMonitoring.java:98   | PAGE
+2025-07-02 06:15:50,135 INFO [Fly Me To The Moon-DS#2]       SheetReduction.java:154  | Gutter. Different glyphs 4/5 WordInter#4563{(0.792/0.792) staff:8 TEXT "A" font:47} vs EndingInter#5092{(0.800/0.905) staff:9 ENDING}
+2025-07-02 06:15:50,136 INFO [Fly Me To The Moon-DS#2]       SheetReduction.java:154  | Gutter. Different glyphs 4/5 WordInter#4565{(0.792/0.792) staff:8 TEXT "A" font:47} vs EndingInter#5092{(0.800/0.905) staff:9 ENDING}
+2025-07-02 06:15:50,136 INFO [Fly Me To The Moon-DS#2]       SheetReduction.java:154  | Gutter. Different glyphs 4/5 WordInter#4565{(0.792/0.792) staff:8 TEXT "A" font:47} vs EndingInter#5093{(0.800/0.926) staff:9 ENDING}
+2025-07-02 06:15:50,138 INFO [Fly Me To The Moon-DS#2]                 Book.java:2550 | Book{Fly Me To The Moon-DS} storing
+2025-07-02 06:15:50,205 INFO [Fly Me To The Moon-DS#2]                 Book.java:2531 | Stored /book.xml
+2025-07-02 06:15:50,348 INFO [Fly Me To The Moon-DS#2]           DataHolder.java:348  | Stored /sheet#2/BINARY.png
+2025-07-02 06:15:50,890 INFO [Fly Me To The Moon-DS#2]                Sheet.java:1562 | Stored /sheet#2/sheet#2.xml
+2025-07-02 06:15:50,890 INFO [Fly Me To The Moon-DS#2]                 Book.java:2491 | Book stored as .\MXL\Fly Me To The Moon-DS\Fly Me To The Moon-DS.omr
+2025-07-02 06:15:50,897 INFO [Fly Me To The Moon-DS#2]            SheetStub.java:1644 | Disposed sheet#2
+2025-07-02 06:15:50,962 INFO [Fly Me To The Moon-DS#2]                 Book.java:2018 | End of Stub#2 memory: 39,386,992
+2025-07-02 06:15:50,963 INFO [Fly Me To The Moon-DS#3]       StepMonitoring.java:98   | LOAD
+2025-07-02 06:15:51,030 INFO [Fly Me To The Moon-DS#3]            SheetStub.java:1268 | Loaded image #3 2550x3299 from C:\Users\alexa\Downloads\Fly Me To The Moon-DS.pdf
+2025-07-02 06:15:51,032 INFO [Fly Me To The Moon-DS#3]       StepMonitoring.java:98   | BINARY
+2025-07-02 06:15:51,511 INFO [Fly Me To The Moon-DS#3]       StepMonitoring.java:98   | SCALE
+2025-07-02 06:15:51,515 INFO [Fly Me To The Moon-DS#3]         ScaleBuilder.java:241  | Beam  guessed height: 10 -- 0.50 of 21 interline
+2025-07-02 06:15:51,516 INFO [Fly Me To The Moon-DS#3]         ScaleBuilder.java:264  | Beam measured height: 11 -- 0.33 of [6..21] range at 250% of needed quorum
+2025-07-02 06:15:51,516 INFO [Fly Me To The Moon-DS#3]            ScaleStep.java:65   | Scale{ interline(20,21,21) line(2,2,2) beam(11)}
+2025-07-02 06:15:51,516 INFO [Fly Me To The Moon-DS#3]       StepMonitoring.java:98   | GRID
+2025-07-02 06:15:51,641 INFO [Fly Me To The Moon-DS#3]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-02 06:15:51,651 INFO [Fly Me To The Moon-DS#3]    ClustersRetriever.java:328  | Retrieved raw line clusters: 10 of sizes [5] with interline(20,21,21)
+2025-07-02 06:15:51,738 INFO [Fly Me To The Moon-DS#3]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8] #5[9, 10]
+2025-07-02 06:15:51,891 INFO [Fly Me To The Moon-DS#3]        SystemManager.java:779  | 1 part along 5 systems
+2025-07-02 06:15:51,891 INFO [Fly Me To The Moon-DS#3]       StepMonitoring.java:98   | HEADERS
+2025-07-02 06:15:52,043 INFO [Fly Me To The Moon-DS#3]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-02 06:15:52,080 INFO [Fly Me To The Moon-DS#3]        StemSeedsStep.java:86   | stem(2 max:3)
+2025-07-02 06:15:52,093 INFO [Fly Me To The Moon-DS#3]       StepMonitoring.java:98   | BEAMS
+2025-07-02 06:15:55,479 INFO [Fly Me To The Moon-DS#3]       StepMonitoring.java:98   | LEDGERS
+2025-07-02 06:15:55,640 INFO [Fly Me To The Moon-DS#3]       StepMonitoring.java:98   | HEADS
+2025-07-02 06:16:00,561 INFO [Fly Me To The Moon-DS#3]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:-0.5,R:-0.4] NOTEHEAD_BLACK[L:-0.5,R:-0.5]}
+2025-07-02 06:16:00,561 INFO [Fly Me To The Moon-DS#3]       StepMonitoring.java:98   | STEMS
+2025-07-02 06:16:01,010 INFO [Fly Me To The Moon-DS#3]       StepMonitoring.java:98   | REDUCTION
+2025-07-02 06:16:01,119 INFO [Fly Me To The Moon-DS#3]        ReductionStep.java:105  | Stems free length median value: 70 pixels, 3.3 interlines
+2025-07-02 06:16:01,123 INFO [Fly Me To The Moon-DS#3]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-02 06:16:01,124 INFO [Fly Me To The Moon-DS#3]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-02 06:16:01,125 INFO [Fly Me To The Moon-DS#3]       StepMonitoring.java:98   | TEXTS
+2025-07-02 06:16:01,914 INFO [Fly Me To The Moon-DS#3]       StepMonitoring.java:98   | MEASURES
+2025-07-02 06:16:01,916 INFO [Fly Me To The Moon-DS#3]                 Page.java:307  | 20 raw measures: [4 in system#1, 4 in system#2, 4 in system#3, 4 in system#4, 4 in system#5]
+2025-07-02 06:16:01,917 INFO [Fly Me To The Moon-DS#3]       StepMonitoring.java:98   | CHORDS
+2025-07-02 06:16:01,924 INFO [Fly Me To The Moon-DS#3]       StepMonitoring.java:98   | CURVES
+2025-07-02 06:16:02,615 INFO [Fly Me To The Moon-DS#3]         SlursBuilder.java:240  | Slurs: 37
+2025-07-02 06:16:02,626 INFO [Fly Me To The Moon-DS#3]      SegmentsBuilder.java:155  | Segments: 36
+2025-07-02 06:16:02,638 INFO [Fly Me To The Moon-DS#3]       StepMonitoring.java:98   | SYMBOLS
+2025-07-02 06:16:03,090 INFO [Fly Me To The Moon-DS#3]       StepMonitoring.java:98   | LINKS
+2025-07-02 06:16:03,132 INFO [Fly Me To The Moon-DS#3]       StepMonitoring.java:98   | RHYTHMS
+2025-07-02 06:16:03,133 INFO [Fly Me To The Moon-DS#3]           PageRhythm.java:199  | {Page#3.1} Time value reused from sheet#1
+2025-07-02 06:16:03,168 INFO [Fly Me To The Moon-DS#3]       StepMonitoring.java:98   | PAGE
+2025-07-02 06:16:03,169 INFO [Fly Me To The Moon-DS#3]       SheetReduction.java:154  | Gutter. Different glyphs 1/2 WordInter#5544{(0.797/0.797) staff:2 TEXT "A" font:C-46} vs EndingInter#6197{(0.800/0.925) staff:3 ENDING}
+2025-07-02 06:16:03,170 INFO [Fly Me To The Moon-DS#3]       SheetReduction.java:154  | Gutter. Different glyphs 1/2 WordInter#5546{(0.797/0.797) staff:2 TEXT "A" font:C-46} vs EndingInter#6197{(0.800/0.925) staff:3 ENDING}
+2025-07-02 06:16:03,170 INFO [Fly Me To The Moon-DS#3]       SheetReduction.java:154  | Gutter. Different glyphs 2/3 WordInter#5578{(0.797/0.797) staff:4 TEXT "A" font:C-42} vs EndingInter#6195{(0.800/0.940) staff:5 ENDING}
+2025-07-02 06:16:03,171 INFO [Fly Me To The Moon-DS#3]       SheetReduction.java:154  | Gutter. Different glyphs 3/4 WordInter#5620{(0.797/0.797) staff:6 TEXT "A" font:C-46} vs EndingInter#6194{(0.800/0.957) staff:7 ENDING}
+2025-07-02 06:16:03,171 INFO [Fly Me To The Moon-DS#3]       SheetReduction.java:154  | Gutter. Different glyphs 4/5 WordInter#5656{(0.797/0.797) staff:8 TEXT "A" font:C-46} vs EndingInter#6196{(0.749/0.910) staff:9 ENDING}
+2025-07-02 06:16:03,172 INFO [Fly Me To The Moon-DS#3]                 Book.java:2550 | Book{Fly Me To The Moon-DS} storing
+2025-07-02 06:16:03,229 INFO [Fly Me To The Moon-DS#3]                 Book.java:2531 | Stored /book.xml
+2025-07-02 06:16:03,327 INFO [Fly Me To The Moon-DS#3]           DataHolder.java:348  | Stored /sheet#3/BINARY.png
+2025-07-02 06:16:03,686 INFO [Fly Me To The Moon-DS#3]                Sheet.java:1562 | Stored /sheet#3/sheet#3.xml
+2025-07-02 06:16:03,687 INFO [Fly Me To The Moon-DS#3]                 Book.java:2491 | Book stored as .\MXL\Fly Me To The Moon-DS\Fly Me To The Moon-DS.omr
+2025-07-02 06:16:03,694 INFO [Fly Me To The Moon-DS#3]            SheetStub.java:1644 | Disposed sheet#3
+2025-07-02 06:16:03,752 INFO [Fly Me To The Moon-DS#3]                 Book.java:2018 | End of Stub#3 memory: 39,067,032
+2025-07-02 06:16:03,753 INFO [Fly Me To The Moon-DS#4]       StepMonitoring.java:98   | LOAD
+2025-07-02 06:16:03,792 INFO [Fly Me To The Moon-DS#4]            SheetStub.java:1268 | Loaded image #4 2550x3299 from C:\Users\alexa\Downloads\Fly Me To The Moon-DS.pdf
+2025-07-02 06:16:03,792 INFO [Fly Me To The Moon-DS#4]       StepMonitoring.java:98   | BINARY
+2025-07-02 06:16:04,199 INFO [Fly Me To The Moon-DS#4]       StepMonitoring.java:98   | SCALE
+2025-07-02 06:16:04,201 INFO [Fly Me To The Moon-DS#4]         ScaleBuilder.java:241  | Beam  guessed height: 10 -- 0.50 of 21 interline
+2025-07-02 06:16:04,202 INFO [Fly Me To The Moon-DS#4]         ScaleBuilder.java:264  | Beam measured height: 11 -- 0.33 of [6..21] range at 203% of needed quorum
+2025-07-02 06:16:04,202 INFO [Fly Me To The Moon-DS#4]            ScaleStep.java:65   | Scale{ interline(20,21,21) line(2,2,3) beam(11)}
+2025-07-02 06:16:04,202 INFO [Fly Me To The Moon-DS#4]       StepMonitoring.java:98   | GRID
+2025-07-02 06:16:04,297 INFO [Fly Me To The Moon-DS#4]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-02 06:16:04,307 INFO [Fly Me To The Moon-DS#4]    ClustersRetriever.java:328  | Retrieved raw line clusters: 8 of sizes [5] with interline(20,21,21)
+2025-07-02 06:16:04,351 INFO [Fly Me To The Moon-DS#4]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8]
+2025-07-02 06:16:04,550 INFO [Fly Me To The Moon-DS#4]        SystemManager.java:779  | 1 part along 4 systems
+2025-07-02 06:16:04,551 INFO [Fly Me To The Moon-DS#4]       StepMonitoring.java:98   | HEADERS
+2025-07-02 06:16:04,696 INFO [Fly Me To The Moon-DS#4]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-02 06:16:04,726 INFO [Fly Me To The Moon-DS#4]        StemSeedsStep.java:86   | stem(2 max:3)
+2025-07-02 06:16:04,735 INFO [Fly Me To The Moon-DS#4]       StepMonitoring.java:98   | BEAMS
+2025-07-02 06:16:07,543 INFO [Fly Me To The Moon-DS#4]       StepMonitoring.java:98   | LEDGERS
+2025-07-02 06:16:07,674 INFO [Fly Me To The Moon-DS#4]       StepMonitoring.java:98   | HEADS
+2025-07-02 06:16:11,748 INFO [Fly Me To The Moon-DS#4]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[R:-0.4] NOTEHEAD_BLACK[L:-0.5,R:-0.4]}
+2025-07-02 06:16:11,749 INFO [Fly Me To The Moon-DS#4]       StepMonitoring.java:98   | STEMS
+2025-07-02 06:16:11,997 INFO [Fly Me To The Moon-DS#4]       StepMonitoring.java:98   | REDUCTION
+2025-07-02 06:16:12,047 INFO [Fly Me To The Moon-DS#4]        ReductionStep.java:105  | Stems free length median value: 72 pixels, 3.4 interlines
+2025-07-02 06:16:12,050 INFO [Fly Me To The Moon-DS#4]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-02 06:16:12,051 INFO [Fly Me To The Moon-DS#4]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-02 06:16:12,051 INFO [Fly Me To The Moon-DS#4]       StepMonitoring.java:98   | TEXTS
+2025-07-02 06:16:12,804 INFO [Fly Me To The Moon-DS#4]       StepMonitoring.java:98   | MEASURES
+2025-07-02 06:16:12,805 INFO [Fly Me To The Moon-DS#4]                 Page.java:307  | 15 raw measures: [4 in system#1, 4 in system#2, 4 in system#3, 3 in system#4]
+2025-07-02 06:16:12,805 INFO [Fly Me To The Moon-DS#4]       StepMonitoring.java:98   | CHORDS
+2025-07-02 06:16:12,808 INFO [Fly Me To The Moon-DS#4]       StepMonitoring.java:98   | CURVES
+2025-07-02 06:16:13,415 INFO [Fly Me To The Moon-DS#4]         SlursBuilder.java:240  | Slurs: 46
+2025-07-02 06:16:13,431 INFO [Fly Me To The Moon-DS#4]      SegmentsBuilder.java:155  | Segments: 22
+2025-07-02 06:16:13,433 INFO [Fly Me To The Moon-DS#4]       StepMonitoring.java:98   | SYMBOLS
+2025-07-02 06:16:13,908 INFO [Fly Me To The Moon-DS#4]       StepMonitoring.java:98   | LINKS
+2025-07-02 06:16:13,936 INFO [Fly Me To The Moon-DS#4]       StepMonitoring.java:98   | RHYTHMS
+2025-07-02 06:16:13,937 INFO [Fly Me To The Moon-DS#4]           PageRhythm.java:199  | {Page#4.1} Time value reused from sheet#1
+2025-07-02 06:16:13,962 INFO [Fly Me To The Moon-DS#4]       StepMonitoring.java:98   | PAGE
+2025-07-02 06:16:13,964 INFO [Fly Me To The Moon-DS#4]                 Book.java:2550 | Book{Fly Me To The Moon-DS} storing
+2025-07-02 06:16:14,014 INFO [Fly Me To The Moon-DS#4]                 Book.java:2531 | Stored /book.xml
+2025-07-02 06:16:14,107 INFO [Fly Me To The Moon-DS#4]           DataHolder.java:348  | Stored /sheet#4/BINARY.png
+2025-07-02 06:16:14,392 INFO [Fly Me To The Moon-DS#4]                Sheet.java:1562 | Stored /sheet#4/sheet#4.xml
+2025-07-02 06:16:14,393 INFO [Fly Me To The Moon-DS#4]                 Book.java:2491 | Book stored as .\MXL\Fly Me To The Moon-DS\Fly Me To The Moon-DS.omr
+2025-07-02 06:16:14,402 INFO [Fly Me To The Moon-DS#4]            SheetStub.java:1644 | Disposed sheet#4
+2025-07-02 06:16:14,459 INFO [Fly Me To The Moon-DS#4]                 Book.java:2018 | End of Stub#4 memory: 39,055,416
+2025-07-02 06:16:14,459 INFO [Fly Me To The Moon-DS]                 Book.java:2025 | Book processed.
+2025-07-02 06:16:15,155 INFO [Fly Me To The Moon-DS]            SheetStub.java:995  | Loaded /sheet#1/sheet#1.xml
+2025-07-02 06:16:15,618 INFO [Fly Me To The Moon-DS]            SheetStub.java:995  | Loaded /sheet#2/sheet#2.xml
+2025-07-02 06:16:16,041 INFO [Fly Me To The Moon-DS]            SheetStub.java:995  | Loaded /sheet#3/sheet#3.xml
+2025-07-02 06:16:16,331 INFO [Fly Me To The Moon-DS]            SheetStub.java:995  | Loaded /sheet#4/sheet#4.xml
+2025-07-02 06:16:16,927 INFO [Fly Me To The Moon-DS]      PartwiseBuilder.java:2661 | Exporting sheet(s): [#1#2#3#4]
+2025-07-02 06:16:17,225 INFO [Fly Me To The Moon-DS]        ScoreExporter.java:164  | Score Fly Me To The Moon-DS exported to .\MXL\Fly Me To The Moon-DS\Fly Me To The Moon-DS.mxl
+2025-07-02 06:16:17,296 INFO [Fly Me To The Moon-DS]                Score.java:181  | Closing {Score 1}

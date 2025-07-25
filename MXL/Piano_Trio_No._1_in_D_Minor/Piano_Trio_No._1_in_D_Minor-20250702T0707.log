@@ -1,0 +1,1385 @@
+2025-07-02 07:07:28,439 ERROR [Piano_Trio_No._1_in_D_Minor]              IOUtils.java:278  | Unmapping is not supported.
+java.lang.reflect.InaccessibleObjectException: Unable to make public jdk.internal.ref.Cleaner java.nio.DirectByteBuffer.cleaner() accessible: module java.base does not "opens java.nio" to unnamed module @1a18644
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(Unknown Source)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(Unknown Source)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(Unknown Source)
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Unknown Source)
+	at java.base/java.lang.reflect.Method.setAccessible(Unknown Source)
+	at org.apache.pdfbox.io.IOUtils.unmapper(IOUtils.java:244)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at org.apache.pdfbox.io.IOUtils.<clinit>(IOUtils.java:69)
+	at org.apache.pdfbox.Loader.loadPDF(Loader.java:378)
+	at org.audiveris.omr.image.ImageLoading.getPdfLoader(ImageLoading.java:159)
+	at org.audiveris.omr.image.ImageLoading.getLoader(ImageLoading.java:209)
+	at org.audiveris.omr.sheet.Book.createStubs(Book.java:557)
+	at org.audiveris.omr.CLI$ProcessingTask.processBook(CLI.java:830)
+	at org.audiveris.omr.CLI$CliTask.call(CLI.java:504)
+	at org.audiveris.omr.Main.runBatchTasks(Main.java:371)
+	at org.audiveris.omr.Main.main(Main.java:260)
+	at Audiveris.main(Audiveris.java:50)
+2025-07-02 07:07:28,503 INFO [Piano_Trio_No._1_in_D_Minor]                 Book.java:562  | 12 sheets in C:\Users\alexa\Downloads\Piano_Trio_No._1_in_D_Minor.pdf
+2025-07-02 07:07:28,694 INFO []                 Book.java:2531 | Stored /book.xml
+2025-07-02 07:07:28,695 INFO []                 Book.java:2491 | Book stored as .\MXL\Piano_Trio_No._1_in_D_Minor\Piano_Trio_No._1_in_D_Minor.omr
+2025-07-02 07:07:28,701 INFO []                 Book.java:1933 | Book reaching PAGE on sheets:[#1#2#3#4#5#6#7#8#9#10#11#12]
+2025-07-02 07:07:28,704 INFO [Piano_Trio_No._1_in_D_Minor#1]       StepMonitoring.java:98   | LOAD
+2025-07-02 07:07:29,203 INFO [Piano_Trio_No._1_in_D_Minor#1]            SheetStub.java:1268 | Loaded image #1 2550x3299 from C:\Users\alexa\Downloads\Piano_Trio_No._1_in_D_Minor.pdf
+2025-07-02 07:07:29,211 INFO [Piano_Trio_No._1_in_D_Minor#1]       StepMonitoring.java:98   | BINARY
+2025-07-02 07:07:29,751 INFO [Piano_Trio_No._1_in_D_Minor#1]       StepMonitoring.java:98   | SCALE
+2025-07-02 07:07:29,793 INFO [Piano_Trio_No._1_in_D_Minor#1]         ScaleBuilder.java:241  | Beam  guessed height:  8 -- 0.50 of 15 interline
+2025-07-02 07:07:29,796 INFO [Piano_Trio_No._1_in_D_Minor#1]         ScaleBuilder.java:264  | Beam measured height:  7 -- 0.27 of [4..15] range at 228% of needed quorum
+2025-07-02 07:07:29,797 INFO [Piano_Trio_No._1_in_D_Minor#1]            ScaleStep.java:65   | Scale{ interline(14,15,15) line(1,1,2) beam(7)}
+2025-07-02 07:07:29,799 INFO [Piano_Trio_No._1_in_D_Minor#1]       StepMonitoring.java:98   | GRID
+2025-07-02 07:07:30,574 INFO [Piano_Trio_No._1_in_D_Minor#1]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-02 07:07:30,658 INFO [Piano_Trio_No._1_in_D_Minor#1]    ClustersRetriever.java:328  | Retrieved raw line clusters: 16 of sizes [5] with interline(14,15,15)
+2025-07-02 07:07:31,065 INFO [Piano_Trio_No._1_in_D_Minor#1]            PeakGraph.java:310  | Systems: #1[1, 2, 3, 4] #2[5, 6, 7, 8] #3[9, 10, 11, 12] #4[13, 14, 15, 16]
+2025-07-02 07:07:31,545 INFO [Piano_Trio_No._1_in_D_Minor#1]        SystemManager.java:779  | 3 parts along 4 systems
+2025-07-02 07:07:31,546 INFO [Piano_Trio_No._1_in_D_Minor#1]                 Book.java:545  | Created scores: [{Score 1}]
+2025-07-02 07:07:31,546 INFO [Piano_Trio_No._1_in_D_Minor#1]       StepMonitoring.java:98   | HEADERS
+2025-07-02 07:07:31,904 INFO [Piano_Trio_No._1_in_D_Minor#1]      BasicClassifier.java:277  | Classifier loaded XML norms.
+2025-07-02 07:07:31,909 INFO [Piano_Trio_No._1_in_D_Minor#1]   AbstractClassifier.java:396  | Classifier data loaded from default uri jar:file:/C:/Users/alexa/OneDrive/Desktop/PDF_to_MIDI/Audiveris/app/audiveris.jar!/res/basic-classifier.zip
+2025-07-02 07:07:32,950 INFO [Piano_Trio_No._1_in_D_Minor#1]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-02 07:07:33,032 INFO [Piano_Trio_No._1_in_D_Minor#1]        StemSeedsStep.java:86   | stem(2 max:2)
+2025-07-02 07:07:33,108 INFO [Piano_Trio_No._1_in_D_Minor#1]       StepMonitoring.java:98   | BEAMS
+2025-07-02 07:07:35,348 INFO [Piano_Trio_No._1_in_D_Minor#1]       StepMonitoring.java:98   | LEDGERS
+2025-07-02 07:07:35,666 INFO [Piano_Trio_No._1_in_D_Minor#1]       StepMonitoring.java:98   | HEADS
+2025-07-02 07:07:40,178 INFO [Piano_Trio_No._1_in_D_Minor#1]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:0.3,R:0.3] NOTEHEAD_BLACK[L:0.3,R:0.2]}
+2025-07-02 07:07:40,178 INFO [Piano_Trio_No._1_in_D_Minor#1]       StepMonitoring.java:98   | STEMS
+2025-07-02 07:07:41,378 INFO [Piano_Trio_No._1_in_D_Minor#1]       StepMonitoring.java:98   | REDUCTION
+2025-07-02 07:07:41,588 INFO [Piano_Trio_No._1_in_D_Minor#1]        ReductionStep.java:105  | Stems free length median value: 52 pixels, 3.5 interlines
+2025-07-02 07:07:41,594 INFO [Piano_Trio_No._1_in_D_Minor#1]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-02 07:07:41,594 INFO [Piano_Trio_No._1_in_D_Minor#1]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-02 07:07:41,595 INFO [Piano_Trio_No._1_in_D_Minor#1]       StepMonitoring.java:98   | TEXTS
+2025-07-02 07:07:42,810 INFO [Piano_Trio_No._1_in_D_Minor#1]       StepMonitoring.java:98   | MEASURES
+2025-07-02 07:07:42,829 INFO [Piano_Trio_No._1_in_D_Minor#1]                 Page.java:307  | 32 raw measures: [8 in system#1, 7 in system#2, 7 in system#3, 10 in system#4]
+2025-07-02 07:07:42,830 INFO [Piano_Trio_No._1_in_D_Minor#1]       StepMonitoring.java:98   | CHORDS
+2025-07-02 07:07:42,863 INFO [Piano_Trio_No._1_in_D_Minor#1]       StepMonitoring.java:98   | CURVES
+2025-07-02 07:07:43,925 INFO [Piano_Trio_No._1_in_D_Minor#1]         SlursBuilder.java:240  | Slurs: 8
+2025-07-02 07:07:43,968 INFO [Piano_Trio_No._1_in_D_Minor#1]      SegmentsBuilder.java:155  | Segments: 38
+2025-07-02 07:07:43,987 INFO [Piano_Trio_No._1_in_D_Minor#1]       StepMonitoring.java:98   | SYMBOLS
+2025-07-02 07:07:44,756 INFO [Piano_Trio_No._1_in_D_Minor#1]       StepMonitoring.java:98   | LINKS
+2025-07-02 07:07:44,759 INFO [Piano_Trio_No._1_in_D_Minor#1]        SentenceInter.java:461  | No chord near SentenceInter#6710{(0.710) staff:1 mFont:S-55 Direction} I. Allegro
+2025-07-02 07:07:44,863 INFO [Piano_Trio_No._1_in_D_Minor#1]       StepMonitoring.java:98   | RHYTHMS
+2025-07-02 07:07:44,959 INFO [Piano_Trio_No._1_in_D_Minor#1]                Voice.java:257  | Measure{#15P1} Voice{#1 excess:1/8} too long
+2025-07-02 07:07:44,962 INFO [Piano_Trio_No._1_in_D_Minor#1]          StackRhythm.java:224  | S2 MeasureStack#15 no correct rhythm
+2025-07-02 07:07:44,976 INFO [Piano_Trio_No._1_in_D_Minor#1]                Voice.java:257  | Measure{#17P3} Voice{#5 excess:1/2} too long
+2025-07-02 07:07:44,977 INFO [Piano_Trio_No._1_in_D_Minor#1]          StackRhythm.java:224  | S3 MeasureStack#17 no correct rhythm
+2025-07-02 07:07:44,985 INFO [Piano_Trio_No._1_in_D_Minor#1]                Voice.java:257  | Measure{#18P3} Voice{#5 excess:1/2} too long
+2025-07-02 07:07:44,988 INFO [Piano_Trio_No._1_in_D_Minor#1]          StackRhythm.java:224  | S3 MeasureStack#18 no correct rhythm
+2025-07-02 07:07:45,031 INFO [Piano_Trio_No._1_in_D_Minor#1]        MeasureRhythm.java:1045 | Measure{#24P2} No timeOffset for HeadChordInter#7224{(0.938/0.938) staff:14 slot#5 dur:1/4}
+2025-07-02 07:07:45,035 INFO [Piano_Trio_No._1_in_D_Minor#1]          StackRhythm.java:224  | S4 MeasureStack#24 no correct rhythm
+2025-07-02 07:07:45,045 INFO [Piano_Trio_No._1_in_D_Minor#1]        MeasureRhythm.java:1045 | Measure{#30P1} No timeOffset for HeadChordInter#7212{(0.936/0.936) staff:13 slot#5 dur:1/4}
+2025-07-02 07:07:45,046 INFO [Piano_Trio_No._1_in_D_Minor#1]        MeasureRhythm.java:1045 | Measure{#30P2} No timeOffset for HeadChordInter#7234{(0.953/0.953) staff:14 slot#5 dur:1/4}
+2025-07-02 07:07:45,048 INFO [Piano_Trio_No._1_in_D_Minor#1]          StackRhythm.java:224  | S4 MeasureStack#30 no correct rhythm
+2025-07-02 07:07:45,051 INFO [Piano_Trio_No._1_in_D_Minor#1]        MeasureRhythm.java:1045 | Measure{#32P2} No timeOffset for HeadChordInter#7239{(0.953/0.953) staff:14 slot#5 dur:1/4}
+2025-07-02 07:07:45,052 INFO [Piano_Trio_No._1_in_D_Minor#1]          StackRhythm.java:224  | S4 MeasureStack#32 no correct rhythm
+2025-07-02 07:07:45,053 INFO [Piano_Trio_No._1_in_D_Minor#1]       StepMonitoring.java:98   | PAGE
+2025-07-02 07:07:45,064 INFO [Piano_Trio_No._1_in_D_Minor#1]                Voice.java:257  | Measure{#15P5} Voice{#1 excess:1/8} too long
+2025-07-02 07:07:45,064 INFO [Piano_Trio_No._1_in_D_Minor#1]                Voice.java:257  | Measure{#17P8} Voice{#5 excess:1/2} too long
+2025-07-02 07:07:45,066 INFO [Piano_Trio_No._1_in_D_Minor#1]                Voice.java:257  | Measure{#18P8} Voice{#5 excess:1/2} too long
+2025-07-02 07:07:45,068 INFO [Piano_Trio_No._1_in_D_Minor#1]                 Book.java:2550 | Book{Piano_Trio_No._1_in_D_Minor} storing
+2025-07-02 07:07:45,138 INFO [Piano_Trio_No._1_in_D_Minor#1]                 Book.java:2531 | Stored /book.xml
+2025-07-02 07:07:45,288 INFO [Piano_Trio_No._1_in_D_Minor#1]           DataHolder.java:348  | Stored /sheet#1/BINARY.png
+2025-07-02 07:07:46,157 INFO [Piano_Trio_No._1_in_D_Minor#1]                Sheet.java:1562 | Stored /sheet#1/sheet#1.xml
+2025-07-02 07:07:46,157 INFO [Piano_Trio_No._1_in_D_Minor#1]                 Book.java:2491 | Book stored as .\MXL\Piano_Trio_No._1_in_D_Minor\Piano_Trio_No._1_in_D_Minor.omr
+2025-07-02 07:07:46,164 INFO [Piano_Trio_No._1_in_D_Minor#1]            SheetStub.java:1644 | Disposed sheet#1
+2025-07-02 07:07:46,231 INFO [Piano_Trio_No._1_in_D_Minor#1]                 Book.java:2018 | End of Stub#1 memory: 38,286,520
+2025-07-02 07:07:46,232 INFO [Piano_Trio_No._1_in_D_Minor#2]       StepMonitoring.java:98   | LOAD
+2025-07-02 07:07:46,344 INFO [Piano_Trio_No._1_in_D_Minor#2]            SheetStub.java:1268 | Loaded image #2 2550x3299 from C:\Users\alexa\Downloads\Piano_Trio_No._1_in_D_Minor.pdf
+2025-07-02 07:07:46,345 INFO [Piano_Trio_No._1_in_D_Minor#2]       StepMonitoring.java:98   | BINARY
+2025-07-02 07:07:46,758 INFO [Piano_Trio_No._1_in_D_Minor#2]       StepMonitoring.java:98   | SCALE
+2025-07-02 07:07:46,789 INFO [Piano_Trio_No._1_in_D_Minor#2]         ScaleBuilder.java:241  | Beam  guessed height:  8 -- 0.50 of 15 interline
+2025-07-02 07:07:46,790 INFO [Piano_Trio_No._1_in_D_Minor#2]         ScaleBuilder.java:264  | Beam measured height:  7 -- 0.27 of [4..15] range at 435% of needed quorum
+2025-07-02 07:07:46,790 INFO [Piano_Trio_No._1_in_D_Minor#2]            ScaleStep.java:65   | Scale{ interline(14,15,15) line(1,1,2) beam(7)}
+2025-07-02 07:07:46,790 INFO [Piano_Trio_No._1_in_D_Minor#2]       StepMonitoring.java:98   | GRID
+2025-07-02 07:07:46,993 INFO [Piano_Trio_No._1_in_D_Minor#2]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-02 07:07:47,024 INFO [Piano_Trio_No._1_in_D_Minor#2]    ClustersRetriever.java:328  | Retrieved raw line clusters: 16 of sizes [5] with interline(14,15,15)
+2025-07-02 07:07:47,109 INFO [Piano_Trio_No._1_in_D_Minor#2]            PeakGraph.java:310  | Systems: #1[1, 2, 3, 4] #2[5, 6, 7, 8] #3[9, 10, 11, 12] #4[13, 14, 15, 16]
+2025-07-02 07:07:47,289 INFO [Piano_Trio_No._1_in_D_Minor#2]        SystemManager.java:779  | 3 parts along 4 systems
+2025-07-02 07:07:47,289 INFO [Piano_Trio_No._1_in_D_Minor#2]       StepMonitoring.java:98   | HEADERS
+2025-07-02 07:07:47,547 INFO [Piano_Trio_No._1_in_D_Minor#2]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-02 07:07:47,587 INFO [Piano_Trio_No._1_in_D_Minor#2]        StemSeedsStep.java:86   | stem(2 max:2)
+2025-07-02 07:07:47,599 INFO [Piano_Trio_No._1_in_D_Minor#2]       StepMonitoring.java:98   | BEAMS
+2025-07-02 07:07:49,217 INFO [Piano_Trio_No._1_in_D_Minor#2]       StepMonitoring.java:98   | LEDGERS
+2025-07-02 07:07:49,352 INFO [Piano_Trio_No._1_in_D_Minor#2]       StepMonitoring.java:98   | HEADS
+2025-07-02 07:07:52,818 INFO [Piano_Trio_No._1_in_D_Minor#2]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:0.4,R:-0.1] NOTEHEAD_BLACK[L:0.5,R:0.2]}
+2025-07-02 07:07:52,818 INFO [Piano_Trio_No._1_in_D_Minor#2]       StepMonitoring.java:98   | STEMS
+2025-07-02 07:07:53,453 INFO [Piano_Trio_No._1_in_D_Minor#2]       StepMonitoring.java:98   | REDUCTION
+2025-07-02 07:07:53,546 INFO [Piano_Trio_No._1_in_D_Minor#2]        ReductionStep.java:105  | Stems free length median value: 52 pixels, 3.5 interlines
+2025-07-02 07:07:53,551 INFO [Piano_Trio_No._1_in_D_Minor#2]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-02 07:07:53,551 INFO [Piano_Trio_No._1_in_D_Minor#2]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-02 07:07:53,552 INFO [Piano_Trio_No._1_in_D_Minor#2]       StepMonitoring.java:98   | TEXTS
+2025-07-02 07:07:54,384 INFO [Piano_Trio_No._1_in_D_Minor#2]       StepMonitoring.java:98   | MEASURES
+2025-07-02 07:07:54,386 INFO [Piano_Trio_No._1_in_D_Minor#2]                 Page.java:307  | 18 raw measures: [4 in system#1, 3 in system#2, 7 in system#3, 4 in system#4]
+2025-07-02 07:07:54,386 INFO [Piano_Trio_No._1_in_D_Minor#2]       StepMonitoring.java:98   | CHORDS
+2025-07-02 07:07:54,397 INFO [Piano_Trio_No._1_in_D_Minor#2]       StepMonitoring.java:98   | CURVES
+2025-07-02 07:07:55,130 INFO [Piano_Trio_No._1_in_D_Minor#2]         SlursBuilder.java:240  | Slurs: 24
+2025-07-02 07:07:55,137 INFO [Piano_Trio_No._1_in_D_Minor#2]      SegmentsBuilder.java:155  | Segments: 12
+2025-07-02 07:07:55,138 INFO [Piano_Trio_No._1_in_D_Minor#2]       StepMonitoring.java:98   | SYMBOLS
+2025-07-02 07:07:55,406 INFO [Piano_Trio_No._1_in_D_Minor#2]       StepMonitoring.java:98   | LINKS
+2025-07-02 07:07:55,452 INFO [Piano_Trio_No._1_in_D_Minor#2]       StepMonitoring.java:98   | RHYTHMS
+2025-07-02 07:07:55,452 INFO [Piano_Trio_No._1_in_D_Minor#2]           PageRhythm.java:199  | {Page#2.1} Time value reused from sheet#1
+2025-07-02 07:07:55,469 INFO [Piano_Trio_No._1_in_D_Minor#2]        MeasureRhythm.java:1045 | Measure{#6P2} No timeOffset for HeadChordInter#6268{(0.883/0.883) staff:6 slot#5 dur:1/4}
+2025-07-02 07:07:55,473 INFO [Piano_Trio_No._1_in_D_Minor#2]          StackRhythm.java:224  | S2 MeasureStack#6 no correct rhythm
+2025-07-02 07:07:55,487 INFO [Piano_Trio_No._1_in_D_Minor#2]        MeasureRhythm.java:1045 | Measure{#14P2} No timeOffset for HeadChordInter#6384{(0.935/0.935) staff:10 slot#5 dur:1/4}
+2025-07-02 07:07:55,487 INFO [Piano_Trio_No._1_in_D_Minor#2]   AbstractChordInter.java:627  | Measure{#14P2} No timeOffset for HeadChordInter#6384{(0.935/0.935) staff:10 slot#5 dur:1/4}
+2025-07-02 07:07:55,487 INFO [Piano_Trio_No._1_in_D_Minor#2]   AbstractChordInter.java:627  | Measure{#14P2} No timeOffset for HeadChordInter#6385{(0.936/0.936) staff:10 slot#6 dur:1/4}
+2025-07-02 07:07:55,488 INFO [Piano_Trio_No._1_in_D_Minor#2]   AbstractChordInter.java:627  | Measure{#14P2} No timeOffset for HeadChordInter#6386{(0.938/0.938) staff:10 slot#7 dur:1/4}
+2025-07-02 07:07:55,489 INFO [Piano_Trio_No._1_in_D_Minor#2]          StackRhythm.java:224  | S3 MeasureStack#14 no correct rhythm
+2025-07-02 07:07:55,501 INFO [Piano_Trio_No._1_in_D_Minor#2]       StepMonitoring.java:98   | PAGE
+2025-07-02 07:07:55,504 INFO [Piano_Trio_No._1_in_D_Minor#2]                 Book.java:2550 | Book{Piano_Trio_No._1_in_D_Minor} storing
+2025-07-02 07:07:55,557 INFO [Piano_Trio_No._1_in_D_Minor#2]                 Book.java:2531 | Stored /book.xml
+2025-07-02 07:07:55,672 INFO [Piano_Trio_No._1_in_D_Minor#2]           DataHolder.java:348  | Stored /sheet#2/BINARY.png
+2025-07-02 07:07:56,083 INFO [Piano_Trio_No._1_in_D_Minor#2]                Sheet.java:1562 | Stored /sheet#2/sheet#2.xml
+2025-07-02 07:07:56,084 INFO [Piano_Trio_No._1_in_D_Minor#2]                 Book.java:2491 | Book stored as .\MXL\Piano_Trio_No._1_in_D_Minor\Piano_Trio_No._1_in_D_Minor.omr
+2025-07-02 07:07:56,089 INFO [Piano_Trio_No._1_in_D_Minor#2]            SheetStub.java:1644 | Disposed sheet#2
+2025-07-02 07:07:56,143 INFO [Piano_Trio_No._1_in_D_Minor#2]                 Book.java:2018 | End of Stub#2 memory: 37,492,528
+2025-07-02 07:07:56,143 INFO [Piano_Trio_No._1_in_D_Minor#3]       StepMonitoring.java:98   | LOAD
+2025-07-02 07:07:56,240 INFO [Piano_Trio_No._1_in_D_Minor#3]            SheetStub.java:1268 | Loaded image #3 2550x3299 from C:\Users\alexa\Downloads\Piano_Trio_No._1_in_D_Minor.pdf
+2025-07-02 07:07:56,241 INFO [Piano_Trio_No._1_in_D_Minor#3]       StepMonitoring.java:98   | BINARY
+2025-07-02 07:07:56,693 INFO [Piano_Trio_No._1_in_D_Minor#3]       StepMonitoring.java:98   | SCALE
+2025-07-02 07:07:56,717 INFO [Piano_Trio_No._1_in_D_Minor#3]         ScaleBuilder.java:241  | Beam  guessed height:  8 -- 0.50 of 15 interline
+2025-07-02 07:07:56,718 INFO [Piano_Trio_No._1_in_D_Minor#3]         ScaleBuilder.java:264  | Beam measured height:  8 -- 0.36 of [4..15] range at 324% of needed quorum
+2025-07-02 07:07:56,718 INFO [Piano_Trio_No._1_in_D_Minor#3]            ScaleStep.java:65   | Scale{ interline(14,15,15) line(1,1,2) beam(8)}
+2025-07-02 07:07:56,718 INFO [Piano_Trio_No._1_in_D_Minor#3]       StepMonitoring.java:98   | GRID
+2025-07-02 07:07:56,852 INFO [Piano_Trio_No._1_in_D_Minor#3]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-02 07:07:56,871 INFO [Piano_Trio_No._1_in_D_Minor#3]    ClustersRetriever.java:328  | Retrieved raw line clusters: 16 of sizes [5] with interline(14,15,15)
+2025-07-02 07:07:56,965 INFO [Piano_Trio_No._1_in_D_Minor#3]            PeakGraph.java:310  | Systems: #1[1, 2, 3, 4] #2[5, 6, 7, 8] #3[9, 10, 11, 12] #4[13, 14, 15, 16]
+2025-07-02 07:07:57,151 INFO [Piano_Trio_No._1_in_D_Minor#3]        SystemManager.java:779  | 3 parts along 4 systems
+2025-07-02 07:07:57,152 INFO [Piano_Trio_No._1_in_D_Minor#3]       StepMonitoring.java:98   | HEADERS
+2025-07-02 07:07:57,404 INFO [Piano_Trio_No._1_in_D_Minor#3]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-02 07:07:57,438 INFO [Piano_Trio_No._1_in_D_Minor#3]        StemSeedsStep.java:86   | stem(2 max:3)
+2025-07-02 07:07:57,446 INFO [Piano_Trio_No._1_in_D_Minor#3]       StepMonitoring.java:98   | BEAMS
+2025-07-02 07:07:59,386 INFO [Piano_Trio_No._1_in_D_Minor#3]       StepMonitoring.java:98   | LEDGERS
+2025-07-02 07:07:59,526 INFO [Piano_Trio_No._1_in_D_Minor#3]       StepMonitoring.java:98   | HEADS
+2025-07-02 07:08:02,972 INFO [Piano_Trio_No._1_in_D_Minor#3]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_BLACK[L:0.3,R:-0.4]}
+2025-07-02 07:08:02,972 INFO [Piano_Trio_No._1_in_D_Minor#3]       StepMonitoring.java:98   | STEMS
+2025-07-02 07:08:03,408 INFO [Piano_Trio_No._1_in_D_Minor#3]       StepMonitoring.java:98   | REDUCTION
+2025-07-02 07:08:03,469 INFO [Piano_Trio_No._1_in_D_Minor#3]        ReductionStep.java:105  | Stems free length median value: 52 pixels, 3.5 interlines
+2025-07-02 07:08:03,471 INFO [Piano_Trio_No._1_in_D_Minor#3]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-02 07:08:03,471 INFO [Piano_Trio_No._1_in_D_Minor#3]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-02 07:08:03,472 INFO [Piano_Trio_No._1_in_D_Minor#3]       StepMonitoring.java:98   | TEXTS
+2025-07-02 07:08:04,274 INFO [Piano_Trio_No._1_in_D_Minor#3]       StepMonitoring.java:98   | MEASURES
+2025-07-02 07:08:04,276 INFO [Piano_Trio_No._1_in_D_Minor#3]                 Page.java:307  | 18 raw measures: [4 in system#1, 4 in system#2, 5 in system#3, 5 in system#4]
+2025-07-02 07:08:04,277 INFO [Piano_Trio_No._1_in_D_Minor#3]       StepMonitoring.java:98   | CHORDS
+2025-07-02 07:08:04,282 INFO [Piano_Trio_No._1_in_D_Minor#3]       StepMonitoring.java:98   | CURVES
+2025-07-02 07:08:04,812 INFO [Piano_Trio_No._1_in_D_Minor#3]         SlursBuilder.java:240  | Slurs: 46
+2025-07-02 07:08:04,825 INFO [Piano_Trio_No._1_in_D_Minor#3]      SegmentsBuilder.java:155  | Segments: 16
+2025-07-02 07:08:04,828 INFO [Piano_Trio_No._1_in_D_Minor#3]       StepMonitoring.java:98   | SYMBOLS
+2025-07-02 07:08:05,429 INFO [Piano_Trio_No._1_in_D_Minor#3]       StepMonitoring.java:98   | LINKS
+2025-07-02 07:08:05,498 INFO [Piano_Trio_No._1_in_D_Minor#3]       StepMonitoring.java:98   | RHYTHMS
+2025-07-02 07:08:05,499 INFO [Piano_Trio_No._1_in_D_Minor#3]           PageRhythm.java:199  | {Page#3.1} Time value reused from sheet#1
+2025-07-02 07:08:05,508 INFO [Piano_Trio_No._1_in_D_Minor#3]        MeasureRhythm.java:1045 | Measure{#3P3} No timeOffset for HeadChordInter#5512{(0.925/0.925) staff:4 slot#10 dur:1/8}
+2025-07-02 07:08:05,509 INFO [Piano_Trio_No._1_in_D_Minor#3]          StackRhythm.java:224  | S1 MeasureStack#3 no correct rhythm
+2025-07-02 07:08:05,512 INFO [Piano_Trio_No._1_in_D_Minor#3]                Voice.java:257  | Measure{#4P3} Voice{#5 excess:1/4} too long
+2025-07-02 07:08:05,512 INFO [Piano_Trio_No._1_in_D_Minor#3]          StackRhythm.java:224  | S1 MeasureStack#4 no correct rhythm
+2025-07-02 07:08:05,516 INFO [Piano_Trio_No._1_in_D_Minor#3]        MeasureRhythm.java:1045 | Measure{#5P3} No timeOffset for HeadChordInter#5557{(0.946/0.946) staff:8 slot#10 dur:1/8}
+2025-07-02 07:08:05,517 INFO [Piano_Trio_No._1_in_D_Minor#3]          StackRhythm.java:224  | S2 MeasureStack#5 no correct rhythm
+2025-07-02 07:08:05,519 INFO [Piano_Trio_No._1_in_D_Minor#3]        MeasureRhythm.java:1045 | Measure{#6P3} No timeOffset for HeadChordInter#5569{(0.946/0.946) staff:8 slot#10 dur:1/8}
+2025-07-02 07:08:05,519 INFO [Piano_Trio_No._1_in_D_Minor#3]                Voice.java:257  | Measure{#6P3} Voice{#5 excess:1/8} too long
+2025-07-02 07:08:05,519 INFO [Piano_Trio_No._1_in_D_Minor#3]          StackRhythm.java:224  | S2 MeasureStack#6 no correct rhythm
+2025-07-02 07:08:05,520 INFO [Piano_Trio_No._1_in_D_Minor#3]        MeasureRhythm.java:1045 | Measure{#7P1} No timeOffset for HeadChordInter#5536{(0.926/0.926) staff:5 slot#8 dur:1/12}
+2025-07-02 07:08:05,522 INFO [Piano_Trio_No._1_in_D_Minor#3]                Voice.java:257  | Measure{#7P3} Voice{#5 excess:1/4} too long
+2025-07-02 07:08:05,523 INFO [Piano_Trio_No._1_in_D_Minor#3]          StackRhythm.java:224  | S2 MeasureStack#7 no correct rhythm
+2025-07-02 07:08:05,525 INFO [Piano_Trio_No._1_in_D_Minor#3]        MeasureRhythm.java:1045 | Measure{#8P3} No timeOffset for HeadChordInter#5593{(0.950/0.950) staff:8 slot#10 dur:1/12}
+2025-07-02 07:08:05,525 INFO [Piano_Trio_No._1_in_D_Minor#3]          StackRhythm.java:224  | S2 MeasureStack#8 no correct rhythm
+2025-07-02 07:08:05,528 INFO [Piano_Trio_No._1_in_D_Minor#3]        MeasureRhythm.java:1045 | Measure{#9P1} No timeOffset for HeadChordInter#5605{(0.945/0.945) staff:9 slot#10 dur:1/8}
+2025-07-02 07:08:05,531 INFO [Piano_Trio_No._1_in_D_Minor#3]                Voice.java:257  | Measure{#9P1} Voice{#1 excess:1/8} too long
+2025-07-02 07:08:05,534 INFO [Piano_Trio_No._1_in_D_Minor#3]        MeasureRhythm.java:1045 | Measure{#9P3} No timeOffset for HeadChordInter#5674{(0.947/0.947) staff:12 slot#10 dur:1/12}
+2025-07-02 07:08:05,535 INFO [Piano_Trio_No._1_in_D_Minor#3]          StackRhythm.java:224  | S3 MeasureStack#9 no correct rhythm
+2025-07-02 07:08:05,537 INFO [Piano_Trio_No._1_in_D_Minor#3]        MeasureRhythm.java:1045 | Measure{#10P1} No timeOffset for HeadChordInter#5617{(0.949/0.949) staff:9 slot#10 dur:1/8}
+2025-07-02 07:08:05,537 INFO [Piano_Trio_No._1_in_D_Minor#3]                Voice.java:257  | Measure{#10P1} Voice{#1 excess:1/8} too long
+2025-07-02 07:08:05,539 INFO [Piano_Trio_No._1_in_D_Minor#3]                Voice.java:257  | Measure{#10P3} Voice{#5 excess:1/4} too long
+2025-07-02 07:08:05,540 INFO [Piano_Trio_No._1_in_D_Minor#3]                Voice.java:257  | Measure{#10P3} Voice{#2 excess:1/4} too long
+2025-07-02 07:08:05,540 INFO [Piano_Trio_No._1_in_D_Minor#3]          StackRhythm.java:224  | S3 MeasureStack#10 no correct rhythm
+2025-07-02 07:08:05,541 INFO [Piano_Trio_No._1_in_D_Minor#3]        MeasureRhythm.java:1045 | Measure{#11P1} No timeOffset for HeadChordInter#5629{(0.957/0.957) staff:9 slot#10 dur:1/12}
+2025-07-02 07:08:05,542 INFO [Piano_Trio_No._1_in_D_Minor#3]          StackRhythm.java:224  | S3 MeasureStack#11 no correct rhythm
+2025-07-02 07:08:05,545 INFO [Piano_Trio_No._1_in_D_Minor#3]        MeasureRhythm.java:1045 | Measure{#12P1} No timeOffset for HeadChordInter#5641{(0.956/0.956) staff:9 slot#10 dur:1/8}
+2025-07-02 07:08:05,546 INFO [Piano_Trio_No._1_in_D_Minor#3]          StackRhythm.java:224  | S3 MeasureStack#12 no correct rhythm
+2025-07-02 07:08:05,548 INFO [Piano_Trio_No._1_in_D_Minor#3]        MeasureRhythm.java:1045 | Measure{#13P1} No timeOffset for HeadChordInter#5653{(0.956/0.956) staff:9 slot#10 dur:1/8}
+2025-07-02 07:08:05,549 INFO [Piano_Trio_No._1_in_D_Minor#3]                Voice.java:257  | Measure{#13P1} Voice{#1 excess:1/8} too long
+2025-07-02 07:08:05,551 INFO [Piano_Trio_No._1_in_D_Minor#3]                Voice.java:257  | Measure{#13P2} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:05,551 INFO [Piano_Trio_No._1_in_D_Minor#3]          StackRhythm.java:224  | S3 MeasureStack#13 no correct rhythm
+2025-07-02 07:08:05,554 INFO [Piano_Trio_No._1_in_D_Minor#3]                Voice.java:257  | Measure{#14P1} Voice{#1 excess:1/4} too long
+2025-07-02 07:08:05,554 INFO [Piano_Trio_No._1_in_D_Minor#3]        MeasureRhythm.java:1045 | Measure{#14P2} No timeOffset for HeadChordInter#5748{(0.937/0.937) staff:14 slot#3 dur:1/4}
+2025-07-02 07:08:05,555 INFO [Piano_Trio_No._1_in_D_Minor#3]   AbstractChordInter.java:627  | Measure{#14P2} No timeOffset for HeadChordInter#5748{(0.937/0.937) staff:14 slot#3 dur:1/4}
+2025-07-02 07:08:05,556 INFO [Piano_Trio_No._1_in_D_Minor#3]          StackRhythm.java:224  | S4 MeasureStack#14 no correct rhythm
+2025-07-02 07:08:05,558 INFO [Piano_Trio_No._1_in_D_Minor#3]        MeasureRhythm.java:1045 | Measure{#15P1} No timeOffset for HeadChordInter#5707{(0.948/0.948) staff:13 slot#10 dur:1/8}
+2025-07-02 07:08:05,560 INFO [Piano_Trio_No._1_in_D_Minor#3]          StackRhythm.java:224  | S4 MeasureStack#15 no correct rhythm
+2025-07-02 07:08:05,562 INFO [Piano_Trio_No._1_in_D_Minor#3]                Voice.java:257  | Measure{#16P1} Voice{#1 excess:1/8} too long
+2025-07-02 07:08:05,564 INFO [Piano_Trio_No._1_in_D_Minor#3]          StackRhythm.java:224  | S4 MeasureStack#16 no correct rhythm
+2025-07-02 07:08:05,566 INFO [Piano_Trio_No._1_in_D_Minor#3]                Voice.java:257  | Measure{#17P1} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:05,567 INFO [Piano_Trio_No._1_in_D_Minor#3]          StackRhythm.java:224  | S4 MeasureStack#17 no correct rhythm
+2025-07-02 07:08:05,568 INFO [Piano_Trio_No._1_in_D_Minor#3]                Voice.java:257  | Measure{#18P1} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:05,569 INFO [Piano_Trio_No._1_in_D_Minor#3]          StackRhythm.java:224  | S4 MeasureStack#18 no correct rhythm
+2025-07-02 07:08:05,570 INFO [Piano_Trio_No._1_in_D_Minor#3]       StepMonitoring.java:98   | PAGE
+2025-07-02 07:08:05,573 INFO [Piano_Trio_No._1_in_D_Minor#3]                Voice.java:257  | Measure{#4P8} Voice{#5 excess:1/4} too long
+2025-07-02 07:08:05,574 INFO [Piano_Trio_No._1_in_D_Minor#3]                Voice.java:257  | Measure{#6P8} Voice{#5 excess:1/8} too long
+2025-07-02 07:08:05,575 INFO [Piano_Trio_No._1_in_D_Minor#3]                Voice.java:257  | Measure{#7P8} Voice{#5 excess:1/4} too long
+2025-07-02 07:08:05,575 INFO [Piano_Trio_No._1_in_D_Minor#3]                Voice.java:257  | Measure{#9P6} Voice{#1 excess:1/8} too long
+2025-07-02 07:08:05,575 INFO [Piano_Trio_No._1_in_D_Minor#3]                Voice.java:257  | Measure{#10P6} Voice{#1 excess:1/8} too long
+2025-07-02 07:08:05,576 INFO [Piano_Trio_No._1_in_D_Minor#3]                Voice.java:257  | Measure{#10P8} Voice{#2 excess:1/4} too long
+2025-07-02 07:08:05,576 INFO [Piano_Trio_No._1_in_D_Minor#3]                Voice.java:257  | Measure{#10P8} Voice{#5 excess:1/4} too long
+2025-07-02 07:08:05,576 INFO [Piano_Trio_No._1_in_D_Minor#3]                Voice.java:257  | Measure{#13P6} Voice{#1 excess:1/8} too long
+2025-07-02 07:08:05,576 INFO [Piano_Trio_No._1_in_D_Minor#3]                Voice.java:257  | Measure{#13P7} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:05,577 INFO [Piano_Trio_No._1_in_D_Minor#3]                Voice.java:257  | Measure{#14P6} Voice{#1 excess:1/4} too long
+2025-07-02 07:08:05,577 INFO [Piano_Trio_No._1_in_D_Minor#3]                Voice.java:257  | Measure{#16P6} Voice{#1 excess:1/8} too long
+2025-07-02 07:08:05,578 INFO [Piano_Trio_No._1_in_D_Minor#3]                Voice.java:257  | Measure{#17P6} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:05,578 INFO [Piano_Trio_No._1_in_D_Minor#3]                Voice.java:257  | Measure{#18P6} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:05,579 INFO [Piano_Trio_No._1_in_D_Minor#3]                 Book.java:2550 | Book{Piano_Trio_No._1_in_D_Minor} storing
+2025-07-02 07:08:05,638 INFO [Piano_Trio_No._1_in_D_Minor#3]                 Book.java:2531 | Stored /book.xml
+2025-07-02 07:08:05,734 INFO [Piano_Trio_No._1_in_D_Minor#3]           DataHolder.java:348  | Stored /sheet#3/BINARY.png
+2025-07-02 07:08:06,121 INFO [Piano_Trio_No._1_in_D_Minor#3]                Sheet.java:1562 | Stored /sheet#3/sheet#3.xml
+2025-07-02 07:08:06,121 INFO [Piano_Trio_No._1_in_D_Minor#3]                 Book.java:2491 | Book stored as .\MXL\Piano_Trio_No._1_in_D_Minor\Piano_Trio_No._1_in_D_Minor.omr
+2025-07-02 07:08:06,129 INFO [Piano_Trio_No._1_in_D_Minor#3]            SheetStub.java:1644 | Disposed sheet#3
+2025-07-02 07:08:06,188 INFO [Piano_Trio_No._1_in_D_Minor#3]                 Book.java:2018 | End of Stub#3 memory: 37,614,648
+2025-07-02 07:08:06,189 INFO [Piano_Trio_No._1_in_D_Minor#4]       StepMonitoring.java:98   | LOAD
+2025-07-02 07:08:06,308 INFO [Piano_Trio_No._1_in_D_Minor#4]            SheetStub.java:1268 | Loaded image #4 2550x3299 from C:\Users\alexa\Downloads\Piano_Trio_No._1_in_D_Minor.pdf
+2025-07-02 07:08:06,308 INFO [Piano_Trio_No._1_in_D_Minor#4]       StepMonitoring.java:98   | BINARY
+2025-07-02 07:08:06,741 INFO [Piano_Trio_No._1_in_D_Minor#4]       StepMonitoring.java:98   | SCALE
+2025-07-02 07:08:06,745 INFO [Piano_Trio_No._1_in_D_Minor#4]         ScaleBuilder.java:241  | Beam  guessed height:  8 -- 0.50 of 15 interline
+2025-07-02 07:08:06,746 INFO [Piano_Trio_No._1_in_D_Minor#4]         ScaleBuilder.java:264  | Beam measured height:  7 -- 0.27 of [4..15] range at 395% of needed quorum
+2025-07-02 07:08:06,746 INFO [Piano_Trio_No._1_in_D_Minor#4]            ScaleStep.java:65   | Scale{ interline(14,15,15) line(1,1,3) beam(7)}
+2025-07-02 07:08:06,746 INFO [Piano_Trio_No._1_in_D_Minor#4]       StepMonitoring.java:98   | GRID
+2025-07-02 07:08:06,954 INFO [Piano_Trio_No._1_in_D_Minor#4]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-02 07:08:06,985 INFO [Piano_Trio_No._1_in_D_Minor#4]    ClustersRetriever.java:328  | Retrieved raw line clusters: 16 of sizes [5] with interline(14,15,15)
+2025-07-02 07:08:07,170 INFO [Piano_Trio_No._1_in_D_Minor#4]            PeakGraph.java:310  | Systems: #1[1, 2, 3, 4] #2[5, 6, 7, 8] #3[9, 10, 11, 12] #4[13, 14, 15, 16]
+2025-07-02 07:08:07,419 INFO [Piano_Trio_No._1_in_D_Minor#4]        SystemManager.java:779  | 3 parts along 4 systems
+2025-07-02 07:08:07,419 INFO [Piano_Trio_No._1_in_D_Minor#4]       StepMonitoring.java:98   | HEADERS
+2025-07-02 07:08:07,596 INFO [Piano_Trio_No._1_in_D_Minor#4]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-02 07:08:07,631 INFO [Piano_Trio_No._1_in_D_Minor#4]        StemSeedsStep.java:86   | stem(2 max:2)
+2025-07-02 07:08:07,643 INFO [Piano_Trio_No._1_in_D_Minor#4]       StepMonitoring.java:98   | BEAMS
+2025-07-02 07:08:09,307 INFO [Piano_Trio_No._1_in_D_Minor#4]       StepMonitoring.java:98   | LEDGERS
+2025-07-02 07:08:09,497 INFO [Piano_Trio_No._1_in_D_Minor#4]       StepMonitoring.java:98   | HEADS
+2025-07-02 07:08:13,647 INFO [Piano_Trio_No._1_in_D_Minor#4]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:0.4,R:0.4] NOTEHEAD_BLACK[L:0.4,R:0.3]}
+2025-07-02 07:08:13,648 INFO [Piano_Trio_No._1_in_D_Minor#4]       StepMonitoring.java:98   | STEMS
+2025-07-02 07:08:14,405 INFO [Piano_Trio_No._1_in_D_Minor#4]       StepMonitoring.java:98   | REDUCTION
+2025-07-02 07:08:14,506 INFO [Piano_Trio_No._1_in_D_Minor#4]        ReductionStep.java:105  | Stems free length median value: 49 pixels, 3.3 interlines
+2025-07-02 07:08:14,510 INFO [Piano_Trio_No._1_in_D_Minor#4]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-02 07:08:14,510 INFO [Piano_Trio_No._1_in_D_Minor#4]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-02 07:08:14,510 INFO [Piano_Trio_No._1_in_D_Minor#4]       StepMonitoring.java:98   | TEXTS
+2025-07-02 07:08:16,068 INFO [Piano_Trio_No._1_in_D_Minor#4]       StepMonitoring.java:98   | MEASURES
+2025-07-02 07:08:16,072 INFO [Piano_Trio_No._1_in_D_Minor#4]                 Page.java:307  | 15 raw measures: [5 in system#1, 3 in system#2, 4 in system#3, 3 in system#4]
+2025-07-02 07:08:16,072 INFO [Piano_Trio_No._1_in_D_Minor#4]       StepMonitoring.java:98   | CHORDS
+2025-07-02 07:08:16,087 INFO [Piano_Trio_No._1_in_D_Minor#4]       StepMonitoring.java:98   | CURVES
+2025-07-02 07:08:16,796 INFO [Piano_Trio_No._1_in_D_Minor#4]         SlursBuilder.java:240  | Slurs: 91
+2025-07-02 07:08:16,817 INFO [Piano_Trio_No._1_in_D_Minor#4]      SegmentsBuilder.java:155  | Segments: 44
+2025-07-02 07:08:16,818 INFO [Piano_Trio_No._1_in_D_Minor#4]       StepMonitoring.java:98   | SYMBOLS
+2025-07-02 07:08:17,385 INFO [Piano_Trio_No._1_in_D_Minor#4]       StepMonitoring.java:98   | LINKS
+2025-07-02 07:08:17,466 INFO [Piano_Trio_No._1_in_D_Minor#4]       StepMonitoring.java:98   | RHYTHMS
+2025-07-02 07:08:17,467 INFO [Piano_Trio_No._1_in_D_Minor#4]           PageRhythm.java:199  | {Page#4.1} Time value reused from sheet#1
+2025-07-02 07:08:17,469 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#1P1} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,470 INFO [Piano_Trio_No._1_in_D_Minor#4]        MeasureRhythm.java:1045 | Measure{#1P2} No timeOffset for HeadChordInter#7578{(0.932/0.932) staff:2 slot#4 dur:1/4}
+2025-07-02 07:08:17,472 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#1P3} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,474 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#1P3} Voice{#5 excess:1/4} too long
+2025-07-02 07:08:17,474 INFO [Piano_Trio_No._1_in_D_Minor#4]          StackRhythm.java:224  | S1 MeasureStack#1 no correct rhythm
+2025-07-02 07:08:17,476 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#2P1} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,477 INFO [Piano_Trio_No._1_in_D_Minor#4]        MeasureRhythm.java:1045 | Measure{#2P2} No timeOffset for HeadChordInter#7582{(0.939/0.939) staff:2 slot#4 dur:1/4}
+2025-07-02 07:08:17,479 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#2P3} Voice{#7 excess:5/12} too long
+2025-07-02 07:08:17,479 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#2P3} Voice{#8 excess:1/6} too long
+2025-07-02 07:08:17,480 INFO [Piano_Trio_No._1_in_D_Minor#4]          StackRhythm.java:224  | S1 MeasureStack#2 no correct rhythm
+2025-07-02 07:08:17,482 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#3P1} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,482 INFO [Piano_Trio_No._1_in_D_Minor#4]        MeasureRhythm.java:1045 | Measure{#3P2} No timeOffset for HeadChordInter#7586{(0.927/0.927) staff:2 slot#4 dur:1/4}
+2025-07-02 07:08:17,484 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#3P3} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,484 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#3P3} Voice{#5 excess:1/4} too long
+2025-07-02 07:08:17,485 INFO [Piano_Trio_No._1_in_D_Minor#4]          StackRhythm.java:224  | S1 MeasureStack#3 no correct rhythm
+2025-07-02 07:08:17,486 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#4P1} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,487 INFO [Piano_Trio_No._1_in_D_Minor#4]        MeasureRhythm.java:1045 | Measure{#4P2} No timeOffset for HeadChordInter#7590{(0.940/0.940) staff:2 slot#4 dur:1/4}
+2025-07-02 07:08:17,490 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#4P3} Voice{#7 excess:5/12} too long
+2025-07-02 07:08:17,490 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#4P3} Voice{#8 excess:1/6} too long
+2025-07-02 07:08:17,490 INFO [Piano_Trio_No._1_in_D_Minor#4]          StackRhythm.java:224  | S1 MeasureStack#4 no correct rhythm
+2025-07-02 07:08:17,493 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#5P1} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,493 INFO [Piano_Trio_No._1_in_D_Minor#4]        MeasureRhythm.java:1045 | Measure{#5P2} No timeOffset for HeadChordInter#7594{(0.940/0.940) staff:2 slot#4 dur:1/4}
+2025-07-02 07:08:17,496 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#5P3} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,496 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#5P3} Voice{#6 excess:1/4} too long
+2025-07-02 07:08:17,496 INFO [Piano_Trio_No._1_in_D_Minor#4]          StackRhythm.java:224  | S1 MeasureStack#5 no correct rhythm
+2025-07-02 07:08:17,498 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#6P1} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,499 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#6P3} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,500 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#6P3} Voice{#6 excess:1/4} too long
+2025-07-02 07:08:17,500 INFO [Piano_Trio_No._1_in_D_Minor#4]          StackRhythm.java:224  | S2 MeasureStack#6 no correct rhythm
+2025-07-02 07:08:17,501 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#7P1} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,503 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#7P3} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,504 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#7P3} Voice{#6 excess:1/4} too long
+2025-07-02 07:08:17,504 INFO [Piano_Trio_No._1_in_D_Minor#4]          StackRhythm.java:224  | S2 MeasureStack#7 no correct rhythm
+2025-07-02 07:08:17,506 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#8P1} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,507 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#8P2} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,509 INFO [Piano_Trio_No._1_in_D_Minor#4]        MeasureRhythm.java:1045 | Measure{#8P3} No timeOffset for HeadChordInter#7749{(0.956/0.956) staff:7 slot#5 dur:1/4}
+2025-07-02 07:08:17,509 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#8P3} Voice{#1 excess:1/4} too long
+2025-07-02 07:08:17,510 INFO [Piano_Trio_No._1_in_D_Minor#4]          StackRhythm.java:224  | S2 MeasureStack#8 no correct rhythm
+2025-07-02 07:08:17,512 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#9P1} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,513 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#9P2} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,514 INFO [Piano_Trio_No._1_in_D_Minor#4]          StackRhythm.java:224  | S3 MeasureStack#9 no correct rhythm
+2025-07-02 07:08:17,515 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#10P1} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,517 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#10P2} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,517 INFO [Piano_Trio_No._1_in_D_Minor#4]        MeasureRhythm.java:1045 | Measure{#10P3} No timeOffset for HeadChordInter#7857{(0.966/0.966) staff:11 slot#4 dur:1/4}
+2025-07-02 07:08:17,518 INFO [Piano_Trio_No._1_in_D_Minor#4]          StackRhythm.java:224  | S3 MeasureStack#10 no correct rhythm
+2025-07-02 07:08:17,520 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#11P1} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,521 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#11P2} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,522 INFO [Piano_Trio_No._1_in_D_Minor#4]          StackRhythm.java:224  | S3 MeasureStack#11 no correct rhythm
+2025-07-02 07:08:17,524 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#12P1} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,525 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#12P2} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,527 INFO [Piano_Trio_No._1_in_D_Minor#4]          StackRhythm.java:224  | S3 MeasureStack#12 no correct rhythm
+2025-07-02 07:08:17,529 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#13P1} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,531 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#13P2} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,532 INFO [Piano_Trio_No._1_in_D_Minor#4]          StackRhythm.java:224  | S4 MeasureStack#13 no correct rhythm
+2025-07-02 07:08:17,533 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#14P1} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,534 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#14P2} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,535 INFO [Piano_Trio_No._1_in_D_Minor#4]        MeasureRhythm.java:1045 | Measure{#14P3} No timeOffset for HeadChordInter#7930{(0.966/0.966) staff:15 slot#5 dur:1/4}
+2025-07-02 07:08:17,535 INFO [Piano_Trio_No._1_in_D_Minor#4]        MeasureRhythm.java:1045 | Measure{#14P3} No timeOffset for HeadChordInter#7937{(0.960/0.960) staff:16 slot#5 dur:1/4}
+2025-07-02 07:08:17,536 INFO [Piano_Trio_No._1_in_D_Minor#4]          StackRhythm.java:224  | S4 MeasureStack#14 no correct rhythm
+2025-07-02 07:08:17,537 INFO [Piano_Trio_No._1_in_D_Minor#4]       StepMonitoring.java:98   | PAGE
+2025-07-02 07:08:17,541 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#1P5} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,541 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#1P8} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,541 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#1P8} Voice{#5 excess:1/4} too long
+2025-07-02 07:08:17,541 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#2P5} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,542 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#2P8} Voice{#7 excess:5/12} too long
+2025-07-02 07:08:17,543 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#2P8} Voice{#8 excess:1/6} too long
+2025-07-02 07:08:17,543 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#3P5} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,543 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#3P8} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,543 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#3P8} Voice{#5 excess:1/4} too long
+2025-07-02 07:08:17,543 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#4P5} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,543 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#4P8} Voice{#7 excess:5/12} too long
+2025-07-02 07:08:17,543 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#4P8} Voice{#8 excess:1/6} too long
+2025-07-02 07:08:17,544 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#5P5} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,544 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#5P8} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,544 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#5P8} Voice{#6 excess:1/4} too long
+2025-07-02 07:08:17,544 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#6P5} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,544 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#6P8} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,544 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#6P8} Voice{#6 excess:1/4} too long
+2025-07-02 07:08:17,545 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#7P5} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,545 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#7P8} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,545 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#7P8} Voice{#6 excess:1/4} too long
+2025-07-02 07:08:17,545 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#8P5} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,545 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#8P7} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,545 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#8P8} Voice{#1 excess:1/4} too long
+2025-07-02 07:08:17,546 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#9P6} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,546 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#9P7} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,546 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#10P6} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,546 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#10P7} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,547 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#11P6} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,547 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#11P7} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,547 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#12P6} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,547 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#12P7} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,547 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#13P5} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,547 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#13P7} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,548 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#14P5} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,548 INFO [Piano_Trio_No._1_in_D_Minor#4]                Voice.java:257  | Measure{#14P7} Voice{#1 excess:1/2} too long
+2025-07-02 07:08:17,549 INFO [Piano_Trio_No._1_in_D_Minor#4]                 Book.java:2550 | Book{Piano_Trio_No._1_in_D_Minor} storing
+2025-07-02 07:08:17,631 INFO [Piano_Trio_No._1_in_D_Minor#4]                 Book.java:2531 | Stored /book.xml
+2025-07-02 07:08:17,739 INFO [Piano_Trio_No._1_in_D_Minor#4]           DataHolder.java:348  | Stored /sheet#4/BINARY.png
+2025-07-02 07:08:18,320 INFO [Piano_Trio_No._1_in_D_Minor#4]                Sheet.java:1562 | Stored /sheet#4/sheet#4.xml
+2025-07-02 07:08:18,320 INFO [Piano_Trio_No._1_in_D_Minor#4]                 Book.java:2491 | Book stored as .\MXL\Piano_Trio_No._1_in_D_Minor\Piano_Trio_No._1_in_D_Minor.omr
+2025-07-02 07:08:18,332 INFO [Piano_Trio_No._1_in_D_Minor#4]            SheetStub.java:1644 | Disposed sheet#4
+2025-07-02 07:08:18,397 INFO [Piano_Trio_No._1_in_D_Minor#4]                 Book.java:2018 | End of Stub#4 memory: 37,716,912
+2025-07-02 07:08:18,397 INFO [Piano_Trio_No._1_in_D_Minor#5]       StepMonitoring.java:98   | LOAD
+2025-07-02 07:08:18,476 INFO [Piano_Trio_No._1_in_D_Minor#5]            SheetStub.java:1268 | Loaded image #5 2550x3299 from C:\Users\alexa\Downloads\Piano_Trio_No._1_in_D_Minor.pdf
+2025-07-02 07:08:18,477 INFO [Piano_Trio_No._1_in_D_Minor#5]       StepMonitoring.java:98   | BINARY
+2025-07-02 07:08:18,930 INFO [Piano_Trio_No._1_in_D_Minor#5]       StepMonitoring.java:98   | SCALE
+2025-07-02 07:08:18,933 INFO [Piano_Trio_No._1_in_D_Minor#5]         ScaleBuilder.java:241  | Beam  guessed height:  8 -- 0.50 of 15 interline
+2025-07-02 07:08:18,934 INFO [Piano_Trio_No._1_in_D_Minor#5]         ScaleBuilder.java:264  | Beam measured height:  8 -- 0.36 of [4..15] range at 204% of needed quorum
+2025-07-02 07:08:18,934 INFO [Piano_Trio_No._1_in_D_Minor#5]            ScaleStep.java:65   | Scale{ interline(14,15,15) line(1,1,1) beam(8)}
+2025-07-02 07:08:18,934 INFO [Piano_Trio_No._1_in_D_Minor#5]       StepMonitoring.java:98   | GRID
+2025-07-02 07:08:19,071 INFO [Piano_Trio_No._1_in_D_Minor#5]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-02 07:08:19,089 INFO [Piano_Trio_No._1_in_D_Minor#5]    ClustersRetriever.java:328  | Retrieved raw line clusters: 16 of sizes [5] with interline(14,15,15)
+2025-07-02 07:08:19,160 INFO [Piano_Trio_No._1_in_D_Minor#5]            PeakGraph.java:310  | Systems: #1[1, 2, 3, 4] #2[5, 6, 7, 8] #3[9, 10, 11, 12] #4[13, 14, 15, 16]
+2025-07-02 07:08:19,322 INFO [Piano_Trio_No._1_in_D_Minor#5]        SystemManager.java:779  | 3 parts along 4 systems
+2025-07-02 07:08:19,323 INFO [Piano_Trio_No._1_in_D_Minor#5]       StepMonitoring.java:98   | HEADERS
+2025-07-02 07:08:19,702 INFO [Piano_Trio_No._1_in_D_Minor#5]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-02 07:08:19,740 INFO [Piano_Trio_No._1_in_D_Minor#5]        StemSeedsStep.java:86   | stem(2 max:2)
+2025-07-02 07:08:19,748 INFO [Piano_Trio_No._1_in_D_Minor#5]       StepMonitoring.java:98   | BEAMS
+2025-07-02 07:08:21,510 INFO [Piano_Trio_No._1_in_D_Minor#5]       StepMonitoring.java:98   | LEDGERS
+2025-07-02 07:08:21,583 INFO [Piano_Trio_No._1_in_D_Minor#5]       StepMonitoring.java:98   | HEADS
+2025-07-02 07:08:25,882 INFO [Piano_Trio_No._1_in_D_Minor#5]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:0.1,R:-0.3] NOTEHEAD_BLACK[L:-0.1,R:-0.5]}
+2025-07-02 07:08:25,882 INFO [Piano_Trio_No._1_in_D_Minor#5]       StepMonitoring.java:98   | STEMS
+2025-07-02 07:08:26,564 INFO [Piano_Trio_No._1_in_D_Minor#5]       StepMonitoring.java:98   | REDUCTION
+2025-07-02 07:08:26,664 INFO [Piano_Trio_No._1_in_D_Minor#5]        ReductionStep.java:105  | Stems free length median value: 53 pixels, 3.5 interlines
+2025-07-02 07:08:26,670 INFO [Piano_Trio_No._1_in_D_Minor#5]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-02 07:08:26,670 INFO [Piano_Trio_No._1_in_D_Minor#5]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-02 07:08:26,670 INFO [Piano_Trio_No._1_in_D_Minor#5]       StepMonitoring.java:98   | TEXTS
+2025-07-02 07:08:27,341 INFO [Piano_Trio_No._1_in_D_Minor#5]       StepMonitoring.java:98   | MEASURES
+2025-07-02 07:08:27,344 INFO [Piano_Trio_No._1_in_D_Minor#5]                 Page.java:307  | 36 raw measures: [9 in system#1, 9 in system#2, 9 in system#3, 9 in system#4]
+2025-07-02 07:08:27,344 INFO [Piano_Trio_No._1_in_D_Minor#5]       StepMonitoring.java:98   | CHORDS
+2025-07-02 07:08:27,357 INFO [Piano_Trio_No._1_in_D_Minor#5]       StepMonitoring.java:98   | CURVES
+2025-07-02 07:08:27,944 INFO [Piano_Trio_No._1_in_D_Minor#5]         SlursBuilder.java:240  | Slurs: 5
+2025-07-02 07:08:27,951 INFO [Piano_Trio_No._1_in_D_Minor#5]      SegmentsBuilder.java:155  | Segments: 7
+2025-07-02 07:08:27,952 INFO [Piano_Trio_No._1_in_D_Minor#5]       StepMonitoring.java:98   | SYMBOLS
+2025-07-02 07:08:28,328 INFO [Piano_Trio_No._1_in_D_Minor#5]       StepMonitoring.java:98   | LINKS
+2025-07-02 07:08:28,362 INFO [Piano_Trio_No._1_in_D_Minor#5]       StepMonitoring.java:98   | RHYTHMS
+2025-07-02 07:08:28,366 INFO [Piano_Trio_No._1_in_D_Minor#5]        MeasureRhythm.java:1045 | Measure{#3P3} No timeOffset for HeadChordInter#8850{(0.946/0.946) staff:4 slot#4 dur:1/4}
+2025-07-02 07:08:28,367 INFO [Piano_Trio_No._1_in_D_Minor#5]   AbstractChordInter.java:627  | Measure{#3P3} No timeOffset for HeadChordInter#8850{(0.946/0.946) staff:4 slot#4 dur:1/4}
+2025-07-02 07:08:28,367 INFO [Piano_Trio_No._1_in_D_Minor#5]          StackRhythm.java:224  | S1 MeasureStack#3 no correct rhythm
+2025-07-02 07:08:28,372 INFO [Piano_Trio_No._1_in_D_Minor#5]        MeasureRhythm.java:1045 | Measure{#8P3} No timeOffset for HeadChordInter#8870{(0.932/0.932) staff:4 slot#6 dur:1/4}
+2025-07-02 07:08:28,372 INFO [Piano_Trio_No._1_in_D_Minor#5]                Voice.java:257  | Measure{#8P3} Voice{#5 excess:1/4} too long
+2025-07-02 07:08:28,372 INFO [Piano_Trio_No._1_in_D_Minor#5]          StackRhythm.java:224  | S1 MeasureStack#8 no correct rhythm
+2025-07-02 07:08:28,376 INFO [Piano_Trio_No._1_in_D_Minor#5]        MeasureRhythm.java:1045 | Measure{#11P3} No timeOffset for HeadChordInter#8951{(0.933/0.933) staff:8 slot#4 dur:1/4}
+2025-07-02 07:08:28,377 INFO [Piano_Trio_No._1_in_D_Minor#5]   AbstractChordInter.java:627  | Measure{#11P3} No timeOffset for HeadChordInter#8951{(0.933/0.933) staff:8 slot#4 dur:1/4}
+2025-07-02 07:08:28,377 INFO [Piano_Trio_No._1_in_D_Minor#5]          StackRhythm.java:224  | S2 MeasureStack#11 no correct rhythm
+2025-07-02 07:08:28,386 INFO [Piano_Trio_No._1_in_D_Minor#5]        MeasureRhythm.java:1045 | Measure{#19P3} No timeOffset for HeadChordInter#9054{(0.924/0.924) staff:12 slot#4 dur:1/4}
+2025-07-02 07:08:28,386 INFO [Piano_Trio_No._1_in_D_Minor#5]   AbstractChordInter.java:627  | Measure{#19P3} No timeOffset for HeadChordInter#9054{(0.924/0.924) staff:12 slot#4 dur:1/4}
+2025-07-02 07:08:28,386 INFO [Piano_Trio_No._1_in_D_Minor#5]          StackRhythm.java:224  | S3 MeasureStack#19 no correct rhythm
+2025-07-02 07:08:28,392 INFO [Piano_Trio_No._1_in_D_Minor#5]        MeasureRhythm.java:1045 | Measure{#24P3} No timeOffset for HeadChordInter#9074{(0.933/0.933) staff:12 slot#6 dur:1/4}
+2025-07-02 07:08:28,393 INFO [Piano_Trio_No._1_in_D_Minor#5]                Voice.java:257  | Measure{#24P3} Voice{#5 excess:1/4} too long
+2025-07-02 07:08:28,393 INFO [Piano_Trio_No._1_in_D_Minor#5]          StackRhythm.java:224  | S3 MeasureStack#24 no correct rhythm
+2025-07-02 07:08:28,407 INFO [Piano_Trio_No._1_in_D_Minor#5]       StepMonitoring.java:98   | PAGE
+2025-07-02 07:08:28,409 INFO [Piano_Trio_No._1_in_D_Minor#5]                Voice.java:257  | Measure{#8P8} Voice{#5 excess:1/4} too long
+2025-07-02 07:08:28,410 INFO [Piano_Trio_No._1_in_D_Minor#5]                Voice.java:257  | Measure{#24P8} Voice{#5 excess:1/4} too long
+2025-07-02 07:08:28,411 INFO [Piano_Trio_No._1_in_D_Minor#5]                 Book.java:2550 | Book{Piano_Trio_No._1_in_D_Minor} storing
+2025-07-02 07:08:28,463 INFO [Piano_Trio_No._1_in_D_Minor#5]                 Book.java:2531 | Stored /book.xml
+2025-07-02 07:08:28,554 INFO [Piano_Trio_No._1_in_D_Minor#5]           DataHolder.java:348  | Stored /sheet#5/BINARY.png
+2025-07-02 07:08:28,936 INFO [Piano_Trio_No._1_in_D_Minor#5]                Sheet.java:1562 | Stored /sheet#5/sheet#5.xml
+2025-07-02 07:08:28,936 INFO [Piano_Trio_No._1_in_D_Minor#5]                 Book.java:2491 | Book stored as .\MXL\Piano_Trio_No._1_in_D_Minor\Piano_Trio_No._1_in_D_Minor.omr
+2025-07-02 07:08:28,945 INFO [Piano_Trio_No._1_in_D_Minor#5]            SheetStub.java:1644 | Disposed sheet#5
+2025-07-02 07:08:29,000 INFO [Piano_Trio_No._1_in_D_Minor#5]                 Book.java:2018 | End of Stub#5 memory: 37,747,856
+2025-07-02 07:08:29,000 INFO [Piano_Trio_No._1_in_D_Minor#6]       StepMonitoring.java:98   | LOAD
+2025-07-02 07:08:29,081 INFO [Piano_Trio_No._1_in_D_Minor#6]            SheetStub.java:1268 | Loaded image #6 2550x3299 from C:\Users\alexa\Downloads\Piano_Trio_No._1_in_D_Minor.pdf
+2025-07-02 07:08:29,081 INFO [Piano_Trio_No._1_in_D_Minor#6]       StepMonitoring.java:98   | BINARY
+2025-07-02 07:08:29,487 INFO [Piano_Trio_No._1_in_D_Minor#6]       StepMonitoring.java:98   | SCALE
+2025-07-02 07:08:29,490 INFO [Piano_Trio_No._1_in_D_Minor#6]         ScaleBuilder.java:241  | Beam  guessed height:  8 -- 0.50 of 15 interline
+2025-07-02 07:08:29,490 INFO [Piano_Trio_No._1_in_D_Minor#6]         ScaleBuilder.java:264  | Beam measured height:  8 -- 0.36 of [4..15] range at 290% of needed quorum
+2025-07-02 07:08:29,490 INFO [Piano_Trio_No._1_in_D_Minor#6]            ScaleStep.java:65   | Scale{ interline(14,15,15) line(1,1,2) beam(8)}
+2025-07-02 07:08:29,491 INFO [Piano_Trio_No._1_in_D_Minor#6]       StepMonitoring.java:98   | GRID
+2025-07-02 07:08:29,668 INFO [Piano_Trio_No._1_in_D_Minor#6]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-02 07:08:29,687 INFO [Piano_Trio_No._1_in_D_Minor#6]    ClustersRetriever.java:328  | Retrieved raw line clusters: 16 of sizes [5] with interline(14,15,15)
+2025-07-02 07:08:29,772 INFO [Piano_Trio_No._1_in_D_Minor#6]            PeakGraph.java:310  | Systems: #1[1, 2, 3, 4] #2[5, 6, 7, 8] #3[9, 10, 11, 12] #4[13, 14, 15, 16]
+2025-07-02 07:08:29,972 INFO [Piano_Trio_No._1_in_D_Minor#6]        SystemManager.java:779  | 3 parts along 4 systems
+2025-07-02 07:08:29,972 INFO [Piano_Trio_No._1_in_D_Minor#6]       StepMonitoring.java:98   | HEADERS
+2025-07-02 07:08:30,234 INFO [Piano_Trio_No._1_in_D_Minor#6]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-02 07:08:30,266 INFO [Piano_Trio_No._1_in_D_Minor#6]        StemSeedsStep.java:86   | stem(2 max:2)
+2025-07-02 07:08:30,274 INFO [Piano_Trio_No._1_in_D_Minor#6]       StepMonitoring.java:98   | BEAMS
+2025-07-02 07:08:32,043 INFO [Piano_Trio_No._1_in_D_Minor#6]       StepMonitoring.java:98   | LEDGERS
+2025-07-02 07:08:32,149 INFO [Piano_Trio_No._1_in_D_Minor#6]       StepMonitoring.java:98   | HEADS
+2025-07-02 07:08:36,471 INFO [Piano_Trio_No._1_in_D_Minor#6]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:0.5,R:-0.4] NOTEHEAD_BLACK[L:0.2,R:-0.4]}
+2025-07-02 07:08:36,471 INFO [Piano_Trio_No._1_in_D_Minor#6]       StepMonitoring.java:98   | STEMS
+2025-07-02 07:08:37,138 INFO [Piano_Trio_No._1_in_D_Minor#6]       StepMonitoring.java:98   | REDUCTION
+2025-07-02 07:08:37,222 INFO [Piano_Trio_No._1_in_D_Minor#6]        ReductionStep.java:105  | Stems free length median value: 51 pixels, 3.4 interlines
+2025-07-02 07:08:37,227 INFO [Piano_Trio_No._1_in_D_Minor#6]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-02 07:08:37,227 INFO [Piano_Trio_No._1_in_D_Minor#6]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-02 07:08:37,227 INFO [Piano_Trio_No._1_in_D_Minor#6]       StepMonitoring.java:98   | TEXTS
+2025-07-02 07:08:37,882 INFO [Piano_Trio_No._1_in_D_Minor#6]       StepMonitoring.java:98   | MEASURES
+2025-07-02 07:08:37,884 INFO [Piano_Trio_No._1_in_D_Minor#6]                 Page.java:307  | 35 raw measures: [10 in system#1, 9 in system#2, 8 in system#3, 8 in system#4]
+2025-07-02 07:08:37,884 INFO [Piano_Trio_No._1_in_D_Minor#6]       StepMonitoring.java:98   | CHORDS
+2025-07-02 07:08:37,896 INFO [Piano_Trio_No._1_in_D_Minor#6]       StepMonitoring.java:98   | CURVES
+2025-07-02 07:08:38,537 INFO [Piano_Trio_No._1_in_D_Minor#6]         SlursBuilder.java:240  | Slurs: 25
+2025-07-02 07:08:38,573 INFO [Piano_Trio_No._1_in_D_Minor#6]      SegmentsBuilder.java:155  | Segments: 20
+2025-07-02 07:08:38,574 INFO [Piano_Trio_No._1_in_D_Minor#6]       StepMonitoring.java:98   | SYMBOLS
+2025-07-02 07:08:38,939 INFO [Piano_Trio_No._1_in_D_Minor#6]       StepMonitoring.java:98   | LINKS
+2025-07-02 07:08:38,976 INFO [Piano_Trio_No._1_in_D_Minor#6]       StepMonitoring.java:98   | RHYTHMS
+2025-07-02 07:08:38,977 INFO [Piano_Trio_No._1_in_D_Minor#6]           PageRhythm.java:199  | {Page#6.1} Time value reused from sheet#5
+2025-07-02 07:08:39,021 INFO [Piano_Trio_No._1_in_D_Minor#6]       StepMonitoring.java:98   | PAGE
+2025-07-02 07:08:39,026 INFO [Piano_Trio_No._1_in_D_Minor#6]                 Book.java:2550 | Book{Piano_Trio_No._1_in_D_Minor} storing
+2025-07-02 07:08:39,085 INFO [Piano_Trio_No._1_in_D_Minor#6]                 Book.java:2531 | Stored /book.xml
+2025-07-02 07:08:39,187 INFO [Piano_Trio_No._1_in_D_Minor#6]           DataHolder.java:348  | Stored /sheet#6/BINARY.png
+2025-07-02 07:08:39,707 INFO [Piano_Trio_No._1_in_D_Minor#6]                Sheet.java:1562 | Stored /sheet#6/sheet#6.xml
+2025-07-02 07:08:39,707 INFO [Piano_Trio_No._1_in_D_Minor#6]                 Book.java:2491 | Book stored as .\MXL\Piano_Trio_No._1_in_D_Minor\Piano_Trio_No._1_in_D_Minor.omr
+2025-07-02 07:08:39,717 INFO [Piano_Trio_No._1_in_D_Minor#6]            SheetStub.java:1644 | Disposed sheet#6
+2025-07-02 07:08:39,769 INFO [Piano_Trio_No._1_in_D_Minor#6]                 Book.java:2018 | End of Stub#6 memory: 37,772,480
+2025-07-02 07:08:39,770 INFO [Piano_Trio_No._1_in_D_Minor#7]       StepMonitoring.java:98   | LOAD
+2025-07-02 07:08:39,829 INFO [Piano_Trio_No._1_in_D_Minor#7]            SheetStub.java:1268 | Loaded image #7 2550x3299 from C:\Users\alexa\Downloads\Piano_Trio_No._1_in_D_Minor.pdf
+2025-07-02 07:08:39,830 INFO [Piano_Trio_No._1_in_D_Minor#7]       StepMonitoring.java:98   | BINARY
+2025-07-02 07:08:40,246 INFO [Piano_Trio_No._1_in_D_Minor#7]       StepMonitoring.java:98   | SCALE
+2025-07-02 07:08:40,248 INFO [Piano_Trio_No._1_in_D_Minor#7]         ScaleBuilder.java:241  | Beam  guessed height:  8 -- 0.50 of 15 interline
+2025-07-02 07:08:40,249 INFO [Piano_Trio_No._1_in_D_Minor#7]         ScaleBuilder.java:264  | Beam measured height:  8 -- 0.36 of [4..15] range at 118% of needed quorum
+2025-07-02 07:08:40,249 INFO [Piano_Trio_No._1_in_D_Minor#7]            ScaleStep.java:65   | Scale{ interline(14,15,15) line(1,1,2) beam(8)}
+2025-07-02 07:08:40,249 INFO [Piano_Trio_No._1_in_D_Minor#7]       StepMonitoring.java:98   | GRID
+2025-07-02 07:08:40,390 INFO [Piano_Trio_No._1_in_D_Minor#7]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-02 07:08:40,404 INFO [Piano_Trio_No._1_in_D_Minor#7]    ClustersRetriever.java:328  | Retrieved raw line clusters: 16 of sizes [5] with interline(14,15,15)
+2025-07-02 07:08:40,505 INFO [Piano_Trio_No._1_in_D_Minor#7]            PeakGraph.java:310  | Systems: #1[1, 2, 3, 4] #2[5, 6, 7, 8] #3[9, 10, 11, 12] #4[13, 14, 15, 16]
+2025-07-02 07:08:40,688 INFO [Piano_Trio_No._1_in_D_Minor#7]        SystemManager.java:779  | 3 parts along 4 systems
+2025-07-02 07:08:40,688 INFO [Piano_Trio_No._1_in_D_Minor#7]       StepMonitoring.java:98   | HEADERS
+2025-07-02 07:08:40,983 INFO [Piano_Trio_No._1_in_D_Minor#7]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-02 07:08:41,026 INFO [Piano_Trio_No._1_in_D_Minor#7]        StemSeedsStep.java:86   | stem(2 max:2)
+2025-07-02 07:08:41,038 INFO [Piano_Trio_No._1_in_D_Minor#7]       StepMonitoring.java:98   | BEAMS
+2025-07-02 07:08:42,796 INFO [Piano_Trio_No._1_in_D_Minor#7]       StepMonitoring.java:98   | LEDGERS
+2025-07-02 07:08:42,901 INFO [Piano_Trio_No._1_in_D_Minor#7]       StepMonitoring.java:98   | HEADS
+2025-07-02 07:08:46,384 INFO [Piano_Trio_No._1_in_D_Minor#7]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:0.3,R:-0.1] NOTEHEAD_BLACK[L:-0.2,R:-0.4]}
+2025-07-02 07:08:46,385 INFO [Piano_Trio_No._1_in_D_Minor#7]       StepMonitoring.java:98   | STEMS
+2025-07-02 07:08:47,254 INFO [Piano_Trio_No._1_in_D_Minor#7]       StepMonitoring.java:98   | REDUCTION
+2025-07-02 07:08:47,392 INFO [Piano_Trio_No._1_in_D_Minor#7]        ReductionStep.java:105  | Stems free length median value: 52 pixels, 3.5 interlines
+2025-07-02 07:08:47,395 INFO [Piano_Trio_No._1_in_D_Minor#7]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-02 07:08:47,396 INFO [Piano_Trio_No._1_in_D_Minor#7]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-02 07:08:47,396 INFO [Piano_Trio_No._1_in_D_Minor#7]       StepMonitoring.java:98   | TEXTS
+2025-07-02 07:08:48,097 INFO [Piano_Trio_No._1_in_D_Minor#7]       StepMonitoring.java:98   | MEASURES
+2025-07-02 07:08:48,098 INFO [Piano_Trio_No._1_in_D_Minor#7]                 Page.java:307  | 34 raw measures: [8 in system#1, 5 in system#2, 12 in system#3, 9 in system#4]
+2025-07-02 07:08:48,098 INFO [Piano_Trio_No._1_in_D_Minor#7]       StepMonitoring.java:98   | CHORDS
+2025-07-02 07:08:48,107 INFO [Piano_Trio_No._1_in_D_Minor#7]       StepMonitoring.java:98   | CURVES
+2025-07-02 07:08:48,653 INFO [Piano_Trio_No._1_in_D_Minor#7]         SlursBuilder.java:240  | Slurs: 12
+2025-07-02 07:08:48,663 INFO [Piano_Trio_No._1_in_D_Minor#7]      SegmentsBuilder.java:155  | Segments: 22
+2025-07-02 07:08:48,670 INFO [Piano_Trio_No._1_in_D_Minor#7]       StepMonitoring.java:98   | SYMBOLS
+2025-07-02 07:08:48,982 INFO [Piano_Trio_No._1_in_D_Minor#7]       StepMonitoring.java:98   | LINKS
+2025-07-02 07:08:48,997 INFO [Piano_Trio_No._1_in_D_Minor#7]        SentenceInter.java:461  | No chord near SentenceInter#9219{(0.616) staff:9 mFont:S-92 Direction} ./
+2025-07-02 07:08:49,027 INFO [Piano_Trio_No._1_in_D_Minor#7]       StepMonitoring.java:98   | RHYTHMS
+2025-07-02 07:08:49,027 INFO [Piano_Trio_No._1_in_D_Minor#7]           PageRhythm.java:199  | {Page#7.1} Time value reused from sheet#5
+2025-07-02 07:08:49,052 INFO [Piano_Trio_No._1_in_D_Minor#7]       StepMonitoring.java:98   | PAGE
+2025-07-02 07:08:49,054 INFO [Piano_Trio_No._1_in_D_Minor#7]                 Book.java:2550 | Book{Piano_Trio_No._1_in_D_Minor} storing
+2025-07-02 07:08:49,117 INFO [Piano_Trio_No._1_in_D_Minor#7]                 Book.java:2531 | Stored /book.xml
+2025-07-02 07:08:49,231 INFO [Piano_Trio_No._1_in_D_Minor#7]           DataHolder.java:348  | Stored /sheet#7/BINARY.png
+2025-07-02 07:08:49,672 INFO [Piano_Trio_No._1_in_D_Minor#7]                Sheet.java:1562 | Stored /sheet#7/sheet#7.xml
+2025-07-02 07:08:49,673 INFO [Piano_Trio_No._1_in_D_Minor#7]                 Book.java:2491 | Book stored as .\MXL\Piano_Trio_No._1_in_D_Minor\Piano_Trio_No._1_in_D_Minor.omr
+2025-07-02 07:08:49,685 INFO [Piano_Trio_No._1_in_D_Minor#7]            SheetStub.java:1644 | Disposed sheet#7
+2025-07-02 07:08:49,739 INFO [Piano_Trio_No._1_in_D_Minor#7]                 Book.java:2018 | End of Stub#7 memory: 37,811,760
+2025-07-02 07:08:49,739 INFO [Piano_Trio_No._1_in_D_Minor#8]       StepMonitoring.java:98   | LOAD
+2025-07-02 07:08:49,809 INFO [Piano_Trio_No._1_in_D_Minor#8]            SheetStub.java:1268 | Loaded image #8 2550x3299 from C:\Users\alexa\Downloads\Piano_Trio_No._1_in_D_Minor.pdf
+2025-07-02 07:08:49,810 INFO [Piano_Trio_No._1_in_D_Minor#8]       StepMonitoring.java:98   | BINARY
+2025-07-02 07:08:50,239 INFO [Piano_Trio_No._1_in_D_Minor#8]       StepMonitoring.java:98   | SCALE
+2025-07-02 07:08:50,241 INFO [Piano_Trio_No._1_in_D_Minor#8]         ScaleBuilder.java:241  | Beam  guessed height:  8 -- 0.50 of 15 interline
+2025-07-02 07:08:50,241 INFO [Piano_Trio_No._1_in_D_Minor#8]         ScaleBuilder.java:264  | Beam measured height:  8 -- 0.36 of [4..15] range at 115% of needed quorum
+2025-07-02 07:08:50,241 INFO [Piano_Trio_No._1_in_D_Minor#8]            ScaleStep.java:65   | Scale{ interline(14,15,15) line(1,1,2) beam(8)}
+2025-07-02 07:08:50,242 INFO [Piano_Trio_No._1_in_D_Minor#8]       StepMonitoring.java:98   | GRID
+2025-07-02 07:08:50,388 INFO [Piano_Trio_No._1_in_D_Minor#8]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-02 07:08:50,401 INFO [Piano_Trio_No._1_in_D_Minor#8]    ClustersRetriever.java:328  | Retrieved raw line clusters: 16 of sizes [5] with interline(14,15,15)
+2025-07-02 07:08:50,503 INFO [Piano_Trio_No._1_in_D_Minor#8]            PeakGraph.java:310  | Systems: #1[1, 2, 3, 4] #2[5, 6, 7, 8] #3[9, 10, 11, 12] #4[13, 14, 15, 16]
+2025-07-02 07:08:50,686 INFO [Piano_Trio_No._1_in_D_Minor#8]        SystemManager.java:779  | 3 parts along 4 systems
+2025-07-02 07:08:50,686 INFO [Piano_Trio_No._1_in_D_Minor#8]       StepMonitoring.java:98   | HEADERS
+2025-07-02 07:08:51,049 INFO [Piano_Trio_No._1_in_D_Minor#8]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-02 07:08:51,086 INFO [Piano_Trio_No._1_in_D_Minor#8]        StemSeedsStep.java:86   | stem(2 max:2)
+2025-07-02 07:08:51,094 INFO [Piano_Trio_No._1_in_D_Minor#8]       StepMonitoring.java:98   | BEAMS
+2025-07-02 07:08:52,805 INFO [Piano_Trio_No._1_in_D_Minor#8]       StepMonitoring.java:98   | LEDGERS
+2025-07-02 07:08:52,934 INFO [Piano_Trio_No._1_in_D_Minor#8]       StepMonitoring.java:98   | HEADS
+2025-07-02 07:08:56,326 INFO [Piano_Trio_No._1_in_D_Minor#8]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:0.5,R:-0.2] NOTEHEAD_BLACK[L:-0.0,R:-0.4]}
+2025-07-02 07:08:56,326 INFO [Piano_Trio_No._1_in_D_Minor#8]       StepMonitoring.java:98   | STEMS
+2025-07-02 07:08:56,902 INFO [Piano_Trio_No._1_in_D_Minor#8]       StepMonitoring.java:98   | REDUCTION
+2025-07-02 07:08:56,994 INFO [Piano_Trio_No._1_in_D_Minor#8]        ReductionStep.java:105  | Stems free length median value: 51 pixels, 3.4 interlines
+2025-07-02 07:08:56,997 INFO [Piano_Trio_No._1_in_D_Minor#8]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-02 07:08:56,997 INFO [Piano_Trio_No._1_in_D_Minor#8]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-02 07:08:56,997 INFO [Piano_Trio_No._1_in_D_Minor#8]       StepMonitoring.java:98   | TEXTS
+2025-07-02 07:08:58,112 INFO [Piano_Trio_No._1_in_D_Minor#8]       StepMonitoring.java:98   | MEASURES
+2025-07-02 07:08:58,114 INFO [Piano_Trio_No._1_in_D_Minor#8]                 Page.java:307  | 50 raw measures: [5 in system#1, 6 in system#2, 15 in system#3, 24 in system#4]
+2025-07-02 07:08:58,114 INFO [Piano_Trio_No._1_in_D_Minor#8]       StepMonitoring.java:98   | CHORDS
+2025-07-02 07:08:58,125 INFO [Piano_Trio_No._1_in_D_Minor#8]       StepMonitoring.java:98   | CURVES
+2025-07-02 07:08:58,810 INFO [Piano_Trio_No._1_in_D_Minor#8]         SlursBuilder.java:240  | Slurs: 50
+2025-07-02 07:08:58,823 INFO [Piano_Trio_No._1_in_D_Minor#8]      SegmentsBuilder.java:155  | Segments: 37
+2025-07-02 07:08:58,824 INFO [Piano_Trio_No._1_in_D_Minor#8]       StepMonitoring.java:98   | SYMBOLS
+2025-07-02 07:08:59,390 INFO [Piano_Trio_No._1_in_D_Minor#8]       StepMonitoring.java:98   | LINKS
+2025-07-02 07:08:59,412 INFO [Piano_Trio_No._1_in_D_Minor#8]        SentenceInter.java:461  | No chord near SentenceInter#7945{(0.723) staff:9 mFont:S-58 Direction} IV. Finale
+2025-07-02 07:08:59,413 INFO [Piano_Trio_No._1_in_D_Minor#8]        SentenceInter.java:461  | No chord near SentenceInter#7948{(0.598) staff:9 mFont:BS-42 Direction} J=160
+2025-07-02 07:08:59,437 INFO [Piano_Trio_No._1_in_D_Minor#8]       StepMonitoring.java:98   | RHYTHMS
+2025-07-02 07:08:59,438 INFO [Piano_Trio_No._1_in_D_Minor#8]           PageRhythm.java:199  | {Page#8.1} Time value reused from sheet#7
+2025-07-02 07:08:59,450 INFO [Piano_Trio_No._1_in_D_Minor#8]        MeasureRhythm.java:1045 | Measure{#12P3} No timeOffset for HeadChordInter#8374{(0.965/0.965) staff:12 slot#2 dur:1/4}
+2025-07-02 07:08:59,451 INFO [Piano_Trio_No._1_in_D_Minor#8]          StackRhythm.java:224  | S3 MeasureStack#12 no correct rhythm
+2025-07-02 07:08:59,455 INFO [Piano_Trio_No._1_in_D_Minor#8]        MeasureRhythm.java:1045 | Measure{#20P3} No timeOffset for HeadChordInter#8352{(0.923/0.923) staff:11 slot#2 dur:1/8}
+2025-07-02 07:08:59,455 INFO [Piano_Trio_No._1_in_D_Minor#8]          StackRhythm.java:224  | S3 MeasureStack#20 no correct rhythm
+2025-07-02 07:08:59,456 INFO [Piano_Trio_No._1_in_D_Minor#8]        MeasureRhythm.java:1045 | Measure{#21P3} No timeOffset for HeadChordInter#8354{(0.941/0.941) staff:11 slot#2 dur:1/8}
+2025-07-02 07:08:59,456 INFO [Piano_Trio_No._1_in_D_Minor#8]          StackRhythm.java:224  | S3 MeasureStack#21 no correct rhythm
+2025-07-02 07:08:59,457 INFO [Piano_Trio_No._1_in_D_Minor#8]                Voice.java:257  | Measure{#23P3} Voice{#1 excess:1/4} too long
+2025-07-02 07:08:59,457 INFO [Piano_Trio_No._1_in_D_Minor#8]          StackRhythm.java:224  | S3 MeasureStack#23 no correct rhythm
+2025-07-02 07:08:59,457 INFO [Piano_Trio_No._1_in_D_Minor#8]                Voice.java:257  | Measure{#24P3} Voice{#1 excess:1/4} too long
+2025-07-02 07:08:59,458 INFO [Piano_Trio_No._1_in_D_Minor#8]          StackRhythm.java:224  | S3 MeasureStack#24 no correct rhythm
+2025-07-02 07:08:59,462 INFO [Piano_Trio_No._1_in_D_Minor#8]        MeasureRhythm.java:1045 | Measure{#34P2} No timeOffset for HeadChordInter#8406{(0.932/0.932) staff:14 slot#3 dur:1/4}
+2025-07-02 07:08:59,462 INFO [Piano_Trio_No._1_in_D_Minor#8]        MeasureRhythm.java:1045 | Measure{#34P3} No timeOffset for HeadChordInter#8424{(0.971/0.971) staff:15 slot#3 dur:1/4}
+2025-07-02 07:08:59,463 INFO [Piano_Trio_No._1_in_D_Minor#8]          StackRhythm.java:224  | S4 MeasureStack#34 no correct rhythm
+2025-07-02 07:08:59,465 INFO [Piano_Trio_No._1_in_D_Minor#8]        MeasureRhythm.java:1045 | Measure{#44P3} No timeOffset for HeadChordInter#8436{(0.965/0.965) staff:15 slot#3 dur:1/4}
+2025-07-02 07:08:59,466 INFO [Piano_Trio_No._1_in_D_Minor#8]          StackRhythm.java:224  | S4 MeasureStack#44 no correct rhythm
+2025-07-02 07:08:59,467 INFO [Piano_Trio_No._1_in_D_Minor#8]        MeasureRhythm.java:1045 | Measure{#48P3} No timeOffset for HeadChordInter#8442{(0.971/0.971) staff:15 slot#3 dur:1/4}
+2025-07-02 07:08:59,467 INFO [Piano_Trio_No._1_in_D_Minor#8]          StackRhythm.java:224  | S4 MeasureStack#48 no correct rhythm
+2025-07-02 07:08:59,468 INFO [Piano_Trio_No._1_in_D_Minor#8]       StepMonitoring.java:98   | PAGE
+2025-07-02 07:08:59,471 INFO [Piano_Trio_No._1_in_D_Minor#8]                Voice.java:257  | Measure{#23P8} Voice{#1 excess:1/4} too long
+2025-07-02 07:08:59,471 INFO [Piano_Trio_No._1_in_D_Minor#8]                Voice.java:257  | Measure{#24P8} Voice{#1 excess:1/4} too long
+2025-07-02 07:08:59,472 INFO [Piano_Trio_No._1_in_D_Minor#8]                 Book.java:2550 | Book{Piano_Trio_No._1_in_D_Minor} storing
+2025-07-02 07:08:59,530 INFO [Piano_Trio_No._1_in_D_Minor#8]                 Book.java:2531 | Stored /book.xml
+2025-07-02 07:08:59,624 INFO [Piano_Trio_No._1_in_D_Minor#8]           DataHolder.java:348  | Stored /sheet#8/BINARY.png
+2025-07-02 07:09:00,038 INFO [Piano_Trio_No._1_in_D_Minor#8]                Sheet.java:1562 | Stored /sheet#8/sheet#8.xml
+2025-07-02 07:09:00,038 INFO [Piano_Trio_No._1_in_D_Minor#8]                 Book.java:2491 | Book stored as .\MXL\Piano_Trio_No._1_in_D_Minor\Piano_Trio_No._1_in_D_Minor.omr
+2025-07-02 07:09:00,055 INFO [Piano_Trio_No._1_in_D_Minor#8]            SheetStub.java:1644 | Disposed sheet#8
+2025-07-02 07:09:00,112 INFO [Piano_Trio_No._1_in_D_Minor#8]                 Book.java:2018 | End of Stub#8 memory: 37,856,496
+2025-07-02 07:09:00,112 INFO [Piano_Trio_No._1_in_D_Minor#9]       StepMonitoring.java:98   | LOAD
+2025-07-02 07:09:00,175 INFO [Piano_Trio_No._1_in_D_Minor#9]            SheetStub.java:1268 | Loaded image #9 2550x3299 from C:\Users\alexa\Downloads\Piano_Trio_No._1_in_D_Minor.pdf
+2025-07-02 07:09:00,176 INFO [Piano_Trio_No._1_in_D_Minor#9]       StepMonitoring.java:98   | BINARY
+2025-07-02 07:09:00,580 INFO [Piano_Trio_No._1_in_D_Minor#9]       StepMonitoring.java:98   | SCALE
+2025-07-02 07:09:00,583 INFO [Piano_Trio_No._1_in_D_Minor#9]         ScaleBuilder.java:241  | Beam  guessed height:  8 -- 0.50 of 15 interline
+2025-07-02 07:09:00,583 INFO [Piano_Trio_No._1_in_D_Minor#9]         ScaleBuilder.java:264  | Beam measured height:  8 -- 0.36 of [4..15] range at 143% of needed quorum
+2025-07-02 07:09:00,583 INFO [Piano_Trio_No._1_in_D_Minor#9]            ScaleStep.java:65   | Scale{ interline(14,15,15) line(1,1,2) beam(8)}
+2025-07-02 07:09:00,583 INFO [Piano_Trio_No._1_in_D_Minor#9]       StepMonitoring.java:98   | GRID
+2025-07-02 07:09:00,757 INFO [Piano_Trio_No._1_in_D_Minor#9]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-02 07:09:00,773 INFO [Piano_Trio_No._1_in_D_Minor#9]    ClustersRetriever.java:328  | Retrieved raw line clusters: 16 of sizes [5] with interline(14,15,15)
+2025-07-02 07:09:00,854 INFO [Piano_Trio_No._1_in_D_Minor#9]            PeakGraph.java:310  | Systems: #1[1, 2, 3, 4] #2[5, 6, 7, 8] #3[9, 10, 11, 12] #4[13, 14, 15, 16]
+2025-07-02 07:09:01,028 INFO [Piano_Trio_No._1_in_D_Minor#9]        SystemManager.java:779  | 3 parts along 4 systems
+2025-07-02 07:09:01,028 INFO [Piano_Trio_No._1_in_D_Minor#9]       StepMonitoring.java:98   | HEADERS
+2025-07-02 07:09:01,315 INFO [Piano_Trio_No._1_in_D_Minor#9]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-02 07:09:01,351 INFO [Piano_Trio_No._1_in_D_Minor#9]        StemSeedsStep.java:86   | stem(2 max:2)
+2025-07-02 07:09:01,361 INFO [Piano_Trio_No._1_in_D_Minor#9]       StepMonitoring.java:98   | BEAMS
+2025-07-02 07:09:03,074 INFO [Piano_Trio_No._1_in_D_Minor#9]       StepMonitoring.java:98   | LEDGERS
+2025-07-02 07:09:03,193 INFO [Piano_Trio_No._1_in_D_Minor#9]       StepMonitoring.java:98   | HEADS
+2025-07-02 07:09:07,368 INFO [Piano_Trio_No._1_in_D_Minor#9]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:-0.4,R:-0.3] NOTEHEAD_BLACK[L:-0.2,R:-0.4]}
+2025-07-02 07:09:07,368 INFO [Piano_Trio_No._1_in_D_Minor#9]       StepMonitoring.java:98   | STEMS
+2025-07-02 07:09:08,339 INFO [Piano_Trio_No._1_in_D_Minor#9]       StepMonitoring.java:98   | REDUCTION
+2025-07-02 07:09:08,540 INFO [Piano_Trio_No._1_in_D_Minor#9]        ReductionStep.java:105  | Stems free length median value: 53 pixels, 3.5 interlines
+2025-07-02 07:09:08,543 INFO [Piano_Trio_No._1_in_D_Minor#9]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-02 07:09:08,543 INFO [Piano_Trio_No._1_in_D_Minor#9]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-02 07:09:08,543 INFO [Piano_Trio_No._1_in_D_Minor#9]       StepMonitoring.java:98   | TEXTS
+2025-07-02 07:09:09,330 INFO [Piano_Trio_No._1_in_D_Minor#9]       StepMonitoring.java:98   | MEASURES
+2025-07-02 07:09:09,332 INFO [Piano_Trio_No._1_in_D_Minor#9]                 Page.java:307  | 45 raw measures: [13 in system#1, 12 in system#2, 10 in system#3, 10 in system#4]
+2025-07-02 07:09:09,332 INFO [Piano_Trio_No._1_in_D_Minor#9]       StepMonitoring.java:98   | CHORDS
+2025-07-02 07:09:09,345 INFO [Piano_Trio_No._1_in_D_Minor#9]       StepMonitoring.java:98   | CURVES
+2025-07-02 07:09:10,029 INFO [Piano_Trio_No._1_in_D_Minor#9]         SlursBuilder.java:240  | Slurs: 16
+2025-07-02 07:09:10,040 INFO [Piano_Trio_No._1_in_D_Minor#9]      SegmentsBuilder.java:155  | Segments: 63
+2025-07-02 07:09:10,041 INFO [Piano_Trio_No._1_in_D_Minor#9]       StepMonitoring.java:98   | SYMBOLS
+2025-07-02 07:09:10,575 INFO [Piano_Trio_No._1_in_D_Minor#9]       StepMonitoring.java:98   | LINKS
+2025-07-02 07:09:10,632 INFO [Piano_Trio_No._1_in_D_Minor#9]       StepMonitoring.java:98   | RHYTHMS
+2025-07-02 07:09:10,633 INFO [Piano_Trio_No._1_in_D_Minor#9]           PageRhythm.java:199  | {Page#9.1} Time value reused from sheet#8
+2025-07-02 07:09:10,637 INFO [Piano_Trio_No._1_in_D_Minor#9]        MeasureRhythm.java:1045 | Measure{#6P2} No timeOffset for HeadChordInter#10330{(0.931/0.931) staff:2 slot#3 dur:1/4}
+2025-07-02 07:09:10,638 INFO [Piano_Trio_No._1_in_D_Minor#9]          StackRhythm.java:224  | S1 MeasureStack#6 no correct rhythm
+2025-07-02 07:09:10,643 INFO [Piano_Trio_No._1_in_D_Minor#9]        MeasureRhythm.java:1045 | Measure{#14P2} No timeOffset for HeadChordInter#10420{(0.937/0.937) staff:6 slot#3 dur:1/4}
+2025-07-02 07:09:10,644 INFO [Piano_Trio_No._1_in_D_Minor#9]          StackRhythm.java:224  | S2 MeasureStack#14 no correct rhythm
+2025-07-02 07:09:10,646 INFO [Piano_Trio_No._1_in_D_Minor#9]        MeasureRhythm.java:1045 | Measure{#18P2} No timeOffset for HeadChordInter#10426{(0.946/0.946) staff:6 slot#3 dur:1/4}
+2025-07-02 07:09:10,646 INFO [Piano_Trio_No._1_in_D_Minor#9]          StackRhythm.java:224  | S2 MeasureStack#18 no correct rhythm
+2025-07-02 07:09:10,647 INFO [Piano_Trio_No._1_in_D_Minor#9]        MeasureRhythm.java:1045 | Measure{#19P1} No timeOffset for HeadChordInter#10404{(0.888/0.888) staff:5 slot#3 dur:1/4}
+2025-07-02 07:09:10,647 INFO [Piano_Trio_No._1_in_D_Minor#9]          StackRhythm.java:224  | S2 MeasureStack#19 no correct rhythm
+2025-07-02 07:09:10,647 INFO [Piano_Trio_No._1_in_D_Minor#9]        MeasureRhythm.java:1045 | Measure{#20P1} No timeOffset for HeadChordInter#10407{(0.947/0.947) staff:5 slot#3 dur:1/4}
+2025-07-02 07:09:10,648 INFO [Piano_Trio_No._1_in_D_Minor#9]          StackRhythm.java:224  | S2 MeasureStack#20 no correct rhythm
+2025-07-02 07:09:10,650 INFO [Piano_Trio_No._1_in_D_Minor#9]        MeasureRhythm.java:1045 | Measure{#22P2} No timeOffset for HeadChordInter#10432{(0.931/0.931) staff:6 slot#3 dur:1/4}
+2025-07-02 07:09:10,650 INFO [Piano_Trio_No._1_in_D_Minor#9]          StackRhythm.java:224  | S2 MeasureStack#22 no correct rhythm
+2025-07-02 07:09:10,653 INFO [Piano_Trio_No._1_in_D_Minor#9]        MeasureRhythm.java:1045 | Measure{#27P1} No timeOffset for HeadChordInter#10488{(0.946/0.946) staff:9 slot#3 dur:1/4}
+2025-07-02 07:09:10,653 INFO [Piano_Trio_No._1_in_D_Minor#9]          StackRhythm.java:224  | S3 MeasureStack#27 no correct rhythm
+2025-07-02 07:09:10,654 INFO [Piano_Trio_No._1_in_D_Minor#9]        MeasureRhythm.java:1045 | Measure{#28P1} No timeOffset for HeadChordInter#10491{(0.946/0.946) staff:9 slot#3 dur:1/4}
+2025-07-02 07:09:10,654 INFO [Piano_Trio_No._1_in_D_Minor#9]          StackRhythm.java:224  | S3 MeasureStack#28 no correct rhythm
+2025-07-02 07:09:10,655 INFO [Piano_Trio_No._1_in_D_Minor#9]        MeasureRhythm.java:1045 | Measure{#29P1} No timeOffset for HeadChordInter#10494{(0.933/0.933) staff:9 slot#3 dur:1/4}
+2025-07-02 07:09:10,656 INFO [Piano_Trio_No._1_in_D_Minor#9]          StackRhythm.java:224  | S3 MeasureStack#29 no correct rhythm
+2025-07-02 07:09:10,657 INFO [Piano_Trio_No._1_in_D_Minor#9]        MeasureRhythm.java:1045 | Measure{#30P2} No timeOffset for HeadChordInter#10522{(0.917/0.917) staff:10 slot#3 dur:1/4}
+2025-07-02 07:09:10,657 INFO [Piano_Trio_No._1_in_D_Minor#9]          StackRhythm.java:224  | S3 MeasureStack#30 no correct rhythm
+2025-07-02 07:09:10,658 INFO [Piano_Trio_No._1_in_D_Minor#9]        MeasureRhythm.java:1045 | Measure{#31P1} No timeOffset for HeadChordInter#10500{(0.948/0.948) staff:9 slot#3 dur:1/4}
+2025-07-02 07:09:10,659 INFO [Piano_Trio_No._1_in_D_Minor#9]          StackRhythm.java:224  | S3 MeasureStack#31 no correct rhythm
+2025-07-02 07:09:10,659 INFO [Piano_Trio_No._1_in_D_Minor#9]        MeasureRhythm.java:1045 | Measure{#32P1} No timeOffset for HeadChordInter#10503{(0.937/0.937) staff:9 slot#3 dur:1/4}
+2025-07-02 07:09:10,660 INFO [Piano_Trio_No._1_in_D_Minor#9]          StackRhythm.java:224  | S3 MeasureStack#32 no correct rhythm
+2025-07-02 07:09:10,660 INFO [Piano_Trio_No._1_in_D_Minor#9]        MeasureRhythm.java:1045 | Measure{#33P1} No timeOffset for HeadChordInter#10506{(0.927/0.927) staff:9 slot#3 dur:1/4}
+2025-07-02 07:09:10,661 INFO [Piano_Trio_No._1_in_D_Minor#9]          StackRhythm.java:224  | S3 MeasureStack#33 no correct rhythm
+2025-07-02 07:09:10,661 INFO [Piano_Trio_No._1_in_D_Minor#9]        MeasureRhythm.java:1045 | Measure{#34P1} No timeOffset for HeadChordInter#10509{(0.956/0.956) staff:9 slot#3 dur:1/4}
+2025-07-02 07:09:10,662 INFO [Piano_Trio_No._1_in_D_Minor#9]        MeasureRhythm.java:1045 | Measure{#34P2} No timeOffset for HeadChordInter#10528{(0.939/0.939) staff:10 slot#3 dur:1/4}
+2025-07-02 07:09:10,663 INFO [Piano_Trio_No._1_in_D_Minor#9]          StackRhythm.java:224  | S3 MeasureStack#34 no correct rhythm
+2025-07-02 07:09:10,663 INFO [Piano_Trio_No._1_in_D_Minor#9]                Voice.java:257  | Measure{#35P1} Voice{#1 excess:1/8} too long
+2025-07-02 07:09:10,664 INFO [Piano_Trio_No._1_in_D_Minor#9]          StackRhythm.java:224  | S3 MeasureStack#35 no correct rhythm
+2025-07-02 07:09:10,665 INFO [Piano_Trio_No._1_in_D_Minor#9]                Voice.java:257  | Measure{#36P1} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:10,665 INFO [Piano_Trio_No._1_in_D_Minor#9]          StackRhythm.java:224  | S4 MeasureStack#36 no correct rhythm
+2025-07-02 07:09:10,665 INFO [Piano_Trio_No._1_in_D_Minor#9]        MeasureRhythm.java:1045 | Measure{#37P1} No timeOffset for HeadChordInter#10578{(0.931/0.931) staff:13 slot#3 dur:1/4}
+2025-07-02 07:09:10,666 INFO [Piano_Trio_No._1_in_D_Minor#9]          StackRhythm.java:224  | S4 MeasureStack#37 no correct rhythm
+2025-07-02 07:09:10,671 INFO [Piano_Trio_No._1_in_D_Minor#9]        MeasureRhythm.java:1045 | Measure{#44P1} No timeOffset for HeadChordInter#10597{(0.939/0.939) staff:13 slot#3 dur:1/4}
+2025-07-02 07:09:10,672 INFO [Piano_Trio_No._1_in_D_Minor#9]          StackRhythm.java:224  | S4 MeasureStack#44 no correct rhythm
+2025-07-02 07:09:10,673 INFO [Piano_Trio_No._1_in_D_Minor#9]       StepMonitoring.java:98   | PAGE
+2025-07-02 07:09:10,677 INFO [Piano_Trio_No._1_in_D_Minor#9]                Voice.java:257  | Measure{#35P7} Voice{#1 excess:1/8} too long
+2025-07-02 07:09:10,678 INFO [Piano_Trio_No._1_in_D_Minor#9]                Voice.java:257  | Measure{#36P3} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:10,679 INFO [Piano_Trio_No._1_in_D_Minor#9]                 Book.java:2550 | Book{Piano_Trio_No._1_in_D_Minor} storing
+2025-07-02 07:09:10,742 INFO [Piano_Trio_No._1_in_D_Minor#9]                 Book.java:2531 | Stored /book.xml
+2025-07-02 07:09:10,836 INFO [Piano_Trio_No._1_in_D_Minor#9]           DataHolder.java:348  | Stored /sheet#9/BINARY.png
+2025-07-02 07:09:11,333 INFO [Piano_Trio_No._1_in_D_Minor#9]                Sheet.java:1562 | Stored /sheet#9/sheet#9.xml
+2025-07-02 07:09:11,333 INFO [Piano_Trio_No._1_in_D_Minor#9]                 Book.java:2491 | Book stored as .\MXL\Piano_Trio_No._1_in_D_Minor\Piano_Trio_No._1_in_D_Minor.omr
+2025-07-02 07:09:11,343 INFO [Piano_Trio_No._1_in_D_Minor#9]            SheetStub.java:1644 | Disposed sheet#9
+2025-07-02 07:09:11,396 INFO [Piano_Trio_No._1_in_D_Minor#9]                 Book.java:2018 | End of Stub#9 memory: 37,892,952
+2025-07-02 07:09:11,396 INFO [Piano_Trio_No._1_in_D_Minor#10]       StepMonitoring.java:98   | LOAD
+2025-07-02 07:09:11,457 INFO [Piano_Trio_No._1_in_D_Minor#10]            SheetStub.java:1268 | Loaded image #10 2550x3299 from C:\Users\alexa\Downloads\Piano_Trio_No._1_in_D_Minor.pdf
+2025-07-02 07:09:11,458 INFO [Piano_Trio_No._1_in_D_Minor#10]       StepMonitoring.java:98   | BINARY
+2025-07-02 07:09:11,866 INFO [Piano_Trio_No._1_in_D_Minor#10]       StepMonitoring.java:98   | SCALE
+2025-07-02 07:09:11,868 INFO [Piano_Trio_No._1_in_D_Minor#10]         ScaleBuilder.java:241  | Beam  guessed height:  8 -- 0.50 of 15 interline
+2025-07-02 07:09:11,869 INFO [Piano_Trio_No._1_in_D_Minor#10]         ScaleBuilder.java:264  | Beam measured height:  8 -- 0.36 of [4..15] range at 245% of needed quorum
+2025-07-02 07:09:11,869 INFO [Piano_Trio_No._1_in_D_Minor#10]            ScaleStep.java:65   | Scale{ interline(14,15,15) line(1,1,2) beam(8)}
+2025-07-02 07:09:11,869 INFO [Piano_Trio_No._1_in_D_Minor#10]       StepMonitoring.java:98   | GRID
+2025-07-02 07:09:12,018 INFO [Piano_Trio_No._1_in_D_Minor#10]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-02 07:09:12,031 INFO [Piano_Trio_No._1_in_D_Minor#10]    ClustersRetriever.java:328  | Retrieved raw line clusters: 16 of sizes [5] with interline(14,15,15)
+2025-07-02 07:09:12,105 INFO [Piano_Trio_No._1_in_D_Minor#10]            PeakGraph.java:310  | Systems: #1[1, 2, 3, 4] #2[5, 6, 7, 8] #3[9, 10, 11, 12] #4[13, 14, 15, 16]
+2025-07-02 07:09:12,271 INFO [Piano_Trio_No._1_in_D_Minor#10]        SystemManager.java:779  | 3 parts along 4 systems
+2025-07-02 07:09:12,271 INFO [Piano_Trio_No._1_in_D_Minor#10]       StepMonitoring.java:98   | HEADERS
+2025-07-02 07:09:12,549 INFO [Piano_Trio_No._1_in_D_Minor#10]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-02 07:09:12,584 INFO [Piano_Trio_No._1_in_D_Minor#10]        StemSeedsStep.java:86   | stem(2 max:2)
+2025-07-02 07:09:12,593 INFO [Piano_Trio_No._1_in_D_Minor#10]       StepMonitoring.java:98   | BEAMS
+2025-07-02 07:09:14,533 INFO [Piano_Trio_No._1_in_D_Minor#10]       StepMonitoring.java:98   | LEDGERS
+2025-07-02 07:09:14,655 INFO [Piano_Trio_No._1_in_D_Minor#10]       StepMonitoring.java:98   | HEADS
+2025-07-02 07:09:18,521 INFO [Piano_Trio_No._1_in_D_Minor#10]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:-0.1,R:-0.2] NOTEHEAD_BLACK[L:0.0,R:-0.4]}
+2025-07-02 07:09:18,521 INFO [Piano_Trio_No._1_in_D_Minor#10]       StepMonitoring.java:98   | STEMS
+2025-07-02 07:09:19,252 INFO [Piano_Trio_No._1_in_D_Minor#10]       StepMonitoring.java:98   | REDUCTION
+2025-07-02 07:09:19,366 INFO [Piano_Trio_No._1_in_D_Minor#10]        ReductionStep.java:105  | Stems free length median value: 52 pixels, 3.5 interlines
+2025-07-02 07:09:19,368 INFO [Piano_Trio_No._1_in_D_Minor#10]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-02 07:09:19,368 INFO [Piano_Trio_No._1_in_D_Minor#10]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-02 07:09:19,369 INFO [Piano_Trio_No._1_in_D_Minor#10]       StepMonitoring.java:98   | TEXTS
+2025-07-02 07:09:20,445 INFO [Piano_Trio_No._1_in_D_Minor#10]       StepMonitoring.java:98   | MEASURES
+2025-07-02 07:09:20,447 INFO [Piano_Trio_No._1_in_D_Minor#10]                 Page.java:307  | 39 raw measures: [13 in system#1, 11 in system#2, 8 in system#3, 7 in system#4]
+2025-07-02 07:09:20,448 INFO [Piano_Trio_No._1_in_D_Minor#10]       StepMonitoring.java:98   | CHORDS
+2025-07-02 07:09:20,455 INFO [Piano_Trio_No._1_in_D_Minor#10]       StepMonitoring.java:98   | CURVES
+2025-07-02 07:09:21,189 INFO [Piano_Trio_No._1_in_D_Minor#10]         SlursBuilder.java:240  | Slurs: 16
+2025-07-02 07:09:21,211 INFO [Piano_Trio_No._1_in_D_Minor#10]      SegmentsBuilder.java:155  | Segments: 59
+2025-07-02 07:09:21,213 INFO [Piano_Trio_No._1_in_D_Minor#10]       StepMonitoring.java:98   | SYMBOLS
+2025-07-02 07:09:22,060 INFO [Piano_Trio_No._1_in_D_Minor#10]       StepMonitoring.java:98   | LINKS
+2025-07-02 07:09:22,120 INFO [Piano_Trio_No._1_in_D_Minor#10]       StepMonitoring.java:98   | RHYTHMS
+2025-07-02 07:09:22,121 INFO [Piano_Trio_No._1_in_D_Minor#10]           PageRhythm.java:199  | {Page#10.1} Time value reused from sheet#8
+2025-07-02 07:09:22,129 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#12P1} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:22,129 INFO [Piano_Trio_No._1_in_D_Minor#10]        MeasureRhythm.java:1045 | Measure{#12P2} No timeOffset for HeadChordInter#8990{(0.931/0.931) staff:2 slot#3 dur:1/4}
+2025-07-02 07:09:22,131 INFO [Piano_Trio_No._1_in_D_Minor#10]          StackRhythm.java:224  | S1 MeasureStack#12 no correct rhythm
+2025-07-02 07:09:22,131 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#13P1} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:22,132 INFO [Piano_Trio_No._1_in_D_Minor#10]          StackRhythm.java:224  | S1 MeasureStack#13 no correct rhythm
+2025-07-02 07:09:22,138 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#22P3} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:22,138 INFO [Piano_Trio_No._1_in_D_Minor#10]          StackRhythm.java:224  | S2 MeasureStack#22 no correct rhythm
+2025-07-02 07:09:22,139 INFO [Piano_Trio_No._1_in_D_Minor#10]        MeasureRhythm.java:1045 | Measure{#23P2} No timeOffset for HeadChordInter#9091{(0.932/0.932) staff:6 slot#3 dur:1/4}
+2025-07-02 07:09:22,139 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#23P3} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:22,139 INFO [Piano_Trio_No._1_in_D_Minor#10]          StackRhythm.java:224  | S2 MeasureStack#23 no correct rhythm
+2025-07-02 07:09:22,141 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#25P3} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:22,141 INFO [Piano_Trio_No._1_in_D_Minor#10]          StackRhythm.java:224  | S3 MeasureStack#25 no correct rhythm
+2025-07-02 07:09:22,143 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#26P3} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:22,143 INFO [Piano_Trio_No._1_in_D_Minor#10]          StackRhythm.java:224  | S3 MeasureStack#26 no correct rhythm
+2025-07-02 07:09:22,144 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#28P3} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:22,144 INFO [Piano_Trio_No._1_in_D_Minor#10]          StackRhythm.java:224  | S3 MeasureStack#28 no correct rhythm
+2025-07-02 07:09:22,145 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#29P3} Voice{#5 excess:1/4} too long
+2025-07-02 07:09:22,145 INFO [Piano_Trio_No._1_in_D_Minor#10]          StackRhythm.java:224  | S3 MeasureStack#29 no correct rhythm
+2025-07-02 07:09:22,146 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#30P3} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:22,146 INFO [Piano_Trio_No._1_in_D_Minor#10]          StackRhythm.java:224  | S3 MeasureStack#30 no correct rhythm
+2025-07-02 07:09:22,146 INFO [Piano_Trio_No._1_in_D_Minor#10]        MeasureRhythm.java:1045 | Measure{#31P2} No timeOffset for HeadChordInter#9185{(0.940/0.940) staff:10 slot#3 dur:1/4}
+2025-07-02 07:09:22,147 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#31P3} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:22,147 INFO [Piano_Trio_No._1_in_D_Minor#10]          StackRhythm.java:224  | S3 MeasureStack#31 no correct rhythm
+2025-07-02 07:09:22,147 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#32P3} Voice{#5 excess:1/4} too long
+2025-07-02 07:09:22,147 INFO [Piano_Trio_No._1_in_D_Minor#10]          StackRhythm.java:224  | S3 MeasureStack#32 no correct rhythm
+2025-07-02 07:09:22,148 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#33P3} Voice{#5 excess:1/4} too long
+2025-07-02 07:09:22,149 INFO [Piano_Trio_No._1_in_D_Minor#10]          StackRhythm.java:224  | S4 MeasureStack#33 no correct rhythm
+2025-07-02 07:09:22,150 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#34P3} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:22,150 INFO [Piano_Trio_No._1_in_D_Minor#10]          StackRhythm.java:224  | S4 MeasureStack#34 no correct rhythm
+2025-07-02 07:09:22,151 INFO [Piano_Trio_No._1_in_D_Minor#10]        MeasureRhythm.java:1045 | Measure{#35P2} No timeOffset for HeadChordInter#9261{(0.937/0.937) staff:14 slot#3 dur:1/4}
+2025-07-02 07:09:22,151 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#35P3} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:22,151 INFO [Piano_Trio_No._1_in_D_Minor#10]          StackRhythm.java:224  | S4 MeasureStack#35 no correct rhythm
+2025-07-02 07:09:22,151 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#36P3} Voice{#5 excess:1/4} too long
+2025-07-02 07:09:22,151 INFO [Piano_Trio_No._1_in_D_Minor#10]          StackRhythm.java:224  | S4 MeasureStack#36 no correct rhythm
+2025-07-02 07:09:22,153 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#37P3} Voice{#2 excess:1/6} too long
+2025-07-02 07:09:22,153 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#37P3} Voice{#7 excess:1/24} too long
+2025-07-02 07:09:22,153 INFO [Piano_Trio_No._1_in_D_Minor#10]          StackRhythm.java:224  | S4 MeasureStack#37 no correct rhythm
+2025-07-02 07:09:22,154 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#38P3} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:22,155 INFO [Piano_Trio_No._1_in_D_Minor#10]          StackRhythm.java:224  | S4 MeasureStack#38 no correct rhythm
+2025-07-02 07:09:22,156 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#39P3} Voice{#5 excess:1/4} too long
+2025-07-02 07:09:22,156 INFO [Piano_Trio_No._1_in_D_Minor#10]          StackRhythm.java:224  | S4 MeasureStack#39 no correct rhythm
+2025-07-02 07:09:22,156 INFO [Piano_Trio_No._1_in_D_Minor#10]       StepMonitoring.java:98   | PAGE
+2025-07-02 07:09:22,161 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#12P7} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:22,161 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#13P7} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:22,162 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#22P10} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:22,163 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#23P10} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:22,163 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#25P10} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:22,163 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#26P10} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:22,163 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#28P10} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:22,163 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#29P10} Voice{#5 excess:1/4} too long
+2025-07-02 07:09:22,164 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#30P10} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:22,164 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#31P10} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:22,164 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#32P10} Voice{#5 excess:1/4} too long
+2025-07-02 07:09:22,164 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#33P10} Voice{#5 excess:1/4} too long
+2025-07-02 07:09:22,164 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#34P10} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:22,164 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#35P10} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:22,165 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#36P10} Voice{#5 excess:1/4} too long
+2025-07-02 07:09:22,165 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#37P10} Voice{#2 excess:1/6} too long
+2025-07-02 07:09:22,165 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#37P10} Voice{#7 excess:1/24} too long
+2025-07-02 07:09:22,165 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#38P10} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:22,165 INFO [Piano_Trio_No._1_in_D_Minor#10]                Voice.java:257  | Measure{#39P10} Voice{#5 excess:1/4} too long
+2025-07-02 07:09:22,166 INFO [Piano_Trio_No._1_in_D_Minor#10]                 Book.java:2550 | Book{Piano_Trio_No._1_in_D_Minor} storing
+2025-07-02 07:09:22,230 INFO [Piano_Trio_No._1_in_D_Minor#10]                 Book.java:2531 | Stored /book.xml
+2025-07-02 07:09:22,328 INFO [Piano_Trio_No._1_in_D_Minor#10]           DataHolder.java:348  | Stored /sheet#10/BINARY.png
+2025-07-02 07:09:22,825 INFO [Piano_Trio_No._1_in_D_Minor#10]                Sheet.java:1562 | Stored /sheet#10/sheet#10.xml
+2025-07-02 07:09:22,825 INFO [Piano_Trio_No._1_in_D_Minor#10]                 Book.java:2491 | Book stored as .\MXL\Piano_Trio_No._1_in_D_Minor\Piano_Trio_No._1_in_D_Minor.omr
+2025-07-02 07:09:22,840 INFO [Piano_Trio_No._1_in_D_Minor#10]            SheetStub.java:1644 | Disposed sheet#10
+2025-07-02 07:09:22,893 INFO [Piano_Trio_No._1_in_D_Minor#10]                 Book.java:2018 | End of Stub#10 memory: 37,919,976
+2025-07-02 07:09:22,893 INFO [Piano_Trio_No._1_in_D_Minor#11]       StepMonitoring.java:98   | LOAD
+2025-07-02 07:09:22,962 INFO [Piano_Trio_No._1_in_D_Minor#11]            SheetStub.java:1268 | Loaded image #11 2550x3299 from C:\Users\alexa\Downloads\Piano_Trio_No._1_in_D_Minor.pdf
+2025-07-02 07:09:22,962 INFO [Piano_Trio_No._1_in_D_Minor#11]       StepMonitoring.java:98   | BINARY
+2025-07-02 07:09:23,444 INFO [Piano_Trio_No._1_in_D_Minor#11]       StepMonitoring.java:98   | SCALE
+2025-07-02 07:09:23,447 INFO [Piano_Trio_No._1_in_D_Minor#11]         ScaleBuilder.java:241  | Beam  guessed height:  8 -- 0.50 of 15 interline
+2025-07-02 07:09:23,447 INFO [Piano_Trio_No._1_in_D_Minor#11]         ScaleBuilder.java:264  | Beam measured height:  8 -- 0.36 of [4..15] range at 305% of needed quorum
+2025-07-02 07:09:23,447 INFO [Piano_Trio_No._1_in_D_Minor#11]            ScaleStep.java:65   | Scale{ interline(14,15,15) line(1,1,2) beam(8)}
+2025-07-02 07:09:23,447 INFO [Piano_Trio_No._1_in_D_Minor#11]       StepMonitoring.java:98   | GRID
+2025-07-02 07:09:23,604 INFO [Piano_Trio_No._1_in_D_Minor#11]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-02 07:09:23,615 INFO [Piano_Trio_No._1_in_D_Minor#11]    ClustersRetriever.java:328  | Retrieved raw line clusters: 16 of sizes [5] with interline(14,15,15)
+2025-07-02 07:09:23,685 INFO [Piano_Trio_No._1_in_D_Minor#11]            PeakGraph.java:310  | Systems: #1[1, 2, 3, 4] #2[5, 6, 7, 8] #3[9, 10, 11, 12] #4[13, 14, 15, 16]
+2025-07-02 07:09:23,858 INFO [Piano_Trio_No._1_in_D_Minor#11]        SystemManager.java:779  | 3 parts along 4 systems
+2025-07-02 07:09:23,858 INFO [Piano_Trio_No._1_in_D_Minor#11]       StepMonitoring.java:98   | HEADERS
+2025-07-02 07:09:24,062 INFO [Piano_Trio_No._1_in_D_Minor#11]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-02 07:09:24,098 INFO [Piano_Trio_No._1_in_D_Minor#11]        StemSeedsStep.java:86   | stem(2 max:2)
+2025-07-02 07:09:24,105 INFO [Piano_Trio_No._1_in_D_Minor#11]       StepMonitoring.java:98   | BEAMS
+2025-07-02 07:09:25,903 INFO [Piano_Trio_No._1_in_D_Minor#11]       StepMonitoring.java:98   | LEDGERS
+2025-07-02 07:09:26,068 INFO [Piano_Trio_No._1_in_D_Minor#11]       StepMonitoring.java:98   | HEADS
+2025-07-02 07:09:29,888 INFO [Piano_Trio_No._1_in_D_Minor#11]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:0.4,R:-0.1] NOTEHEAD_BLACK[L:0.2,R:-0.5]}
+2025-07-02 07:09:29,888 INFO [Piano_Trio_No._1_in_D_Minor#11]       StepMonitoring.java:98   | STEMS
+2025-07-02 07:09:30,717 INFO [Piano_Trio_No._1_in_D_Minor#11]       StepMonitoring.java:98   | REDUCTION
+2025-07-02 07:09:30,775 INFO [Piano_Trio_No._1_in_D_Minor#11]        ReductionStep.java:105  | Stems free length median value: 50 pixels, 3.3 interlines
+2025-07-02 07:09:30,777 INFO [Piano_Trio_No._1_in_D_Minor#11]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-02 07:09:30,777 INFO [Piano_Trio_No._1_in_D_Minor#11]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-02 07:09:30,777 INFO [Piano_Trio_No._1_in_D_Minor#11]       StepMonitoring.java:98   | TEXTS
+2025-07-02 07:09:31,622 INFO [Piano_Trio_No._1_in_D_Minor#11]       StepMonitoring.java:98   | MEASURES
+2025-07-02 07:09:31,624 INFO [Piano_Trio_No._1_in_D_Minor#11]                 Page.java:307  | 37 raw measures: [8 in system#1, 9 in system#2, 12 in system#3, 8 in system#4]
+2025-07-02 07:09:31,625 INFO [Piano_Trio_No._1_in_D_Minor#11]       StepMonitoring.java:98   | CHORDS
+2025-07-02 07:09:31,633 INFO [Piano_Trio_No._1_in_D_Minor#11]       StepMonitoring.java:98   | CURVES
+2025-07-02 07:09:32,267 INFO [Piano_Trio_No._1_in_D_Minor#11]         SlursBuilder.java:240  | Slurs: 63
+2025-07-02 07:09:32,275 INFO [Piano_Trio_No._1_in_D_Minor#11]      SegmentsBuilder.java:155  | Segments: 33
+2025-07-02 07:09:32,276 INFO [Piano_Trio_No._1_in_D_Minor#11]       StepMonitoring.java:98   | SYMBOLS
+2025-07-02 07:09:32,918 INFO [Piano_Trio_No._1_in_D_Minor#11]       StepMonitoring.java:98   | LINKS
+2025-07-02 07:09:32,975 INFO [Piano_Trio_No._1_in_D_Minor#11]       StepMonitoring.java:98   | RHYTHMS
+2025-07-02 07:09:32,976 INFO [Piano_Trio_No._1_in_D_Minor#11]           PageRhythm.java:199  | {Page#11.1} Time value reused from sheet#8
+2025-07-02 07:09:32,978 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#1P3} Voice{#5 excess:1/4} too long
+2025-07-02 07:09:32,978 INFO [Piano_Trio_No._1_in_D_Minor#11]          StackRhythm.java:224  | S1 MeasureStack#1 no correct rhythm
+2025-07-02 07:09:32,979 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#2P3} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:32,979 INFO [Piano_Trio_No._1_in_D_Minor#11]          StackRhythm.java:224  | S1 MeasureStack#2 no correct rhythm
+2025-07-02 07:09:32,980 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#3P3} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:32,980 INFO [Piano_Trio_No._1_in_D_Minor#11]          StackRhythm.java:224  | S1 MeasureStack#3 no correct rhythm
+2025-07-02 07:09:32,981 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#4P3} Voice{#5 excess:1/4} too long
+2025-07-02 07:09:32,981 INFO [Piano_Trio_No._1_in_D_Minor#11]          StackRhythm.java:224  | S1 MeasureStack#4 no correct rhythm
+2025-07-02 07:09:32,982 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#5P3} Voice{#5 excess:1/4} too long
+2025-07-02 07:09:32,982 INFO [Piano_Trio_No._1_in_D_Minor#11]          StackRhythm.java:224  | S1 MeasureStack#5 no correct rhythm
+2025-07-02 07:09:32,983 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#6P3} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:32,983 INFO [Piano_Trio_No._1_in_D_Minor#11]          StackRhythm.java:224  | S1 MeasureStack#6 no correct rhythm
+2025-07-02 07:09:32,983 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#7P1} Voice{#1 excess:1/8} too long
+2025-07-02 07:09:32,984 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#7P3} Voice{#5 excess:1/4} too long
+2025-07-02 07:09:32,984 INFO [Piano_Trio_No._1_in_D_Minor#11]          StackRhythm.java:224  | S1 MeasureStack#7 no correct rhythm
+2025-07-02 07:09:32,984 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#8P1} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:32,985 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#8P3} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:32,985 INFO [Piano_Trio_No._1_in_D_Minor#11]          StackRhythm.java:224  | S1 MeasureStack#8 no correct rhythm
+2025-07-02 07:09:32,986 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#9P3} Voice{#5 excess:1/4} too long
+2025-07-02 07:09:32,986 INFO [Piano_Trio_No._1_in_D_Minor#11]          StackRhythm.java:224  | S2 MeasureStack#9 no correct rhythm
+2025-07-02 07:09:32,988 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#11P1} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:32,988 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#11P3} Voice{#5 excess:1/4} too long
+2025-07-02 07:09:32,988 INFO [Piano_Trio_No._1_in_D_Minor#11]          StackRhythm.java:224  | S2 MeasureStack#11 no correct rhythm
+2025-07-02 07:09:32,989 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#12P1} Voice{#1 excess:1/8} too long
+2025-07-02 07:09:32,989 INFO [Piano_Trio_No._1_in_D_Minor#11]        MeasureRhythm.java:1045 | Measure{#12P2} No timeOffset for HeadChordInter#7947{(0.932/0.932) staff:6 slot#3 dur:1/4}
+2025-07-02 07:09:32,990 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#12P3} Voice{#5 excess:1/4} too long
+2025-07-02 07:09:32,991 INFO [Piano_Trio_No._1_in_D_Minor#11]          StackRhythm.java:224  | S2 MeasureStack#12 no correct rhythm
+2025-07-02 07:09:32,991 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#13P1} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:32,992 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#13P3} Voice{#5 excess:1/4} too long
+2025-07-02 07:09:32,992 INFO [Piano_Trio_No._1_in_D_Minor#11]          StackRhythm.java:224  | S2 MeasureStack#13 no correct rhythm
+2025-07-02 07:09:32,992 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#14P1} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:32,992 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#14P3} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:32,993 INFO [Piano_Trio_No._1_in_D_Minor#11]          StackRhythm.java:224  | S2 MeasureStack#14 no correct rhythm
+2025-07-02 07:09:32,993 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#15P1} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:32,993 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#15P3} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:32,994 INFO [Piano_Trio_No._1_in_D_Minor#11]          StackRhythm.java:224  | S2 MeasureStack#15 no correct rhythm
+2025-07-02 07:09:32,994 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#16P1} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:32,994 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#16P3} Voice{#5 excess:1/4} too long
+2025-07-02 07:09:32,995 INFO [Piano_Trio_No._1_in_D_Minor#11]          StackRhythm.java:224  | S2 MeasureStack#16 no correct rhythm
+2025-07-02 07:09:32,995 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#17P1} Voice{#1 excess:1/8} too long
+2025-07-02 07:09:32,996 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#17P3} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:32,996 INFO [Piano_Trio_No._1_in_D_Minor#11]          StackRhythm.java:224  | S2 MeasureStack#17 no correct rhythm
+2025-07-02 07:09:32,997 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#18P1} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:32,998 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#18P3} Voice{#2 excess:1/24} too long
+2025-07-02 07:09:32,999 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#18P3} Voice{#7 excess:1/24} too long
+2025-07-02 07:09:32,999 INFO [Piano_Trio_No._1_in_D_Minor#11]          StackRhythm.java:224  | S3 MeasureStack#18 no correct rhythm
+2025-07-02 07:09:32,999 INFO [Piano_Trio_No._1_in_D_Minor#11]        MeasureRhythm.java:1045 | Measure{#19P3} No timeOffset for HeadChordInter#8077{(0.906/0.906) staff:11 slot#3 dur:1/4}
+2025-07-02 07:09:32,999 INFO [Piano_Trio_No._1_in_D_Minor#11]          StackRhythm.java:224  | S3 MeasureStack#19 no correct rhythm
+2025-07-02 07:09:33,001 INFO [Piano_Trio_No._1_in_D_Minor#11]        MeasureRhythm.java:1045 | Measure{#24P3} No timeOffset for HeadChordInter#8085{(0.941/0.941) staff:11 slot#3 dur:1/4}
+2025-07-02 07:09:33,001 INFO [Piano_Trio_No._1_in_D_Minor#11]          StackRhythm.java:224  | S3 MeasureStack#24 no correct rhythm
+2025-07-02 07:09:33,001 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#25P1} Voice{#1 excess:1/8} too long
+2025-07-02 07:09:33,002 INFO [Piano_Trio_No._1_in_D_Minor#11]          StackRhythm.java:224  | S3 MeasureStack#25 no correct rhythm
+2025-07-02 07:09:33,003 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#26P1} Voice{#1 excess:1/8} too long
+2025-07-02 07:09:33,004 INFO [Piano_Trio_No._1_in_D_Minor#11]          StackRhythm.java:224  | S3 MeasureStack#26 no correct rhythm
+2025-07-02 07:09:33,004 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#27P1} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,005 INFO [Piano_Trio_No._1_in_D_Minor#11]        MeasureRhythm.java:1045 | Measure{#27P3} No timeOffset for HeadChordInter#8090{(0.960/0.960) staff:11 slot#3 dur:1/4}
+2025-07-02 07:09:33,005 INFO [Piano_Trio_No._1_in_D_Minor#11]          StackRhythm.java:224  | S3 MeasureStack#27 no correct rhythm
+2025-07-02 07:09:33,006 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#28P1} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,007 INFO [Piano_Trio_No._1_in_D_Minor#11]        MeasureRhythm.java:1045 | Measure{#28P3} No timeOffset for HeadChordInter#8092{(0.959/0.959) staff:11 slot#2 dur:1/4}
+2025-07-02 07:09:33,007 INFO [Piano_Trio_No._1_in_D_Minor#11]          StackRhythm.java:224  | S3 MeasureStack#28 no correct rhythm
+2025-07-02 07:09:33,007 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#29P1} Voice{#1 excess:1/8} too long
+2025-07-02 07:09:33,008 INFO [Piano_Trio_No._1_in_D_Minor#11]          StackRhythm.java:224  | S3 MeasureStack#29 no correct rhythm
+2025-07-02 07:09:33,009 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#30P1} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,010 INFO [Piano_Trio_No._1_in_D_Minor#11]          StackRhythm.java:224  | S4 MeasureStack#30 no correct rhythm
+2025-07-02 07:09:33,011 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#31P1} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,012 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#31P3} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,012 INFO [Piano_Trio_No._1_in_D_Minor#11]          StackRhythm.java:224  | S4 MeasureStack#31 no correct rhythm
+2025-07-02 07:09:33,013 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#32P1} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,013 INFO [Piano_Trio_No._1_in_D_Minor#11]        MeasureRhythm.java:1045 | Measure{#32P3} No timeOffset for HeadChordInter#8192{(0.960/0.960) staff:15 slot#3 dur:1/4}
+2025-07-02 07:09:33,014 INFO [Piano_Trio_No._1_in_D_Minor#11]          StackRhythm.java:224  | S4 MeasureStack#32 no correct rhythm
+2025-07-02 07:09:33,014 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#33P1} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,015 INFO [Piano_Trio_No._1_in_D_Minor#11]          StackRhythm.java:224  | S4 MeasureStack#33 no correct rhythm
+2025-07-02 07:09:33,016 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#35P1} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,017 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#35P2} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,017 INFO [Piano_Trio_No._1_in_D_Minor#11]        MeasureRhythm.java:1045 | Measure{#35P3} No timeOffset for HeadChordInter#8197{(0.964/0.964) staff:15 slot#3 dur:1/4}
+2025-07-02 07:09:33,018 INFO [Piano_Trio_No._1_in_D_Minor#11]          StackRhythm.java:224  | S4 MeasureStack#35 no correct rhythm
+2025-07-02 07:09:33,035 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#36P1} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,036 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#36P2} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,036 INFO [Piano_Trio_No._1_in_D_Minor#11]        MeasureRhythm.java:1045 | Measure{#36P3} No timeOffset for HeadChordInter#8200{(0.955/0.955) staff:15 slot#3 dur:1/4}
+2025-07-02 07:09:33,037 INFO [Piano_Trio_No._1_in_D_Minor#11]          StackRhythm.java:224  | S4 MeasureStack#36 no correct rhythm
+2025-07-02 07:09:33,037 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#37P1} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,038 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#37P2} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,039 INFO [Piano_Trio_No._1_in_D_Minor#11]          StackRhythm.java:224  | S4 MeasureStack#37 no correct rhythm
+2025-07-02 07:09:33,039 INFO [Piano_Trio_No._1_in_D_Minor#11]       StepMonitoring.java:98   | PAGE
+2025-07-02 07:09:33,042 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#1P10} Voice{#5 excess:1/4} too long
+2025-07-02 07:09:33,042 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#2P10} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:33,042 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#3P10} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:33,043 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#4P10} Voice{#5 excess:1/4} too long
+2025-07-02 07:09:33,043 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#5P10} Voice{#5 excess:1/4} too long
+2025-07-02 07:09:33,043 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#6P10} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:33,043 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#7P3} Voice{#1 excess:1/8} too long
+2025-07-02 07:09:33,043 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#7P10} Voice{#5 excess:1/4} too long
+2025-07-02 07:09:33,043 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#8P3} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,043 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#8P10} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:33,043 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#9P10} Voice{#5 excess:1/4} too long
+2025-07-02 07:09:33,043 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#11P3} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,043 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#11P10} Voice{#5 excess:1/4} too long
+2025-07-02 07:09:33,043 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#12P3} Voice{#1 excess:1/8} too long
+2025-07-02 07:09:33,044 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#12P10} Voice{#5 excess:1/4} too long
+2025-07-02 07:09:33,044 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#13P3} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,044 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#13P10} Voice{#5 excess:1/4} too long
+2025-07-02 07:09:33,044 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#14P3} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,044 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#14P10} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:33,045 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#15P3} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,045 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#15P10} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:33,045 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#16P3} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,045 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#16P10} Voice{#5 excess:1/4} too long
+2025-07-02 07:09:33,045 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#17P3} Voice{#1 excess:1/8} too long
+2025-07-02 07:09:33,045 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#17P10} Voice{#5 excess:1/8} too long
+2025-07-02 07:09:33,046 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#18P3} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,046 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#18P10} Voice{#2 excess:1/24} too long
+2025-07-02 07:09:33,076 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#18P10} Voice{#7 excess:1/24} too long
+2025-07-02 07:09:33,076 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#25P3} Voice{#1 excess:1/8} too long
+2025-07-02 07:09:33,077 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#26P3} Voice{#1 excess:1/8} too long
+2025-07-02 07:09:33,077 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#27P3} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,077 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#28P3} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,077 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#29P3} Voice{#1 excess:1/8} too long
+2025-07-02 07:09:33,077 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#30P3} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,077 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#31P3} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,077 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#31P10} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,078 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#32P3} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,078 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#33P3} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,078 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#35P3} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,078 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#35P4} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,078 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#36P3} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,078 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#36P4} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,078 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#37P3} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,078 INFO [Piano_Trio_No._1_in_D_Minor#11]                Voice.java:257  | Measure{#37P4} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:33,079 INFO [Piano_Trio_No._1_in_D_Minor#11]                 Book.java:2550 | Book{Piano_Trio_No._1_in_D_Minor} storing
+2025-07-02 07:09:33,138 INFO [Piano_Trio_No._1_in_D_Minor#11]                 Book.java:2531 | Stored /book.xml
+2025-07-02 07:09:33,237 INFO [Piano_Trio_No._1_in_D_Minor#11]           DataHolder.java:348  | Stored /sheet#11/BINARY.png
+2025-07-02 07:09:33,757 INFO [Piano_Trio_No._1_in_D_Minor#11]                Sheet.java:1562 | Stored /sheet#11/sheet#11.xml
+2025-07-02 07:09:33,758 INFO [Piano_Trio_No._1_in_D_Minor#11]                 Book.java:2491 | Book stored as .\MXL\Piano_Trio_No._1_in_D_Minor\Piano_Trio_No._1_in_D_Minor.omr
+2025-07-02 07:09:33,774 INFO [Piano_Trio_No._1_in_D_Minor#11]            SheetStub.java:1644 | Disposed sheet#11
+2025-07-02 07:09:33,836 INFO [Piano_Trio_No._1_in_D_Minor#11]                 Book.java:2018 | End of Stub#11 memory: 37,949,304
+2025-07-02 07:09:33,837 INFO [Piano_Trio_No._1_in_D_Minor#12]       StepMonitoring.java:98   | LOAD
+2025-07-02 07:09:33,896 INFO [Piano_Trio_No._1_in_D_Minor#12]            SheetStub.java:1268 | Loaded image #12 2550x3299 from C:\Users\alexa\Downloads\Piano_Trio_No._1_in_D_Minor.pdf
+2025-07-02 07:09:33,896 INFO [Piano_Trio_No._1_in_D_Minor#12]       StepMonitoring.java:98   | BINARY
+2025-07-02 07:09:34,319 INFO [Piano_Trio_No._1_in_D_Minor#12]       StepMonitoring.java:98   | SCALE
+2025-07-02 07:09:34,321 INFO [Piano_Trio_No._1_in_D_Minor#12]         ScaleBuilder.java:241  | Beam  guessed height:  8 -- 0.50 of 15 interline
+2025-07-02 07:09:34,321 INFO [Piano_Trio_No._1_in_D_Minor#12]         ScaleBuilder.java:264  | Beam measured height:  8 -- 0.36 of [4..15] range at 164% of needed quorum
+2025-07-02 07:09:34,321 INFO [Piano_Trio_No._1_in_D_Minor#12]            ScaleStep.java:65   | Scale{ interline(14,15,15) line(1,1,2) beam(8)}
+2025-07-02 07:09:34,321 INFO [Piano_Trio_No._1_in_D_Minor#12]       StepMonitoring.java:98   | GRID
+2025-07-02 07:09:34,446 INFO [Piano_Trio_No._1_in_D_Minor#12]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-02 07:09:34,456 INFO [Piano_Trio_No._1_in_D_Minor#12]    ClustersRetriever.java:328  | Retrieved raw line clusters: 12 of sizes [5] with interline(14,15,15)
+2025-07-02 07:09:34,513 INFO [Piano_Trio_No._1_in_D_Minor#12]            PeakGraph.java:310  | Systems: #1[1, 2, 3, 4] #2[5, 6, 7, 8] #3[9, 10, 11, 12]
+2025-07-02 07:09:34,669 INFO [Piano_Trio_No._1_in_D_Minor#12]        SystemManager.java:779  | 3 parts along 3 systems
+2025-07-02 07:09:34,670 INFO [Piano_Trio_No._1_in_D_Minor#12]       StepMonitoring.java:98   | HEADERS
+2025-07-02 07:09:34,925 INFO [Piano_Trio_No._1_in_D_Minor#12]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-02 07:09:34,966 INFO [Piano_Trio_No._1_in_D_Minor#12]        StemSeedsStep.java:86   | stem(2 max:3)
+2025-07-02 07:09:34,975 INFO [Piano_Trio_No._1_in_D_Minor#12]       StepMonitoring.java:98   | BEAMS
+2025-07-02 07:09:36,645 INFO [Piano_Trio_No._1_in_D_Minor#12]       StepMonitoring.java:98   | LEDGERS
+2025-07-02 07:09:36,736 INFO [Piano_Trio_No._1_in_D_Minor#12]       StepMonitoring.java:98   | HEADS
+2025-07-02 07:09:40,120 INFO [Piano_Trio_No._1_in_D_Minor#12]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:0.4,R:-0.2] NOTEHEAD_BLACK[L:0.1,R:-0.5]}
+2025-07-02 07:09:40,120 INFO [Piano_Trio_No._1_in_D_Minor#12]       StepMonitoring.java:98   | STEMS
+2025-07-02 07:09:40,758 INFO [Piano_Trio_No._1_in_D_Minor#12]       StepMonitoring.java:98   | REDUCTION
+2025-07-02 07:09:40,812 INFO [Piano_Trio_No._1_in_D_Minor#12]        ReductionStep.java:105  | Stems free length median value: 52 pixels, 3.5 interlines
+2025-07-02 07:09:40,814 INFO [Piano_Trio_No._1_in_D_Minor#12]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-02 07:09:40,814 INFO [Piano_Trio_No._1_in_D_Minor#12]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-02 07:09:40,815 INFO [Piano_Trio_No._1_in_D_Minor#12]       StepMonitoring.java:98   | TEXTS
+2025-07-02 07:09:41,426 INFO [Piano_Trio_No._1_in_D_Minor#12]       StepMonitoring.java:98   | MEASURES
+2025-07-02 07:09:41,428 INFO [Piano_Trio_No._1_in_D_Minor#12]                 Page.java:307  | 22 raw measures: [8 in system#1, 7 in system#2, 7 in system#3]
+2025-07-02 07:09:41,428 INFO [Piano_Trio_No._1_in_D_Minor#12]       StepMonitoring.java:98   | CHORDS
+2025-07-02 07:09:41,432 INFO [Piano_Trio_No._1_in_D_Minor#12]       StepMonitoring.java:98   | CURVES
+2025-07-02 07:09:42,055 INFO [Piano_Trio_No._1_in_D_Minor#12]         SlursBuilder.java:240  | Slurs: 15
+2025-07-02 07:09:42,058 INFO [Piano_Trio_No._1_in_D_Minor#12]      SegmentsBuilder.java:155  | Segments: 15
+2025-07-02 07:09:42,059 INFO [Piano_Trio_No._1_in_D_Minor#12]       StepMonitoring.java:98   | SYMBOLS
+2025-07-02 07:09:42,612 INFO [Piano_Trio_No._1_in_D_Minor#12]       StepMonitoring.java:98   | LINKS
+2025-07-02 07:09:42,631 INFO [Piano_Trio_No._1_in_D_Minor#12]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#7993{(0.790) staff:7 OTTAVA BASSA}
+2025-07-02 07:09:42,660 INFO [Piano_Trio_No._1_in_D_Minor#12]       StepMonitoring.java:98   | RHYTHMS
+2025-07-02 07:09:42,660 INFO [Piano_Trio_No._1_in_D_Minor#12]           PageRhythm.java:199  | {Page#12.1} Time value reused from sheet#8
+2025-07-02 07:09:42,662 INFO [Piano_Trio_No._1_in_D_Minor#12]                Voice.java:257  | Measure{#1P1} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:42,662 INFO [Piano_Trio_No._1_in_D_Minor#12]                Voice.java:257  | Measure{#1P2} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:42,663 INFO [Piano_Trio_No._1_in_D_Minor#12]          StackRhythm.java:224  | S1 MeasureStack#1 no correct rhythm
+2025-07-02 07:09:42,664 INFO [Piano_Trio_No._1_in_D_Minor#12]                Voice.java:257  | Measure{#2P1} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:42,664 INFO [Piano_Trio_No._1_in_D_Minor#12]                Voice.java:257  | Measure{#2P2} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:42,665 INFO [Piano_Trio_No._1_in_D_Minor#12]          StackRhythm.java:224  | S1 MeasureStack#2 no correct rhythm
+2025-07-02 07:09:42,665 INFO [Piano_Trio_No._1_in_D_Minor#12]                Voice.java:257  | Measure{#3P1} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:42,666 INFO [Piano_Trio_No._1_in_D_Minor#12]                Voice.java:257  | Measure{#3P2} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:42,666 INFO [Piano_Trio_No._1_in_D_Minor#12]          StackRhythm.java:224  | S1 MeasureStack#3 no correct rhythm
+2025-07-02 07:09:42,666 INFO [Piano_Trio_No._1_in_D_Minor#12]                Voice.java:257  | Measure{#4P1} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:42,668 INFO [Piano_Trio_No._1_in_D_Minor#12]          StackRhythm.java:224  | S1 MeasureStack#4 no correct rhythm
+2025-07-02 07:09:42,668 INFO [Piano_Trio_No._1_in_D_Minor#12]                Voice.java:257  | Measure{#5P1} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:42,669 INFO [Piano_Trio_No._1_in_D_Minor#12]        MeasureRhythm.java:1045 | Measure{#5P3} No timeOffset for HeadChordInter#6626{(0.962/0.962) staff:3 slot#3 dur:1/4}
+2025-07-02 07:09:42,669 INFO [Piano_Trio_No._1_in_D_Minor#12]          StackRhythm.java:224  | S1 MeasureStack#5 no correct rhythm
+2025-07-02 07:09:42,670 INFO [Piano_Trio_No._1_in_D_Minor#12]                Voice.java:257  | Measure{#6P1} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:42,670 INFO [Piano_Trio_No._1_in_D_Minor#12]          StackRhythm.java:224  | S1 MeasureStack#6 no correct rhythm
+2025-07-02 07:09:42,671 INFO [Piano_Trio_No._1_in_D_Minor#12]                Voice.java:257  | Measure{#7P1} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:42,671 INFO [Piano_Trio_No._1_in_D_Minor#12]        MeasureRhythm.java:1045 | Measure{#7P3} No timeOffset for HeadChordInter#6630{(0.970/0.970) staff:3 slot#3 dur:1/4}
+2025-07-02 07:09:42,671 INFO [Piano_Trio_No._1_in_D_Minor#12]          StackRhythm.java:224  | S1 MeasureStack#7 no correct rhythm
+2025-07-02 07:09:42,682 INFO [Piano_Trio_No._1_in_D_Minor#12]       StepMonitoring.java:98   | PAGE
+2025-07-02 07:09:42,685 INFO [Piano_Trio_No._1_in_D_Minor#12]                Voice.java:257  | Measure{#1P7} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:42,686 INFO [Piano_Trio_No._1_in_D_Minor#12]                Voice.java:257  | Measure{#1P9} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:42,686 INFO [Piano_Trio_No._1_in_D_Minor#12]                Voice.java:257  | Measure{#2P7} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:42,686 INFO [Piano_Trio_No._1_in_D_Minor#12]                Voice.java:257  | Measure{#2P9} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:42,686 INFO [Piano_Trio_No._1_in_D_Minor#12]                Voice.java:257  | Measure{#3P7} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:42,686 INFO [Piano_Trio_No._1_in_D_Minor#12]                Voice.java:257  | Measure{#3P9} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:42,686 INFO [Piano_Trio_No._1_in_D_Minor#12]                Voice.java:257  | Measure{#4P7} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:42,686 INFO [Piano_Trio_No._1_in_D_Minor#12]                Voice.java:257  | Measure{#5P7} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:42,687 INFO [Piano_Trio_No._1_in_D_Minor#12]                Voice.java:257  | Measure{#6P7} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:42,687 INFO [Piano_Trio_No._1_in_D_Minor#12]                Voice.java:257  | Measure{#7P7} Voice{#1 excess:1/4} too long
+2025-07-02 07:09:42,688 INFO [Piano_Trio_No._1_in_D_Minor#12]                 Book.java:2550 | Book{Piano_Trio_No._1_in_D_Minor} storing
+2025-07-02 07:09:42,743 INFO [Piano_Trio_No._1_in_D_Minor#12]                 Book.java:2531 | Stored /book.xml
+2025-07-02 07:09:42,831 INFO [Piano_Trio_No._1_in_D_Minor#12]           DataHolder.java:348  | Stored /sheet#12/BINARY.png
+2025-07-02 07:09:43,163 INFO [Piano_Trio_No._1_in_D_Minor#12]                Sheet.java:1562 | Stored /sheet#12/sheet#12.xml
+2025-07-02 07:09:43,163 INFO [Piano_Trio_No._1_in_D_Minor#12]                 Book.java:2491 | Book stored as .\MXL\Piano_Trio_No._1_in_D_Minor\Piano_Trio_No._1_in_D_Minor.omr
+2025-07-02 07:09:43,178 INFO [Piano_Trio_No._1_in_D_Minor#12]            SheetStub.java:1644 | Disposed sheet#12
+2025-07-02 07:09:43,233 INFO [Piano_Trio_No._1_in_D_Minor#12]                 Book.java:2018 | End of Stub#12 memory: 37,971,096
+2025-07-02 07:09:43,233 INFO [Piano_Trio_No._1_in_D_Minor]                 Book.java:2025 | Book processed.
+2025-07-02 07:09:43,992 INFO [Piano_Trio_No._1_in_D_Minor]            SheetStub.java:995  | Loaded /sheet#1/sheet#1.xml
+2025-07-02 07:09:44,417 INFO [Piano_Trio_No._1_in_D_Minor]            SheetStub.java:995  | Loaded /sheet#2/sheet#2.xml
+2025-07-02 07:09:44,736 INFO [Piano_Trio_No._1_in_D_Minor]            SheetStub.java:995  | Loaded /sheet#3/sheet#3.xml
+2025-07-02 07:09:45,153 INFO [Piano_Trio_No._1_in_D_Minor]            SheetStub.java:995  | Loaded /sheet#4/sheet#4.xml
+2025-07-02 07:09:45,549 INFO [Piano_Trio_No._1_in_D_Minor]            SheetStub.java:995  | Loaded /sheet#5/sheet#5.xml
+2025-07-02 07:09:45,792 INFO [Piano_Trio_No._1_in_D_Minor]            SheetStub.java:995  | Loaded /sheet#6/sheet#6.xml
+2025-07-02 07:09:46,060 INFO [Piano_Trio_No._1_in_D_Minor]            SheetStub.java:995  | Loaded /sheet#7/sheet#7.xml
+2025-07-02 07:09:46,340 INFO [Piano_Trio_No._1_in_D_Minor]            SheetStub.java:995  | Loaded /sheet#8/sheet#8.xml
+2025-07-02 07:09:46,661 INFO [Piano_Trio_No._1_in_D_Minor]            SheetStub.java:995  | Loaded /sheet#9/sheet#9.xml
+2025-07-02 07:09:46,896 INFO [Piano_Trio_No._1_in_D_Minor]            SheetStub.java:995  | Loaded /sheet#10/sheet#10.xml
+2025-07-02 07:09:47,222 INFO [Piano_Trio_No._1_in_D_Minor]            SheetStub.java:995  | Loaded /sheet#11/sheet#11.xml
+2025-07-02 07:09:47,429 INFO [Piano_Trio_No._1_in_D_Minor]            SheetStub.java:995  | Loaded /sheet#12/sheet#12.xml
+2025-07-02 07:09:47,919 INFO [Piano_Trio_No._1_in_D_Minor]      PartwiseBuilder.java:2661 | Exporting sheet(s): [#1#2#3#4#5#6#7#8#9#10#11#12]
+2025-07-02 07:09:47,920 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#1 System#1 Part#8{name:Violin staves[1] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:47,932 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#1 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:47,933 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#1 System#3 Part#5{name:Vln. staves[9] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:47,934 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#1 System#4 Part#3{name:Vln. staves[13] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:47,935 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#1 System#1 Part#8{name:Violin staves[1] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:47,936 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#1 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:47,937 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#1 System#3 Part#5{name:Vln. staves[9] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:47,937 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#1 System#4 Part#3{name:Vln. staves[13] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:47,938 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#1 System#1 Part#8{name:Violin staves[1] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:47,938 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#1 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:47,938 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#1 System#3 Part#5{name:Vln. staves[9] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:47,945 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#1 System#1 Part#8{name:Violin staves[1] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:47,946 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#1 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:47,946 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#1 System#3 Part#5{name:Vln. staves[9] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:47,949 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#1 System#1 Part#8{name:Violin staves[1] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:47,949 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#1 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:47,952 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#1 System#4 Part#3{name:Vln. staves[13] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:47,953 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#1 System#1 Part#8{name:Violin staves[1] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:47,953 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#1 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:47,956 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#1 System#4 Part#3{name:Vln. staves[13] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:47,957 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#1 System#1 Part#8{name:Violin staves[1] configs:[5]} dummyPart id: 7
+2025-07-02 07:09:47,958 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#1 System#3 Part#5{name:Vln. staves[9] configs:[5]} dummyPart id: 7
+2025-07-02 07:09:47,959 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#1 System#4 Part#3{name:Vln. staves[13] configs:[5]} dummyPart id: 7
+2025-07-02 07:09:47,961 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#1 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:47,962 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#1 System#3 Part#5{name:Vln. staves[9] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:47,962 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#1 System#4 Part#3{name:Vln. staves[13] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:47,964 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#1 System#3 Part#5{name:Vln. staves[9] configs:[5]} dummyPart id: 9
+2025-07-02 07:09:47,964 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#1 System#4 Part#3{name:Vln. staves[13] configs:[5]} dummyPart id: 9
+2025-07-02 07:09:47,983 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#2 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:47,986 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#2 System#2 Part#8{ staves[5] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:47,986 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#2 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:47,987 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#2 System#4 Part#8{ staves[13] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:47,987 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#2 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:47,988 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#2 System#2 Part#8{ staves[5] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:47,988 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#2 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:47,988 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#2 System#4 Part#8{ staves[13] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:47,989 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#2 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:47,989 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#2 System#2 Part#8{ staves[5] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:47,990 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#2 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:47,990 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#2 System#4 Part#8{ staves[13] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:47,990 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#2 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:47,991 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#2 System#2 Part#8{ staves[5] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:47,991 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#2 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:47,991 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#2 System#4 Part#8{ staves[13] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:47,991 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#2 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:47,993 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#2 System#2 Part#8{ staves[5] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:47,993 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#2 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:47,994 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#2 System#4 Part#8{ staves[13] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:47,994 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#2 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:47,995 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#2 System#2 Part#8{ staves[5] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:47,995 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#2 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:47,995 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#2 System#4 Part#8{ staves[13] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:47,996 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#2 System#2 Part#8{ staves[5] configs:[5]} dummyPart id: 7
+2025-07-02 07:09:47,997 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#2 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 7
+2025-07-02 07:09:47,997 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#2 System#4 Part#8{ staves[13] configs:[5]} dummyPart id: 7
+2025-07-02 07:09:47,998 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#2 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:48,019 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#3 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,021 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#3 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,022 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#3 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,022 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#3 System#4 Part#8{ staves[13] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,022 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#3 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,023 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#3 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,023 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#3 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,023 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#3 System#4 Part#8{ staves[13] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,024 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#3 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,024 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#3 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,024 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#3 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,025 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#3 System#4 Part#8{ staves[13] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,025 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#3 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,025 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#3 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,026 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#3 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,026 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#3 System#4 Part#8{ staves[13] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,026 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#3 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,026 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#3 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,027 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#3 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,027 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#3 System#4 Part#8{ staves[13] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,028 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#3 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,028 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#3 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,028 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#3 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,028 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#3 System#4 Part#8{ staves[13] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,031 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#3 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 7
+2025-07-02 07:09:48,031 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#3 System#4 Part#8{ staves[13] configs:[5]} dummyPart id: 7
+2025-07-02 07:09:48,032 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#3 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:48,032 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#3 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:48,046 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#4 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,049 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#4 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,049 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#4 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,050 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#4 System#4 Part#7{name:Vln. staves[13] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,050 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#4 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,050 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#4 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,051 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#4 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,051 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#4 System#4 Part#7{name:Vln. staves[13] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,052 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#4 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,052 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#4 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,053 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#4 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,053 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#4 System#4 Part#7{name:Vln. staves[13] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,054 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#4 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,054 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#4 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,055 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#4 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,055 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#4 System#4 Part#7{name:Vln. staves[13] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,055 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#4 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,056 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#4 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,056 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#4 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,057 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#4 System#4 Part#7{name:Vln. staves[13] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,057 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#4 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,058 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#4 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,058 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#4 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,059 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#4 System#4 Part#7{name:Vln. staves[13] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,064 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#4 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 7
+2025-07-02 07:09:48,067 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#4 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:48,067 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#4 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:48,069 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#4 System#4 Part#7{name:Vln. staves[13] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:48,083 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#5 System#1 Part#8{name:Violin staves[1] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,085 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#5 System#2 Part#8{ staves[5] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,085 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#5 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,086 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#5 System#4 Part#8{ staves[13] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,086 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#5 System#1 Part#8{name:Violin staves[1] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,087 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#5 System#2 Part#8{ staves[5] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,087 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#5 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,087 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#5 System#4 Part#8{ staves[13] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,088 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#5 System#1 Part#8{name:Violin staves[1] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,088 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#5 System#2 Part#8{ staves[5] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,088 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#5 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,089 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#5 System#4 Part#8{ staves[13] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,089 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#5 System#1 Part#8{name:Violin staves[1] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,089 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#5 System#2 Part#8{ staves[5] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,089 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#5 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,089 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#5 System#4 Part#8{ staves[13] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,089 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#5 System#1 Part#8{name:Violin staves[1] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,090 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#5 System#2 Part#8{ staves[5] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,090 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#5 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,090 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#5 System#4 Part#8{ staves[13] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,090 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#5 System#1 Part#8{name:Violin staves[1] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,091 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#5 System#2 Part#8{ staves[5] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,091 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#5 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,091 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#5 System#4 Part#8{ staves[13] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,092 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#5 System#1 Part#8{name:Violin staves[1] configs:[5]} dummyPart id: 7
+2025-07-02 07:09:48,092 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#5 System#2 Part#8{ staves[5] configs:[5]} dummyPart id: 7
+2025-07-02 07:09:48,092 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#5 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 7
+2025-07-02 07:09:48,092 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#5 System#4 Part#8{ staves[13] configs:[5]} dummyPart id: 7
+2025-07-02 07:09:48,110 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#6 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,112 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#6 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,113 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#6 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,114 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#6 System#4 Part#7{name:Vln. staves[13] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,114 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#6 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,115 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#6 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,115 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#6 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,115 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#6 System#4 Part#7{name:Vln. staves[13] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,116 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#6 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,116 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#6 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,116 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#6 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,117 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#6 System#4 Part#7{name:Vln. staves[13] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,117 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#6 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,117 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#6 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,117 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#6 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,118 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#6 System#4 Part#7{name:Vln. staves[13] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,118 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#6 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,118 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#6 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,118 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#6 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,119 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#6 System#4 Part#7{name:Vln. staves[13] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,119 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#6 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,119 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#6 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,120 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#6 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,120 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#6 System#4 Part#7{name:Vln. staves[13] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,123 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#6 System#3 Part#8{ staves[9] configs:[5]} dummyPart id: 7
+2025-07-02 07:09:48,124 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#6 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:48,124 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#6 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:48,125 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#6 System#4 Part#7{name:Vln. staves[13] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:48,139 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#7 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,141 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#7 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,141 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#7 System#3 Part#8{name:Violin staves[9] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,142 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#7 System#4 Part#7{name:Vln. staves[13] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,152 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#7 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,153 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#7 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,153 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#7 System#3 Part#8{name:Violin staves[9] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,154 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#7 System#4 Part#7{name:Vln. staves[13] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,154 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#7 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,154 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#7 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,155 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#7 System#3 Part#8{name:Violin staves[9] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,155 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#7 System#4 Part#7{name:Vln. staves[13] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,155 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#7 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,155 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#7 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,156 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#7 System#3 Part#8{name:Violin staves[9] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,156 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#7 System#4 Part#7{name:Vln. staves[13] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,156 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#7 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,157 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#7 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,157 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#7 System#3 Part#8{name:Violin staves[9] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,158 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#7 System#4 Part#7{name:Vln. staves[13] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,158 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#7 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,158 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#7 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,159 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#7 System#3 Part#8{name:Violin staves[9] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,159 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#7 System#4 Part#7{name:Vln. staves[13] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,160 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#7 System#3 Part#8{name:Violin staves[9] configs:[5]} dummyPart id: 7
+2025-07-02 07:09:48,160 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#7 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:48,161 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#7 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:48,161 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#7 System#4 Part#7{name:Vln. staves[13] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:48,176 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#8 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,179 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#8 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,179 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#8 System#3 Part#8{name:Violin staves[9] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,179 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#8 System#4 Part#7{name:Vln. staves[13] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,180 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#8 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,194 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#8 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,194 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#8 System#3 Part#8{name:Violin staves[9] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,194 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#8 System#4 Part#7{name:Vln. staves[13] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,196 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#8 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,196 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#8 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,196 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#8 System#3 Part#8{name:Violin staves[9] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,197 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#8 System#4 Part#7{name:Vln. staves[13] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,197 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#8 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,197 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#8 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,197 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#8 System#3 Part#8{name:Violin staves[9] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,198 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#8 System#4 Part#7{name:Vln. staves[13] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,198 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#8 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,199 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#8 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,199 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#8 System#3 Part#8{name:Violin staves[9] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,200 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#8 System#4 Part#7{name:Vln. staves[13] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,200 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#8 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,200 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#8 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,200 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#8 System#3 Part#8{name:Violin staves[9] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,201 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#8 System#4 Part#7{name:Vln. staves[13] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,202 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#8 System#3 Part#8{name:Violin staves[9] configs:[5]} dummyPart id: 7
+2025-07-02 07:09:48,203 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#8 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:48,203 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#8 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:48,204 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#8 System#4 Part#7{name:Vln. staves[13] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:48,223 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#9 System#1 Part#3{name:Vln. staves[1] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,227 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#9 System#3 Part#7{name:Vln. staves[9] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,227 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#9 System#4 Part#3{name:Vln. staves[13] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,228 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#9 System#1 Part#3{name:Vln. staves[1] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,229 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#9 System#3 Part#7{name:Vln. staves[9] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,229 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#9 System#4 Part#3{name:Vln. staves[13] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,235 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#9 System#2 Part#1{name:V111. staves[5] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,236 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#9 System#3 Part#7{name:Vln. staves[9] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,237 WARN [Piano_Trio_No._1_in_D_Minor]      PartwiseBuilder.java:1689 | Error visiting FermataInter#12084{(0.268/0.647) staff:13 FERMATA} in {Page#9.1}
+java.lang.NullPointerException: Cannot invoke "org.audiveris.omr.sig.inter.AbstractNoteInter.getStaff()" because "this.current.note" is null
+	at org.audiveris.omr.score.PartwiseBuilder.processFermata(PartwiseBuilder.java:1675)
+	at org.audiveris.omr.score.PartwiseBuilder.processBarline(PartwiseBuilder.java:1278)
+	at org.audiveris.omr.score.PartwiseBuilder.processMeasure(PartwiseBuilder.java:2117)
+	at org.audiveris.omr.score.PartwiseBuilder.processPart(PartwiseBuilder.java:2632)
+	at org.audiveris.omr.score.PartwiseBuilder.processSystem(PartwiseBuilder.java:3132)
+	at org.audiveris.omr.score.PartwiseBuilder.processLogicalPart(PartwiseBuilder.java:1845)
+	at org.audiveris.omr.score.PartwiseBuilder.processStub(PartwiseBuilder.java:3083)
+	at org.audiveris.omr.score.PartwiseBuilder.processPartList(PartwiseBuilder.java:2664)
+	at org.audiveris.omr.score.PartwiseBuilder.processScore(PartwiseBuilder.java:2895)
+	at org.audiveris.omr.score.PartwiseBuilder.build(PartwiseBuilder.java:3451)
+	at org.audiveris.omr.score.ScoreExporter.export(ScoreExporter.java:122)
+	at org.audiveris.omr.score.ScoreExporter.export(ScoreExporter.java:163)
+	at org.audiveris.omr.sheet.Book.export(Book.java:633)
+	at org.audiveris.omr.CLI$ProcessingTask.processBook(CLI.java:896)
+	at org.audiveris.omr.CLI$CliTask.call(CLI.java:504)
+	at org.audiveris.omr.Main.runBatchTasks(Main.java:371)
+	at org.audiveris.omr.Main.main(Main.java:260)
+	at Audiveris.main(Audiveris.java:50)
+2025-07-02 07:09:48,238 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#9 System#2 Part#1{name:V111. staves[5] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,238 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#9 System#3 Part#7{name:Vln. staves[9] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,240 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#9 System#1 Part#3{name:Vln. staves[1] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,240 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#9 System#2 Part#1{name:V111. staves[5] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,241 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#9 System#3 Part#7{name:Vln. staves[9] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,241 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#9 System#4 Part#3{name:Vln. staves[13] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,242 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#9 System#1 Part#3{name:Vln. staves[1] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,242 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#9 System#2 Part#1{name:V111. staves[5] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,243 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#9 System#3 Part#7{name:Vln. staves[9] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,243 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#9 System#4 Part#3{name:Vln. staves[13] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,244 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#9 System#1 Part#3{name:Vln. staves[1] configs:[5]} dummyPart id: 7
+2025-07-02 07:09:48,244 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#9 System#2 Part#1{name:V111. staves[5] configs:[5]} dummyPart id: 7
+2025-07-02 07:09:48,245 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#9 System#4 Part#3{name:Vln. staves[13] configs:[5]} dummyPart id: 7
+2025-07-02 07:09:48,246 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#9 System#1 Part#3{name:Vln. staves[1] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:48,246 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#9 System#2 Part#1{name:V111. staves[5] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:48,247 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#9 System#3 Part#7{name:Vln. staves[9] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:48,269 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#9 System#4 Part#3{name:Vln. staves[13] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:48,269 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#9 System#1 Part#3{name:Vln. staves[1] configs:[5]} dummyPart id: 9
+2025-07-02 07:09:48,270 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#9 System#2 Part#1{name:V111. staves[5] configs:[5]} dummyPart id: 9
+2025-07-02 07:09:48,270 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#9 System#4 Part#3{name:Vln. staves[13] configs:[5]} dummyPart id: 9
+2025-07-02 07:09:48,283 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#10 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,285 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#10 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,286 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#10 System#3 Part#7{name:Vln. staves[9] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,287 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#10 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,288 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#10 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,288 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#10 System#3 Part#7{name:Vln. staves[9] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,289 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#10 System#4 Part#1{name:V111. staves[13] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,290 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#10 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,290 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#10 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,290 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#10 System#3 Part#7{name:Vln. staves[9] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,291 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#10 System#4 Part#1{name:V111. staves[13] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,291 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#10 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,291 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#10 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,292 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#10 System#3 Part#7{name:Vln. staves[9] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,292 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#10 System#4 Part#1{name:V111. staves[13] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,292 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#10 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,292 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#10 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,293 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#10 System#3 Part#7{name:Vln. staves[9] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,293 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#10 System#4 Part#1{name:V111. staves[13] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,293 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#10 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,293 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#10 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,293 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#10 System#3 Part#7{name:Vln. staves[9] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,294 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#10 System#4 Part#1{name:V111. staves[13] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,296 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#10 System#4 Part#1{name:V111. staves[13] configs:[5]} dummyPart id: 7
+2025-07-02 07:09:48,296 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#10 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:48,320 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#10 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:48,321 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#10 System#3 Part#7{name:Vln. staves[9] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:48,321 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#10 System#4 Part#1{name:V111. staves[13] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:48,333 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#11 System#1 Part#3{name:Vln. staves[1] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,338 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#11 System#2 Part#3{name:Vln. staves[5] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,339 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#11 System#3 Part#3{name:Vln. staves[9] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,339 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#11 System#4 Part#3{name:Vln. staves[13] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,340 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#11 System#1 Part#3{name:Vln. staves[1] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,340 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#11 System#2 Part#3{name:Vln. staves[5] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,340 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#11 System#3 Part#3{name:Vln. staves[9] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,341 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#11 System#4 Part#3{name:Vln. staves[13] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,349 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#11 System#1 Part#3{name:Vln. staves[1] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,349 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#11 System#2 Part#3{name:Vln. staves[5] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,349 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#11 System#3 Part#3{name:Vln. staves[9] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,350 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#11 System#4 Part#3{name:Vln. staves[13] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,350 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#11 System#1 Part#3{name:Vln. staves[1] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,350 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#11 System#2 Part#3{name:Vln. staves[5] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,351 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#11 System#3 Part#3{name:Vln. staves[9] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,351 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#11 System#4 Part#3{name:Vln. staves[13] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,352 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#11 System#1 Part#3{name:Vln. staves[1] configs:[5]} dummyPart id: 7
+2025-07-02 07:09:48,352 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#11 System#2 Part#3{name:Vln. staves[5] configs:[5]} dummyPart id: 7
+2025-07-02 07:09:48,353 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#11 System#3 Part#3{name:Vln. staves[9] configs:[5]} dummyPart id: 7
+2025-07-02 07:09:48,353 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#11 System#4 Part#3{name:Vln. staves[13] configs:[5]} dummyPart id: 7
+2025-07-02 07:09:48,353 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#11 System#1 Part#3{name:Vln. staves[1] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:48,354 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#11 System#2 Part#3{name:Vln. staves[5] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:48,354 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#11 System#3 Part#3{name:Vln. staves[9] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:48,354 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#11 System#4 Part#3{name:Vln. staves[13] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:48,355 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#11 System#1 Part#3{name:Vln. staves[1] configs:[5]} dummyPart id: 9
+2025-07-02 07:09:48,355 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#11 System#2 Part#3{name:Vln. staves[5] configs:[5]} dummyPart id: 9
+2025-07-02 07:09:48,360 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#11 System#3 Part#3{name:Vln. staves[9] configs:[5]} dummyPart id: 9
+2025-07-02 07:09:48,361 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#11 System#4 Part#3{name:Vln. staves[13] configs:[5]} dummyPart id: 9
+2025-07-02 07:09:48,368 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#12 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,370 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#12 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 1
+2025-07-02 07:09:48,388 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#12 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,389 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#12 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,389 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#12 System#3 Part#1{name:V111. staves[9] configs:[5]} dummyPart id: 2
+2025-07-02 07:09:48,389 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#12 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,390 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#12 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,390 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#12 System#3 Part#1{name:V111. staves[9] configs:[5]} dummyPart id: 3
+2025-07-02 07:09:48,390 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#12 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,391 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#12 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,392 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#12 System#3 Part#1{name:V111. staves[9] configs:[5]} dummyPart id: 4
+2025-07-02 07:09:48,392 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#12 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,392 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#12 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,392 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#12 System#3 Part#1{name:V111. staves[9] configs:[5]} dummyPart id: 5
+2025-07-02 07:09:48,392 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#12 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,394 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#12 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,394 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#12 System#3 Part#1{name:V111. staves[9] configs:[5]} dummyPart id: 6
+2025-07-02 07:09:48,398 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#12 System#3 Part#1{name:V111. staves[9] configs:[5]} dummyPart id: 7
+2025-07-02 07:09:48,398 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#12 System#1 Part#7{name:Vln. staves[1] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:48,399 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#12 System#2 Part#7{name:Vln. staves[5] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:48,399 INFO [Piano_Trio_No._1_in_D_Minor]                 Part.java:351  | Sheet#12 System#3 Part#1{name:V111. staves[9] configs:[5]} dummyPart id: 8
+2025-07-02 07:09:49,016 INFO [Piano_Trio_No._1_in_D_Minor]        ScoreExporter.java:164  | Score Piano_Trio_No._1_in_D_Minor exported to .\MXL\Piano_Trio_No._1_in_D_Minor\Piano_Trio_No._1_in_D_Minor.mxl
+2025-07-02 07:09:49,121 INFO [Piano_Trio_No._1_in_D_Minor]                 Book.java:2531 | Stored /book.xml
+2025-07-02 07:09:49,517 INFO [Piano_Trio_No._1_in_D_Minor]                Sheet.java:1562 | Stored /sheet#1/sheet#1.xml
+2025-07-02 07:09:49,889 INFO [Piano_Trio_No._1_in_D_Minor]                Sheet.java:1562 | Stored /sheet#2/sheet#2.xml
+2025-07-02 07:09:50,231 INFO [Piano_Trio_No._1_in_D_Minor]                Sheet.java:1562 | Stored /sheet#3/sheet#3.xml
+2025-07-02 07:09:50,814 INFO [Piano_Trio_No._1_in_D_Minor]                Sheet.java:1562 | Stored /sheet#4/sheet#4.xml
+2025-07-02 07:09:51,164 INFO [Piano_Trio_No._1_in_D_Minor]                Sheet.java:1562 | Stored /sheet#5/sheet#5.xml
+2025-07-02 07:09:51,632 INFO [Piano_Trio_No._1_in_D_Minor]                Sheet.java:1562 | Stored /sheet#6/sheet#6.xml
+2025-07-02 07:09:52,035 INFO [Piano_Trio_No._1_in_D_Minor]                Sheet.java:1562 | Stored /sheet#7/sheet#7.xml
+2025-07-02 07:09:52,434 INFO [Piano_Trio_No._1_in_D_Minor]                Sheet.java:1562 | Stored /sheet#8/sheet#8.xml
+2025-07-02 07:09:52,434 INFO [Piano_Trio_No._1_in_D_Minor]                 Book.java:2491 | Book stored as .\MXL\Piano_Trio_No._1_in_D_Minor\Piano_Trio_No._1_in_D_Minor.omr
+2025-07-02 07:09:52,449 INFO [Piano_Trio_No._1_in_D_Minor]                Score.java:181  | Closing {Score 1}

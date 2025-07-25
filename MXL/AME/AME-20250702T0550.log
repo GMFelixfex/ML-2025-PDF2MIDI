@@ -1,0 +1,45 @@
+2025-07-02 05:50:38,785 ERROR [AME]              IOUtils.java:278  | Unmapping is not supported.
+java.lang.reflect.InaccessibleObjectException: Unable to make public jdk.internal.ref.Cleaner java.nio.DirectByteBuffer.cleaner() accessible: module java.base does not "opens java.nio" to unnamed module @1a18644
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(Unknown Source)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(Unknown Source)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(Unknown Source)
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Unknown Source)
+	at java.base/java.lang.reflect.Method.setAccessible(Unknown Source)
+	at org.apache.pdfbox.io.IOUtils.unmapper(IOUtils.java:244)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at org.apache.pdfbox.io.IOUtils.<clinit>(IOUtils.java:69)
+	at org.apache.pdfbox.Loader.loadPDF(Loader.java:378)
+	at org.audiveris.omr.image.ImageLoading.getPdfLoader(ImageLoading.java:159)
+	at org.audiveris.omr.image.ImageLoading.getLoader(ImageLoading.java:209)
+	at org.audiveris.omr.sheet.Book.createStubs(Book.java:557)
+	at org.audiveris.omr.CLI$ProcessingTask.processBook(CLI.java:830)
+	at org.audiveris.omr.CLI$CliTask.call(CLI.java:504)
+	at org.audiveris.omr.Main.runBatchTasks(Main.java:371)
+	at org.audiveris.omr.Main.main(Main.java:260)
+	at Audiveris.main(Audiveris.java:50)
+2025-07-02 05:50:38,834 INFO [AME]                 Book.java:562  | 1 sheet in C:\Uni\OMR_Project\alex\PDF\AME.pdf
+2025-07-02 05:50:38,992 INFO []                 Book.java:2531 | Stored /book.xml
+2025-07-02 05:50:38,992 INFO []                 Book.java:2491 | Book stored as .\MXL\AME\AME.omr
+2025-07-02 05:50:39,000 INFO []                 Book.java:1933 | Book reaching PAGE on sheets:[#1]
+2025-07-02 05:50:39,002 INFO [AME]       StepMonitoring.java:98   | LOAD
+2025-07-02 05:50:39,187 INFO [AME]            SheetStub.java:1268 | Loaded image #1 2815x2470 from C:\Uni\OMR_Project\alex\PDF\AME.pdf
+2025-07-02 05:50:39,190 INFO [AME]       StepMonitoring.java:98   | BINARY
+2025-07-02 05:50:39,591 INFO [AME]       StepMonitoring.java:98   | SCALE
+2025-07-02 05:50:39,610 INFO [AME]         ScaleBuilder.java:222  | Significant beam peak detected: 5 pixels
+2025-07-02 05:50:39,611 INFO [AME]            ScaleStep.java:65   | Scale{ interline(23,23,23) line(2,2,3) beam(5)}
+2025-07-02 05:50:39,612 INFO [AME]       StepMonitoring.java:98   | GRID
+2025-07-02 05:50:39,894 INFO [AME]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-02 05:50:39,916 INFO [AME]    ClustersRetriever.java:328  | Retrieved raw line clusters: 0 of sizes [5] with interline(23,23,23)
+2025-07-02 05:50:39,931 WARN [AME]            PeakGraph.java:305  | No system found
+2025-07-02 05:50:39,932 INFO [AME]                 Book.java:545  | Created scores: []
+2025-07-02 05:50:39,932 INFO [AME]            SheetStub.java:1186 | Sheet AME flagged as invalid.
+2025-07-02 05:50:39,933 INFO [AME]            SheetStub.java:1394 | StepException cause detected in [LOAD, BINARY, SCALE, GRID, HEADERS, STEM_SEEDS, BEAMS, LEDGERS, HEADS, STEMS, REDUCTION, CUE_BEAMS, TEXTS, MEASURES, CHORDS, CURVES, SYMBOLS, LINKS, RHYTHMS, PAGE]
+2025-07-02 05:50:39,933 INFO [AME]                 Book.java:2550 | Book{AME} storing
+2025-07-02 05:50:39,957 INFO [AME]                 Book.java:2531 | Stored /book.xml
+2025-07-02 05:50:40,100 INFO [AME]           DataHolder.java:348  | Stored /sheet#1/BINARY.png
+2025-07-02 05:50:40,338 INFO [AME]                Sheet.java:1562 | Stored /sheet#1/sheet#1.xml
+2025-07-02 05:50:40,339 INFO [AME]                 Book.java:2491 | Book stored as .\MXL\AME\AME.omr
+2025-07-02 05:50:40,344 INFO [AME]            SheetStub.java:1644 | Disposed sheet
+2025-07-02 05:50:40,375 INFO [AME]                 Book.java:2018 | End of Stub#1 memory: 11,151,832
+2025-07-02 05:50:40,376 INFO [AME]                 Book.java:2025 | Book processed.
+2025-07-02 05:50:40,376 INFO [AME]                 Book.java:599  | Could not export since transcription did not complete successfully

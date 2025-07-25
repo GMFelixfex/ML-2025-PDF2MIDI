@@ -1,0 +1,76 @@
+2025-07-02 06:23:04,029 ERROR [Henry_Mancini_-_Moon_River_-Easy_Piano-]              IOUtils.java:278  | Unmapping is not supported.
+java.lang.reflect.InaccessibleObjectException: Unable to make public jdk.internal.ref.Cleaner java.nio.DirectByteBuffer.cleaner() accessible: module java.base does not "opens java.nio" to unnamed module @1a18644
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(Unknown Source)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(Unknown Source)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(Unknown Source)
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Unknown Source)
+	at java.base/java.lang.reflect.Method.setAccessible(Unknown Source)
+	at org.apache.pdfbox.io.IOUtils.unmapper(IOUtils.java:244)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at org.apache.pdfbox.io.IOUtils.<clinit>(IOUtils.java:69)
+	at org.apache.pdfbox.Loader.loadPDF(Loader.java:378)
+	at org.audiveris.omr.image.ImageLoading.getPdfLoader(ImageLoading.java:159)
+	at org.audiveris.omr.image.ImageLoading.getLoader(ImageLoading.java:209)
+	at org.audiveris.omr.sheet.Book.createStubs(Book.java:557)
+	at org.audiveris.omr.CLI$ProcessingTask.processBook(CLI.java:830)
+	at org.audiveris.omr.CLI$CliTask.call(CLI.java:504)
+	at org.audiveris.omr.Main.runBatchTasks(Main.java:371)
+	at org.audiveris.omr.Main.main(Main.java:260)
+	at Audiveris.main(Audiveris.java:50)
+2025-07-02 06:23:04,106 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]                 Book.java:562  | 1 sheet in C:\Users\alexa\Downloads\Henry_Mancini_-_Moon_River_-Easy_Piano-.pdf
+2025-07-02 06:23:04,315 INFO []                 Book.java:2531 | Stored /book.xml
+2025-07-02 06:23:04,315 INFO []                 Book.java:2491 | Book stored as .\MXL\Henry_Mancini_-_Moon_River_-Easy_Piano-\Henry_Mancini_-_Moon_River_-Easy_Piano-.omr
+2025-07-02 06:23:04,323 INFO []                 Book.java:1933 | Book reaching PAGE on sheets:[#1]
+2025-07-02 06:23:04,326 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]       StepMonitoring.java:98   | LOAD
+2025-07-02 06:23:04,816 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]            SheetStub.java:1268 | Loaded image #1 2479x3508 from C:\Users\alexa\Downloads\Henry_Mancini_-_Moon_River_-Easy_Piano-.pdf
+2025-07-02 06:23:04,827 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]       StepMonitoring.java:98   | BINARY
+2025-07-02 06:23:05,293 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]       StepMonitoring.java:98   | SCALE
+2025-07-02 06:23:05,320 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]         ScaleBuilder.java:241  | Beam  guessed height: 10 -- 0.50 of 21 interline
+2025-07-02 06:23:05,322 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]         ScaleBuilder.java:264  | Beam measured height: 11 -- 0.33 of [6..21] range at 62% of needed quorum
+2025-07-02 06:23:05,322 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]            ScaleStep.java:65   | Scale{ interline(20,21,21) line(2,2,2) beam(11)}
+2025-07-02 06:23:05,323 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]       StepMonitoring.java:98   | GRID
+2025-07-02 06:23:06,013 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-02 06:23:06,103 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]    ClustersRetriever.java:328  | Retrieved raw line clusters: 10 of sizes [5] with interline(20,21,21)
+2025-07-02 06:23:06,396 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8] #5[9, 10]
+2025-07-02 06:23:06,958 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]        SystemManager.java:134  | Indentation detected for system #1
+2025-07-02 06:23:06,964 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]        SystemManager.java:779  | 1 part along 5 systems
+2025-07-02 06:23:06,966 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]                 Book.java:545  | Created scores: [{Score 1}]
+2025-07-02 06:23:06,967 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]       StepMonitoring.java:98   | HEADERS
+2025-07-02 06:23:07,517 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]      BasicClassifier.java:277  | Classifier loaded XML norms.
+2025-07-02 06:23:07,524 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]   AbstractClassifier.java:396  | Classifier data loaded from default uri jar:file:/C:/Users/alexa/OneDrive/Desktop/PDF_to_MIDI/Audiveris/app/audiveris.jar!/res/basic-classifier.zip
+2025-07-02 06:23:08,404 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-02 06:23:08,474 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]        StemSeedsStep.java:86   | stem(4 max:4)
+2025-07-02 06:23:08,541 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]       StepMonitoring.java:98   | BEAMS
+2025-07-02 06:23:11,706 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]       StepMonitoring.java:98   | LEDGERS
+2025-07-02 06:23:12,153 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]       StepMonitoring.java:98   | HEADS
+2025-07-02 06:23:16,799 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:0.5,R:-0.1] NOTEHEAD_BLACK[L:0.5,R:0.1]}
+2025-07-02 06:23:16,800 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]       StepMonitoring.java:98   | STEMS
+2025-07-02 06:23:17,647 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]       StepMonitoring.java:98   | REDUCTION
+2025-07-02 06:23:17,779 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]        ReductionStep.java:105  | Stems free length median value: 67 pixels, 3.2 interlines
+2025-07-02 06:23:17,787 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-02 06:23:17,791 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-02 06:23:17,791 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]       StepMonitoring.java:98   | TEXTS
+2025-07-02 06:23:19,961 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]       StepMonitoring.java:98   | MEASURES
+2025-07-02 06:23:19,993 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]                 Page.java:307  | 37 raw measures: [6 in system#1, 10 in system#2, 6 in system#3, 7 in system#4, 8 in system#5]
+2025-07-02 06:23:19,993 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]       StepMonitoring.java:98   | CHORDS
+2025-07-02 06:23:20,021 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]       StepMonitoring.java:98   | CURVES
+2025-07-02 06:23:20,894 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]         SlursBuilder.java:240  | Slurs: 25
+2025-07-02 06:23:20,928 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]      SegmentsBuilder.java:155  | Segments: 46
+2025-07-02 06:23:20,945 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]       StepMonitoring.java:98   | SYMBOLS
+2025-07-02 06:23:22,361 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]       StepMonitoring.java:98   | LINKS
+2025-07-02 06:23:22,413 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#4959{(0.131) staff:6 VENTIDUESIMA BASSA}
+2025-07-02 06:23:22,426 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#5043{(0.131) staff:7 VENTIDUESIMA ALTA}
+2025-07-02 06:23:22,453 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]       StepMonitoring.java:98   | RHYTHMS
+2025-07-02 06:23:22,513 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]       StepMonitoring.java:98   | PAGE
+2025-07-02 06:23:22,521 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]                 Book.java:2550 | Book{Henry_Mancini_-_Moon_River_-Easy_Piano-} storing
+2025-07-02 06:23:22,571 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]                 Book.java:2531 | Stored /book.xml
+2025-07-02 06:23:22,733 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]           DataHolder.java:348  | Stored /sheet#1/BINARY.png
+2025-07-02 06:23:23,617 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]                Sheet.java:1562 | Stored /sheet#1/sheet#1.xml
+2025-07-02 06:23:23,618 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]                 Book.java:2491 | Book stored as .\MXL\Henry_Mancini_-_Moon_River_-Easy_Piano-\Henry_Mancini_-_Moon_River_-Easy_Piano-.omr
+2025-07-02 06:23:23,627 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]            SheetStub.java:1644 | Disposed sheet
+2025-07-02 06:23:23,697 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]                 Book.java:2018 | End of Stub#1 memory: 38,182,888
+2025-07-02 06:23:23,698 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]                 Book.java:2025 | Book processed.
+2025-07-02 06:23:24,405 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]            SheetStub.java:995  | Loaded /sheet#1/sheet#1.xml
+2025-07-02 06:23:25,088 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]      PartwiseBuilder.java:2661 | Exporting sheet(s): [#1]
+2025-07-02 06:23:25,260 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]        ScoreExporter.java:164  | Score Henry_Mancini_-_Moon_River_-Easy_Piano- exported to .\MXL\Henry_Mancini_-_Moon_River_-Easy_Piano-\Henry_Mancini_-_Moon_River_-Easy_Piano-.mxl
+2025-07-02 06:23:25,315 INFO [Henry_Mancini_-_Moon_River_-Easy_Piano-]                Score.java:181  | Closing {Score 1}

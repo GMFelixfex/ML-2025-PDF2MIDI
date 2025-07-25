@@ -1,0 +1,293 @@
+2025-07-02 06:33:47,091 ERROR [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_]              IOUtils.java:278  | Unmapping is not supported.
+java.lang.reflect.InaccessibleObjectException: Unable to make public jdk.internal.ref.Cleaner java.nio.DirectByteBuffer.cleaner() accessible: module java.base does not "opens java.nio" to unnamed module @1a18644
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(Unknown Source)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(Unknown Source)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(Unknown Source)
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Unknown Source)
+	at java.base/java.lang.reflect.Method.setAccessible(Unknown Source)
+	at org.apache.pdfbox.io.IOUtils.unmapper(IOUtils.java:244)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at org.apache.pdfbox.io.IOUtils.<clinit>(IOUtils.java:69)
+	at org.apache.pdfbox.Loader.loadPDF(Loader.java:378)
+	at org.audiveris.omr.image.ImageLoading.getPdfLoader(ImageLoading.java:159)
+	at org.audiveris.omr.image.ImageLoading.getLoader(ImageLoading.java:209)
+	at org.audiveris.omr.sheet.Book.createStubs(Book.java:557)
+	at org.audiveris.omr.CLI$ProcessingTask.processBook(CLI.java:830)
+	at org.audiveris.omr.CLI$CliTask.call(CLI.java:504)
+	at org.audiveris.omr.Main.runBatchTasks(Main.java:371)
+	at org.audiveris.omr.Main.main(Main.java:260)
+	at Audiveris.main(Audiveris.java:50)
+2025-07-02 06:33:47,248 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_]                 Book.java:562  | 4 sheets in C:\Users\alexa\Downloads\Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_.pdf
+2025-07-02 06:33:47,491 INFO []                 Book.java:2531 | Stored /book.xml
+2025-07-02 06:33:47,491 INFO []                 Book.java:2491 | Book stored as .\MXL\Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_\Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_.omr
+2025-07-02 06:33:47,501 INFO []                 Book.java:1933 | Book reaching PAGE on sheets:[#1#2#3#4]
+2025-07-02 06:33:47,504 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]       StepMonitoring.java:98   | LOAD
+2025-07-02 06:33:48,777 WARN [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]            COSParser.java:1082 | Invalid stream length: 0, stream start position: 2597933
+2025-07-02 06:33:48,780 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]            SheetStub.java:1268 | Loaded image #1 2480x3187 from C:\Users\alexa\Downloads\Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_.pdf
+2025-07-02 06:33:48,789 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]       StepMonitoring.java:98   | BINARY
+2025-07-02 06:33:49,351 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]       StepMonitoring.java:98   | SCALE
+2025-07-02 06:33:49,385 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]         ScaleBuilder.java:241  | Beam  guessed height:  8 -- 0.50 of 17 interline
+2025-07-02 06:33:49,386 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]         ScaleBuilder.java:264  | Beam measured height: 10 -- 0.42 of [5..17] range at 629% of needed quorum
+2025-07-02 06:33:49,387 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]            ScaleStep.java:65   | Scale{ interline(16,17,18) line(3,4,5) beam(10)}
+2025-07-02 06:33:49,390 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]       StepMonitoring.java:98   | GRID
+2025-07-02 06:33:50,223 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]       LinesRetriever.java:1500 | Global slope: 0.00028
+2025-07-02 06:33:50,280 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]    ClustersRetriever.java:328  | Retrieved raw line clusters: 12 of sizes [5] with interline(16,17,18)
+2025-07-02 06:33:50,557 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]            PeakGraph.java:1380 | Split Peak{2395-2405 F#2088 T#7} into Peak{2395-2400 F#2139 T#7} and Peak{2402-2405 F#2140 T#7}
+2025-07-02 06:33:50,575 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8] #5[9, 10] #6[11, 12]
+2025-07-02 06:33:51,103 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]        SystemManager.java:134  | Indentation detected for system #1
+2025-07-02 06:33:51,105 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]        SystemManager.java:779  | 1 part along 6 systems
+2025-07-02 06:33:51,106 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]                 Book.java:545  | Created scores: [{Score 1}]
+2025-07-02 06:33:51,107 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]       StepMonitoring.java:98   | HEADERS
+2025-07-02 06:33:51,459 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]      BasicClassifier.java:277  | Classifier loaded XML norms.
+2025-07-02 06:33:51,463 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]   AbstractClassifier.java:396  | Classifier data loaded from default uri jar:file:/C:/Users/alexa/OneDrive/Desktop/PDF_to_MIDI/Audiveris/app/audiveris.jar!/res/basic-classifier.zip
+2025-07-02 06:33:52,406 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-02 06:33:52,490 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]        StemSeedsStep.java:86   | stem(5 max:6)
+2025-07-02 06:33:52,578 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]       StepMonitoring.java:98   | BEAMS
+2025-07-02 06:33:55,597 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]       StepMonitoring.java:98   | LEDGERS
+2025-07-02 06:33:55,991 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]       StepMonitoring.java:98   | HEADS
+2025-07-02 06:34:01,142 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_BLACK[L:-0.7,R:-1.2]}
+2025-07-02 06:34:01,143 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]       StepMonitoring.java:98   | STEMS
+2025-07-02 06:34:02,076 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]       StepMonitoring.java:98   | REDUCTION
+2025-07-02 06:34:02,262 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]        ReductionStep.java:105  | Stems free length median value: 61 pixels, 3.6 interlines
+2025-07-02 06:34:02,271 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-02 06:34:02,271 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-02 06:34:02,272 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]       StepMonitoring.java:98   | TEXTS
+2025-07-02 06:34:03,026 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]       StepMonitoring.java:98   | MEASURES
+2025-07-02 06:34:03,042 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]                 Page.java:307  | 13 raw measures: [2 in system#1, 2 in system#2, 2 in system#3, 2 in system#4, 3 in system#5, 2 in system#6]
+2025-07-02 06:34:03,043 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]       StepMonitoring.java:98   | CHORDS
+2025-07-02 06:34:03,066 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]       StepMonitoring.java:98   | CURVES
+2025-07-02 06:34:04,099 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]         SlursBuilder.java:240  | Slurs: 14
+2025-07-02 06:34:04,110 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]      SegmentsBuilder.java:155  | Segments: 1
+2025-07-02 06:34:04,125 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]       StepMonitoring.java:98   | SYMBOLS
+2025-07-02 06:34:04,731 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]       StepMonitoring.java:98   | LINKS
+2025-07-02 06:34:04,787 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]       StepMonitoring.java:98   | RHYTHMS
+2025-07-02 06:34:04,873 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]        MeasureRhythm.java:1277 | Measure{#10} Time inconsistency in {3/4=[HeadChordInter#6548{(0.961/0.961) staff:10 slot#11 off:3/4 dur:1/8}], 15/16=[HeadChordInter#6527{(0.951/0.951) staff:9 slot#11 off:15/16 dur:1/16}]}
+2025-07-02 06:34:04,874 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]        MeasureRhythm.java:1277 | Measure{#10} Time inconsistency in {7/8=[HeadChordInter#6549{(0.951/0.951) staff:10 slot#13 off:7/8 dur:1/8}], 17/16=[HeadChordInter#6529{(0.938/0.938) staff:9 slot#13 off:17/16 dur:1/16}]}
+2025-07-02 06:34:04,874 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]                Voice.java:257  | Measure{#10} Voice{#1 excess:3/16} too long
+2025-07-02 06:34:04,875 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]          StackRhythm.java:224  | S5 MeasureStack#10 no correct rhythm
+2025-07-02 06:34:04,889 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]       StepMonitoring.java:98   | PAGE
+2025-07-02 06:34:04,898 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]                Voice.java:257  | Measure{#10} Voice{#1 excess:3/16} too long
+2025-07-02 06:34:04,901 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]                 Book.java:2550 | Book{Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_} storing
+2025-07-02 06:34:04,958 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]                 Book.java:2531 | Stored /book.xml
+2025-07-02 06:34:05,086 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]           DataHolder.java:348  | Stored /sheet#1/BINARY.png
+2025-07-02 06:34:05,843 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]                Sheet.java:1562 | Stored /sheet#1/sheet#1.xml
+2025-07-02 06:34:05,844 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]                 Book.java:2491 | Book stored as .\MXL\Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_\Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_.omr
+2025-07-02 06:34:05,849 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]            SheetStub.java:1644 | Disposed sheet#1
+2025-07-02 06:34:05,915 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#1]                 Book.java:2018 | End of Stub#1 memory: 31,699,336
+2025-07-02 06:34:05,916 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]       StepMonitoring.java:98   | LOAD
+2025-07-02 06:34:06,416 WARN [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]            COSParser.java:1082 | Invalid stream length: 0, stream start position: 2598108
+2025-07-02 06:34:06,417 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]            SheetStub.java:1268 | Loaded image #2 2480x3187 from C:\Users\alexa\Downloads\Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_.pdf
+2025-07-02 06:34:06,417 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]       StepMonitoring.java:98   | BINARY
+2025-07-02 06:34:06,806 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]       StepMonitoring.java:98   | SCALE
+2025-07-02 06:34:06,852 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]         ScaleBuilder.java:241  | Beam  guessed height:  8 -- 0.50 of 17 interline
+2025-07-02 06:34:06,853 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]         ScaleBuilder.java:264  | Beam measured height: 11 -- 0.50 of [5..17] range at 466% of needed quorum
+2025-07-02 06:34:06,853 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]            ScaleStep.java:65   | Scale{ interline(16,17,18) line(3,4,5) beam(11)}
+2025-07-02 06:34:06,853 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]       StepMonitoring.java:98   | GRID
+2025-07-02 06:34:07,203 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-02 06:34:07,237 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]    ClustersRetriever.java:328  | Retrieved raw line clusters: 12 of sizes [5] with interline(16,17,18)
+2025-07-02 06:34:07,349 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8] #5[9, 10] #6[11, 12]
+2025-07-02 06:34:07,685 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]        SystemManager.java:779  | 1 part along 6 systems
+2025-07-02 06:34:07,686 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]       StepMonitoring.java:98   | HEADERS
+2025-07-02 06:34:08,019 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-02 06:34:08,052 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]        StemSeedsStep.java:86   | stem(5 max:6)
+2025-07-02 06:34:08,069 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]       StepMonitoring.java:98   | BEAMS
+2025-07-02 06:34:11,128 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]       StepMonitoring.java:98   | LEDGERS
+2025-07-02 06:34:11,248 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]       StepMonitoring.java:98   | HEADS
+2025-07-02 06:34:15,825 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:-1.2] NOTEHEAD_BLACK[L:-0.8,R:-1.2]}
+2025-07-02 06:34:15,825 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]       StepMonitoring.java:98   | STEMS
+2025-07-02 06:34:16,735 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]       StepMonitoring.java:98   | REDUCTION
+2025-07-02 06:34:16,864 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]        ReductionStep.java:105  | Stems free length median value: 61 pixels, 3.6 interlines
+2025-07-02 06:34:16,869 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-02 06:34:16,869 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-02 06:34:16,870 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]       StepMonitoring.java:98   | TEXTS
+2025-07-02 06:34:17,355 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]       StepMonitoring.java:98   | MEASURES
+2025-07-02 06:34:17,357 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]                 Page.java:307  | 12 raw measures: [2 in system#1, 2 in system#2, 2 in system#3, 2 in system#4, 2 in system#5, 2 in system#6]
+2025-07-02 06:34:17,357 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]       StepMonitoring.java:98   | CHORDS
+2025-07-02 06:34:17,365 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]       StepMonitoring.java:98   | CURVES
+2025-07-02 06:34:18,106 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]         SlursBuilder.java:240  | Slurs: 29
+2025-07-02 06:34:18,112 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]      SegmentsBuilder.java:155  | Segments: 2
+2025-07-02 06:34:18,115 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]       StepMonitoring.java:98   | SYMBOLS
+2025-07-02 06:34:18,490 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]       StepMonitoring.java:98   | LINKS
+2025-07-02 06:34:18,539 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]       StepMonitoring.java:98   | RHYTHMS
+2025-07-02 06:34:18,539 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]           PageRhythm.java:199  | {Page#2.1} Time value reused from sheet#1
+2025-07-02 06:34:18,545 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]        MeasureRhythm.java:1277 | Measure{#1} Time inconsistency in {11/16=[HeadChordInter#7751{(0.960/0.960) staff:2 slot#10 off:11/16 dur:1/8}], 3/4=[HeadChordInter#7730{(0.949/0.949) staff:1 slot#10 off:3/4 dur:1/16}]}
+2025-07-02 06:34:18,546 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]        MeasureRhythm.java:1277 | Measure{#1} Time inconsistency in {13/16=[HeadChordInter#7752{(0.960/0.960) staff:2 slot#12 off:13/16 dur:1/8}], 7/8=[HeadChordInter#7732{(0.947/0.947) staff:1 slot#12 off:7/8 dur:1/8}]}
+2025-07-02 06:34:18,551 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]        MeasureRhythm.java:1045 | Measure{#2} No timeOffset for HeadChordInter#7740{(0.930/0.930) staff:1 slot#9 dur:1/4}
+2025-07-02 06:34:18,551 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]        MeasureRhythm.java:1045 | Measure{#2} No timeOffset for HeadChordInter#7757{(0.940/0.940) staff:2 slot#9 dur:1/8}
+2025-07-02 06:34:18,551 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]   AbstractChordInter.java:627  | Measure{#2} No timeOffset for HeadChordInter#7740{(0.930/0.930) staff:1 slot#9 dur:1/4}
+2025-07-02 06:34:18,552 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]   AbstractChordInter.java:627  | Measure{#2} No timeOffset for HeadChordInter#7758{(0.938/0.938) staff:2 slot#10 dur:1/16}
+2025-07-02 06:34:18,552 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]   AbstractChordInter.java:627  | Measure{#2} No timeOffset for HeadChordInter#7741{(0.938/0.938) staff:1 slot#10 dur:1/8}
+2025-07-02 06:34:18,552 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]   AbstractChordInter.java:627  | Measure{#2} No timeOffset for HeadChordInter#7758{(0.938/0.938) staff:2 slot#10 dur:1/16}
+2025-07-02 06:34:18,553 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]                Voice.java:257  | Measure{#2} Voice{#3 excess:3/16} too long
+2025-07-02 06:34:18,553 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]          StackRhythm.java:224  | S1 MeasureStack#2 no correct rhythm
+2025-07-02 06:34:18,557 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]                Voice.java:257  | Measure{#3} Voice{#2 excess:3/16} too long
+2025-07-02 06:34:18,558 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]                Voice.java:257  | Measure{#3} Voice{#6 excess:3/16} too long
+2025-07-02 06:34:18,558 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]          StackRhythm.java:224  | S2 MeasureStack#3 no correct rhythm
+2025-07-02 06:34:18,565 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]                Voice.java:257  | Measure{#4} Voice{#1 excess:1/16} too long
+2025-07-02 06:34:18,565 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]                Voice.java:257  | Measure{#4} Voice{#7 excess:19/48} too long
+2025-07-02 06:34:18,565 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]                Voice.java:257  | Measure{#4} Voice{#9 excess:1/16} too long
+2025-07-02 06:34:18,566 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]          StackRhythm.java:224  | S2 MeasureStack#4 no correct rhythm
+2025-07-02 06:34:18,575 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]        MeasureRhythm.java:1277 | Measure{#6} Time inconsistency in {1/4=[HeadChordInter#7825{(0.969/0.969) staff:6 slot#4 off:1/4 dur:1/8}], 1/2=[HeadChordInter#7809{(0.947/0.947) staff:5 slot#4 off:1/2 dur:1/4}]}
+2025-07-02 06:34:18,578 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]        MeasureRhythm.java:1045 | Measure{#6} No timeOffset for HeadChordInter#7811{(0.943/0.943) staff:5 slot#7 dur:1/4}
+2025-07-02 06:34:18,578 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]   AbstractChordInter.java:627  | Measure{#6} No timeOffset for HeadChordInter#7815{(0.958/0.958) staff:5 slot#12 dur:1/4}
+2025-07-02 06:34:18,579 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]        MeasureRhythm.java:1045 | Measure{#6} No timeOffset for HeadChordInter#7827{(0.968/0.968) staff:6 slot#8 dur:1/8}
+2025-07-02 06:34:18,579 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]          StackRhythm.java:224  | S3 MeasureStack#6 no correct rhythm
+2025-07-02 06:34:18,585 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]                Voice.java:257  | Measure{#7} Voice{#1 excess:1/16} too long
+2025-07-02 06:34:18,586 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]                Voice.java:257  | Measure{#7} Voice{#2 excess:1/8} too long
+2025-07-02 06:34:18,587 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]          StackRhythm.java:224  | S4 MeasureStack#7 no correct rhythm
+2025-07-02 06:34:18,594 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]                Voice.java:257  | Measure{#9} Voice{#1 excess:1/2} too long
+2025-07-02 06:34:18,595 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]                Voice.java:257  | Measure{#9} Voice{#6 excess:1/2} too long
+2025-07-02 06:34:18,595 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]          StackRhythm.java:224  | S5 MeasureStack#9 no correct rhythm
+2025-07-02 06:34:18,598 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]        MeasureRhythm.java:1045 | Measure{#10} No timeOffset for HeadChordInter#7890{(0.542/0.542) staff:10 slot#4 dur:1/2}
+2025-07-02 06:34:18,598 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]   AbstractChordInter.java:627  | Measure{#10} No timeOffset for HeadChordInter#7890{(0.542/0.542) staff:10 slot#4 dur:1/2}
+2025-07-02 06:34:18,599 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]   AbstractChordInter.java:627  | Measure{#10} No timeOffset for HeadChordInter#7890{(0.542/0.542) staff:10 slot#4 dur:1/2}
+2025-07-02 06:34:18,599 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]   AbstractChordInter.java:627  | Measure{#10} No timeOffset for HeadChordInter#7890{(0.542/0.542) staff:10 slot#4 dur:1/2}
+2025-07-02 06:34:18,600 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]          StackRhythm.java:224  | S5 MeasureStack#10 no correct rhythm
+2025-07-02 06:34:18,607 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]        MeasureRhythm.java:1277 | Measure{#12} Time inconsistency in {13/16=[HeadChordInter#7913{(0.592/0.592) staff:11 slot#12 off:13/16 dur:3/8}], 15/16=[HeadChordInter#7930{(0.964/0.964) staff:12 slot#12 off:15/16 dur:1/4}]}
+2025-07-02 06:34:18,608 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]                Voice.java:257  | Measure{#12} Voice{#5 excess:3/16} too long
+2025-07-02 06:34:18,608 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]                Voice.java:257  | Measure{#12} Voice{#2 excess:5/16} too long
+2025-07-02 06:34:18,609 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]          StackRhythm.java:224  | S6 MeasureStack#12 no correct rhythm
+2025-07-02 06:34:18,609 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]       StepMonitoring.java:98   | PAGE
+2025-07-02 06:34:18,612 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]                Voice.java:257  | Measure{#2} Voice{#3 excess:3/16} too long
+2025-07-02 06:34:18,614 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]                Voice.java:257  | Measure{#3} Voice{#2 excess:3/16} too long
+2025-07-02 06:34:18,614 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]                Voice.java:257  | Measure{#3} Voice{#6 excess:3/16} too long
+2025-07-02 06:34:18,614 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]                Voice.java:257  | Measure{#4} Voice{#1 excess:1/16} too long
+2025-07-02 06:34:18,614 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]                Voice.java:257  | Measure{#4} Voice{#7 excess:19/48} too long
+2025-07-02 06:34:18,614 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]                Voice.java:257  | Measure{#4} Voice{#9 excess:1/16} too long
+2025-07-02 06:34:18,614 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]                Voice.java:257  | Measure{#7} Voice{#1 excess:1/16} too long
+2025-07-02 06:34:18,614 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]                Voice.java:257  | Measure{#7} Voice{#2 excess:1/8} too long
+2025-07-02 06:34:18,614 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]                Voice.java:257  | Measure{#9} Voice{#1 excess:1/2} too long
+2025-07-02 06:34:18,615 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]                Voice.java:257  | Measure{#9} Voice{#6 excess:1/2} too long
+2025-07-02 06:34:18,615 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]                Voice.java:257  | Measure{#12} Voice{#2 excess:5/16} too long
+2025-07-02 06:34:18,615 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]                Voice.java:257  | Measure{#12} Voice{#5 excess:3/16} too long
+2025-07-02 06:34:18,616 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]                 Book.java:2550 | Book{Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_} storing
+2025-07-02 06:34:18,676 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]                 Book.java:2531 | Stored /book.xml
+2025-07-02 06:34:18,775 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]           DataHolder.java:348  | Stored /sheet#2/BINARY.png
+2025-07-02 06:34:19,281 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]                Sheet.java:1562 | Stored /sheet#2/sheet#2.xml
+2025-07-02 06:34:19,282 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]                 Book.java:2491 | Book stored as .\MXL\Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_\Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_.omr
+2025-07-02 06:34:19,289 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]            SheetStub.java:1644 | Disposed sheet#2
+2025-07-02 06:34:19,343 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#2]                 Book.java:2018 | End of Stub#2 memory: 31,254,768
+2025-07-02 06:34:19,344 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]       StepMonitoring.java:98   | LOAD
+2025-07-02 06:34:19,746 WARN [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]            COSParser.java:1082 | Invalid stream length: 0, stream start position: 2598284
+2025-07-02 06:34:19,746 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]            SheetStub.java:1268 | Loaded image #3 2480x3187 from C:\Users\alexa\Downloads\Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_.pdf
+2025-07-02 06:34:19,747 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]       StepMonitoring.java:98   | BINARY
+2025-07-02 06:34:20,073 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]       StepMonitoring.java:98   | SCALE
+2025-07-02 06:34:20,078 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]         ScaleBuilder.java:241  | Beam  guessed height:  8 -- 0.50 of 17 interline
+2025-07-02 06:34:20,078 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]         ScaleBuilder.java:264  | Beam measured height: 10 -- 0.42 of [5..17] range at 384% of needed quorum
+2025-07-02 06:34:20,078 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]            ScaleStep.java:65   | Scale{ interline(16,17,18) line(3,4,5) beam(10)}
+2025-07-02 06:34:20,079 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]       StepMonitoring.java:98   | GRID
+2025-07-02 06:34:20,186 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-02 06:34:20,209 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]    ClustersRetriever.java:328  | Retrieved raw line clusters: 12 of sizes [5] with interline(16,17,18)
+2025-07-02 06:34:20,381 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8] #5[9, 10] #6[11, 12]
+2025-07-02 06:34:20,711 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]        SystemManager.java:779  | 1 part along 6 systems
+2025-07-02 06:34:20,712 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]       StepMonitoring.java:98   | HEADERS
+2025-07-02 06:34:21,041 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-02 06:34:21,073 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]        StemSeedsStep.java:86   | stem(5 max:6)
+2025-07-02 06:34:21,085 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]       StepMonitoring.java:98   | BEAMS
+2025-07-02 06:34:23,623 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]       StaffProjector.java:665  | Too high serif for multiple rest in Staff#1 at x:460
+2025-07-02 06:34:23,623 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]       StaffProjector.java:665  | Too high serif for multiple rest in Staff#1 at x:747
+2025-07-02 06:34:23,803 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]       StepMonitoring.java:98   | LEDGERS
+2025-07-02 06:34:23,934 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]       StepMonitoring.java:98   | HEADS
+2025-07-02 06:34:28,352 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_BLACK[L:-0.6,R:-1.3]}
+2025-07-02 06:34:28,353 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]       StepMonitoring.java:98   | STEMS
+2025-07-02 06:34:28,976 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]       StepMonitoring.java:98   | REDUCTION
+2025-07-02 06:34:29,061 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]        ReductionStep.java:105  | Stems free length median value: 62 pixels, 3.6 interlines
+2025-07-02 06:34:29,065 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-02 06:34:29,066 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-02 06:34:29,066 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]       StepMonitoring.java:98   | TEXTS
+2025-07-02 06:34:29,468 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]       StepMonitoring.java:98   | MEASURES
+2025-07-02 06:34:29,469 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]                 Page.java:307  | 14 raw measures: [2 in system#1, 2 in system#2, 2 in system#3, 3 in system#4, 3 in system#5, 2 in system#6]
+2025-07-02 06:34:29,469 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]       StepMonitoring.java:98   | CHORDS
+2025-07-02 06:34:29,474 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]       StepMonitoring.java:98   | CURVES
+2025-07-02 06:34:30,129 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]         SlursBuilder.java:240  | Slurs: 41
+2025-07-02 06:34:30,135 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]      SegmentsBuilder.java:155  | Segments: 4
+2025-07-02 06:34:30,136 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]       StepMonitoring.java:98   | SYMBOLS
+2025-07-02 06:34:30,579 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]       StepMonitoring.java:98   | LINKS
+2025-07-02 06:34:30,612 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]       StepMonitoring.java:98   | RHYTHMS
+2025-07-02 06:34:30,613 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]           PageRhythm.java:199  | {Page#3.1} Time value reused from sheet#1
+2025-07-02 06:34:30,619 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]                Voice.java:257  | Measure{#2} Voice{#5 excess:3/16} too long
+2025-07-02 06:34:30,620 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]                Voice.java:257  | Measure{#2} Voice{#3 excess:3/16} too long
+2025-07-02 06:34:30,621 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]          StackRhythm.java:224  | S1 MeasureStack#2 no correct rhythm
+2025-07-02 06:34:30,629 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]        MeasureRhythm.java:1277 | Measure{#4} Time inconsistency in {5/8=[HeadChordInter#7271{(0.901/0.901) staff:3 slot#7 off:5/8 dur:1/16}], 11/16=[HeadChordInter#7291{(0.963/0.963) staff:4 slot#7 off:11/16 dur:1/8}]}
+2025-07-02 06:34:30,630 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]        MeasureRhythm.java:1277 | Measure{#4} Time inconsistency in {3/4=[HeadChordInter#7273{(0.952/0.952) staff:3 slot#9 off:3/4 dur:1/16}], 13/16=[HeadChordInter#7292{(0.961/0.961) staff:4 slot#9 off:13/16 dur:1/8}]}
+2025-07-02 06:34:30,631 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]                Voice.java:257  | Measure{#4} Voice{#5 excess:3/16} too long
+2025-07-02 06:34:30,633 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]                Voice.java:257  | Measure{#4} Voice{#3 excess:3/16} too long
+2025-07-02 06:34:30,633 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]          StackRhythm.java:224  | S2 MeasureStack#4 no correct rhythm
+2025-07-02 06:34:30,640 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]                Voice.java:257  | Measure{#6} Voice{#5 excess:1/8} too long
+2025-07-02 06:34:30,640 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]                Voice.java:257  | Measure{#6} Voice{#2 excess:1/8} too long
+2025-07-02 06:34:30,641 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]          StackRhythm.java:224  | S3 MeasureStack#6 no correct rhythm
+2025-07-02 06:34:30,645 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]                Voice.java:257  | Measure{#9} Voice{#5 excess:1/16} too long
+2025-07-02 06:34:30,646 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]          StackRhythm.java:224  | S4 MeasureStack#9 no correct rhythm
+2025-07-02 06:34:30,649 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]        MeasureRhythm.java:1045 | Measure{#10} No timeOffset for HeadChordInter#7351{(0.961/0.961) staff:10 slot#7 dur:1/4}
+2025-07-02 06:34:30,649 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]   AbstractChordInter.java:627  | Measure{#10} No timeOffset for HeadChordInter#7351{(0.961/0.961) staff:10 slot#7 dur:1/4}
+2025-07-02 06:34:30,649 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]   AbstractChordInter.java:627  | Measure{#10} No timeOffset for HeadChordInter#7353{(0.959/0.959) staff:10 slot#9 dur:1/4}
+2025-07-02 06:34:30,649 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]                Voice.java:257  | Measure{#10} Voice{#5 excess:1/16} too long
+2025-07-02 06:34:30,651 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]          StackRhythm.java:224  | S5 MeasureStack#10 no correct rhythm
+2025-07-02 06:34:30,660 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]        MeasureRhythm.java:1277 | Measure{#13} Time inconsistency in {3/8=[RestChordInter#8409{(0.800/0.800) staff:12 slot#6 off:3/8 dur:1/16}], 7/16=[HeadChordInter#7374{(0.955/0.955) staff:11 slot#6 off:7/16 dur:1/16}]}
+2025-07-02 06:34:30,665 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]       StepMonitoring.java:98   | PAGE
+2025-07-02 06:34:30,669 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]                Voice.java:257  | Measure{#2} Voice{#3 excess:3/16} too long
+2025-07-02 06:34:30,671 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]                Voice.java:257  | Measure{#2} Voice{#5 excess:3/16} too long
+2025-07-02 06:34:30,671 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]                Voice.java:257  | Measure{#4} Voice{#3 excess:3/16} too long
+2025-07-02 06:34:30,671 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]                Voice.java:257  | Measure{#4} Voice{#5 excess:3/16} too long
+2025-07-02 06:34:30,672 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]                Voice.java:257  | Measure{#6} Voice{#2 excess:1/8} too long
+2025-07-02 06:34:30,672 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]                Voice.java:257  | Measure{#6} Voice{#5 excess:1/8} too long
+2025-07-02 06:34:30,672 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]                Voice.java:257  | Measure{#9} Voice{#5 excess:1/16} too long
+2025-07-02 06:34:30,672 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]                Voice.java:257  | Measure{#10} Voice{#5 excess:1/16} too long
+2025-07-02 06:34:30,673 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]                 Book.java:2550 | Book{Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_} storing
+2025-07-02 06:34:30,738 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]                 Book.java:2531 | Stored /book.xml
+2025-07-02 06:34:30,824 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]           DataHolder.java:348  | Stored /sheet#3/BINARY.png
+2025-07-02 06:34:31,264 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]                Sheet.java:1562 | Stored /sheet#3/sheet#3.xml
+2025-07-02 06:34:31,264 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]                 Book.java:2491 | Book stored as .\MXL\Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_\Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_.omr
+2025-07-02 06:34:31,271 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]            SheetStub.java:1644 | Disposed sheet#3
+2025-07-02 06:34:31,324 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#3]                 Book.java:2018 | End of Stub#3 memory: 31,394,752
+2025-07-02 06:34:31,325 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]       StepMonitoring.java:98   | LOAD
+2025-07-02 06:34:31,679 WARN [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]            COSParser.java:1082 | Invalid stream length: 0, stream start position: 2598461
+2025-07-02 06:34:31,679 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]            SheetStub.java:1268 | Loaded image #4 2480x3187 from C:\Users\alexa\Downloads\Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_.pdf
+2025-07-02 06:34:31,679 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]       StepMonitoring.java:98   | BINARY
+2025-07-02 06:34:32,017 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]       StepMonitoring.java:98   | SCALE
+2025-07-02 06:34:32,021 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]         ScaleBuilder.java:241  | Beam  guessed height:  8 -- 0.50 of 17 interline
+2025-07-02 06:34:32,022 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]         ScaleBuilder.java:264  | Beam measured height: 10 -- 0.42 of [5..17] range at 580% of needed quorum
+2025-07-02 06:34:32,022 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]            ScaleStep.java:65   | Scale{ interline(16,17,18) line(3,4,5) beam(10)}
+2025-07-02 06:34:32,022 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]       StepMonitoring.java:98   | GRID
+2025-07-02 06:34:32,097 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-02 06:34:32,113 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]    ClustersRetriever.java:328  | Retrieved raw line clusters: 8 of sizes [5] with interline(16,17,18)
+2025-07-02 06:34:32,147 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8]
+2025-07-02 06:34:32,297 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]        SystemManager.java:779  | 1 part along 4 systems
+2025-07-02 06:34:32,299 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]       StepMonitoring.java:98   | HEADERS
+2025-07-02 06:34:32,609 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-02 06:34:32,645 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]        StemSeedsStep.java:86   | stem(5 max:6)
+2025-07-02 06:34:32,651 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]       StepMonitoring.java:98   | BEAMS
+2025-07-02 06:34:35,126 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]       StepMonitoring.java:98   | LEDGERS
+2025-07-02 06:34:35,179 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]       StepMonitoring.java:98   | HEADS
+2025-07-02 06:34:37,507 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_BLACK[R:-1.3]}
+2025-07-02 06:34:37,508 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]       StepMonitoring.java:98   | STEMS
+2025-07-02 06:34:37,648 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]       StepMonitoring.java:98   | REDUCTION
+2025-07-02 06:34:37,676 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-02 06:34:37,677 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-02 06:34:37,677 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]       StepMonitoring.java:98   | TEXTS
+2025-07-02 06:34:38,043 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]       StepMonitoring.java:98   | MEASURES
+2025-07-02 06:34:38,044 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]                 Page.java:307  | 7 raw measures: [2 in system#1, 1 in system#2, 2 in system#3, 2 in system#4]
+2025-07-02 06:34:38,045 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]       StepMonitoring.java:98   | CHORDS
+2025-07-02 06:34:38,046 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]       StepMonitoring.java:98   | CURVES
+2025-07-02 06:34:38,414 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]         SlursBuilder.java:240  | Slurs: 9
+2025-07-02 06:34:38,417 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]      SegmentsBuilder.java:155  | Segments: 5
+2025-07-02 06:34:38,417 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]       StepMonitoring.java:98   | SYMBOLS
+2025-07-02 06:34:38,680 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]       StepMonitoring.java:98   | LINKS
+2025-07-02 06:34:38,693 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]       StepMonitoring.java:98   | RHYTHMS
+2025-07-02 06:34:38,695 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]           PageRhythm.java:199  | {Page#4.1} Time value reused from sheet#1
+2025-07-02 06:34:38,712 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]       StepMonitoring.java:98   | PAGE
+2025-07-02 06:34:38,714 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]                 Book.java:2550 | Book{Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_} storing
+2025-07-02 06:34:38,761 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]                 Book.java:2531 | Stored /book.xml
+2025-07-02 06:34:38,857 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]           DataHolder.java:348  | Stored /sheet#4/BINARY.png
+2025-07-02 06:34:39,099 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]                Sheet.java:1562 | Stored /sheet#4/sheet#4.xml
+2025-07-02 06:34:39,100 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]                 Book.java:2491 | Book stored as .\MXL\Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_\Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_.omr
+2025-07-02 06:34:39,110 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]            SheetStub.java:1644 | Disposed sheet#4
+2025-07-02 06:34:39,167 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_#4]                 Book.java:2018 | End of Stub#4 memory: 31,406,000
+2025-07-02 06:34:39,167 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_]                 Book.java:2025 | Book processed.
+2025-07-02 06:34:40,020 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_]            SheetStub.java:995  | Loaded /sheet#1/sheet#1.xml
+2025-07-02 06:34:40,510 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_]            SheetStub.java:995  | Loaded /sheet#2/sheet#2.xml
+2025-07-02 06:34:40,866 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_]            SheetStub.java:995  | Loaded /sheet#3/sheet#3.xml
+2025-07-02 06:34:41,055 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_]            SheetStub.java:995  | Loaded /sheet#4/sheet#4.xml
+2025-07-02 06:34:41,515 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_]      PartwiseBuilder.java:2661 | Exporting sheet(s): [#1#2#3#4]
+2025-07-02 06:34:41,785 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_]        ScoreExporter.java:164  | Score Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_ exported to .\MXL\Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_\Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_.mxl
+2025-07-02 06:34:41,878 INFO [Megalovania-Sheet-Music-Undertale-SheetMusic-Free.com_]                Score.java:181  | Closing {Score 1}

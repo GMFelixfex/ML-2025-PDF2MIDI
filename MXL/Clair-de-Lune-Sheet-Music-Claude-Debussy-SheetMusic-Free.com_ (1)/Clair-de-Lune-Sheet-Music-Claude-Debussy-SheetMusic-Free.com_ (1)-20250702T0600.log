@@ -1,0 +1,820 @@
+2025-07-02 06:00:27,959 ERROR [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]              IOUtils.java:278  | Unmapping is not supported.
+java.lang.reflect.InaccessibleObjectException: Unable to make public jdk.internal.ref.Cleaner java.nio.DirectByteBuffer.cleaner() accessible: module java.base does not "opens java.nio" to unnamed module @1a18644
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(Unknown Source)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(Unknown Source)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(Unknown Source)
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Unknown Source)
+	at java.base/java.lang.reflect.Method.setAccessible(Unknown Source)
+	at org.apache.pdfbox.io.IOUtils.unmapper(IOUtils.java:244)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at org.apache.pdfbox.io.IOUtils.<clinit>(IOUtils.java:69)
+	at org.apache.pdfbox.Loader.loadPDF(Loader.java:378)
+	at org.audiveris.omr.image.ImageLoading.getPdfLoader(ImageLoading.java:159)
+	at org.audiveris.omr.image.ImageLoading.getLoader(ImageLoading.java:209)
+	at org.audiveris.omr.sheet.Book.createStubs(Book.java:557)
+	at org.audiveris.omr.CLI$ProcessingTask.processBook(CLI.java:830)
+	at org.audiveris.omr.CLI$CliTask.call(CLI.java:504)
+	at org.audiveris.omr.Main.runBatchTasks(Main.java:371)
+	at org.audiveris.omr.Main.main(Main.java:260)
+	at Audiveris.main(Audiveris.java:50)
+2025-07-02 06:00:28,084 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Book.java:562  | 6 sheets in C:\Users\alexa\Downloads\Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1).pdf
+2025-07-02 06:00:28,268 INFO []                 Book.java:2531 | Stored /book.xml
+2025-07-02 06:00:28,269 INFO []                 Book.java:2491 | Book stored as .\MXL\Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)\Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1).omr
+2025-07-02 06:00:28,275 INFO []                 Book.java:1933 | Book reaching PAGE on sheets:[#1#2#3#4#5#6]
+2025-07-02 06:00:28,278 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]       StepMonitoring.java:98   | LOAD
+2025-07-02 06:00:29,056 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]            SheetStub.java:1268 | Loaded image #1 2480x3187 from C:\Users\alexa\Downloads\Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1).pdf
+2025-07-02 06:00:29,065 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]       StepMonitoring.java:98   | BINARY
+2025-07-02 06:00:29,700 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]       StepMonitoring.java:98   | SCALE
+2025-07-02 06:00:29,741 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]         ScaleBuilder.java:241  | Beam  guessed height:  8 -- 0.50 of 17 interline
+2025-07-02 06:00:29,743 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]         ScaleBuilder.java:264  | Beam measured height: 10 -- 0.30 of [7..17] range at 272% of needed quorum
+2025-07-02 06:00:29,744 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]            ScaleStep.java:65   | Scale{ interline(16,17,18) line(3,4,7) beam(10)}
+2025-07-02 06:00:29,745 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]       StepMonitoring.java:98   | GRID
+2025-07-02 06:00:30,887 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]       LinesRetriever.java:1500 | Global slope: -0.00025
+2025-07-02 06:00:30,966 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]    ClustersRetriever.java:328  | Retrieved raw line clusters: 10 of sizes [5] with interline(16,17,18)
+2025-07-02 06:00:31,257 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8] #5[9, 10]
+2025-07-02 06:00:31,321 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]        BarsRetriever.java:768  | No brace partner at level:1 for Peak{48-66 F#3913 T#10 [BRACE, BRACE_BOTTOM]}
+2025-07-02 06:00:31,978 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]        SystemManager.java:134  | Indentation detected for system #1
+2025-07-02 06:00:31,979 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]        SystemManager.java:779  | 2 parts along 5 systems
+2025-07-02 06:00:31,980 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                 Book.java:545  | Created scores: [{Score 1}]
+2025-07-02 06:00:31,981 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]       StepMonitoring.java:98   | HEADERS
+2025-07-02 06:00:32,328 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]      BasicClassifier.java:277  | Classifier loaded XML norms.
+2025-07-02 06:00:32,334 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]   AbstractClassifier.java:396  | Classifier data loaded from default uri jar:file:/C:/Users/alexa/OneDrive/Desktop/PDF_to_MIDI/Audiveris/app/audiveris.jar!/res/basic-classifier.zip
+2025-07-02 06:00:33,976 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-02 06:00:34,186 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]        StemSeedsStep.java:86   | stem(5 max:6)
+2025-07-02 06:00:34,308 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]       StepMonitoring.java:98   | BEAMS
+2025-07-02 06:00:37,261 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]       StepMonitoring.java:98   | LEDGERS
+2025-07-02 06:00:37,587 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]       StepMonitoring.java:98   | HEADS
+2025-07-02 06:00:42,321 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:-1.3,R:-1.5] NOTEHEAD_BLACK[L:-1.2,R:-1.3]}
+2025-07-02 06:00:42,322 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]       StepMonitoring.java:98   | STEMS
+2025-07-02 06:00:43,536 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]       StepMonitoring.java:98   | REDUCTION
+2025-07-02 06:00:43,753 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]        ReductionStep.java:105  | Stems free length median value: 54 pixels, 3.2 interlines
+2025-07-02 06:00:43,759 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-02 06:00:43,760 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-02 06:00:43,760 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]       StepMonitoring.java:98   | TEXTS
+2025-07-02 06:00:44,701 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]       StepMonitoring.java:98   | MEASURES
+2025-07-02 06:00:44,721 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                 Page.java:307  | 15 raw measures: [3 in system#1, 3 in system#2, 3 in system#3, 3 in system#4, 3 in system#5]
+2025-07-02 06:00:44,722 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]       StepMonitoring.java:98   | CHORDS
+2025-07-02 06:00:44,744 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]       StepMonitoring.java:98   | CURVES
+2025-07-02 06:00:46,016 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]         SlursBuilder.java:240  | Slurs: 65
+2025-07-02 06:00:46,046 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]      SegmentsBuilder.java:155  | Segments: 19
+2025-07-02 06:00:46,057 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]       StepMonitoring.java:98   | SYMBOLS
+2025-07-02 06:00:47,106 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]       StepMonitoring.java:98   | LINKS
+2025-07-02 06:00:47,109 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]        SentenceInter.java:461  | No chord near SentenceInter#7324{(0.556) staff:1 mFont:43 Direction} 1-53
+2025-07-02 06:00:47,112 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#9099{(0.195) staff:2 OTTAVA ALTA}
+2025-07-02 06:00:47,175 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]       StepMonitoring.java:98   | RHYTHMS
+2025-07-02 06:00:47,210 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]        MeasureRhythm.java:1045 | Measure{#1} No timeOffset for HeadChordInter#7395{(0.934/0.934) staff:1 slot#5 dur:1/4}
+2025-07-02 06:00:47,211 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#1} Voice{#6 excess:3/8} too long
+2025-07-02 06:00:47,212 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]          StackRhythm.java:224  | S1 MeasureStack#1 no correct rhythm
+2025-07-02 06:00:47,216 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#2} Voice{#1 excess:1/8} too long
+2025-07-02 06:00:47,216 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#2} Voice{#5 excess:1/8} too long
+2025-07-02 06:00:47,216 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]          StackRhythm.java:224  | S1 MeasureStack#2 no correct rhythm
+2025-07-02 06:00:47,221 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#3} Voice{#1 excess:1/8} too long
+2025-07-02 06:00:47,222 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#3} Voice{#2 excess:1/8} too long
+2025-07-02 06:00:47,222 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#3} Voice{#6 excess:1/4} too long
+2025-07-02 06:00:47,224 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]          StackRhythm.java:224  | S1 MeasureStack#3 no correct rhythm
+2025-07-02 06:00:47,229 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#4} Voice{#1 excess:1/8} too long
+2025-07-02 06:00:47,229 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#4} Voice{#5 excess:1/8} too long
+2025-07-02 06:00:47,230 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]          StackRhythm.java:224  | S2 MeasureStack#4 no correct rhythm
+2025-07-02 06:00:47,233 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]        MeasureRhythm.java:1045 | Measure{#5} No timeOffset for HeadChordInter#7426{(0.962/0.962) staff:3 slot#7 dur:1/8}
+2025-07-02 06:00:47,234 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]        MeasureRhythm.java:1045 | Measure{#5} No timeOffset for HeadChordInter#7437{(0.947/0.947) staff:4 slot#7 dur:1/4}
+2025-07-02 06:00:47,235 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]          StackRhythm.java:224  | S2 MeasureStack#5 no correct rhythm
+2025-07-02 06:00:47,237 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]        MeasureRhythm.java:1045 | Measure{#6} No timeOffset for HeadChordInter#7439{(0.935/0.935) staff:4 slot#5 dur:1/4}
+2025-07-02 06:00:47,238 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]          StackRhythm.java:224  | S2 MeasureStack#6 no correct rhythm
+2025-07-02 06:00:47,242 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#7} Voice{#5 excess:1/8} too long
+2025-07-02 06:00:47,242 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#7} Voice{#3 excess:1/8} too long
+2025-07-02 06:00:47,243 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]          StackRhythm.java:224  | S3 MeasureStack#7 no correct rhythm
+2025-07-02 06:00:47,245 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]        MeasureRhythm.java:1045 | Measure{#8} No timeOffset for HeadChordInter#7456{(0.943/0.943) staff:5 slot#5 dur:3/8}
+2025-07-02 06:00:47,246 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]        MeasureRhythm.java:1045 | Measure{#8} No timeOffset for HeadChordInter#7462{(0.935/0.935) staff:6 slot#5 dur:3/8}
+2025-07-02 06:00:47,246 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]        MeasureRhythm.java:1045 | Measure{#8} No timeOffset for HeadChordInter#7463{(0.931/0.931) staff:6 slot#5 dur:1/8}
+2025-07-02 06:00:47,246 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]          StackRhythm.java:224  | S3 MeasureStack#8 no correct rhythm
+2025-07-02 06:00:47,248 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#9} Voice{#1 excess:1/4} too long
+2025-07-02 06:00:47,249 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#9} Voice{#5 excess:1/8} too long
+2025-07-02 06:00:47,249 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]          StackRhythm.java:224  | S3 MeasureStack#9 no correct rhythm
+2025-07-02 06:00:47,253 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#10} Voice{#1 excess:1/8} too long
+2025-07-02 06:00:47,254 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#10} Voice{#2 excess:3/8} too long
+2025-07-02 06:00:47,254 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#10} Voice{#6 excess:1/8} too long
+2025-07-02 06:00:47,254 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#10} Voice{#7 excess:3/8} too long
+2025-07-02 06:00:47,255 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]          StackRhythm.java:224  | S4 MeasureStack#10 no correct rhythm
+2025-07-02 06:00:47,265 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#11} Voice{#3 excess:1/8} too long
+2025-07-02 06:00:47,265 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#11} Voice{#8 excess:1/8} too long
+2025-07-02 06:00:47,266 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]          StackRhythm.java:224  | S4 MeasureStack#11 no correct rhythm
+2025-07-02 06:00:47,272 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#12} Voice{#2 excess:3/8} too long
+2025-07-02 06:00:47,272 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#12} Voice{#6 excess:1} too long
+2025-07-02 06:00:47,273 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#12} Voice{#3 excess:5/8} too long
+2025-07-02 06:00:47,273 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]          StackRhythm.java:224  | S4 MeasureStack#12 no correct rhythm
+2025-07-02 06:00:47,277 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#13P1} Voice{#1 excess:1/8} too long
+2025-07-02 06:00:47,277 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#13P1} Voice{#2 excess:3/8} too long
+2025-07-02 06:00:47,280 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]        MeasureRhythm.java:1045 | Measure{#13P2} No timeOffset for RestChordInter#9512{(0.798/0.798) staff:10 slot#6 dur:1/8}
+2025-07-02 06:00:47,280 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#13P2} Voice{#2 excess:1/8} too long
+2025-07-02 06:00:47,281 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]          StackRhythm.java:224  | S5 MeasureStack#13 no correct rhythm
+2025-07-02 06:00:47,285 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#14P1} Voice{#1 excess:1/8} too long
+2025-07-02 06:00:47,286 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#14P1} Voice{#2 excess:3/8} too long
+2025-07-02 06:00:47,291 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#14P2} Voice{#1 excess:1/4} too long
+2025-07-02 06:00:47,291 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#14P2} Voice{#2 excess:11/24} too long
+2025-07-02 06:00:47,292 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#14P2} Voice{#3 excess:11/24} too long
+2025-07-02 06:00:47,292 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]          StackRhythm.java:224  | S5 MeasureStack#14 no correct rhythm
+2025-07-02 06:00:47,295 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#15P1} Voice{#1 excess:1/4} too long
+2025-07-02 06:00:47,298 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]        MeasureRhythm.java:1045 | Measure{#15P2} No timeOffset for HeadChordInter#7545{(0.948/0.948) staff:10 slot#7 dur:1/8}
+2025-07-02 06:00:47,299 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#15P2} Voice{#1 excess:1/8} too long
+2025-07-02 06:00:47,299 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#15P2} Voice{#2 excess:1/4} too long
+2025-07-02 06:00:47,300 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]          StackRhythm.java:224  | S5 MeasureStack#15 no correct rhythm
+2025-07-02 06:00:47,301 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]       StepMonitoring.java:98   | PAGE
+2025-07-02 06:00:47,309 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#1} Voice{#6 excess:3/8} too long
+2025-07-02 06:00:47,310 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#2} Voice{#2 excess:1/8} too long
+2025-07-02 06:00:47,311 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#2} Voice{#5 excess:1/8} too long
+2025-07-02 06:00:47,311 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#3} Voice{#2 excess:1/8} too long
+2025-07-02 06:00:47,311 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#3} Voice{#1 excess:1/8} too long
+2025-07-02 06:00:47,312 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#3} Voice{#6 excess:1/4} too long
+2025-07-02 06:00:47,312 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#4} Voice{#1 excess:1/8} too long
+2025-07-02 06:00:47,312 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#4} Voice{#5 excess:1/8} too long
+2025-07-02 06:00:47,312 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#7} Voice{#3 excess:1/8} too long
+2025-07-02 06:00:47,313 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#7} Voice{#5 excess:1/8} too long
+2025-07-02 06:00:47,313 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#9} Voice{#1 excess:1/4} too long
+2025-07-02 06:00:47,313 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#9} Voice{#7 excess:1/8} too long
+2025-07-02 06:00:47,313 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#10} Voice{#1 excess:1/8} too long
+2025-07-02 06:00:47,313 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#10} Voice{#2 excess:3/8} too long
+2025-07-02 06:00:47,313 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#10} Voice{#6 excess:1/8} too long
+2025-07-02 06:00:47,313 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#10} Voice{#7 excess:3/8} too long
+2025-07-02 06:00:47,313 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#11} Voice{#3 excess:1/8} too long
+2025-07-02 06:00:47,314 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#11} Voice{#8 excess:1/8} too long
+2025-07-02 06:00:47,314 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#12} Voice{#2 excess:3/8} too long
+2025-07-02 06:00:47,314 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#12} Voice{#3 excess:5/8} too long
+2025-07-02 06:00:47,315 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#12} Voice{#6 excess:1} too long
+2025-07-02 06:00:47,315 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#13P1} Voice{#1 excess:1/8} too long
+2025-07-02 06:00:47,315 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#13P1} Voice{#2 excess:3/8} too long
+2025-07-02 06:00:47,315 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#13P2} Voice{#2 excess:1/8} too long
+2025-07-02 06:00:47,315 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#14P1} Voice{#1 excess:1/8} too long
+2025-07-02 06:00:47,316 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#14P1} Voice{#2 excess:3/8} too long
+2025-07-02 06:00:47,316 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#14P2} Voice{#1 excess:1/4} too long
+2025-07-02 06:00:47,331 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#14P2} Voice{#2 excess:11/24} too long
+2025-07-02 06:00:47,332 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#14P2} Voice{#3 excess:11/24} too long
+2025-07-02 06:00:47,332 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#15P1} Voice{#1 excess:1/4} too long
+2025-07-02 06:00:47,332 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#15P2} Voice{#1 excess:1/8} too long
+2025-07-02 06:00:47,332 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Voice.java:257  | Measure{#15P2} Voice{#2 excess:1/4} too long
+2025-07-02 06:00:47,334 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                 Book.java:2550 | Book{Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)} storing
+2025-07-02 06:00:47,418 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                 Book.java:2531 | Stored /book.xml
+2025-07-02 06:00:47,585 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]           DataHolder.java:348  | Stored /sheet#1/BINARY.png
+2025-07-02 06:00:48,577 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                Sheet.java:1562 | Stored /sheet#1/sheet#1.xml
+2025-07-02 06:00:48,578 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                 Book.java:2491 | Book stored as .\MXL\Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)\Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1).omr
+2025-07-02 06:00:48,585 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]            SheetStub.java:1644 | Disposed sheet#1
+2025-07-02 06:00:48,656 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#1]                 Book.java:2018 | End of Stub#1 memory: 31,849,704
+2025-07-02 06:00:48,657 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]       StepMonitoring.java:98   | LOAD
+2025-07-02 06:00:49,114 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]            SheetStub.java:1268 | Loaded image #2 2480x3187 from C:\Users\alexa\Downloads\Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1).pdf
+2025-07-02 06:00:49,115 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]       StepMonitoring.java:98   | BINARY
+2025-07-02 06:00:49,687 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]       StepMonitoring.java:98   | SCALE
+2025-07-02 06:00:49,726 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]         ScaleBuilder.java:241  | Beam  guessed height:  8 -- 0.50 of 17 interline
+2025-07-02 06:00:49,727 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]         ScaleBuilder.java:264  | Beam measured height: 10 -- 0.36 of [6..17] range at 425% of needed quorum
+2025-07-02 06:00:49,727 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]            ScaleStep.java:65   | Scale{ interline(16,17,18) line(3,4,6) beam(10)}
+2025-07-02 06:00:49,727 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]       StepMonitoring.java:98   | GRID
+2025-07-02 06:00:49,971 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-02 06:00:49,996 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]    ClustersRetriever.java:328  | Retrieved raw line clusters: 8 of sizes [5] with interline(16,17,18)
+2025-07-02 06:00:50,273 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8]
+2025-07-02 06:00:50,685 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]        SystemManager.java:779  | 1 part along 4 systems
+2025-07-02 06:00:50,686 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]       StepMonitoring.java:98   | HEADERS
+2025-07-02 06:00:50,995 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-02 06:00:51,047 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]        StemSeedsStep.java:86   | stem(5 max:6)
+2025-07-02 06:00:51,077 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]       StepMonitoring.java:98   | BEAMS
+2025-07-02 06:00:53,708 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]       StepMonitoring.java:98   | LEDGERS
+2025-07-02 06:00:53,943 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]       StepMonitoring.java:98   | HEADS
+2025-07-02 06:00:58,236 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:-0.9,R:-1.1] NOTEHEAD_BLACK[L:-1.2,R:-1.4]}
+2025-07-02 06:00:58,237 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]       StepMonitoring.java:98   | STEMS
+2025-07-02 06:00:59,378 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]       StepMonitoring.java:98   | REDUCTION
+2025-07-02 06:00:59,623 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]        ReductionStep.java:105  | Stems free length median value: 54 pixels, 3.2 interlines
+2025-07-02 06:00:59,627 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-02 06:00:59,628 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-02 06:00:59,628 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]       StepMonitoring.java:98   | TEXTS
+2025-07-02 06:01:00,344 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]       StepMonitoring.java:98   | MEASURES
+2025-07-02 06:01:00,346 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]                 Page.java:307  | 12 raw measures: [3 in system#1, 3 in system#2, 3 in system#3, 3 in system#4]
+2025-07-02 06:01:00,346 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]       StepMonitoring.java:98   | CHORDS
+2025-07-02 06:01:00,353 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]       StepMonitoring.java:98   | CURVES
+2025-07-02 06:01:01,072 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]         SlursBuilder.java:240  | Slurs: 26
+2025-07-02 06:01:01,087 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]      SegmentsBuilder.java:155  | Segments: 32
+2025-07-02 06:01:01,088 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]       StepMonitoring.java:98   | SYMBOLS
+2025-07-02 06:01:01,813 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]       StepMonitoring.java:98   | LINKS
+2025-07-02 06:01:01,862 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]        SentenceInter.java:461  | No chord near SentenceInter#8667{(0.653) staff:7 mFont:BIS-40 Direction} dim. molto
+2025-07-02 06:01:01,876 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]       StepMonitoring.java:98   | RHYTHMS
+2025-07-02 06:01:01,877 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]           PageRhythm.java:199  | {Page#2.1} Time value reused from sheet#1
+2025-07-02 06:01:01,882 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]                Voice.java:257  | Measure{#1} Voice{#1 excess:1/4} too long
+2025-07-02 06:01:01,882 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]                Voice.java:257  | Measure{#1} Voice{#5 excess:1/4} too long
+2025-07-02 06:01:01,883 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]          StackRhythm.java:224  | S1 MeasureStack#1 no correct rhythm
+2025-07-02 06:01:01,886 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]                Voice.java:257  | Measure{#2} Voice{#1 excess:1/4} too long
+2025-07-02 06:01:01,887 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]                Voice.java:257  | Measure{#2} Voice{#5 excess:3/8} too long
+2025-07-02 06:01:01,887 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]                Voice.java:257  | Measure{#2} Voice{#7 excess:1/4} too long
+2025-07-02 06:01:01,887 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]          StackRhythm.java:224  | S1 MeasureStack#2 no correct rhythm
+2025-07-02 06:01:01,891 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]                Voice.java:257  | Measure{#3} Voice{#1 excess:1/4} too long
+2025-07-02 06:01:01,891 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]                Voice.java:257  | Measure{#3} Voice{#5 excess:1/4} too long
+2025-07-02 06:01:01,891 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]          StackRhythm.java:224  | S1 MeasureStack#3 no correct rhythm
+2025-07-02 06:01:01,898 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]        MeasureRhythm.java:1045 | Measure{#5} No timeOffset for HeadChordInter#8755{(0.971/0.971) staff:3 slot#7 dur:3/8}
+2025-07-02 06:01:01,898 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]        MeasureRhythm.java:1045 | Measure{#5} No timeOffset for HeadChordInter#8775{(0.954/0.954) staff:4 slot#7 dur:3/8}
+2025-07-02 06:01:01,899 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]          StackRhythm.java:224  | S2 MeasureStack#5 no correct rhythm
+2025-07-02 06:01:01,901 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]        MeasureRhythm.java:1045 | Measure{#6} No timeOffset for HeadChordInter#8777{(0.948/0.948) staff:4 slot#2 dur:1/4}
+2025-07-02 06:01:01,901 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]   AbstractChordInter.java:627  | Measure{#6} No timeOffset for HeadChordInter#8777{(0.948/0.948) staff:4 slot#2 dur:1/4}
+2025-07-02 06:01:01,902 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]   AbstractChordInter.java:627  | Measure{#6} No timeOffset for HeadChordInter#8784{(0.952/0.952) staff:4 slot#7 dur:1/8}
+2025-07-02 06:01:01,903 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]                Voice.java:257  | Measure{#6} Voice{#7 excess:1/8} too long
+2025-07-02 06:01:01,903 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]          StackRhythm.java:224  | S2 MeasureStack#6 no correct rhythm
+2025-07-02 06:01:01,906 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]        MeasureRhythm.java:1045 | Measure{#7} No timeOffset for HeadChordInter#8790{(0.969/0.969) staff:5 slot#7 dur:3/8}
+2025-07-02 06:01:01,907 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]        MeasureRhythm.java:1045 | Measure{#7} No timeOffset for HeadChordInter#8810{(0.968/0.968) staff:6 slot#7 dur:3/8}
+2025-07-02 06:01:01,907 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]          StackRhythm.java:224  | S3 MeasureStack#7 no correct rhythm
+2025-07-02 06:01:01,910 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]        MeasureRhythm.java:1045 | Measure{#8} No timeOffset for HeadChordInter#8791{(0.969/0.969) staff:5 slot#3 dur:1/8}
+2025-07-02 06:01:01,911 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]        MeasureRhythm.java:1045 | Measure{#8} No timeOffset for HeadChordInter#8813{(0.947/0.947) staff:6 slot#3 dur:1/8}
+2025-07-02 06:01:01,911 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]   AbstractChordInter.java:627  | Measure{#8} No timeOffset for HeadChordInter#8795{(0.968/0.968) staff:5 slot#7 dur:1/8}
+2025-07-02 06:01:01,911 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]   AbstractChordInter.java:627  | Measure{#8} No timeOffset for HeadChordInter#8818{(0.953/0.953) staff:6 slot#7 dur:1/8}
+2025-07-02 06:01:01,912 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]        MeasureRhythm.java:1045 | Measure{#8} No timeOffset for HeadChordInter#8817{(0.926/0.926) staff:6 slot#6 dur:3/8}
+2025-07-02 06:01:01,912 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]          StackRhythm.java:224  | S3 MeasureStack#8 no correct rhythm
+2025-07-02 06:01:01,916 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]        MeasureRhythm.java:1045 | Measure{#9} No timeOffset for HeadChordInter#8801{(0.970/0.970) staff:5 slot#7 dur:1/8}
+2025-07-02 06:01:01,917 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]        MeasureRhythm.java:1045 | Measure{#9} No timeOffset for HeadChordInter#8825{(0.960/0.960) staff:6 slot#7 dur:1/8}
+2025-07-02 06:01:01,918 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]          StackRhythm.java:224  | S3 MeasureStack#9 no correct rhythm
+2025-07-02 06:01:01,918 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]        MeasureRhythm.java:1045 | Measure{#10} No timeOffset for HeadChordInter#8829{(0.956/0.967) staff:7 slot#2 dur:3/8}
+2025-07-02 06:01:01,919 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]        MeasureRhythm.java:1045 | Measure{#10} No timeOffset for HeadChordInter#8838{(0.965/0.973) staff:8 slot#2 dur:3/8}
+2025-07-02 06:01:01,919 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]          StackRhythm.java:224  | S4 MeasureStack#10 no correct rhythm
+2025-07-02 06:01:01,920 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]        MeasureRhythm.java:1045 | Measure{#11} No timeOffset for HeadChordInter#8840{(0.522/0.522) staff:8 slot#3 dur:1/2}
+2025-07-02 06:01:01,920 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]   AbstractChordInter.java:627  | Measure{#11} No timeOffset for HeadChordInter#8840{(0.522/0.522) staff:8 slot#3 dur:1/2}
+2025-07-02 06:01:01,920 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]        MeasureRhythm.java:1045 | Measure{#11} No timeOffset for HeadChordInter#8831{(0.956/0.968) staff:7 slot#4 dur:3/8}
+2025-07-02 06:01:01,921 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]                Voice.java:257  | Measure{#11} Voice{#1 excess:1/4} too long
+2025-07-02 06:01:01,921 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]                Voice.java:257  | Measure{#11} Voice{#5 excess:1/4} too long
+2025-07-02 06:01:01,921 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]          StackRhythm.java:224  | S4 MeasureStack#11 no correct rhythm
+2025-07-02 06:01:01,929 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]        MeasureRhythm.java:1045 | Measure{#12} No timeOffset for HeadChordInter#8835{(0.773/0.773) staff:7 slot#13 dur:1/4}
+2025-07-02 06:01:01,930 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]        MeasureRhythm.java:1045 | Measure{#12} No timeOffset for HeadChordInter#8833{(0.946/0.946) staff:7 slot#13 dur:1/4}
+2025-07-02 06:01:01,931 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]        MeasureRhythm.java:1045 | Measure{#12} No timeOffset for HeadChordInter#8856{(0.980/0.980) staff:8 slot#13 dur:1/16}
+2025-07-02 06:01:01,931 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]   AbstractChordInter.java:627  | Measure{#12} No timeOffset for HeadChordInter#8835{(0.773/0.773) staff:7 slot#13 dur:1/4}
+2025-07-02 06:01:01,932 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]   AbstractChordInter.java:627  | Measure{#12} No timeOffset for HeadChordInter#8833{(0.946/0.946) staff:7 slot#13 dur:1/4}
+2025-07-02 06:01:01,932 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]   AbstractChordInter.java:627  | Measure{#12} No timeOffset for HeadChordInter#8861{(0.947/0.947) staff:8 slot#18 dur:1/16}
+2025-07-02 06:01:01,932 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]                Voice.java:257  | Measure{#12} Voice{#5 excess:1/32} too long
+2025-07-02 06:01:01,932 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]                Voice.java:257  | Measure{#12} Voice{#7 excess:1/32} too long
+2025-07-02 06:01:01,933 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]          StackRhythm.java:224  | S4 MeasureStack#12 no correct rhythm
+2025-07-02 06:01:01,933 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]       StepMonitoring.java:98   | PAGE
+2025-07-02 06:01:01,935 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]                Voice.java:257  | Measure{#1} Voice{#1 excess:1/4} too long
+2025-07-02 06:01:01,935 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]                Voice.java:257  | Measure{#1} Voice{#5 excess:1/4} too long
+2025-07-02 06:01:01,946 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]                Voice.java:257  | Measure{#2} Voice{#1 excess:1/4} too long
+2025-07-02 06:01:01,946 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]                Voice.java:257  | Measure{#2} Voice{#5 excess:3/8} too long
+2025-07-02 06:01:01,946 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]                Voice.java:257  | Measure{#2} Voice{#7 excess:1/4} too long
+2025-07-02 06:01:01,946 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]                Voice.java:257  | Measure{#3} Voice{#1 excess:1/4} too long
+2025-07-02 06:01:01,947 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]                Voice.java:257  | Measure{#3} Voice{#5 excess:1/4} too long
+2025-07-02 06:01:01,947 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]                Voice.java:257  | Measure{#6} Voice{#7 excess:1/8} too long
+2025-07-02 06:01:01,947 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]                Voice.java:257  | Measure{#11} Voice{#1 excess:1/4} too long
+2025-07-02 06:01:01,948 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]                Voice.java:257  | Measure{#11} Voice{#5 excess:1/4} too long
+2025-07-02 06:01:01,948 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]                Voice.java:257  | Measure{#12} Voice{#5 excess:1/32} too long
+2025-07-02 06:01:01,948 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]                Voice.java:257  | Measure{#12} Voice{#7 excess:1/32} too long
+2025-07-02 06:01:01,948 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]                 Book.java:2550 | Book{Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)} storing
+2025-07-02 06:01:02,013 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]                 Book.java:2531 | Stored /book.xml
+2025-07-02 06:01:02,136 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]           DataHolder.java:348  | Stored /sheet#2/BINARY.png
+2025-07-02 06:01:02,645 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]                Sheet.java:1562 | Stored /sheet#2/sheet#2.xml
+2025-07-02 06:01:02,645 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]                 Book.java:2491 | Book stored as .\MXL\Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)\Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1).omr
+2025-07-02 06:01:02,652 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]            SheetStub.java:1644 | Disposed sheet#2
+2025-07-02 06:01:02,703 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#2]                 Book.java:2018 | End of Stub#2 memory: 31,342,600
+2025-07-02 06:01:02,704 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]       StepMonitoring.java:98   | LOAD
+2025-07-02 06:01:03,038 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]            SheetStub.java:1268 | Loaded image #3 2480x3187 from C:\Users\alexa\Downloads\Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1).pdf
+2025-07-02 06:01:03,039 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]       StepMonitoring.java:98   | BINARY
+2025-07-02 06:01:03,394 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]       StepMonitoring.java:98   | SCALE
+2025-07-02 06:01:03,399 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]         ScaleBuilder.java:241  | Beam  guessed height:  8 -- 0.50 of 17 interline
+2025-07-02 06:01:03,400 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]         ScaleBuilder.java:264  | Beam measured height: 10 -- 0.36 of [6..17] range at 729% of needed quorum
+2025-07-02 06:01:03,400 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]            ScaleStep.java:65   | Scale{ interline(16,17,18) line(3,4,6) beam(10)}
+2025-07-02 06:01:03,400 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]       StepMonitoring.java:98   | GRID
+2025-07-02 06:01:03,581 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-02 06:01:03,606 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]    ClustersRetriever.java:328  | Retrieved raw line clusters: 10 of sizes [5] with interline(16,17,18)
+2025-07-02 06:01:03,696 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8] #5[9, 10]
+2025-07-02 06:01:04,027 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]        SystemManager.java:779  | 1 part along 5 systems
+2025-07-02 06:01:04,027 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]       StepMonitoring.java:98   | HEADERS
+2025-07-02 06:01:04,409 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-02 06:01:04,454 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]        StemSeedsStep.java:86   | stem(5 max:6)
+2025-07-02 06:01:04,467 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]       StepMonitoring.java:98   | BEAMS
+2025-07-02 06:01:07,333 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]       StepMonitoring.java:98   | LEDGERS
+2025-07-02 06:01:07,618 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]       StepMonitoring.java:98   | HEADS
+2025-07-02 06:01:11,577 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:-1.6] NOTEHEAD_BLACK[L:-0.5,R:-1.0]}
+2025-07-02 06:01:11,577 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]       StepMonitoring.java:98   | STEMS
+2025-07-02 06:01:12,437 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]       StepMonitoring.java:98   | REDUCTION
+2025-07-02 06:01:12,521 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]        ReductionStep.java:105  | Stems free length median value: 54 pixels, 3.2 interlines
+2025-07-02 06:01:12,524 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-02 06:01:12,524 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-02 06:01:12,524 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]       StepMonitoring.java:98   | TEXTS
+2025-07-02 06:01:13,109 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]       StepMonitoring.java:98   | MEASURES
+2025-07-02 06:01:13,110 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                 Page.java:307  | 10 raw measures: [2 in system#1, 2 in system#2, 2 in system#3, 2 in system#4, 2 in system#5]
+2025-07-02 06:01:13,110 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]       StepMonitoring.java:98   | CHORDS
+2025-07-02 06:01:13,116 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]       StepMonitoring.java:98   | CURVES
+2025-07-02 06:01:14,217 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]         SlursBuilder.java:240  | Slurs: 36
+2025-07-02 06:01:14,226 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]      SegmentsBuilder.java:155  | Segments: 11
+2025-07-02 06:01:14,227 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]       StepMonitoring.java:98   | SYMBOLS
+2025-07-02 06:01:14,757 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]       StepMonitoring.java:98   | LINKS
+2025-07-02 06:01:14,799 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]       StepMonitoring.java:98   | RHYTHMS
+2025-07-02 06:01:14,800 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]           PageRhythm.java:199  | {Page#3.1} Time value reused from sheet#1
+2025-07-02 06:01:14,806 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]        MeasureRhythm.java:1045 | Measure{#1} No timeOffset for HeadChordInter#7377{(0.958/0.958) staff:1 slot#13 dur:1/4}
+2025-07-02 06:01:14,807 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]        MeasureRhythm.java:1045 | Measure{#1} No timeOffset for HeadChordInter#7398{(0.977/0.977) staff:2 slot#13 dur:1/16}
+2025-07-02 06:01:14,807 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]        MeasureRhythm.java:1045 | Measure{#1} No timeOffset for HeadChordInter#7399{(0.943/0.943) staff:2 slot#13 dur:1/4}
+2025-07-02 06:01:14,807 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]   AbstractChordInter.java:627  | Measure{#1} No timeOffset for HeadChordInter#7377{(0.958/0.958) staff:1 slot#13 dur:1/4}
+2025-07-02 06:01:14,808 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]   AbstractChordInter.java:627  | Measure{#1} No timeOffset for HeadChordInter#7404{(0.950/0.950) staff:2 slot#18 dur:1/16}
+2025-07-02 06:01:14,808 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]   AbstractChordInter.java:627  | Measure{#1} No timeOffset for HeadChordInter#7399{(0.943/0.943) staff:2 slot#13 dur:1/4}
+2025-07-02 06:01:14,808 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                Voice.java:257  | Measure{#1} Voice{#5 excess:1/16} too long
+2025-07-02 06:01:14,808 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]          StackRhythm.java:224  | S1 MeasureStack#1 no correct rhythm
+2025-07-02 06:01:14,813 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]        MeasureRhythm.java:1045 | Measure{#2} No timeOffset for HeadChordInter#7382{(0.963/0.963) staff:1 slot#13 dur:1/4}
+2025-07-02 06:01:14,814 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]        MeasureRhythm.java:1045 | Measure{#2} No timeOffset for HeadChordInter#7417{(0.956/0.956) staff:2 slot#13 dur:1/16}
+2025-07-02 06:01:14,814 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]   AbstractChordInter.java:627  | Measure{#2} No timeOffset for HeadChordInter#7382{(0.963/0.963) staff:1 slot#13 dur:1/4}
+2025-07-02 06:01:14,814 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]   AbstractChordInter.java:627  | Measure{#2} No timeOffset for HeadChordInter#7422{(0.955/0.955) staff:2 slot#18 dur:1/16}
+2025-07-02 06:01:14,814 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]          StackRhythm.java:224  | S1 MeasureStack#2 no correct rhythm
+2025-07-02 06:01:14,821 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]        MeasureRhythm.java:1045 | Measure{#3} No timeOffset for RestChordInter#8947{(0.788/0.788) staff:3 slot#13 dur:3/8}
+2025-07-02 06:01:14,821 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]        MeasureRhythm.java:1045 | Measure{#3} No timeOffset for HeadChordInter#7430{(0.950/0.950) staff:3 slot#13 dur:1/8}
+2025-07-02 06:01:14,823 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]        MeasureRhythm.java:1045 | Measure{#3} No timeOffset for HeadChordInter#7449{(0.964/0.964) staff:4 slot#13 dur:1/16}
+2025-07-02 06:01:14,823 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]          StackRhythm.java:224  | S2 MeasureStack#3 no correct rhythm
+2025-07-02 06:01:14,829 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]        MeasureRhythm.java:1045 | Measure{#4} No timeOffset for HeadChordInter#7433{(0.951/0.951) staff:3 slot#13 dur:1/4}
+2025-07-02 06:01:14,829 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]        MeasureRhythm.java:1045 | Measure{#4} No timeOffset for HeadChordInter#7469{(0.969/0.969) staff:4 slot#13 dur:1/16}
+2025-07-02 06:01:14,829 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]        MeasureRhythm.java:1045 | Measure{#4} No timeOffset for HeadChordInter#7470{(0.929/0.929) staff:4 slot#13 dur:3/8}
+2025-07-02 06:01:14,830 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]   AbstractChordInter.java:627  | Measure{#4} No timeOffset for HeadChordInter#7433{(0.951/0.951) staff:3 slot#13 dur:1/4}
+2025-07-02 06:01:14,830 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]   AbstractChordInter.java:627  | Measure{#4} No timeOffset for HeadChordInter#7474{(0.932/0.932) staff:4 slot#17 dur:1/8}
+2025-07-02 06:01:14,830 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]   AbstractChordInter.java:627  | Measure{#4} No timeOffset for HeadChordInter#7470{(0.929/0.929) staff:4 slot#13 dur:3/8}
+2025-07-02 06:01:14,830 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                Voice.java:257  | Measure{#4} Voice{#5 excess:1/16} too long
+2025-07-02 06:01:14,830 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]          StackRhythm.java:224  | S2 MeasureStack#4 no correct rhythm
+2025-07-02 06:01:14,837 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]        MeasureRhythm.java:1045 | Measure{#5} No timeOffset for HeadChordInter#7476{(0.943/0.943) staff:5 slot#13 dur:1/4}
+2025-07-02 06:01:14,837 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]        MeasureRhythm.java:1045 | Measure{#5} No timeOffset for HeadChordInter#7506{(0.972/0.972) staff:6 slot#13 dur:3/32}
+2025-07-02 06:01:14,838 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]        MeasureRhythm.java:1045 | Measure{#5} No timeOffset for HeadChordInter#7507{(0.936/0.936) staff:6 slot#13 dur:1/4}
+2025-07-02 06:01:14,838 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]   AbstractChordInter.java:627  | Measure{#5} No timeOffset for HeadChordInter#7476{(0.943/0.943) staff:5 slot#13 dur:1/4}
+2025-07-02 06:01:14,839 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]   AbstractChordInter.java:627  | Measure{#5} No timeOffset for HeadChordInter#7511{(0.897/0.897) staff:6 slot#17 dur:1/8}
+2025-07-02 06:01:14,840 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]   AbstractChordInter.java:627  | Measure{#5} No timeOffset for HeadChordInter#7507{(0.936/0.936) staff:6 slot#13 dur:1/4}
+2025-07-02 06:01:14,840 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                Voice.java:257  | Measure{#5} Voice{#5 excess:1/32} too long
+2025-07-02 06:01:14,841 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]          StackRhythm.java:224  | S3 MeasureStack#5 no correct rhythm
+2025-07-02 06:01:14,845 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]        MeasureRhythm.java:1277 | Measure{#6} Time inconsistency in {3/8=[HeadChordInter#7520{(0.963/0.963) staff:6 slot#10 off:3/8 dur:1/8}], 7/16=[HeadChordInter#7484{(0.949/0.949) staff:5 slot#10 off:7/16 dur:1/16}]}
+2025-07-02 06:01:14,846 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]        MeasureRhythm.java:1277 | Measure{#6} Time inconsistency in {3/4=[HeadChordInter#7522{(0.927/0.927) staff:6 slot#16 off:3/4 dur:1/8}], 13/16=[HeadChordInter#7490{(0.960/0.960) staff:5 slot#16 off:13/16 dur:1/16}]}
+2025-07-02 06:01:14,847 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                Voice.java:257  | Measure{#6} Voice{#1 excess:1/4} too long
+2025-07-02 06:01:14,847 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                Voice.java:257  | Measure{#6} Voice{#8 excess:1/8} too long
+2025-07-02 06:01:14,847 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                Voice.java:257  | Measure{#6} Voice{#9 excess:11/16} too long
+2025-07-02 06:01:14,848 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]          StackRhythm.java:224  | S3 MeasureStack#6 no correct rhythm
+2025-07-02 06:01:14,852 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]        MeasureRhythm.java:1045 | Measure{#7} No timeOffset for HeadChordInter#7525{(0.910/0.910) staff:7 slot#13 dur:3/8}
+2025-07-02 06:01:14,852 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]        MeasureRhythm.java:1045 | Measure{#7} No timeOffset for HeadChordInter#7543{(0.961/0.961) staff:8 slot#13 dur:1/16}
+2025-07-02 06:01:14,853 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]        MeasureRhythm.java:1045 | Measure{#7} No timeOffset for HeadChordInter#7544{(0.902/0.902) staff:8 slot#13 dur:3/8}
+2025-07-02 06:01:14,853 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]          StackRhythm.java:224  | S4 MeasureStack#7 no correct rhythm
+2025-07-02 06:01:14,859 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]        MeasureRhythm.java:1045 | Measure{#8} No timeOffset for HeadChordInter#7527{(0.928/0.928) staff:7 slot#13 dur:1/4}
+2025-07-02 06:01:14,860 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]        MeasureRhythm.java:1045 | Measure{#8} No timeOffset for HeadChordInter#7565{(0.961/0.961) staff:8 slot#13 dur:1/16}
+2025-07-02 06:01:14,860 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]        MeasureRhythm.java:1045 | Measure{#8} No timeOffset for HeadChordInter#7564{(0.892/0.892) staff:8 slot#13 dur:3/8}
+2025-07-02 06:01:14,861 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]   AbstractChordInter.java:627  | Measure{#8} No timeOffset for HeadChordInter#7527{(0.928/0.928) staff:7 slot#13 dur:1/4}
+2025-07-02 06:01:14,861 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]   AbstractChordInter.java:627  | Measure{#8} No timeOffset for HeadChordInter#7570{(0.936/0.936) staff:8 slot#18 dur:1/16}
+2025-07-02 06:01:14,861 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]   AbstractChordInter.java:627  | Measure{#8} No timeOffset for HeadChordInter#7564{(0.892/0.892) staff:8 slot#13 dur:3/8}
+2025-07-02 06:01:14,862 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                Voice.java:257  | Measure{#8} Voice{#5 excess:1/32} too long
+2025-07-02 06:01:14,862 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                Voice.java:257  | Measure{#8} Voice{#7 excess:1/32} too long
+2025-07-02 06:01:14,863 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]          StackRhythm.java:224  | S4 MeasureStack#8 no correct rhythm
+2025-07-02 06:01:14,867 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]        MeasureRhythm.java:1045 | Measure{#9} No timeOffset for HeadChordInter#7572{(0.616/0.616) staff:9 slot#13 dur:1/2}
+2025-07-02 06:01:14,869 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]   AbstractChordInter.java:627  | Measure{#9} No timeOffset for HeadChordInter#7572{(0.616/0.616) staff:9 slot#13 dur:1/2}
+2025-07-02 06:01:14,869 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]        MeasureRhythm.java:1045 | Measure{#9} No timeOffset for HeadChordInter#7610{(0.968/0.968) staff:10 slot#14 dur:1/16}
+2025-07-02 06:01:14,870 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]        MeasureRhythm.java:1045 | Measure{#9} No timeOffset for HeadChordInter#7611{(0.928/0.928) staff:10 slot#14 dur:3/8}
+2025-07-02 06:01:14,870 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]   AbstractChordInter.java:627  | Measure{#9} No timeOffset for HeadChordInter#7573{(0.954/0.954) staff:9 slot#14 dur:1/4}
+2025-07-02 06:01:14,884 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]   AbstractChordInter.java:627  | Measure{#9} No timeOffset for HeadChordInter#7616{(0.952/0.952) staff:10 slot#19 dur:1/16}
+2025-07-02 06:01:14,884 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]   AbstractChordInter.java:627  | Measure{#9} No timeOffset for HeadChordInter#7611{(0.928/0.928) staff:10 slot#14 dur:3/8}
+2025-07-02 06:01:14,884 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                Voice.java:257  | Measure{#9} Voice{#5 excess:1/32} too long
+2025-07-02 06:01:14,885 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                Voice.java:257  | Measure{#9} Voice{#7 excess:1/32} too long
+2025-07-02 06:01:14,885 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]          StackRhythm.java:224  | S5 MeasureStack#9 no correct rhythm
+2025-07-02 06:01:14,892 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]        MeasureRhythm.java:1277 | Measure{#10} Time inconsistency in {1/8=[HeadChordInter#7577{(0.962/0.962) staff:9 slot#4 off:1/8 dur:1/16}], 3/16=[HeadChordInter#7620{(0.906/0.906) staff:10 slot#4 off:3/16 dur:3/16}]}
+2025-07-02 06:01:14,908 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]        MeasureRhythm.java:1277 | Measure{#10} Time inconsistency in {7/16=[HeadChordInter#7584{(0.936/0.936) staff:9 slot#10 off:7/16 dur:1/24}], 1/2=[HeadChordInter#7625{(0.933/0.933) staff:10 slot#10 off:1/2 dur:3/16}]}
+2025-07-02 06:01:14,967 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]        MeasureRhythm.java:1277 | Measure{#10} Time inconsistency in {17/24=[HeadChordInter#7591{(0.945/0.945) staff:9 slot#16 off:17/24 dur:1/16}], 37/48=[HeadChordInter#7630{(0.933/0.933) staff:10 slot#16 off:37/48 dur:3/16}]}
+2025-07-02 06:01:14,968 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                Voice.java:257  | Measure{#10} Voice{#3 excess:7/48} too long
+2025-07-02 06:01:14,968 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                Voice.java:257  | Measure{#10} Voice{#8 excess:5/24} too long
+2025-07-02 06:01:14,968 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                Voice.java:257  | Measure{#10} Voice{#9 excess:5/24} too long
+2025-07-02 06:01:14,968 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                Voice.java:257  | Measure{#10} Voice{#10 excess:5/24} too long
+2025-07-02 06:01:14,968 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                Voice.java:257  | Measure{#10} Voice{#11 excess:7/48} too long
+2025-07-02 06:01:14,968 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]          StackRhythm.java:224  | S5 MeasureStack#10 no correct rhythm
+2025-07-02 06:01:14,968 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]       StepMonitoring.java:98   | PAGE
+2025-07-02 06:01:14,970 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                Voice.java:257  | Measure{#1} Voice{#5 excess:1/16} too long
+2025-07-02 06:01:14,971 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                Voice.java:257  | Measure{#4} Voice{#5 excess:1/16} too long
+2025-07-02 06:01:14,971 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                Voice.java:257  | Measure{#5} Voice{#5 excess:1/32} too long
+2025-07-02 06:01:14,972 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                Voice.java:257  | Measure{#6} Voice{#1 excess:1/4} too long
+2025-07-02 06:01:14,972 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                Voice.java:257  | Measure{#6} Voice{#8 excess:1/8} too long
+2025-07-02 06:01:14,972 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                Voice.java:257  | Measure{#6} Voice{#9 excess:11/16} too long
+2025-07-02 06:01:14,972 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                Voice.java:257  | Measure{#8} Voice{#5 excess:1/32} too long
+2025-07-02 06:01:14,972 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                Voice.java:257  | Measure{#8} Voice{#7 excess:1/32} too long
+2025-07-02 06:01:14,973 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                Voice.java:257  | Measure{#9} Voice{#5 excess:1/32} too long
+2025-07-02 06:01:14,973 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                Voice.java:257  | Measure{#9} Voice{#7 excess:1/32} too long
+2025-07-02 06:01:14,973 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                Voice.java:257  | Measure{#10} Voice{#3 excess:7/48} too long
+2025-07-02 06:01:14,973 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                Voice.java:257  | Measure{#10} Voice{#5 excess:5/24} too long
+2025-07-02 06:01:14,973 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                Voice.java:257  | Measure{#10} Voice{#6 excess:7/48} too long
+2025-07-02 06:01:14,974 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                Voice.java:257  | Measure{#10} Voice{#8 excess:5/24} too long
+2025-07-02 06:01:14,974 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                Voice.java:257  | Measure{#10} Voice{#9 excess:5/24} too long
+2025-07-02 06:01:14,974 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                 Book.java:2550 | Book{Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)} storing
+2025-07-02 06:01:15,035 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                 Book.java:2531 | Stored /book.xml
+2025-07-02 06:01:15,144 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]           DataHolder.java:348  | Stored /sheet#3/BINARY.png
+2025-07-02 06:01:15,695 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                Sheet.java:1562 | Stored /sheet#3/sheet#3.xml
+2025-07-02 06:01:15,695 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                 Book.java:2491 | Book stored as .\MXL\Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)\Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1).omr
+2025-07-02 06:01:15,704 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]            SheetStub.java:1644 | Disposed sheet#3
+2025-07-02 06:01:15,754 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#3]                 Book.java:2018 | End of Stub#3 memory: 31,367,832
+2025-07-02 06:01:15,754 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]       StepMonitoring.java:98   | LOAD
+2025-07-02 06:01:16,048 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]            SheetStub.java:1268 | Loaded image #4 2480x3187 from C:\Users\alexa\Downloads\Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1).pdf
+2025-07-02 06:01:16,049 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]       StepMonitoring.java:98   | BINARY
+2025-07-02 06:01:16,416 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]       StepMonitoring.java:98   | SCALE
+2025-07-02 06:01:16,418 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]         ScaleBuilder.java:241  | Beam  guessed height:  8 -- 0.50 of 17 interline
+2025-07-02 06:01:16,419 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]         ScaleBuilder.java:264  | Beam measured height: 10 -- 0.30 of [7..17] range at 747% of needed quorum
+2025-07-02 06:01:16,419 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]            ScaleStep.java:65   | Scale{ interline(16,17,18) line(3,4,7) beam(10)}
+2025-07-02 06:01:16,419 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]       StepMonitoring.java:98   | GRID
+2025-07-02 06:01:16,604 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-02 06:01:16,618 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]    ClustersRetriever.java:328  | Retrieved raw line clusters: 10 of sizes [5] with interline(16,17,18)
+2025-07-02 06:01:16,705 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8] #5[9, 10]
+2025-07-02 06:01:17,020 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]        SystemManager.java:779  | 1 part along 5 systems
+2025-07-02 06:01:17,021 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]       StepMonitoring.java:98   | HEADERS
+2025-07-02 06:01:17,321 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-02 06:01:17,369 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]        StemSeedsStep.java:86   | stem(5 max:6)
+2025-07-02 06:01:17,380 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]       StepMonitoring.java:98   | BEAMS
+2025-07-02 06:01:20,046 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]       StepMonitoring.java:98   | LEDGERS
+2025-07-02 06:01:20,276 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]       StepMonitoring.java:98   | HEADS
+2025-07-02 06:01:24,563 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:-1.6] NOTEHEAD_BLACK[L:-0.7,R:-1.4]}
+2025-07-02 06:01:24,564 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]       StepMonitoring.java:98   | STEMS
+2025-07-02 06:01:25,230 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]       StepMonitoring.java:98   | REDUCTION
+2025-07-02 06:01:25,344 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]        ReductionStep.java:105  | Stems free length median value: 55 pixels, 3.2 interlines
+2025-07-02 06:01:25,348 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-02 06:01:25,349 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-02 06:01:25,349 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]       StepMonitoring.java:98   | TEXTS
+2025-07-02 06:01:25,747 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]       StepMonitoring.java:98   | MEASURES
+2025-07-02 06:01:25,748 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]                 Page.java:307  | 10 raw measures: [2 in system#1, 2 in system#2, 2 in system#3, 2 in system#4, 2 in system#5]
+2025-07-02 06:01:25,748 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]       StepMonitoring.java:98   | CHORDS
+2025-07-02 06:01:25,755 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]       StepMonitoring.java:98   | CURVES
+2025-07-02 06:01:26,487 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]         SlursBuilder.java:240  | Slurs: 34
+2025-07-02 06:01:26,491 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]      SegmentsBuilder.java:155  | Segments: 3
+2025-07-02 06:01:26,492 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]       StepMonitoring.java:98   | SYMBOLS
+2025-07-02 06:01:27,142 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]       StepMonitoring.java:98   | LINKS
+2025-07-02 06:01:27,186 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]       StepMonitoring.java:98   | RHYTHMS
+2025-07-02 06:01:27,187 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]           PageRhythm.java:199  | {Page#4.1} Time value reused from sheet#1
+2025-07-02 06:01:27,194 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]        MeasureRhythm.java:1045 | Measure{#1} No timeOffset for HeadChordInter#6795{(0.979/0.979) staff:2 slot#13 dur:1/16}
+2025-07-02 06:01:27,195 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]                Voice.java:257  | Measure{#1} Voice{#2 excess:3/8} too long
+2025-07-02 06:01:27,196 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]          StackRhythm.java:224  | S1 MeasureStack#1 no correct rhythm
+2025-07-02 06:01:27,198 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]        MeasureRhythm.java:1045 | Measure{#2} No timeOffset for HeadChordInter#6780{(0.963/0.963) staff:1 slot#13 dur:1/4}
+2025-07-02 06:01:27,199 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]        MeasureRhythm.java:1045 | Measure{#2} No timeOffset for HeadChordInter#6814{(0.968/0.968) staff:2 slot#13 dur:1/16}
+2025-07-02 06:01:27,199 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]        MeasureRhythm.java:1045 | Measure{#2} No timeOffset for HeadChordInter#6815{(0.886/0.886) staff:2 slot#13 dur:3/8}
+2025-07-02 06:01:27,199 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]   AbstractChordInter.java:627  | Measure{#2} No timeOffset for HeadChordInter#6780{(0.963/0.963) staff:1 slot#13 dur:1/4}
+2025-07-02 06:01:27,199 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]   AbstractChordInter.java:627  | Measure{#2} No timeOffset for HeadChordInter#6820{(0.966/0.966) staff:2 slot#18 dur:1/16}
+2025-07-02 06:01:27,199 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]   AbstractChordInter.java:627  | Measure{#2} No timeOffset for HeadChordInter#6815{(0.886/0.886) staff:2 slot#13 dur:3/8}
+2025-07-02 06:01:27,200 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]          StackRhythm.java:224  | S1 MeasureStack#2 no correct rhythm
+2025-07-02 06:01:27,204 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]        MeasureRhythm.java:1045 | Measure{#3} No timeOffset for HeadChordInter#6822{(0.867/0.867) staff:3 slot#13 dur:1/4}
+2025-07-02 06:01:27,205 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]        MeasureRhythm.java:1045 | Measure{#3} No timeOffset for HeadChordInter#6846{(0.977/0.977) staff:4 slot#13 dur:3/32}
+2025-07-02 06:01:27,205 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]        MeasureRhythm.java:1045 | Measure{#3} No timeOffset for HeadChordInter#6847{(0.931/0.931) staff:4 slot#13 dur:1/4}
+2025-07-02 06:01:27,205 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]   AbstractChordInter.java:627  | Measure{#3} No timeOffset for HeadChordInter#6822{(0.867/0.867) staff:3 slot#13 dur:1/4}
+2025-07-02 06:01:27,206 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]   AbstractChordInter.java:627  | Measure{#3} No timeOffset for HeadChordInter#6852{(0.912/0.912) staff:4 slot#18 dur:1/16}
+2025-07-02 06:01:27,206 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]   AbstractChordInter.java:627  | Measure{#3} No timeOffset for HeadChordInter#6847{(0.931/0.931) staff:4 slot#13 dur:1/4}
+2025-07-02 06:01:27,206 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]                Voice.java:257  | Measure{#3} Voice{#5 excess:1/32} too long
+2025-07-02 06:01:27,206 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]          StackRhythm.java:224  | S2 MeasureStack#3 no correct rhythm
+2025-07-02 06:01:27,210 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]        MeasureRhythm.java:1277 | Measure{#4} Time inconsistency in {1/2=[HeadChordInter#6828{(0.946/0.946) staff:3 slot#10 off:1/2 dur:1/8}], 9/16=[HeadChordInter#6863{(0.948/0.948) staff:4 slot#10 off:9/16 dur:1/16}]}
+2025-07-02 06:01:27,211 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]                Voice.java:257  | Measure{#4} Voice{#1 excess:1/4} too long
+2025-07-02 06:01:27,211 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]                Voice.java:257  | Measure{#4} Voice{#7 excess:1/4} too long
+2025-07-02 06:01:27,211 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]                Voice.java:257  | Measure{#4} Voice{#8 excess:1/4} too long
+2025-07-02 06:01:27,211 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]          StackRhythm.java:224  | S2 MeasureStack#4 no correct rhythm
+2025-07-02 06:01:27,216 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]                Voice.java:257  | Measure{#5} Voice{#1 excess:3/8} too long
+2025-07-02 06:01:27,217 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]                Voice.java:257  | Measure{#5} Voice{#2 excess:3/8} too long
+2025-07-02 06:01:27,217 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]                Voice.java:257  | Measure{#5} Voice{#6 excess:3/8} too long
+2025-07-02 06:01:27,217 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]          StackRhythm.java:224  | S3 MeasureStack#5 no correct rhythm
+2025-07-02 06:01:27,221 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]        MeasureRhythm.java:1045 | Measure{#6} No timeOffset for HeadChordInter#6884{(0.865/0.865) staff:5 slot#3 dur:1/2}
+2025-07-02 06:01:27,222 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]        MeasureRhythm.java:1045 | Measure{#6} No timeOffset for HeadChordInter#6885{(0.935/0.935) staff:5 slot#3 dur:1/4}
+2025-07-02 06:01:27,222 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]        MeasureRhythm.java:1045 | Measure{#6} No timeOffset for HeadChordInter#6911{(0.965/0.965) staff:6 slot#3 dur:1/16}
+2025-07-02 06:01:27,222 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]   AbstractChordInter.java:627  | Measure{#6} No timeOffset for HeadChordInter#6884{(0.865/0.865) staff:5 slot#3 dur:1/2}
+2025-07-02 06:01:27,222 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]   AbstractChordInter.java:627  | Measure{#6} No timeOffset for HeadChordInter#6885{(0.935/0.935) staff:5 slot#3 dur:1/4}
+2025-07-02 06:01:27,222 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]   AbstractChordInter.java:627  | Measure{#6} No timeOffset for HeadChordInter#6916{(0.963/0.963) staff:6 slot#8 dur:1/16}
+2025-07-02 06:01:27,222 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]   AbstractChordInter.java:627  | Measure{#6} No timeOffset for HeadChordInter#6884{(0.865/0.865) staff:5 slot#3 dur:1/2}
+2025-07-02 06:01:27,223 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]   AbstractChordInter.java:627  | Measure{#6} No timeOffset for HeadChordInter#6886{(0.904/0.904) staff:5 slot#7 dur:1/8}
+2025-07-02 06:01:27,223 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]   AbstractChordInter.java:627  | Measure{#6} No timeOffset for HeadChordInter#6916{(0.963/0.963) staff:6 slot#8 dur:1/16}
+2025-07-02 06:01:27,223 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]   AbstractChordInter.java:627  | Measure{#6} No timeOffset for HeadChordInter#6884{(0.865/0.865) staff:5 slot#3 dur:1/2}
+2025-07-02 06:01:27,223 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]   AbstractChordInter.java:627  | Measure{#6} No timeOffset for HeadChordInter#6887{(0.928/0.928) staff:5 slot#9 dur:1/4}
+2025-07-02 06:01:27,223 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]   AbstractChordInter.java:627  | Measure{#6} No timeOffset for HeadChordInter#6922{(0.962/0.962) staff:6 slot#14 dur:1/16}
+2025-07-02 06:01:27,224 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]   AbstractChordInter.java:627  | Measure{#6} No timeOffset for HeadChordInter#6884{(0.865/0.865) staff:5 slot#3 dur:1/2}
+2025-07-02 06:01:27,224 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]   AbstractChordInter.java:627  | Measure{#6} No timeOffset for HeadChordInter#6888{(0.942/0.942) staff:5 slot#13 dur:1/8}
+2025-07-02 06:01:27,224 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]   AbstractChordInter.java:627  | Measure{#6} No timeOffset for HeadChordInter#6922{(0.962/0.962) staff:6 slot#14 dur:1/16}
+2025-07-02 06:01:27,224 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]   AbstractChordInter.java:627  | Measure{#6} No timeOffset for HeadChordInter#6889{(0.929/0.929) staff:5 slot#15 dur:1/4}
+2025-07-02 06:01:27,224 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]   AbstractChordInter.java:627  | Measure{#6} No timeOffset for HeadChordInter#6890{(0.905/0.905) staff:5 slot#15 dur:3/8}
+2025-07-02 06:01:27,225 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]   AbstractChordInter.java:627  | Measure{#6} No timeOffset for HeadChordInter#6928{(0.960/0.960) staff:6 slot#20 dur:1/16}
+2025-07-02 06:01:27,237 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]          StackRhythm.java:224  | S3 MeasureStack#6 no correct rhythm
+2025-07-02 06:01:27,240 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]        MeasureRhythm.java:1045 | Measure{#7} No timeOffset for HeadChordInter#6935{(0.940/0.940) staff:7 slot#13 dur:1/4}
+2025-07-02 06:01:27,241 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]        MeasureRhythm.java:1045 | Measure{#7} No timeOffset for HeadChordInter#6934{(0.888/0.888) staff:7 slot#13 dur:3/8}
+2025-07-02 06:01:27,241 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]        MeasureRhythm.java:1045 | Measure{#7} No timeOffset for HeadChordInter#6960{(0.965/0.965) staff:8 slot#13 dur:1/16}
+2025-07-02 06:01:27,241 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]   AbstractChordInter.java:627  | Measure{#7} No timeOffset for HeadChordInter#6935{(0.940/0.940) staff:7 slot#13 dur:1/4}
+2025-07-02 06:01:27,241 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]   AbstractChordInter.java:627  | Measure{#7} No timeOffset for HeadChordInter#6934{(0.888/0.888) staff:7 slot#13 dur:3/8}
+2025-07-02 06:01:27,242 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]   AbstractChordInter.java:627  | Measure{#7} No timeOffset for HeadChordInter#6965{(0.957/0.957) staff:8 slot#18 dur:1/16}
+2025-07-02 06:01:27,242 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]          StackRhythm.java:224  | S4 MeasureStack#7 no correct rhythm
+2025-07-02 06:01:27,248 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]        MeasureRhythm.java:1045 | Measure{#8} No timeOffset for HeadChordInter#6944{(0.934/0.934) staff:7 slot#13 dur:3/8}
+2025-07-02 06:01:27,249 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]        MeasureRhythm.java:1045 | Measure{#8} No timeOffset for HeadChordInter#6945{(0.935/0.935) staff:7 slot#13 dur:1/8}
+2025-07-02 06:01:27,249 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]        MeasureRhythm.java:1045 | Measure{#8} No timeOffset for HeadChordInter#6978{(0.955/0.955) staff:8 slot#13 dur:1/16}
+2025-07-02 06:01:27,250 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]          StackRhythm.java:224  | S4 MeasureStack#8 no correct rhythm
+2025-07-02 06:01:27,255 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]        MeasureRhythm.java:1045 | Measure{#9} No timeOffset for HeadChordInter#6991{(0.934/0.934) staff:9 slot#13 dur:1/4}
+2025-07-02 06:01:27,256 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]        MeasureRhythm.java:1045 | Measure{#9} No timeOffset for HeadChordInter#6992{(0.939/0.939) staff:9 slot#13 dur:1/8}
+2025-07-02 06:01:27,257 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]        MeasureRhythm.java:1045 | Measure{#9} No timeOffset for HeadChordInter#7021{(0.950/0.950) staff:10 slot#13 dur:1/16}
+2025-07-02 06:01:27,257 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]   AbstractChordInter.java:627  | Measure{#9} No timeOffset for HeadChordInter#6991{(0.934/0.934) staff:9 slot#13 dur:1/4}
+2025-07-02 06:01:27,257 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]   AbstractChordInter.java:627  | Measure{#9} No timeOffset for HeadChordInter#6994{(0.927/0.927) staff:9 slot#17 dur:1/8}
+2025-07-02 06:01:27,257 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]   AbstractChordInter.java:627  | Measure{#9} No timeOffset for HeadChordInter#7026{(0.952/0.952) staff:10 slot#18 dur:3/32}
+2025-07-02 06:01:27,258 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]          StackRhythm.java:224  | S5 MeasureStack#9 no correct rhythm
+2025-07-02 06:01:27,262 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]        MeasureRhythm.java:1045 | Measure{#10} No timeOffset for HeadChordInter#7007{(0.948/0.948) staff:9 slot#13 dur:1/4}
+2025-07-02 06:01:27,264 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]        MeasureRhythm.java:1045 | Measure{#10} No timeOffset for HeadChordInter#7035{(0.943/0.943) staff:10 slot#13 dur:3/32}
+2025-07-02 06:01:27,265 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]        MeasureRhythm.java:1045 | Measure{#10} No timeOffset for HeadChordInter#7036{(0.853/0.853) staff:10 slot#13 dur:1/4}
+2025-07-02 06:01:27,285 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]   AbstractChordInter.java:627  | Measure{#10} No timeOffset for HeadChordInter#7007{(0.948/0.948) staff:9 slot#13 dur:1/4}
+2025-07-02 06:01:27,286 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]   AbstractChordInter.java:627  | Measure{#10} No timeOffset for HeadChordInter#7041{(0.951/0.951) staff:10 slot#18 dur:1/16}
+2025-07-02 06:01:27,286 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]   AbstractChordInter.java:627  | Measure{#10} No timeOffset for HeadChordInter#7036{(0.853/0.853) staff:10 slot#13 dur:1/4}
+2025-07-02 06:01:27,286 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]                Voice.java:257  | Measure{#10} Voice{#2 excess:1/32} too long
+2025-07-02 06:01:27,286 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]                Voice.java:257  | Measure{#10} Voice{#8 excess:1/32} too long
+2025-07-02 06:01:27,286 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]          StackRhythm.java:224  | S5 MeasureStack#10 no correct rhythm
+2025-07-02 06:01:27,287 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]       StepMonitoring.java:98   | PAGE
+2025-07-02 06:01:27,291 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]                Voice.java:257  | Measure{#1} Voice{#2 excess:3/8} too long
+2025-07-02 06:01:27,291 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]                Voice.java:257  | Measure{#3} Voice{#5 excess:1/32} too long
+2025-07-02 06:01:27,292 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]                Voice.java:257  | Measure{#4} Voice{#1 excess:1/4} too long
+2025-07-02 06:01:27,292 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]                Voice.java:257  | Measure{#4} Voice{#7 excess:1/4} too long
+2025-07-02 06:01:27,292 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]                Voice.java:257  | Measure{#4} Voice{#8 excess:1/4} too long
+2025-07-02 06:01:27,292 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]                Voice.java:257  | Measure{#5} Voice{#1 excess:3/8} too long
+2025-07-02 06:01:27,292 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]                Voice.java:257  | Measure{#5} Voice{#2 excess:3/8} too long
+2025-07-02 06:01:27,292 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]                Voice.java:257  | Measure{#5} Voice{#6 excess:3/8} too long
+2025-07-02 06:01:27,293 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]                Voice.java:257  | Measure{#10} Voice{#2 excess:1/32} too long
+2025-07-02 06:01:27,293 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]                Voice.java:257  | Measure{#10} Voice{#8 excess:1/32} too long
+2025-07-02 06:01:27,294 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]                 Book.java:2550 | Book{Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)} storing
+2025-07-02 06:01:27,350 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]                 Book.java:2531 | Stored /book.xml
+2025-07-02 06:01:27,435 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]           DataHolder.java:348  | Stored /sheet#4/BINARY.png
+2025-07-02 06:01:27,990 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]                Sheet.java:1562 | Stored /sheet#4/sheet#4.xml
+2025-07-02 06:01:27,990 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]                 Book.java:2491 | Book stored as .\MXL\Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)\Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1).omr
+2025-07-02 06:01:28,001 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]            SheetStub.java:1644 | Disposed sheet#4
+2025-07-02 06:01:28,050 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#4]                 Book.java:2018 | End of Stub#4 memory: 31,401,688
+2025-07-02 06:01:28,050 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]       StepMonitoring.java:98   | LOAD
+2025-07-02 06:01:28,358 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]            SheetStub.java:1268 | Loaded image #5 2480x3187 from C:\Users\alexa\Downloads\Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1).pdf
+2025-07-02 06:01:28,359 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]       StepMonitoring.java:98   | BINARY
+2025-07-02 06:01:28,701 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]       StepMonitoring.java:98   | SCALE
+2025-07-02 06:01:28,704 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]         ScaleBuilder.java:241  | Beam  guessed height:  8 -- 0.50 of 17 interline
+2025-07-02 06:01:28,704 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]         ScaleBuilder.java:264  | Beam measured height: 10 -- 0.30 of [7..17] range at 615% of needed quorum
+2025-07-02 06:01:28,704 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]            ScaleStep.java:65   | Scale{ interline(16,17,18) line(3,4,7) beam(10)}
+2025-07-02 06:01:28,704 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]       StepMonitoring.java:98   | GRID
+2025-07-02 06:01:28,857 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-02 06:01:28,876 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]    ClustersRetriever.java:328  | Retrieved raw line clusters: 10 of sizes [5] with interline(16,17,18)
+2025-07-02 06:01:28,950 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8] #5[9, 10]
+2025-07-02 06:01:29,241 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        SystemManager.java:779  | 1 part along 5 systems
+2025-07-02 06:01:29,242 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]       StepMonitoring.java:98   | HEADERS
+2025-07-02 06:01:29,609 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-02 06:01:29,642 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        StemSeedsStep.java:86   | stem(5 max:6)
+2025-07-02 06:01:29,652 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]       StepMonitoring.java:98   | BEAMS
+2025-07-02 06:01:32,108 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]       StepMonitoring.java:98   | LEDGERS
+2025-07-02 06:01:32,282 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]       StepMonitoring.java:98   | HEADS
+2025-07-02 06:01:36,147 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:-1.7] NOTEHEAD_BLACK[L:-1.1,R:-1.1]}
+2025-07-02 06:01:36,148 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]       StepMonitoring.java:98   | STEMS
+2025-07-02 06:01:36,590 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]       StepMonitoring.java:98   | REDUCTION
+2025-07-02 06:01:36,665 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        ReductionStep.java:105  | Stems free length median value: 61 pixels, 3.6 interlines
+2025-07-02 06:01:36,668 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-02 06:01:36,668 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-02 06:01:36,668 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]       StepMonitoring.java:98   | TEXTS
+2025-07-02 06:01:37,274 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]       StepMonitoring.java:98   | MEASURES
+2025-07-02 06:01:37,274 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]                 Page.java:307  | 11 raw measures: [2 in system#1, 1 in system#2, 2 in system#3, 3 in system#4, 3 in system#5]
+2025-07-02 06:01:37,275 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]       StepMonitoring.java:98   | CHORDS
+2025-07-02 06:01:37,279 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]       StepMonitoring.java:98   | CURVES
+2025-07-02 06:01:37,946 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]         SlursBuilder.java:240  | Slurs: 40
+2025-07-02 06:01:37,949 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]      SegmentsBuilder.java:155  | Segments: 8
+2025-07-02 06:01:37,950 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]       StepMonitoring.java:98   | SYMBOLS
+2025-07-02 06:01:38,551 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]       StepMonitoring.java:98   | LINKS
+2025-07-02 06:01:38,559 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        SentenceInter.java:461  | No chord near SentenceInter#5748{(0.649) staff:5 mFont:49 Direction} '53
+2025-07-02 06:01:38,583 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]       StepMonitoring.java:98   | RHYTHMS
+2025-07-02 06:01:38,584 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]           PageRhythm.java:199  | {Page#5.1} Time value reused from sheet#1
+2025-07-02 06:01:38,589 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1045 | Measure{#1} No timeOffset for HeadChordInter#5821{(0.946/0.946) staff:1 slot#13 dur:1/4}
+2025-07-02 06:01:38,589 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1045 | Measure{#1} No timeOffset for HeadChordInter#5830{(0.955/0.955) staff:2 slot#13 dur:3/32}
+2025-07-02 06:01:38,589 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1045 | Measure{#1} No timeOffset for HeadChordInter#5831{(0.883/0.883) staff:2 slot#13 dur:1/4}
+2025-07-02 06:01:38,589 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]   AbstractChordInter.java:627  | Measure{#1} No timeOffset for HeadChordInter#5821{(0.946/0.946) staff:1 slot#13 dur:1/4}
+2025-07-02 06:01:38,589 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]   AbstractChordInter.java:627  | Measure{#1} No timeOffset for HeadChordInter#5836{(0.950/0.950) staff:2 slot#18 dur:1/16}
+2025-07-02 06:01:38,590 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]   AbstractChordInter.java:627  | Measure{#1} No timeOffset for HeadChordInter#5831{(0.883/0.883) staff:2 slot#13 dur:1/4}
+2025-07-02 06:01:38,590 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]          StackRhythm.java:224  | S1 MeasureStack#1 no correct rhythm
+2025-07-02 06:01:38,594 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1045 | Measure{#2} No timeOffset for HeadChordInter#5824{(0.951/0.951) staff:1 slot#13 dur:3/8}
+2025-07-02 06:01:38,594 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1045 | Measure{#2} No timeOffset for HeadChordInter#5849{(0.957/0.957) staff:2 slot#13 dur:3/32}
+2025-07-02 06:01:38,595 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1045 | Measure{#2} No timeOffset for HeadChordInter#5850{(0.930/0.930) staff:2 slot#13 dur:1/4}
+2025-07-02 06:01:38,595 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]          StackRhythm.java:224  | S1 MeasureStack#2 no correct rhythm
+2025-07-02 06:01:38,599 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1045 | Measure{#3} No timeOffset for HeadChordInter#5858{(0.882/0.882) staff:3 slot#13 dur:3/8}
+2025-07-02 06:01:38,600 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1045 | Measure{#3} No timeOffset for HeadChordInter#5872{(0.954/0.954) staff:4 slot#13 dur:1/16}
+2025-07-02 06:01:38,600 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1045 | Measure{#3} No timeOffset for HeadChordInter#5873{(0.909/0.909) slot#13 dur:1/4}
+2025-07-02 06:01:38,600 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]          StackRhythm.java:224  | S2 MeasureStack#3 no correct rhythm
+2025-07-02 06:01:38,602 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1045 | Measure{#4} No timeOffset for HeadChordInter#5880{(0.934/0.934) staff:5 slot#8 dur:3/8}
+2025-07-02 06:01:38,602 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1045 | Measure{#4} No timeOffset for RestChordInter#7137{(0.789/0.789) staff:6 slot#8 dur:3/8}
+2025-07-02 06:01:38,602 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1045 | Measure{#4} No timeOffset for HeadChordInter#5892{(0.929/0.929) staff:6 slot#8 dur:3/8}
+2025-07-02 06:01:38,602 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]          StackRhythm.java:224  | S3 MeasureStack#4 no correct rhythm
+2025-07-02 06:01:38,604 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1277 | Measure{#5} Time inconsistency in {1/8=[HeadChordInter#5882{(0.955/0.955) staff:5 slot#3 off:1/8 dur:1/8}], 5/32=[HeadChordInter#5896{(0.954/0.954) staff:6 slot#3 off:5/32 dur:1/16}]}
+2025-07-02 06:01:38,605 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1277 | Measure{#5} Time inconsistency in {1/4=[HeadChordInter#5883{(0.953/0.953) staff:5 slot#5 off:1/4 dur:1/8}], 9/32=[HeadChordInter#5898{(0.925/0.925) staff:6 slot#5 off:9/32 dur:1/16}]}
+2025-07-02 06:01:38,605 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1045 | Measure{#5} No timeOffset for HeadChordInter#5884{(0.860/0.860) staff:5 slot#7 dur:1/2}
+2025-07-02 06:01:38,605 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1045 | Measure{#5} No timeOffset for RestChordInter#7138{(0.633/0.633) staff:6 slot#7 dur:3/8}
+2025-07-02 06:01:38,605 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]   AbstractChordInter.java:627  | Measure{#5} No timeOffset for HeadChordInter#5884{(0.860/0.860) staff:5 slot#7 dur:1/2}
+2025-07-02 06:01:38,606 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]   AbstractChordInter.java:627  | Measure{#5} No timeOffset for RestChordInter#7138{(0.633/0.633) staff:6 slot#7 dur:3/8}
+2025-07-02 06:01:38,606 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]                Voice.java:257  | Measure{#5} Voice{#6 excess:1/8} too long
+2025-07-02 06:01:38,606 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]          StackRhythm.java:224  | S3 MeasureStack#5 no correct rhythm
+2025-07-02 06:01:38,609 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]                Voice.java:257  | Measure{#6} Voice{#1 excess:1/8} too long
+2025-07-02 06:01:38,610 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]                Voice.java:257  | Measure{#6} Voice{#7 excess:1/4} too long
+2025-07-02 06:01:38,610 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]                Voice.java:257  | Measure{#6} Voice{#8 excess:1/4} too long
+2025-07-02 06:01:38,610 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]          StackRhythm.java:224  | S4 MeasureStack#6 no correct rhythm
+2025-07-02 06:01:38,612 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1277 | Measure{#7} Time inconsistency in {1/8=[HeadChordInter#5909{(0.950/0.950) staff:7 slot#3 off:1/8 dur:1/8}], 5/32=[HeadChordInter#5933{(0.957/0.957) staff:8 slot#3 off:5/32 dur:1/16}]}
+2025-07-02 06:01:38,612 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1277 | Measure{#7} Time inconsistency in {1/4=[HeadChordInter#5910{(0.944/0.944) staff:7 slot#5 off:1/4 dur:1/8}], 9/32=[HeadChordInter#5935{(0.950/0.950) staff:8 slot#5 off:9/32 dur:1/16}]}
+2025-07-02 06:01:38,612 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1045 | Measure{#7} No timeOffset for HeadChordInter#5911{(0.836/0.836) staff:7 slot#7 dur:3/4}
+2025-07-02 06:01:38,613 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1045 | Measure{#7} No timeOffset for RestChordInter#7220{(0.712/0.712) staff:8 slot#7 dur:3/8}
+2025-07-02 06:01:38,613 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]   AbstractChordInter.java:627  | Measure{#7} No timeOffset for HeadChordInter#5911{(0.836/0.836) staff:7 slot#7 dur:3/4}
+2025-07-02 06:01:38,613 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]   AbstractChordInter.java:627  | Measure{#7} No timeOffset for RestChordInter#7220{(0.712/0.712) staff:8 slot#7 dur:3/8}
+2025-07-02 06:01:38,613 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]                Voice.java:257  | Measure{#7} Voice{#6 excess:1/8} too long
+2025-07-02 06:01:38,613 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]          StackRhythm.java:224  | S4 MeasureStack#7 no correct rhythm
+2025-07-02 06:01:38,619 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1045 | Measure{#8} No timeOffset for HeadChordInter#5919{(0.928/0.928) staff:7 slot#10 dur:1/8}
+2025-07-02 06:01:38,619 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1045 | Measure{#8} No timeOffset for HeadChordInter#5918{(0.910/0.910) staff:7 slot#10 dur:1/4}
+2025-07-02 06:01:38,619 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1045 | Measure{#8} No timeOffset for HeadChordInter#5946{(0.964/0.964) staff:8 slot#10 dur:3/8}
+2025-07-02 06:01:38,619 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1045 | Measure{#8} No timeOffset for HeadChordInter#5945{(0.531/0.531) staff:8 slot#10 dur:1/2}
+2025-07-02 06:01:38,619 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]                Voice.java:257  | Measure{#8} Voice{#2 excess:1/32} too long
+2025-07-02 06:01:38,619 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]                Voice.java:257  | Measure{#8} Voice{#3 excess:1/32} too long
+2025-07-02 06:01:38,619 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]                Voice.java:257  | Measure{#8} Voice{#7 excess:1/32} too long
+2025-07-02 06:01:38,620 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]          StackRhythm.java:224  | S4 MeasureStack#8 no correct rhythm
+2025-07-02 06:01:38,621 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1277 | Measure{#9} Time inconsistency in {1/8=[HeadChordInter#5948{(0.955/0.955) staff:9 slot#3 off:1/8 dur:1/8}], 5/32=[HeadChordInter#5970{(0.953/0.953) staff:10 slot#3 off:5/32 dur:1/16}]}
+2025-07-02 06:01:38,641 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1277 | Measure{#9} Time inconsistency in {1/4=[HeadChordInter#5949{(0.930/0.930) staff:9 slot#5 off:1/4 dur:1/8}], 9/32=[HeadChordInter#5972{(0.918/0.918) staff:10 slot#5 off:9/32 dur:1/16}]}
+2025-07-02 06:01:38,642 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1045 | Measure{#9} No timeOffset for HeadChordInter#5951{(0.967/0.967) staff:9 slot#8 dur:3/8}
+2025-07-02 06:01:38,642 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1045 | Measure{#9} No timeOffset for HeadChordInter#5975{(0.937/0.937) staff:10 slot#8 dur:3/8}
+2025-07-02 06:01:38,642 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]          StackRhythm.java:224  | S5 MeasureStack#9 no correct rhythm
+2025-07-02 06:01:38,645 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1277 | Measure{#10} Time inconsistency in {1/8=[HeadChordInter#5953{(0.945/0.945) staff:9 slot#3 off:1/8 dur:1/8}], 5/32=[HeadChordInter#5979{(0.951/0.951) staff:10 slot#3 off:5/32 dur:1/16}]}
+2025-07-02 06:01:38,646 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1277 | Measure{#10} Time inconsistency in {1/4=[HeadChordInter#5954{(0.964/0.964) staff:9 slot#5 off:1/4 dur:1/8}], 9/32=[HeadChordInter#5981{(0.942/0.942) staff:10 slot#5 off:9/32 dur:1/16}]}
+2025-07-02 06:01:38,647 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1045 | Measure{#10} No timeOffset for HeadChordInter#5959{(0.965/0.965) staff:9 slot#10 dur:1/8}
+2025-07-02 06:01:38,647 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1045 | Measure{#10} No timeOffset for HeadChordInter#5983{(0.961/0.961) staff:10 slot#10 dur:3/8}
+2025-07-02 06:01:38,647 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]          StackRhythm.java:224  | S5 MeasureStack#10 no correct rhythm
+2025-07-02 06:01:38,649 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1277 | Measure{#11} Time inconsistency in {1/8=[HeadChordInter#5963{(0.938/0.938) staff:9 slot#3 off:1/8 dur:1/8}], 5/32=[HeadChordInter#5987{(0.957/0.957) staff:10 slot#3 off:5/32 dur:1/16}]}
+2025-07-02 06:01:38,649 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]        MeasureRhythm.java:1277 | Measure{#11} Time inconsistency in {1/4=[HeadChordInter#5964{(0.964/0.964) staff:9 slot#5 off:1/4 dur:1/8}], 9/32=[HeadChordInter#5989{(0.941/0.941) staff:10 slot#5 off:9/32 dur:1/16}]}
+2025-07-02 06:01:38,650 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]                Voice.java:257  | Measure{#11} Voice{#2 excess:1/32} too long
+2025-07-02 06:01:38,650 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]                Voice.java:257  | Measure{#11} Voice{#8 excess:1/32} too long
+2025-07-02 06:01:38,650 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]          StackRhythm.java:224  | S5 MeasureStack#11 no correct rhythm
+2025-07-02 06:01:38,651 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]       StepMonitoring.java:98   | PAGE
+2025-07-02 06:01:38,653 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]                Voice.java:257  | Measure{#5} Voice{#6 excess:1/8} too long
+2025-07-02 06:01:38,654 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]                Voice.java:257  | Measure{#6} Voice{#1 excess:1/8} too long
+2025-07-02 06:01:38,654 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]                Voice.java:257  | Measure{#6} Voice{#7 excess:1/4} too long
+2025-07-02 06:01:38,654 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]                Voice.java:257  | Measure{#6} Voice{#8 excess:1/4} too long
+2025-07-02 06:01:38,654 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]                Voice.java:257  | Measure{#7} Voice{#6 excess:1/8} too long
+2025-07-02 06:01:38,654 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]                Voice.java:257  | Measure{#8} Voice{#2 excess:1/32} too long
+2025-07-02 06:01:38,654 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]                Voice.java:257  | Measure{#8} Voice{#3 excess:1/32} too long
+2025-07-02 06:01:38,686 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]                Voice.java:257  | Measure{#8} Voice{#7 excess:1/32} too long
+2025-07-02 06:01:38,686 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]                Voice.java:257  | Measure{#11} Voice{#2 excess:1/32} too long
+2025-07-02 06:01:38,686 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]                Voice.java:257  | Measure{#11} Voice{#8 excess:1/32} too long
+2025-07-02 06:01:38,689 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]                 Book.java:2550 | Book{Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)} storing
+2025-07-02 06:01:38,743 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]                 Book.java:2531 | Stored /book.xml
+2025-07-02 06:01:38,841 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]           DataHolder.java:348  | Stored /sheet#5/BINARY.png
+2025-07-02 06:01:39,360 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]                Sheet.java:1562 | Stored /sheet#5/sheet#5.xml
+2025-07-02 06:01:39,360 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]                 Book.java:2491 | Book stored as .\MXL\Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)\Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1).omr
+2025-07-02 06:01:39,372 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]            SheetStub.java:1644 | Disposed sheet#5
+2025-07-02 06:01:39,427 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#5]                 Book.java:2018 | End of Stub#5 memory: 31,443,888
+2025-07-02 06:01:39,428 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]       StepMonitoring.java:98   | LOAD
+2025-07-02 06:01:39,765 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]            SheetStub.java:1268 | Loaded image #6 2480x3187 from C:\Users\alexa\Downloads\Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1).pdf
+2025-07-02 06:01:39,766 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]       StepMonitoring.java:98   | BINARY
+2025-07-02 06:01:40,162 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]       StepMonitoring.java:98   | SCALE
+2025-07-02 06:01:40,164 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]         ScaleBuilder.java:241  | Beam  guessed height:  8 -- 0.50 of 17 interline
+2025-07-02 06:01:40,164 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]         ScaleBuilder.java:264  | Beam measured height: 10 -- 0.30 of [7..17] range at 457% of needed quorum
+2025-07-02 06:01:40,164 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]            ScaleStep.java:65   | Scale{ interline(16,17,18) line(3,4,7) beam(10)}
+2025-07-02 06:01:40,164 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]       StepMonitoring.java:98   | GRID
+2025-07-02 06:01:40,316 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-02 06:01:40,329 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]    ClustersRetriever.java:328  | Retrieved raw line clusters: 10 of sizes [5] with interline(16,17,18)
+2025-07-02 06:01:40,406 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8] #5[9, 10]
+2025-07-02 06:01:40,709 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]        SystemManager.java:779  | 1 part along 5 systems
+2025-07-02 06:01:40,709 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]       StepMonitoring.java:98   | HEADERS
+2025-07-02 06:01:40,991 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-02 06:01:41,025 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]        StemSeedsStep.java:86   | stem(5 max:6)
+2025-07-02 06:01:41,034 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]       StepMonitoring.java:98   | BEAMS
+2025-07-02 06:01:43,392 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]       StepMonitoring.java:98   | LEDGERS
+2025-07-02 06:01:43,558 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]       StepMonitoring.java:98   | HEADS
+2025-07-02 06:01:47,330 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:-1.5,R:-1.6] NOTEHEAD_BLACK[L:-0.7,R:-1.2]}
+2025-07-02 06:01:47,331 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]       StepMonitoring.java:98   | STEMS
+2025-07-02 06:01:47,746 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]       StepMonitoring.java:98   | REDUCTION
+2025-07-02 06:01:47,804 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]        ReductionStep.java:105  | Stems free length median value: 54 pixels, 3.2 interlines
+2025-07-02 06:01:47,807 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-02 06:01:47,807 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-02 06:01:47,808 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]       StepMonitoring.java:98   | TEXTS
+2025-07-02 06:01:48,299 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]       StepMonitoring.java:98   | MEASURES
+2025-07-02 06:01:48,300 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                 Page.java:307  | 14 raw measures: [3 in system#1, 4 in system#2, 2 in system#3, 2 in system#4, 3 in system#5]
+2025-07-02 06:01:48,300 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]       StepMonitoring.java:98   | CHORDS
+2025-07-02 06:01:48,303 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]       StepMonitoring.java:98   | CURVES
+2025-07-02 06:01:48,904 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]         SlursBuilder.java:240  | Slurs: 47
+2025-07-02 06:01:48,908 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]      SegmentsBuilder.java:155  | Segments: 11
+2025-07-02 06:01:48,908 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]       StepMonitoring.java:98   | SYMBOLS
+2025-07-02 06:01:49,528 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]       StepMonitoring.java:98   | LINKS
+2025-07-02 06:01:49,541 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]        SentenceInter.java:461  | No chord near SentenceInter#6520{(0.650) staff:5 mFont:BIS-41 Direction} mormdojusqu’ﬁlaﬁn
+2025-07-02 06:01:49,570 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]       StepMonitoring.java:98   | RHYTHMS
+2025-07-02 06:01:49,571 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]           PageRhythm.java:199  | {Page#6.1} Time value reused from sheet#1
+2025-07-02 06:01:49,572 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]        MeasureRhythm.java:1045 | Measure{#1} No timeOffset for HeadChordInter#6613{(0.513/0.513) staff:2 slot#3 dur:1/4}
+2025-07-02 06:01:49,572 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]   AbstractChordInter.java:627  | Measure{#1} No timeOffset for HeadChordInter#6613{(0.513/0.513) staff:2 slot#3 dur:1/4}
+2025-07-02 06:01:49,573 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]   AbstractChordInter.java:627  | Measure{#1} No timeOffset for HeadChordInter#6613{(0.513/0.513) staff:2 slot#3 dur:1/4}
+2025-07-02 06:01:49,573 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]        MeasureRhythm.java:1045 | Measure{#1} No timeOffset for HeadChordInter#6598{(0.943/0.943) staff:1 slot#6 dur:3/8}
+2025-07-02 06:01:49,573 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#1} Voice{#5 excess:1/8} too long
+2025-07-02 06:01:49,573 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]          StackRhythm.java:224  | S1 MeasureStack#1 no correct rhythm
+2025-07-02 06:01:49,575 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#2} Voice{#2 excess:3/8} too long
+2025-07-02 06:01:49,575 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#2} Voice{#5 excess:3/8} too long
+2025-07-02 06:01:49,576 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#2} Voice{#3 excess:1/8} too long
+2025-07-02 06:01:49,576 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]          StackRhythm.java:224  | S1 MeasureStack#2 no correct rhythm
+2025-07-02 06:01:49,582 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#4} Voice{#2 excess:1/8} too long
+2025-07-02 06:01:49,582 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#4} Voice{#5 excess:1/8} too long
+2025-07-02 06:01:49,582 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#4} Voice{#7 excess:3/8} too long
+2025-07-02 06:01:49,583 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#4} Voice{#3 excess:1/8} too long
+2025-07-02 06:01:49,583 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#4} Voice{#8 excess:1/8} too long
+2025-07-02 06:01:49,583 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]          StackRhythm.java:224  | S2 MeasureStack#4 no correct rhythm
+2025-07-02 06:01:49,585 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]        MeasureRhythm.java:1045 | Measure{#5} No timeOffset for HeadChordInter#6634{(0.966/0.966) staff:3 slot#5 dur:3/8}
+2025-07-02 06:01:49,585 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]        MeasureRhythm.java:1045 | Measure{#5} No timeOffset for HeadChordInter#6652{(0.946/0.946) staff:4 slot#5 dur:3/8}
+2025-07-02 06:01:49,586 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]          StackRhythm.java:224  | S2 MeasureStack#5 no correct rhythm
+2025-07-02 06:01:49,592 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#7} Voice{#6 excess:1/8} too long
+2025-07-02 06:01:49,592 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]          StackRhythm.java:224  | S2 MeasureStack#7 no correct rhythm
+2025-07-02 06:01:49,597 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]        MeasureRhythm.java:1045 | Measure{#8} No timeOffset for HeadChordInter#6677{(0.973/0.973) staff:6 slot#13 dur:1/16}
+2025-07-02 06:01:49,598 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]        MeasureRhythm.java:1045 | Measure{#8} No timeOffset for HeadChordInter#6678{(0.937/0.937) staff:6 slot#13 dur:3/8}
+2025-07-02 06:01:49,598 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]          StackRhythm.java:224  | S3 MeasureStack#8 no correct rhythm
+2025-07-02 06:01:49,601 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]        MeasureRhythm.java:1045 | Measure{#9} No timeOffset for HeadChordInter#6662{(0.960/0.960) staff:5 slot#13 dur:1/4}
+2025-07-02 06:01:49,601 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]        MeasureRhythm.java:1045 | Measure{#9} No timeOffset for HeadChordInter#6698{(0.946/0.946) staff:6 slot#13 dur:3/8}
+2025-07-02 06:01:49,602 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#9} Voice{#6 excess:3/8} too long
+2025-07-02 06:01:49,602 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]          StackRhythm.java:224  | S3 MeasureStack#9 no correct rhythm
+2025-07-02 06:01:49,605 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]        MeasureRhythm.java:1045 | Measure{#10} No timeOffset for HeadChordInter#6716{(0.952/0.952) staff:8 slot#13 dur:3/32}
+2025-07-02 06:01:49,605 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]        MeasureRhythm.java:1045 | Measure{#10} No timeOffset for HeadChordInter#6717{(0.845/0.845) staff:8 slot#13 dur:1/4}
+2025-07-02 06:01:49,606 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#10} Voice{#5 excess:1/16} too long
+2025-07-02 06:01:49,606 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]          StackRhythm.java:224  | S4 MeasureStack#10 no correct rhythm
+2025-07-02 06:01:49,608 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#11} Voice{#5 excess:13/32} too long
+2025-07-02 06:01:49,608 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#11} Voice{#1 excess:1/32} too long
+2025-07-02 06:01:49,608 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#11} Voice{#2 excess:13/32} too long
+2025-07-02 06:01:49,609 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#11} Voice{#6 excess:5/32} too long
+2025-07-02 06:01:49,609 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#11} Voice{#3 excess:13/32} too long
+2025-07-02 06:01:49,609 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]          StackRhythm.java:224  | S4 MeasureStack#11 no correct rhythm
+2025-07-02 06:01:49,611 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#12} Voice{#5 excess:1/32} too long
+2025-07-02 06:01:49,612 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#12} Voice{#6 excess:1/8} too long
+2025-07-02 06:01:49,612 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#12} Voice{#3 excess:1/32} too long
+2025-07-02 06:01:49,612 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#12} Voice{#4 excess:1/8} too long
+2025-07-02 06:01:49,612 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#12} Voice{#7 excess:1/8} too long
+2025-07-02 06:01:49,612 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]          StackRhythm.java:224  | S5 MeasureStack#12 no correct rhythm
+2025-07-02 06:01:49,614 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#13} Voice{#1 excess:3/8} too long
+2025-07-02 06:01:49,614 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#13} Voice{#7 excess:3/8} too long
+2025-07-02 06:01:49,614 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]          StackRhythm.java:224  | S5 MeasureStack#13 no correct rhythm
+2025-07-02 06:01:49,619 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]        MeasureRhythm.java:1045 | Measure{#14} No timeOffset for RestChordInter#8347{(0.728/0.728) staff:9 slot#2 dur:3/8}
+2025-07-02 06:01:49,620 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]        MeasureRhythm.java:1045 | Measure{#14} No timeOffset for RestChordInter#8346{(0.797/0.797) staff:10 slot#2 dur:3/8}
+2025-07-02 06:01:49,620 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]          StackRhythm.java:224  | S5 MeasureStack#14 no correct rhythm
+2025-07-02 06:01:49,620 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]       StepMonitoring.java:98   | PAGE
+2025-07-02 06:01:49,623 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#1} Voice{#5 excess:1/8} too long
+2025-07-02 06:01:49,623 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#2} Voice{#1 excess:3/8} too long
+2025-07-02 06:01:49,623 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#2} Voice{#3 excess:1/8} too long
+2025-07-02 06:01:49,623 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#2} Voice{#5 excess:3/8} too long
+2025-07-02 06:01:49,623 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#4} Voice{#2 excess:1/8} too long
+2025-07-02 06:01:49,623 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#4} Voice{#3 excess:1/8} too long
+2025-07-02 06:01:49,623 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#4} Voice{#5 excess:1/8} too long
+2025-07-02 06:01:49,624 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#4} Voice{#7 excess:3/8} too long
+2025-07-02 06:01:49,624 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#4} Voice{#8 excess:1/8} too long
+2025-07-02 06:01:49,624 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#7} Voice{#6 excess:1/8} too long
+2025-07-02 06:01:49,624 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#9} Voice{#6 excess:3/8} too long
+2025-07-02 06:01:49,624 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#10} Voice{#5 excess:1/16} too long
+2025-07-02 06:01:49,624 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#11} Voice{#1 excess:1/32} too long
+2025-07-02 06:01:49,624 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#11} Voice{#2 excess:13/32} too long
+2025-07-02 06:01:49,624 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#11} Voice{#3 excess:13/32} too long
+2025-07-02 06:01:49,624 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#11} Voice{#5 excess:13/32} too long
+2025-07-02 06:01:49,624 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#11} Voice{#6 excess:5/32} too long
+2025-07-02 06:01:49,624 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#12} Voice{#3 excess:1/32} too long
+2025-07-02 06:01:49,625 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#12} Voice{#4 excess:1/8} too long
+2025-07-02 06:01:49,625 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#12} Voice{#5 excess:1/8} too long
+2025-07-02 06:01:49,625 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#12} Voice{#5 excess:1/32} too long
+2025-07-02 06:01:49,625 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#12} Voice{#6 excess:1/8} too long
+2025-07-02 06:01:49,625 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#13} Voice{#1 excess:3/8} too long
+2025-07-02 06:01:49,665 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Voice.java:257  | Measure{#13} Voice{#7 excess:3/8} too long
+2025-07-02 06:01:49,666 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                 Book.java:2550 | Book{Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)} storing
+2025-07-02 06:01:49,726 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                 Book.java:2531 | Stored /book.xml
+2025-07-02 06:01:49,815 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]           DataHolder.java:348  | Stored /sheet#6/BINARY.png
+2025-07-02 06:01:50,207 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                Sheet.java:1562 | Stored /sheet#6/sheet#6.xml
+2025-07-02 06:01:50,207 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                 Book.java:2491 | Book stored as .\MXL\Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)\Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1).omr
+2025-07-02 06:01:50,217 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]            SheetStub.java:1644 | Disposed sheet#6
+2025-07-02 06:01:50,265 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)#6]                 Book.java:2018 | End of Stub#6 memory: 31,477,800
+2025-07-02 06:01:50,266 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Book.java:2025 | Book processed.
+2025-07-02 06:01:50,982 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]            SheetStub.java:995  | Loaded /sheet#1/sheet#1.xml
+2025-07-02 06:01:51,379 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]            SheetStub.java:995  | Loaded /sheet#2/sheet#2.xml
+2025-07-02 06:01:51,693 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]            SheetStub.java:995  | Loaded /sheet#3/sheet#3.xml
+2025-07-02 06:01:52,022 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]            SheetStub.java:995  | Loaded /sheet#4/sheet#4.xml
+2025-07-02 06:01:52,306 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]            SheetStub.java:995  | Loaded /sheet#5/sheet#5.xml
+2025-07-02 06:01:52,610 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]            SheetStub.java:995  | Loaded /sheet#6/sheet#6.xml
+2025-07-02 06:01:53,185 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]      PartwiseBuilder.java:2661 | Exporting sheet(s): [#1#2#3#4#5#6]
+2025-07-02 06:01:53,185 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#1 System#1 Part#3{ staves[1,2] configs:[5,5]} dummyPart id: 1
+2025-07-02 06:01:53,196 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#1 System#2 Part#3{ staves[3,4] configs:[5,5]} dummyPart id: 1
+2025-07-02 06:01:53,197 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#1 System#3 Part#3{ staves[5,6] configs:[5,5]} dummyPart id: 1
+2025-07-02 06:01:53,197 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#1 System#4 Part#3{ staves[7,8] configs:[5,5]} dummyPart id: 1
+2025-07-02 06:01:53,209 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#1 System#1 Part#3{ staves[1,2] configs:[5,5]} dummyPart id: 2
+2025-07-02 06:01:53,210 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#1 System#2 Part#3{ staves[3,4] configs:[5,5]} dummyPart id: 2
+2025-07-02 06:01:53,211 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#1 System#3 Part#3{ staves[5,6] configs:[5,5]} dummyPart id: 2
+2025-07-02 06:01:53,211 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#1 System#4 Part#3{ staves[7,8] configs:[5,5]} dummyPart id: 2
+2025-07-02 06:01:53,230 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#1 System#5 Part#1{ staves[9] configs:[5]} dummyPart id: 3
+2025-07-02 06:01:53,232 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#2 System#1 Part#3{ staves[1,2] configs:[5,5]} dummyPart id: 1
+2025-07-02 06:01:53,234 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#2 System#2 Part#3{ staves[3,4] configs:[5,5]} dummyPart id: 1
+2025-07-02 06:01:53,235 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#2 System#3 Part#3{ staves[5,6] configs:[5,5]} dummyPart id: 1
+2025-07-02 06:01:53,236 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#2 System#4 Part#3{ staves[7,8] configs:[5,5]} dummyPart id: 1
+2025-07-02 06:01:53,236 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#2 System#1 Part#3{ staves[1,2] configs:[5,5]} dummyPart id: 2
+2025-07-02 06:01:53,237 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#2 System#2 Part#3{ staves[3,4] configs:[5,5]} dummyPart id: 2
+2025-07-02 06:01:53,238 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#2 System#3 Part#3{ staves[5,6] configs:[5,5]} dummyPart id: 2
+2025-07-02 06:01:53,238 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#2 System#4 Part#3{ staves[7,8] configs:[5,5]} dummyPart id: 2
+2025-07-02 06:01:53,269 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#3 System#1 Part#3{ staves[1,2] configs:[5,5]} dummyPart id: 1
+2025-07-02 06:01:53,271 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#3 System#2 Part#3{ staves[3,4] configs:[5,5]} dummyPart id: 1
+2025-07-02 06:01:53,272 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#3 System#3 Part#3{ staves[5,6] configs:[5,5]} dummyPart id: 1
+2025-07-02 06:01:53,273 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#3 System#4 Part#3{ staves[7,8] configs:[5,5]} dummyPart id: 1
+2025-07-02 06:01:53,274 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#3 System#5 Part#3{ staves[9,10] configs:[5,5]} dummyPart id: 1
+2025-07-02 06:01:53,274 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#3 System#1 Part#3{ staves[1,2] configs:[5,5]} dummyPart id: 2
+2025-07-02 06:01:53,275 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#3 System#2 Part#3{ staves[3,4] configs:[5,5]} dummyPart id: 2
+2025-07-02 06:01:53,275 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#3 System#3 Part#3{ staves[5,6] configs:[5,5]} dummyPart id: 2
+2025-07-02 06:01:53,276 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#3 System#4 Part#3{ staves[7,8] configs:[5,5]} dummyPart id: 2
+2025-07-02 06:01:53,276 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#3 System#5 Part#3{ staves[9,10] configs:[5,5]} dummyPart id: 2
+2025-07-02 06:01:53,295 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#4 System#1 Part#3{ staves[1,2] configs:[5,5]} dummyPart id: 1
+2025-07-02 06:01:53,297 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#4 System#2 Part#3{ staves[3,4] configs:[5,5]} dummyPart id: 1
+2025-07-02 06:01:53,297 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#4 System#3 Part#3{ staves[5,6] configs:[5,5]} dummyPart id: 1
+2025-07-02 06:01:53,299 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#4 System#4 Part#3{ staves[7,8] configs:[5,5]} dummyPart id: 1
+2025-07-02 06:01:53,300 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#4 System#5 Part#3{ staves[9,10] configs:[5,5]} dummyPart id: 1
+2025-07-02 06:01:53,300 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#4 System#1 Part#3{ staves[1,2] configs:[5,5]} dummyPart id: 2
+2025-07-02 06:01:53,301 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#4 System#2 Part#3{ staves[3,4] configs:[5,5]} dummyPart id: 2
+2025-07-02 06:01:53,302 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#4 System#3 Part#3{ staves[5,6] configs:[5,5]} dummyPart id: 2
+2025-07-02 06:01:53,302 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#4 System#4 Part#3{ staves[7,8] configs:[5,5]} dummyPart id: 2
+2025-07-02 06:01:53,303 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#4 System#5 Part#3{ staves[9,10] configs:[5,5]} dummyPart id: 2
+2025-07-02 06:01:53,323 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#5 System#1 Part#3{ staves[1,2] configs:[5,5]} dummyPart id: 1
+2025-07-02 06:01:53,325 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#5 System#2 Part#3{ staves[3,4] configs:[5,5]} dummyPart id: 1
+2025-07-02 06:01:53,326 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#5 System#3 Part#3{ staves[5,6] configs:[5,5]} dummyPart id: 1
+2025-07-02 06:01:53,327 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#5 System#4 Part#3{ staves[7,8] configs:[5,5]} dummyPart id: 1
+2025-07-02 06:01:53,327 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#5 System#5 Part#3{ staves[9,10] configs:[5,5]} dummyPart id: 1
+2025-07-02 06:01:53,328 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#5 System#1 Part#3{ staves[1,2] configs:[5,5]} dummyPart id: 2
+2025-07-02 06:01:53,328 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#5 System#2 Part#3{ staves[3,4] configs:[5,5]} dummyPart id: 2
+2025-07-02 06:01:53,329 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#5 System#3 Part#3{ staves[5,6] configs:[5,5]} dummyPart id: 2
+2025-07-02 06:01:53,329 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#5 System#4 Part#3{ staves[7,8] configs:[5,5]} dummyPart id: 2
+2025-07-02 06:01:53,330 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#5 System#5 Part#3{ staves[9,10] configs:[5,5]} dummyPart id: 2
+2025-07-02 06:01:53,341 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#6 System#1 Part#3{ staves[1,2] configs:[5,5]} dummyPart id: 1
+2025-07-02 06:01:53,343 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#6 System#2 Part#3{ staves[3,4] configs:[5,5]} dummyPart id: 1
+2025-07-02 06:01:53,343 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#6 System#3 Part#3{ staves[5,6] configs:[5,5]} dummyPart id: 1
+2025-07-02 06:01:53,344 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#6 System#4 Part#3{ staves[7,8] configs:[5,5]} dummyPart id: 1
+2025-07-02 06:01:53,344 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#6 System#5 Part#3{ staves[9,10] configs:[5,5]} dummyPart id: 1
+2025-07-02 06:01:53,344 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#6 System#1 Part#3{ staves[1,2] configs:[5,5]} dummyPart id: 2
+2025-07-02 06:01:53,345 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#6 System#2 Part#3{ staves[3,4] configs:[5,5]} dummyPart id: 2
+2025-07-02 06:01:53,346 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#6 System#3 Part#3{ staves[5,6] configs:[5,5]} dummyPart id: 2
+2025-07-02 06:01:53,346 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#6 System#4 Part#3{ staves[7,8] configs:[5,5]} dummyPart id: 2
+2025-07-02 06:01:53,346 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                 Part.java:351  | Sheet#6 System#5 Part#3{ staves[9,10] configs:[5,5]} dummyPart id: 2
+2025-07-02 06:01:53,607 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]        ScoreExporter.java:164  | Score Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1) exported to .\MXL\Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)\Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1).mxl
+2025-07-02 06:01:53,690 INFO [Clair-de-Lune-Sheet-Music-Claude-Debussy-SheetMusic-Free.com_ (1)]                Score.java:181  | Closing {Score 1}

@@ -1,0 +1,122 @@
+2025-07-02 09:00:37,422 ERROR [Tetris_theme_-_very_hard]              IOUtils.java:278  | Unmapping is not supported.
+java.lang.reflect.InaccessibleObjectException: Unable to make public jdk.internal.ref.Cleaner java.nio.DirectByteBuffer.cleaner() accessible: module java.base does not "opens java.nio" to unnamed module @1a18644
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(Unknown Source)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(Unknown Source)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(Unknown Source)
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Unknown Source)
+	at java.base/java.lang.reflect.Method.setAccessible(Unknown Source)
+	at org.apache.pdfbox.io.IOUtils.unmapper(IOUtils.java:244)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at org.apache.pdfbox.io.IOUtils.<clinit>(IOUtils.java:69)
+	at org.apache.pdfbox.Loader.loadPDF(Loader.java:378)
+	at org.audiveris.omr.image.ImageLoading.getPdfLoader(ImageLoading.java:159)
+	at org.audiveris.omr.image.ImageLoading.getLoader(ImageLoading.java:209)
+	at org.audiveris.omr.sheet.Book.createStubs(Book.java:557)
+	at org.audiveris.omr.CLI$ProcessingTask.processBook(CLI.java:830)
+	at org.audiveris.omr.CLI$CliTask.call(CLI.java:504)
+	at org.audiveris.omr.Main.runBatchTasks(Main.java:371)
+	at org.audiveris.omr.Main.main(Main.java:260)
+	at Audiveris.main(Audiveris.java:50)
+2025-07-02 09:00:37,485 INFO [Tetris_theme_-_very_hard]                 Book.java:562  | 2 sheets in C:\Users\alexa\Downloads\Tetris_theme_-_very_hard.pdf
+2025-07-02 09:00:37,646 INFO []                 Book.java:2531 | Stored /book.xml
+2025-07-02 09:00:37,647 INFO []                 Book.java:2491 | Book stored as .\MXL\Tetris_theme_-_very_hard\Tetris_theme_-_very_hard.omr
+2025-07-02 09:00:37,653 INFO []                 Book.java:1933 | Book reaching PAGE on sheets:[#1#2]
+2025-07-02 09:00:37,656 INFO [Tetris_theme_-_very_hard#1]       StepMonitoring.java:98   | LOAD
+2025-07-02 09:00:38,150 INFO [Tetris_theme_-_very_hard#1]            SheetStub.java:1268 | Loaded image #1 2550x3299 from C:\Users\alexa\Downloads\Tetris_theme_-_very_hard.pdf
+2025-07-02 09:00:38,158 INFO [Tetris_theme_-_very_hard#1]       StepMonitoring.java:98   | BINARY
+2025-07-02 09:00:38,755 INFO [Tetris_theme_-_very_hard#1]       StepMonitoring.java:98   | SCALE
+2025-07-02 09:00:38,790 INFO [Tetris_theme_-_very_hard#1]         ScaleBuilder.java:241  | Beam  guessed height: 10 -- 0.50 of 21 interline
+2025-07-02 09:00:38,792 INFO [Tetris_theme_-_very_hard#1]         ScaleBuilder.java:264  | Beam measured height: 11 -- 0.33 of [6..21] range at 363% of needed quorum
+2025-07-02 09:00:38,792 INFO [Tetris_theme_-_very_hard#1]            ScaleStep.java:65   | Scale{ interline(20,21,21) line(2,2,3) beam(11)}
+2025-07-02 09:00:38,793 INFO [Tetris_theme_-_very_hard#1]       StepMonitoring.java:98   | GRID
+2025-07-02 09:00:39,384 INFO [Tetris_theme_-_very_hard#1]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-02 09:00:39,449 INFO [Tetris_theme_-_very_hard#1]    ClustersRetriever.java:328  | Retrieved raw line clusters: 10 of sizes [5] with interline(20,21,21)
+2025-07-02 09:00:39,691 INFO [Tetris_theme_-_very_hard#1]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8] #5[9, 10]
+2025-07-02 09:00:40,124 INFO [Tetris_theme_-_very_hard#1]        SystemManager.java:779  | 1 part along 5 systems
+2025-07-02 09:00:40,125 INFO [Tetris_theme_-_very_hard#1]                 Book.java:545  | Created scores: [{Score 1}]
+2025-07-02 09:00:40,126 INFO [Tetris_theme_-_very_hard#1]       StepMonitoring.java:98   | HEADERS
+2025-07-02 09:00:40,570 INFO [Tetris_theme_-_very_hard#1]      BasicClassifier.java:277  | Classifier loaded XML norms.
+2025-07-02 09:00:40,576 INFO [Tetris_theme_-_very_hard#1]   AbstractClassifier.java:396  | Classifier data loaded from default uri jar:file:/C:/Users/alexa/OneDrive/Desktop/PDF_to_MIDI/Audiveris/app/audiveris.jar!/res/basic-classifier.zip
+2025-07-02 09:00:41,568 INFO [Tetris_theme_-_very_hard#1]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-02 09:00:41,637 INFO [Tetris_theme_-_very_hard#1]        StemSeedsStep.java:86   | stem(2 max:2)
+2025-07-02 09:00:41,730 INFO [Tetris_theme_-_very_hard#1]       StepMonitoring.java:98   | BEAMS
+2025-07-02 09:00:45,439 INFO [Tetris_theme_-_very_hard#1]       StepMonitoring.java:98   | LEDGERS
+2025-07-02 09:00:45,889 INFO [Tetris_theme_-_very_hard#1]       StepMonitoring.java:98   | HEADS
+2025-07-02 09:00:52,919 INFO [Tetris_theme_-_very_hard#1]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:-0.5,R:-0.4] NOTEHEAD_BLACK[L:-0.5,R:-0.5]}
+2025-07-02 09:00:52,920 INFO [Tetris_theme_-_very_hard#1]       StepMonitoring.java:98   | STEMS
+2025-07-02 09:00:54,870 INFO [Tetris_theme_-_very_hard#1]       StepMonitoring.java:98   | REDUCTION
+2025-07-02 09:00:55,364 INFO [Tetris_theme_-_very_hard#1]        ReductionStep.java:105  | Stems free length median value: 71 pixels, 3.4 interlines
+2025-07-02 09:00:55,373 INFO [Tetris_theme_-_very_hard#1]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-02 09:00:55,373 INFO [Tetris_theme_-_very_hard#1]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-02 09:00:55,374 INFO [Tetris_theme_-_very_hard#1]       StepMonitoring.java:98   | TEXTS
+2025-07-02 09:00:56,566 INFO [Tetris_theme_-_very_hard#1]       StepMonitoring.java:98   | MEASURES
+2025-07-02 09:00:56,584 INFO [Tetris_theme_-_very_hard#1]                 Page.java:307  | 26 raw measures: [5 in system#1, 5 in system#2, 5 in system#3, 5 in system#4, 6 in system#5]
+2025-07-02 09:00:56,585 INFO [Tetris_theme_-_very_hard#1]       StepMonitoring.java:98   | CHORDS
+2025-07-02 09:00:56,627 INFO [Tetris_theme_-_very_hard#1]       StepMonitoring.java:98   | CURVES
+2025-07-02 09:00:57,833 INFO [Tetris_theme_-_very_hard#1]         SlursBuilder.java:240  | Slurs: 2
+2025-07-02 09:00:57,874 INFO [Tetris_theme_-_very_hard#1]      SegmentsBuilder.java:155  | Segments: 35
+2025-07-02 09:00:57,884 INFO [Tetris_theme_-_very_hard#1]       StepMonitoring.java:98   | SYMBOLS
+2025-07-02 09:00:58,488 INFO [Tetris_theme_-_very_hard#1]       StepMonitoring.java:98   | LINKS
+2025-07-02 09:00:58,574 INFO [Tetris_theme_-_very_hard#1]       StepMonitoring.java:98   | RHYTHMS
+2025-07-02 09:00:58,677 INFO [Tetris_theme_-_very_hard#1]        MeasureRhythm.java:1045 | Measure{#25} No timeOffset for HeadChordInter#9934{(0.948/0.948) staff:10 slot#3 dur:1/2}
+2025-07-02 09:00:58,678 INFO [Tetris_theme_-_very_hard#1]   AbstractChordInter.java:627  | Measure{#25} No timeOffset for HeadChordInter#9934{(0.948/0.948) staff:10 slot#3 dur:1/2}
+2025-07-02 09:00:58,679 INFO [Tetris_theme_-_very_hard#1]          StackRhythm.java:224  | S5 MeasureStack#25 no correct rhythm
+2025-07-02 09:00:58,680 INFO [Tetris_theme_-_very_hard#1]       StepMonitoring.java:98   | PAGE
+2025-07-02 09:00:58,692 INFO [Tetris_theme_-_very_hard#1]                 Book.java:2550 | Book{Tetris_theme_-_very_hard} storing
+2025-07-02 09:00:58,761 INFO [Tetris_theme_-_very_hard#1]                 Book.java:2531 | Stored /book.xml
+2025-07-02 09:00:58,926 INFO [Tetris_theme_-_very_hard#1]           DataHolder.java:348  | Stored /sheet#1/BINARY.png
+2025-07-02 09:00:59,793 INFO [Tetris_theme_-_very_hard#1]                Sheet.java:1562 | Stored /sheet#1/sheet#1.xml
+2025-07-02 09:00:59,793 INFO [Tetris_theme_-_very_hard#1]                 Book.java:2491 | Book stored as .\MXL\Tetris_theme_-_very_hard\Tetris_theme_-_very_hard.omr
+2025-07-02 09:00:59,799 INFO [Tetris_theme_-_very_hard#1]            SheetStub.java:1644 | Disposed sheet#1
+2025-07-02 09:00:59,863 INFO [Tetris_theme_-_very_hard#1]                 Book.java:2018 | End of Stub#1 memory: 37,735,256
+2025-07-02 09:00:59,866 INFO [Tetris_theme_-_very_hard#2]       StepMonitoring.java:98   | LOAD
+2025-07-02 09:00:59,934 INFO [Tetris_theme_-_very_hard#2]            SheetStub.java:1268 | Loaded image #2 2550x3299 from C:\Users\alexa\Downloads\Tetris_theme_-_very_hard.pdf
+2025-07-02 09:00:59,934 INFO [Tetris_theme_-_very_hard#2]       StepMonitoring.java:98   | BINARY
+2025-07-02 09:01:00,370 INFO [Tetris_theme_-_very_hard#2]       StepMonitoring.java:98   | SCALE
+2025-07-02 09:01:00,394 INFO [Tetris_theme_-_very_hard#2]         ScaleBuilder.java:241  | Beam  guessed height: 10 -- 0.50 of 21 interline
+2025-07-02 09:01:00,396 INFO [Tetris_theme_-_very_hard#2]         ScaleBuilder.java:264  | Beam measured height: 11 -- 0.33 of [6..21] range at 358% of needed quorum
+2025-07-02 09:01:00,396 INFO [Tetris_theme_-_very_hard#2]            ScaleStep.java:65   | Scale{ interline(20,21,21) line(2,2,3) beam(11)}
+2025-07-02 09:01:00,396 INFO [Tetris_theme_-_very_hard#2]       StepMonitoring.java:98   | GRID
+2025-07-02 09:01:00,557 INFO [Tetris_theme_-_very_hard#2]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-02 09:01:00,573 INFO [Tetris_theme_-_very_hard#2]    ClustersRetriever.java:328  | Retrieved raw line clusters: 8 of sizes [5] with interline(20,21,21)
+2025-07-02 09:01:00,701 INFO [Tetris_theme_-_very_hard#2]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8]
+2025-07-02 09:01:00,828 INFO [Tetris_theme_-_very_hard#2]        SystemManager.java:779  | 1 part along 4 systems
+2025-07-02 09:01:00,830 INFO [Tetris_theme_-_very_hard#2]       StepMonitoring.java:98   | HEADERS
+2025-07-02 09:01:01,048 INFO [Tetris_theme_-_very_hard#2]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-02 09:01:01,081 INFO [Tetris_theme_-_very_hard#2]        StemSeedsStep.java:86   | stem(2 max:2)
+2025-07-02 09:01:01,090 INFO [Tetris_theme_-_very_hard#2]       StepMonitoring.java:98   | BEAMS
+2025-07-02 09:01:05,350 INFO [Tetris_theme_-_very_hard#2]       StepMonitoring.java:98   | LEDGERS
+2025-07-02 09:01:06,036 INFO [Tetris_theme_-_very_hard#2]       StepMonitoring.java:98   | HEADS
+2025-07-02 09:01:14,491 INFO [Tetris_theme_-_very_hard#2]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[R:-0.5] NOTEHEAD_BLACK[L:-0.5,R:-0.6]}
+2025-07-02 09:01:14,492 INFO [Tetris_theme_-_very_hard#2]       StepMonitoring.java:98   | STEMS
+2025-07-02 09:01:15,579 INFO [Tetris_theme_-_very_hard#2]       StepMonitoring.java:98   | REDUCTION
+2025-07-02 09:01:15,854 INFO [Tetris_theme_-_very_hard#2]        ReductionStep.java:105  | Stems free length median value: 63 pixels, 3.0 interlines
+2025-07-02 09:01:15,858 INFO [Tetris_theme_-_very_hard#2]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-02 09:01:15,859 INFO [Tetris_theme_-_very_hard#2]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-02 09:01:15,859 INFO [Tetris_theme_-_very_hard#2]       StepMonitoring.java:98   | TEXTS
+2025-07-02 09:01:16,521 INFO [Tetris_theme_-_very_hard#2]       StepMonitoring.java:98   | MEASURES
+2025-07-02 09:01:16,523 INFO [Tetris_theme_-_very_hard#2]                 Page.java:307  | 16 raw measures: [5 in system#1, 5 in system#2, 5 in system#3, 1 in system#4]
+2025-07-02 09:01:16,524 INFO [Tetris_theme_-_very_hard#2]       StepMonitoring.java:98   | CHORDS
+2025-07-02 09:01:16,540 INFO [Tetris_theme_-_very_hard#2]       StepMonitoring.java:98   | CURVES
+2025-07-02 09:01:17,322 INFO [Tetris_theme_-_very_hard#2]         SlursBuilder.java:240  | Slurs: 0
+2025-07-02 09:01:17,332 INFO [Tetris_theme_-_very_hard#2]      SegmentsBuilder.java:155  | Segments: 24
+2025-07-02 09:01:17,333 INFO [Tetris_theme_-_very_hard#2]       StepMonitoring.java:98   | SYMBOLS
+2025-07-02 09:01:17,675 INFO [Tetris_theme_-_very_hard#2]       StepMonitoring.java:98   | LINKS
+2025-07-02 09:01:17,714 INFO [Tetris_theme_-_very_hard#2]       StepMonitoring.java:98   | RHYTHMS
+2025-07-02 09:01:17,737 INFO [Tetris_theme_-_very_hard#2]                Voice.java:257  | Measure{#9} Voice{#2 excess:1/4} too long
+2025-07-02 09:01:17,738 INFO [Tetris_theme_-_very_hard#2]          StackRhythm.java:224  | S2 MeasureStack#9 no correct rhythm
+2025-07-02 09:01:17,754 INFO [Tetris_theme_-_very_hard#2]       StepMonitoring.java:98   | PAGE
+2025-07-02 09:01:17,757 INFO [Tetris_theme_-_very_hard#2]                Voice.java:257  | Measure{#9} Voice{#2 excess:1/4} too long
+2025-07-02 09:01:17,758 INFO [Tetris_theme_-_very_hard#2]                 Book.java:2550 | Book{Tetris_theme_-_very_hard} storing
+2025-07-02 09:01:17,820 INFO [Tetris_theme_-_very_hard#2]                 Book.java:2531 | Stored /book.xml
+2025-07-02 09:01:17,962 INFO [Tetris_theme_-_very_hard#2]           DataHolder.java:348  | Stored /sheet#2/BINARY.png
+2025-07-02 09:01:18,416 INFO [Tetris_theme_-_very_hard#2]                Sheet.java:1562 | Stored /sheet#2/sheet#2.xml
+2025-07-02 09:01:18,417 INFO [Tetris_theme_-_very_hard#2]                 Book.java:2491 | Book stored as .\MXL\Tetris_theme_-_very_hard\Tetris_theme_-_very_hard.omr
+2025-07-02 09:01:18,424 INFO [Tetris_theme_-_very_hard#2]            SheetStub.java:1644 | Disposed sheet#2
+2025-07-02 09:01:18,491 INFO [Tetris_theme_-_very_hard#2]                 Book.java:2018 | End of Stub#2 memory: 37,435,048
+2025-07-02 09:01:18,492 INFO [Tetris_theme_-_very_hard]                 Book.java:2025 | Book processed.
+2025-07-02 09:01:19,313 INFO [Tetris_theme_-_very_hard]            SheetStub.java:995  | Loaded /sheet#1/sheet#1.xml
+2025-07-02 09:01:19,706 INFO [Tetris_theme_-_very_hard]            SheetStub.java:995  | Loaded /sheet#2/sheet#2.xml
+2025-07-02 09:01:20,222 INFO [Tetris_theme_-_very_hard]      PartwiseBuilder.java:2661 | Exporting sheet(s): [#1#2]
+2025-07-02 09:01:20,493 INFO [Tetris_theme_-_very_hard]        ScoreExporter.java:164  | Score Tetris_theme_-_very_hard exported to .\MXL\Tetris_theme_-_very_hard\Tetris_theme_-_very_hard.mxl
+2025-07-02 09:01:20,582 INFO [Tetris_theme_-_very_hard]                Score.java:181  | Closing {Score 1}

@@ -1,0 +1,684 @@
+2025-07-25 01:42:34,226 ERROR [This_Game]              IOUtils.java:278  | Unmapping is not supported.
+java.lang.reflect.InaccessibleObjectException: Unable to make public jdk.internal.ref.Cleaner java.nio.DirectByteBuffer.cleaner() accessible: module java.base does not "opens java.nio" to unnamed module @1e04fa0a
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(Unknown Source)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(Unknown Source)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(Unknown Source)
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Unknown Source)
+	at java.base/java.lang.reflect.Method.setAccessible(Unknown Source)
+	at org.apache.pdfbox.io.IOUtils.unmapper(IOUtils.java:244)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at org.apache.pdfbox.io.IOUtils.<clinit>(IOUtils.java:69)
+	at org.apache.pdfbox.Loader.loadPDF(Loader.java:378)
+	at org.audiveris.omr.image.ImageLoading.getPdfLoader(ImageLoading.java:159)
+	at org.audiveris.omr.image.ImageLoading.getLoader(ImageLoading.java:209)
+	at org.audiveris.omr.sheet.Book.createStubs(Book.java:557)
+	at org.audiveris.omr.CLI$ProcessingTask.processBook(CLI.java:830)
+	at org.audiveris.omr.CLI$CliTask.call(CLI.java:504)
+	at org.audiveris.omr.Main.runBatchTasks(Main.java:371)
+	at org.audiveris.omr.Main.main(Main.java:260)
+	at Audiveris.main(Audiveris.java:50)
+2025-07-25 01:42:34,267 INFO [This_Game]                 Book.java:562  | 7 sheets in D:\HFU\Master\1. Semester\Machine Learning\OMR_Project\alex\PDF\This_Game.pdf
+2025-07-25 01:42:34,340 INFO []                 Book.java:2531 | Stored /book.xml
+2025-07-25 01:42:34,340 INFO []                 Book.java:2491 | Book stored as .\MXL\This_Game\This_Game.omr
+2025-07-25 01:42:34,342 INFO []                 Book.java:1933 | Book reaching PAGE on sheets:[#1#2#3#4#5#6#7]
+2025-07-25 01:42:34,342 INFO [This_Game#1]       StepMonitoring.java:98   | LOAD
+2025-07-25 01:42:34,639 INFO [This_Game#1]            SheetStub.java:1268 | Loaded image #1 2479x3508 from D:\HFU\Master\1. Semester\Machine Learning\OMR_Project\alex\PDF\This_Game.pdf
+2025-07-25 01:42:34,642 INFO [This_Game#1]       StepMonitoring.java:98   | BINARY
+2025-07-25 01:42:35,044 INFO [This_Game#1]       StepMonitoring.java:98   | SCALE
+2025-07-25 01:42:35,066 INFO [This_Game#1]         ScaleBuilder.java:241  | Beam  guessed height:  9 -- 0.50 of 18 interline
+2025-07-25 01:42:35,066 INFO [This_Game#1]         ScaleBuilder.java:264  | Beam measured height:  9 -- 0.31 of [5..18] range at 499% of needed quorum
+2025-07-25 01:42:35,067 INFO [This_Game#1]            ScaleStep.java:65   | Scale{ interline(17,18,18) line(2,2,4) beam(9)}
+2025-07-25 01:42:35,067 INFO [This_Game#1]       StepMonitoring.java:98   | GRID
+2025-07-25 01:42:35,552 INFO [This_Game#1]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-25 01:42:35,610 INFO [This_Game#1]    ClustersRetriever.java:328  | Retrieved raw line clusters: 14 of sizes [5] with interline(17,18,18)
+2025-07-25 01:42:35,799 INFO [This_Game#1]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8] #5[9, 10] #6[11, 12] #7[13, 14]
+2025-07-25 01:42:36,144 INFO [This_Game#1]        SystemManager.java:779  | 1 part along 7 systems
+2025-07-25 01:42:36,145 INFO [This_Game#1]                 Book.java:545  | Created scores: [{Score 1}]
+2025-07-25 01:42:36,145 INFO [This_Game#1]       StepMonitoring.java:98   | HEADERS
+2025-07-25 01:42:36,307 INFO [This_Game#1]      BasicClassifier.java:277  | Classifier loaded XML norms.
+2025-07-25 01:42:36,311 INFO [This_Game#1]   AbstractClassifier.java:396  | Classifier data loaded from default uri jar:file:/D:/HFU/Master/1.%20Semester/Machine%20Learning/OMR_Project/TOOL/Audiveris/app/audiveris.jar!/res/basic-classifier.zip
+2025-07-25 01:42:36,991 INFO [This_Game#1]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-25 01:42:37,038 INFO [This_Game#1]        StemSeedsStep.java:86   | stem(2 max:3)
+2025-07-25 01:42:37,093 INFO [This_Game#1]       StepMonitoring.java:98   | BEAMS
+2025-07-25 01:42:39,680 INFO [This_Game#1]       StepMonitoring.java:98   | LEDGERS
+2025-07-25 01:42:39,957 INFO [This_Game#1]       StepMonitoring.java:98   | HEADS
+2025-07-25 01:42:44,743 INFO [This_Game#1]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:-0.7,R:-0.5] NOTEHEAD_BLACK[L:-0.5,R:-0.5]}
+2025-07-25 01:42:44,744 INFO [This_Game#1]       StepMonitoring.java:98   | STEMS
+2025-07-25 01:42:45,636 INFO [This_Game#1]       StepMonitoring.java:98   | REDUCTION
+2025-07-25 01:42:45,869 INFO [This_Game#1]        ReductionStep.java:105  | Stems free length median value: 62 pixels, 3.4 interlines
+2025-07-25 01:42:45,876 INFO [This_Game#1]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-25 01:42:45,876 INFO [This_Game#1]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-25 01:42:45,877 INFO [This_Game#1]       StepMonitoring.java:98   | TEXTS
+2025-07-25 01:42:46,882 INFO [This_Game#1]       StepMonitoring.java:98   | MEASURES
+2025-07-25 01:42:46,890 INFO [This_Game#1]                 Page.java:307  | 33 raw measures: [5 in system#1, 5 in system#2, 5 in system#3, 5 in system#4, 5 in system#5, 4 in system#6, 4 in system#7]
+2025-07-25 01:42:46,890 INFO [This_Game#1]       StepMonitoring.java:98   | CHORDS
+2025-07-25 01:42:46,912 INFO [This_Game#1]       StepMonitoring.java:98   | CURVES
+2025-07-25 01:42:47,631 INFO [This_Game#1]         SlursBuilder.java:240  | Slurs: 118
+2025-07-25 01:42:47,680 INFO [This_Game#1]      SegmentsBuilder.java:155  | Segments: 55
+2025-07-25 01:42:47,685 INFO [This_Game#1]       StepMonitoring.java:98   | SYMBOLS
+2025-07-25 01:42:48,205 INFO [This_Game#1]       StepMonitoring.java:98   | LINKS
+2025-07-25 01:42:48,288 INFO [This_Game#1]       StepMonitoring.java:98   | RHYTHMS
+2025-07-25 01:42:48,329 INFO [This_Game#1]        MeasureRhythm.java:1045 | Measure{#9} No timeOffset for HeadChordInter#11625{(0.933/0.933) staff:4 slot#8 dur:1/4}
+2025-07-25 01:42:48,330 INFO [This_Game#1]                Voice.java:257  | Measure{#9} Voice{#1 excess:1/4} too long
+2025-07-25 01:42:48,330 INFO [This_Game#1]          StackRhythm.java:224  | S2 MeasureStack#9 no correct rhythm
+2025-07-25 01:42:48,338 INFO [This_Game#1]                Voice.java:257  | Measure{#14} Voice{#1 excess:1/8} too long
+2025-07-25 01:42:48,338 INFO [This_Game#1]                Voice.java:257  | Measure{#14} Voice{#5 excess:1/8} too long
+2025-07-25 01:42:48,338 INFO [This_Game#1]          StackRhythm.java:224  | S3 MeasureStack#14 no correct rhythm
+2025-07-25 01:42:48,360 INFO [This_Game#1]                Voice.java:257  | Measure{#27} Voice{#1 excess:1/16} too long
+2025-07-25 01:42:48,360 INFO [This_Game#1]                Voice.java:257  | Measure{#27} Voice{#5 excess:1/16} too long
+2025-07-25 01:42:48,360 INFO [This_Game#1]          StackRhythm.java:224  | S6 MeasureStack#27 no correct rhythm
+2025-07-25 01:42:48,364 INFO [This_Game#1]        MeasureRhythm.java:1277 | Measure{#28} Time inconsistency in {3/8=[HeadChordInter#11874{(0.943/0.943) staff:12 slot#6 off:3/8 dur:1/16}], 15/16=[HeadChordInter#11842{(0.728/0.728) staff:11 slot#6 off:15/16 dur:1/16}]}
+2025-07-25 01:42:48,364 INFO [This_Game#1]        MeasureRhythm.java:1277 | Measure{#28} Time inconsistency in {7/16=[HeadChordInter#11875{(0.954/0.954) staff:12 slot#7 off:7/16 dur:1/16}], 1=[HeadChordInter#11843{(0.719/0.719) staff:11 slot#7 off:1 dur:1/16}]}
+2025-07-25 01:42:48,364 INFO [This_Game#1]        MeasureRhythm.java:1045 | Measure{#28} No timeOffset for HeadChordInter#11844{(0.717/0.717) staff:11 slot#8 dur:1/16}
+2025-07-25 01:42:48,364 INFO [This_Game#1]        MeasureRhythm.java:1045 | Measure{#28} No timeOffset for HeadChordInter#11876{(0.953/0.953) staff:12 slot#8 dur:1/8}
+2025-07-25 01:42:48,364 INFO [This_Game#1]   AbstractChordInter.java:627  | Measure{#28} No timeOffset for HeadChordInter#11847{(0.733/0.733) staff:11 slot#11 dur:1/16}
+2025-07-25 01:42:48,365 INFO [This_Game#1]   AbstractChordInter.java:627  | Measure{#28} No timeOffset for HeadChordInter#11878{(0.954/0.954) staff:12 slot#11 dur:1/16}
+2025-07-25 01:42:48,365 INFO [This_Game#1]   AbstractChordInter.java:627  | Measure{#28} No timeOffset for HeadChordInter#11847{(0.733/0.733) staff:11 slot#11 dur:1/16}
+2025-07-25 01:42:48,365 INFO [This_Game#1]   AbstractChordInter.java:627  | Measure{#28} No timeOffset for HeadChordInter#11881{(0.954/0.954) staff:12 slot#15 dur:1/16}
+2025-07-25 01:42:48,365 INFO [This_Game#1]   AbstractChordInter.java:627  | Measure{#28} No timeOffset for HeadChordInter#11848{(0.574/0.574) staff:11 slot#13 dur:1/4}
+2025-07-25 01:42:48,365 INFO [This_Game#1]   AbstractChordInter.java:627  | Measure{#28} No timeOffset for HeadChordInter#11881{(0.954/0.954) staff:12 slot#15 dur:1/16}
+2025-07-25 01:42:48,366 INFO [This_Game#1]                Voice.java:257  | Measure{#28} Voice{#2 excess:1/16} too long
+2025-07-25 01:42:48,366 INFO [This_Game#1]          StackRhythm.java:224  | S6 MeasureStack#28 no correct rhythm
+2025-07-25 01:42:48,370 INFO [This_Game#1]                Voice.java:257  | Measure{#29} Voice{#1 excess:1/16} too long
+2025-07-25 01:42:48,371 INFO [This_Game#1]                Voice.java:257  | Measure{#29} Voice{#6 excess:1/16} too long
+2025-07-25 01:42:48,371 INFO [This_Game#1]          StackRhythm.java:224  | S6 MeasureStack#29 no correct rhythm
+2025-07-25 01:42:48,375 INFO [This_Game#1]        MeasureRhythm.java:1277 | Measure{#31} Time inconsistency in {9/16=[HeadChordInter#11935{(0.957/0.957) staff:14 slot#6 off:9/16 dur:3/16}], 11/16=[HeadChordInter#11898{(0.950/0.950) staff:13 slot#6 off:11/16 dur:1/8}]}
+2025-07-25 01:42:48,376 INFO [This_Game#1]                Voice.java:257  | Measure{#31} Voice{#5 excess:1/16} too long
+2025-07-25 01:42:48,376 INFO [This_Game#1]                Voice.java:257  | Measure{#31} Voice{#6 excess:1/16} too long
+2025-07-25 01:42:48,376 INFO [This_Game#1]          StackRhythm.java:224  | S7 MeasureStack#31 no correct rhythm
+2025-07-25 01:42:48,378 INFO [This_Game#1]        MeasureRhythm.java:1045 | Measure{#32} No timeOffset for HeadChordInter#11905{(0.761/0.761) staff:13 slot#5 dur:1/4}
+2025-07-25 01:42:48,379 INFO [This_Game#1]   AbstractChordInter.java:627  | Measure{#32} No timeOffset for HeadChordInter#11905{(0.761/0.761) staff:13 slot#5 dur:1/4}
+2025-07-25 01:42:48,379 INFO [This_Game#1]   AbstractChordInter.java:627  | Measure{#32} No timeOffset for HeadChordInter#11905{(0.761/0.761) staff:13 slot#5 dur:1/4}
+2025-07-25 01:42:48,379 INFO [This_Game#1]   AbstractChordInter.java:627  | Measure{#32} No timeOffset for HeadChordInter#11905{(0.761/0.761) staff:13 slot#5 dur:1/4}
+2025-07-25 01:42:48,379 INFO [This_Game#1]   AbstractChordInter.java:627  | Measure{#32} No timeOffset for HeadChordInter#11905{(0.761/0.761) staff:13 slot#5 dur:1/4}
+2025-07-25 01:42:48,379 INFO [This_Game#1]   AbstractChordInter.java:627  | Measure{#32} No timeOffset for HeadChordInter#11905{(0.761/0.761) staff:13 slot#5 dur:1/4}
+2025-07-25 01:42:48,379 INFO [This_Game#1]   AbstractChordInter.java:627  | Measure{#32} No timeOffset for HeadChordInter#11905{(0.761/0.761) staff:13 slot#5 dur:1/4}
+2025-07-25 01:42:48,380 INFO [This_Game#1]        MeasureRhythm.java:1045 | Measure{#32} No timeOffset for HeadChordInter#11908{(0.766/0.766) staff:13 slot#8 dur:1/16}
+2025-07-25 01:42:48,380 INFO [This_Game#1]        MeasureRhythm.java:1045 | Measure{#32} No timeOffset for HeadChordInter#11944{(0.952/0.952) staff:14 slot#8 dur:1/8}
+2025-07-25 01:42:48,380 INFO [This_Game#1]   AbstractChordInter.java:627  | Measure{#32} No timeOffset for HeadChordInter#11905{(0.761/0.761) staff:13 slot#5 dur:1/4}
+2025-07-25 01:42:48,380 INFO [This_Game#1]   AbstractChordInter.java:627  | Measure{#32} No timeOffset for HeadChordInter#11910{(0.731/0.731) staff:13 slot#10 dur:1/16}
+2025-07-25 01:42:48,381 INFO [This_Game#1]   AbstractChordInter.java:627  | Measure{#32} No timeOffset for HeadChordInter#11946{(0.953/0.953) staff:14 slot#11 dur:1/16}
+2025-07-25 01:42:48,381 INFO [This_Game#1]   AbstractChordInter.java:627  | Measure{#32} No timeOffset for HeadChordInter#11911{(0.637/0.637) staff:13 slot#11 dur:1/4}
+2025-07-25 01:42:48,381 INFO [This_Game#1]   AbstractChordInter.java:627  | Measure{#32} No timeOffset for HeadChordInter#11910{(0.731/0.731) staff:13 slot#10 dur:1/16}
+2025-07-25 01:42:48,381 INFO [This_Game#1]   AbstractChordInter.java:627  | Measure{#32} No timeOffset for HeadChordInter#11946{(0.953/0.953) staff:14 slot#11 dur:1/16}
+2025-07-25 01:42:48,382 INFO [This_Game#1]   AbstractChordInter.java:627  | Measure{#32} No timeOffset for HeadChordInter#11911{(0.637/0.637) staff:13 slot#11 dur:1/4}
+2025-07-25 01:42:48,382 INFO [This_Game#1]   AbstractChordInter.java:627  | Measure{#32} No timeOffset for HeadChordInter#11910{(0.731/0.731) staff:13 slot#10 dur:1/16}
+2025-07-25 01:42:48,382 INFO [This_Game#1]   AbstractChordInter.java:627  | Measure{#32} No timeOffset for HeadChordInter#11946{(0.953/0.953) staff:14 slot#11 dur:1/16}
+2025-07-25 01:42:48,382 INFO [This_Game#1]   AbstractChordInter.java:627  | Measure{#32} No timeOffset for HeadChordInter#11912{(0.550/0.550) staff:13 slot#13 dur:1/8}
+2025-07-25 01:42:48,382 INFO [This_Game#1]   AbstractChordInter.java:627  | Measure{#32} No timeOffset for HeadChordInter#11910{(0.731/0.731) staff:13 slot#10 dur:1/16}
+2025-07-25 01:42:48,382 INFO [This_Game#1]   AbstractChordInter.java:627  | Measure{#32} No timeOffset for HeadChordInter#11946{(0.953/0.953) staff:14 slot#11 dur:1/16}
+2025-07-25 01:42:48,383 INFO [This_Game#1]   AbstractChordInter.java:627  | Measure{#32} No timeOffset for HeadChordInter#11912{(0.550/0.550) staff:13 slot#13 dur:1/8}
+2025-07-25 01:42:48,383 INFO [This_Game#1]                Voice.java:257  | Measure{#32} Voice{#1 excess:3/8} too long
+2025-07-25 01:42:48,383 INFO [This_Game#1]          StackRhythm.java:224  | S7 MeasureStack#32 no correct rhythm
+2025-07-25 01:42:48,385 INFO [This_Game#1]                Voice.java:257  | Measure{#33} Voice{#1 excess:1/16} too long
+2025-07-25 01:42:48,385 INFO [This_Game#1]                Voice.java:257  | Measure{#33} Voice{#6 excess:1/16} too long
+2025-07-25 01:42:48,385 INFO [This_Game#1]          StackRhythm.java:224  | S7 MeasureStack#33 no correct rhythm
+2025-07-25 01:42:48,385 INFO [This_Game#1]       StepMonitoring.java:98   | PAGE
+2025-07-25 01:42:48,386 INFO [This_Game#1]       SheetReduction.java:154  | Gutter. Different glyphs 2/3 RestInter#13677{(0.792/0.792) staff:4 QUARTER_REST p:16.2} vs SlurInter#11970{(0.560/0.907) SLUR_ABOVE}
+2025-07-25 01:42:48,392 INFO [This_Game#1]                Voice.java:257  | Measure{#14} Voice{#1 excess:1/8} too long
+2025-07-25 01:42:48,392 INFO [This_Game#1]                Voice.java:257  | Measure{#14} Voice{#5 excess:1/8} too long
+2025-07-25 01:42:48,393 INFO [This_Game#1]                Voice.java:257  | Measure{#27} Voice{#1 excess:1/16} too long
+2025-07-25 01:42:48,393 INFO [This_Game#1]                Voice.java:257  | Measure{#27} Voice{#5 excess:1/16} too long
+2025-07-25 01:42:48,393 INFO [This_Game#1]                Voice.java:257  | Measure{#28} Voice{#1 excess:1/16} too long
+2025-07-25 01:42:48,393 INFO [This_Game#1]                Voice.java:257  | Measure{#29} Voice{#1 excess:1/16} too long
+2025-07-25 01:42:48,393 INFO [This_Game#1]                Voice.java:257  | Measure{#29} Voice{#6 excess:1/16} too long
+2025-07-25 01:42:48,393 INFO [This_Game#1]                Voice.java:257  | Measure{#31} Voice{#5 excess:1/16} too long
+2025-07-25 01:42:48,393 INFO [This_Game#1]                Voice.java:257  | Measure{#31} Voice{#6 excess:1/16} too long
+2025-07-25 01:42:48,394 INFO [This_Game#1]                Voice.java:257  | Measure{#32} Voice{#5 excess:3/8} too long
+2025-07-25 01:42:48,394 INFO [This_Game#1]                Voice.java:257  | Measure{#33} Voice{#1 excess:1/16} too long
+2025-07-25 01:42:48,394 INFO [This_Game#1]                Voice.java:257  | Measure{#33} Voice{#6 excess:1/16} too long
+2025-07-25 01:42:48,395 INFO [This_Game#1]                 Book.java:2550 | Book{This_Game} storing
+2025-07-25 01:42:48,437 INFO [This_Game#1]                 Book.java:2531 | Stored /book.xml
+2025-07-25 01:42:48,491 INFO [This_Game#1]           DataHolder.java:348  | Stored /sheet#1/BINARY.png
+2025-07-25 01:42:49,090 INFO [This_Game#1]                Sheet.java:1562 | Stored /sheet#1/sheet#1.xml
+2025-07-25 01:42:49,090 INFO [This_Game#1]                 Book.java:2491 | Book stored as .\MXL\This_Game\This_Game.omr
+2025-07-25 01:42:49,092 INFO [This_Game#1]            SheetStub.java:1644 | Disposed sheet#1
+2025-07-25 01:42:49,124 INFO [This_Game#1]                 Book.java:2018 | End of Stub#1 memory: 38,253,296
+2025-07-25 01:42:49,124 INFO [This_Game#2]       StepMonitoring.java:98   | LOAD
+2025-07-25 01:42:49,201 INFO [This_Game#2]            SheetStub.java:1268 | Loaded image #2 2479x3508 from D:\HFU\Master\1. Semester\Machine Learning\OMR_Project\alex\PDF\This_Game.pdf
+2025-07-25 01:42:49,202 INFO [This_Game#2]       StepMonitoring.java:98   | BINARY
+2025-07-25 01:42:49,541 INFO [This_Game#2]       StepMonitoring.java:98   | SCALE
+2025-07-25 01:42:49,555 INFO [This_Game#2]         ScaleBuilder.java:241  | Beam  guessed height:  9 -- 0.50 of 18 interline
+2025-07-25 01:42:49,555 INFO [This_Game#2]         ScaleBuilder.java:264  | Beam measured height:  9 -- 0.31 of [5..18] range at 772% of needed quorum
+2025-07-25 01:42:49,555 INFO [This_Game#2]            ScaleStep.java:65   | Scale{ interline(17,18,18) line(2,2,3) beam(9)}
+2025-07-25 01:42:49,555 INFO [This_Game#2]       StepMonitoring.java:98   | GRID
+2025-07-25 01:42:49,808 INFO [This_Game#2]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-25 01:42:49,825 INFO [This_Game#2]    ClustersRetriever.java:328  | Retrieved raw line clusters: 14 of sizes [5] with interline(17,18,18)
+2025-07-25 01:42:49,932 INFO [This_Game#2]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8] #5[9, 10] #6[11, 12] #7[13, 14]
+2025-07-25 01:42:50,077 INFO [This_Game#2]        SystemManager.java:779  | 1 part along 7 systems
+2025-07-25 01:42:50,077 INFO [This_Game#2]       StepMonitoring.java:98   | HEADERS
+2025-07-25 01:42:50,493 INFO [This_Game#2]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-25 01:42:50,521 INFO [This_Game#2]        StemSeedsStep.java:86   | stem(2 max:3)
+2025-07-25 01:42:50,530 INFO [This_Game#2]       StepMonitoring.java:98   | BEAMS
+2025-07-25 01:42:53,039 INFO [This_Game#2]       StepMonitoring.java:98   | LEDGERS
+2025-07-25 01:42:53,224 INFO [This_Game#2]       StepMonitoring.java:98   | HEADS
+2025-07-25 01:42:58,451 INFO [This_Game#2]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:-0.6,R:-0.5] NOTEHEAD_BLACK[L:-0.5,R:-0.5]}
+2025-07-25 01:42:58,452 INFO [This_Game#2]       StepMonitoring.java:98   | STEMS
+2025-07-25 01:42:58,793 INFO [This_Game#2]           BeamLinker.java:1729 | Not linking shorter BeamInter#2728{(0.439/0.761) BEAM}
+2025-07-25 01:42:58,793 INFO [This_Game#2]           BeamLinker.java:1729 | Not linking shorter BeamInter#2738{(0.439/0.761) BEAM}
+2025-07-25 01:42:58,793 INFO [This_Game#2]           BeamLinker.java:1729 | Not linking shorter BeamInter#2743{(0.439/0.761) BEAM}
+2025-07-25 01:42:58,794 INFO [This_Game#2]           BeamLinker.java:1729 | Not linking shorter BeamInter#2733{(0.412/0.730) BEAM}
+2025-07-25 01:42:58,900 INFO [This_Game#2]           BeamLinker.java:1729 | Not linking shorter BeamInter#2837{(0.522/0.730) BEAM}
+2025-07-25 01:42:59,276 INFO [This_Game#2]       StepMonitoring.java:98   | REDUCTION
+2025-07-25 01:42:59,475 INFO [This_Game#2]        ReductionStep.java:105  | Stems free length median value: 62 pixels, 3.4 interlines
+2025-07-25 01:42:59,478 INFO [This_Game#2]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-25 01:42:59,478 INFO [This_Game#2]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-25 01:42:59,478 INFO [This_Game#2]       StepMonitoring.java:98   | TEXTS
+2025-07-25 01:43:00,328 INFO [This_Game#2]       StepMonitoring.java:98   | MEASURES
+2025-07-25 01:43:00,329 INFO [This_Game#2]                 Page.java:307  | 23 raw measures: [4 in system#1, 3 in system#2, 3 in system#3, 3 in system#4, 4 in system#5, 3 in system#6, 3 in system#7]
+2025-07-25 01:43:00,330 INFO [This_Game#2]       StepMonitoring.java:98   | CHORDS
+2025-07-25 01:43:00,339 INFO [This_Game#2]       StepMonitoring.java:98   | CURVES
+2025-07-25 01:43:00,890 INFO [This_Game#2]         SlursBuilder.java:240  | Slurs: 71
+2025-07-25 01:43:00,903 INFO [This_Game#2]      SegmentsBuilder.java:155  | Segments: 53
+2025-07-25 01:43:00,904 INFO [This_Game#2]       StepMonitoring.java:98   | SYMBOLS
+2025-07-25 01:43:01,378 INFO [This_Game#2]       StepMonitoring.java:98   | LINKS
+2025-07-25 01:43:01,451 INFO [This_Game#2]       StepMonitoring.java:98   | RHYTHMS
+2025-07-25 01:43:01,452 INFO [This_Game#2]           PageRhythm.java:199  | {Page#2.1} Time value reused from sheet#1
+2025-07-25 01:43:01,457 INFO [This_Game#2]                Voice.java:257  | Measure{#2} Voice{#5 excess:1/8} too long
+2025-07-25 01:43:01,457 INFO [This_Game#2]                Voice.java:257  | Measure{#2} Voice{#2 excess:1/8} too long
+2025-07-25 01:43:01,457 INFO [This_Game#2]          StackRhythm.java:224  | S1 MeasureStack#2 no correct rhythm
+2025-07-25 01:43:01,463 INFO [This_Game#2]        MeasureRhythm.java:1045 | Measure{#5} No timeOffset for HeadChordInter#12666{(0.723/0.723) staff:3 slot#2 dur:1/16}
+2025-07-25 01:43:01,463 INFO [This_Game#2]   AbstractChordInter.java:627  | Measure{#5} No timeOffset for HeadChordInter#12667{(0.636/0.636) staff:3 slot#3 dur:1/16}
+2025-07-25 01:43:01,464 INFO [This_Game#2]   AbstractChordInter.java:627  | Measure{#5} No timeOffset for HeadChordInter#12667{(0.636/0.636) staff:3 slot#3 dur:1/16}
+2025-07-25 01:43:01,464 INFO [This_Game#2]   AbstractChordInter.java:627  | Measure{#5} No timeOffset for HeadChordInter#12667{(0.636/0.636) staff:3 slot#3 dur:1/16}
+2025-07-25 01:43:01,464 INFO [This_Game#2]   AbstractChordInter.java:627  | Measure{#5} No timeOffset for HeadChordInter#12670{(0.638/0.638) staff:3 slot#6 dur:1/16}
+2025-07-25 01:43:01,464 INFO [This_Game#2]   AbstractChordInter.java:627  | Measure{#5} No timeOffset for HeadChordInter#12670{(0.638/0.638) staff:3 slot#6 dur:1/16}
+2025-07-25 01:43:01,464 INFO [This_Game#2]   AbstractChordInter.java:627  | Measure{#5} No timeOffset for HeadChordInter#12670{(0.638/0.638) staff:3 slot#6 dur:1/16}
+2025-07-25 01:43:01,464 INFO [This_Game#2]   AbstractChordInter.java:627  | Measure{#5} No timeOffset for HeadChordInter#12673{(0.654/0.654) staff:3 slot#9 dur:1/16}
+2025-07-25 01:43:01,464 INFO [This_Game#2]   AbstractChordInter.java:627  | Measure{#5} No timeOffset for HeadChordInter#12673{(0.654/0.654) staff:3 slot#9 dur:1/16}
+2025-07-25 01:43:01,465 INFO [This_Game#2]   AbstractChordInter.java:627  | Measure{#5} No timeOffset for HeadChordInter#12673{(0.654/0.654) staff:3 slot#9 dur:1/16}
+2025-07-25 01:43:01,465 INFO [This_Game#2]   AbstractChordInter.java:627  | Measure{#5} No timeOffset for HeadChordInter#12676{(0.671/0.671) staff:3 slot#12 dur:1/16}
+2025-07-25 01:43:01,465 INFO [This_Game#2]   AbstractChordInter.java:627  | Measure{#5} No timeOffset for HeadChordInter#12676{(0.671/0.671) staff:3 slot#12 dur:1/16}
+2025-07-25 01:43:01,465 INFO [This_Game#2]          StackRhythm.java:224  | S2 MeasureStack#5 no correct rhythm
+2025-07-25 01:43:01,473 INFO [This_Game#2]        MeasureRhythm.java:1045 | Measure{#9} No timeOffset for HeadChordInter#12728{(0.604/0.604) staff:5 slot#2 dur:1/16}
+2025-07-25 01:43:01,473 INFO [This_Game#2]   AbstractChordInter.java:627  | Measure{#9} No timeOffset for HeadChordInter#12729{(0.731/0.731) staff:5 slot#3 dur:1/16}
+2025-07-25 01:43:01,473 INFO [This_Game#2]   AbstractChordInter.java:627  | Measure{#9} No timeOffset for HeadChordInter#12729{(0.731/0.731) staff:5 slot#3 dur:1/16}
+2025-07-25 01:43:01,473 INFO [This_Game#2]   AbstractChordInter.java:627  | Measure{#9} No timeOffset for HeadChordInter#12729{(0.731/0.731) staff:5 slot#3 dur:1/16}
+2025-07-25 01:43:01,474 INFO [This_Game#2]   AbstractChordInter.java:627  | Measure{#9} No timeOffset for HeadChordInter#12732{(0.731/0.731) staff:5 slot#6 dur:1/16}
+2025-07-25 01:43:01,474 INFO [This_Game#2]   AbstractChordInter.java:627  | Measure{#9} No timeOffset for HeadChordInter#12732{(0.731/0.731) staff:5 slot#6 dur:1/16}
+2025-07-25 01:43:01,474 INFO [This_Game#2]   AbstractChordInter.java:627  | Measure{#9} No timeOffset for HeadChordInter#12732{(0.731/0.731) staff:5 slot#6 dur:1/16}
+2025-07-25 01:43:01,474 INFO [This_Game#2]   AbstractChordInter.java:627  | Measure{#9} No timeOffset for HeadChordInter#12734{(0.628/0.628) staff:5 slot#8 dur:1/4}
+2025-07-25 01:43:01,474 INFO [This_Game#2]   AbstractChordInter.java:627  | Measure{#9} No timeOffset for RestChordInter#14899{(0.800/0.800) staff:5 slot#10 dur:1/8}
+2025-07-25 01:43:01,475 INFO [This_Game#2]          StackRhythm.java:224  | S3 MeasureStack#9 no correct rhythm
+2025-07-25 01:43:01,484 INFO [This_Game#2]        MeasureRhythm.java:1277 | Measure{#13} Time inconsistency in {5/8=[HeadChordInter#12802{(0.942/0.942) staff:7 slot#12 off:5/8 dur:3/16}], 11/16=[HeadChordInter#12801{(0.925/0.925) staff:7 slot#12 off:11/16 dur:1/16}]}
+2025-07-25 01:43:01,484 INFO [This_Game#2]        MeasureRhythm.java:1277 | Measure{#13} Time inconsistency in {13/16=[HeadChordInter#12803{(0.925/0.925) staff:7 slot#15 off:13/16 dur:1/8}], 7/8=[HeadChordInter#12846{(0.897/0.897) staff:8 slot#15 off:7/8 dur:1/16}]}
+2025-07-25 01:43:01,495 INFO [This_Game#2]        MeasureRhythm.java:1045 | Measure{#18} No timeOffset for HeadChordInter#12911{(0.919/0.919) staff:11 slot#12 dur:1/4}
+2025-07-25 01:43:01,495 INFO [This_Game#2]        MeasureRhythm.java:1045 | Measure{#18} No timeOffset for HeadChordInter#12928{(0.954/0.954) staff:12 slot#12 dur:1/4}
+2025-07-25 01:43:01,495 INFO [This_Game#2]          StackRhythm.java:224  | S6 MeasureStack#18 no correct rhythm
+2025-07-25 01:43:01,501 INFO [This_Game#2]        MeasureRhythm.java:1045 | Measure{#21} No timeOffset for HeadChordInter#12979{(0.896/0.896) staff:14 slot#2 dur:1/16}
+2025-07-25 01:43:01,501 INFO [This_Game#2]   AbstractChordInter.java:627  | Measure{#21} No timeOffset for HeadChordInter#12986{(0.935/0.935) staff:14 slot#9 dur:1/16}
+2025-07-25 01:43:01,502 INFO [This_Game#2]   AbstractChordInter.java:627  | Measure{#21} No timeOffset for HeadChordInter#12986{(0.935/0.935) staff:14 slot#9 dur:1/16}
+2025-07-25 01:43:01,502 INFO [This_Game#2]   AbstractChordInter.java:627  | Measure{#21} No timeOffset for HeadChordInter#12986{(0.935/0.935) staff:14 slot#9 dur:1/16}
+2025-07-25 01:43:01,502 INFO [This_Game#2]          StackRhythm.java:224  | S7 MeasureStack#21 no correct rhythm
+2025-07-25 01:43:01,504 INFO [This_Game#2]        MeasureRhythm.java:1045 | Measure{#22} No timeOffset for HeadChordInter#12991{(0.909/0.909) staff:14 slot#2 dur:1/16}
+2025-07-25 01:43:01,504 INFO [This_Game#2]   AbstractChordInter.java:627  | Measure{#22} No timeOffset for HeadChordInter#12995{(0.955/0.955) staff:14 slot#6 dur:1/16}
+2025-07-25 01:43:01,504 INFO [This_Game#2]   AbstractChordInter.java:627  | Measure{#22} No timeOffset for HeadChordInter#12995{(0.955/0.955) staff:14 slot#6 dur:1/16}
+2025-07-25 01:43:01,504 INFO [This_Game#2]   AbstractChordInter.java:627  | Measure{#22} No timeOffset for HeadChordInter#12995{(0.955/0.955) staff:14 slot#6 dur:1/16}
+2025-07-25 01:43:01,505 INFO [This_Game#2]   AbstractChordInter.java:627  | Measure{#22} No timeOffset for HeadChordInter#12995{(0.955/0.955) staff:14 slot#6 dur:1/16}
+2025-07-25 01:43:01,505 INFO [This_Game#2]          StackRhythm.java:224  | S7 MeasureStack#22 no correct rhythm
+2025-07-25 01:43:01,507 INFO [This_Game#2]       StepMonitoring.java:98   | PAGE
+2025-07-25 01:43:01,510 INFO [This_Game#2]                Voice.java:257  | Measure{#2} Voice{#2 excess:1/8} too long
+2025-07-25 01:43:01,510 INFO [This_Game#2]                Voice.java:257  | Measure{#2} Voice{#5 excess:1/8} too long
+2025-07-25 01:43:01,511 INFO [This_Game#2]                 Book.java:2550 | Book{This_Game} storing
+2025-07-25 01:43:01,552 INFO [This_Game#2]                 Book.java:2531 | Stored /book.xml
+2025-07-25 01:43:01,603 INFO [This_Game#2]           DataHolder.java:348  | Stored /sheet#2/BINARY.png
+2025-07-25 01:43:02,113 INFO [This_Game#2]                Sheet.java:1562 | Stored /sheet#2/sheet#2.xml
+2025-07-25 01:43:02,113 INFO [This_Game#2]                 Book.java:2491 | Book stored as .\MXL\This_Game\This_Game.omr
+2025-07-25 01:43:02,115 INFO [This_Game#2]            SheetStub.java:1644 | Disposed sheet#2
+2025-07-25 01:43:02,140 INFO [This_Game#2]                 Book.java:2018 | End of Stub#2 memory: 38,076,136
+2025-07-25 01:43:02,141 INFO [This_Game#3]       StepMonitoring.java:98   | LOAD
+2025-07-25 01:43:02,192 INFO [This_Game#3]            SheetStub.java:1268 | Loaded image #3 2479x3508 from D:\HFU\Master\1. Semester\Machine Learning\OMR_Project\alex\PDF\This_Game.pdf
+2025-07-25 01:43:02,192 INFO [This_Game#3]       StepMonitoring.java:98   | BINARY
+2025-07-25 01:43:02,531 INFO [This_Game#3]       StepMonitoring.java:98   | SCALE
+2025-07-25 01:43:02,534 INFO [This_Game#3]         ScaleBuilder.java:241  | Beam  guessed height:  9 -- 0.50 of 18 interline
+2025-07-25 01:43:02,534 INFO [This_Game#3]         ScaleBuilder.java:264  | Beam measured height:  9 -- 0.31 of [5..18] range at 977% of needed quorum
+2025-07-25 01:43:02,534 INFO [This_Game#3]            ScaleStep.java:65   | Scale{ interline(17,18,18) line(2,2,3) beam(9)}
+2025-07-25 01:43:02,534 INFO [This_Game#3]       StepMonitoring.java:98   | GRID
+2025-07-25 01:43:02,686 INFO [This_Game#3]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-25 01:43:02,700 INFO [This_Game#3]    ClustersRetriever.java:328  | Retrieved raw line clusters: 14 of sizes [5] with interline(17,18,18)
+2025-07-25 01:43:02,751 INFO [This_Game#3]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8] #5[9, 10] #6[11, 12] #7[13, 14]
+2025-07-25 01:43:02,886 INFO [This_Game#3]        SystemManager.java:779  | 1 part along 7 systems
+2025-07-25 01:43:02,887 INFO [This_Game#3]       StepMonitoring.java:98   | HEADERS
+2025-07-25 01:43:03,225 INFO [This_Game#3]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-25 01:43:03,252 INFO [This_Game#3]        StemSeedsStep.java:86   | stem(2 max:3)
+2025-07-25 01:43:03,261 INFO [This_Game#3]       StepMonitoring.java:98   | BEAMS
+2025-07-25 01:43:05,748 INFO [This_Game#3]       StepMonitoring.java:98   | LEDGERS
+2025-07-25 01:43:05,929 INFO [This_Game#3]       StepMonitoring.java:98   | HEADS
+2025-07-25 01:43:10,866 INFO [This_Game#3]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:-0.9,R:-0.5] NOTEHEAD_BLACK[L:-0.5,R:-0.5]}
+2025-07-25 01:43:10,866 INFO [This_Game#3]       StepMonitoring.java:98   | STEMS
+2025-07-25 01:43:11,630 INFO [This_Game#3]       StepMonitoring.java:98   | REDUCTION
+2025-07-25 01:43:11,781 INFO [This_Game#3]        ReductionStep.java:105  | Stems free length median value: 58 pixels, 3.2 interlines
+2025-07-25 01:43:11,784 INFO [This_Game#3]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-25 01:43:11,785 INFO [This_Game#3]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-25 01:43:11,785 INFO [This_Game#3]       StepMonitoring.java:98   | TEXTS
+2025-07-25 01:43:12,241 INFO [This_Game#3]       StepMonitoring.java:98   | MEASURES
+2025-07-25 01:43:12,242 INFO [This_Game#3]                 Page.java:307  | 22 raw measures: [3 in system#1, 3 in system#2, 3 in system#3, 3 in system#4, 4 in system#5, 3 in system#6, 3 in system#7]
+2025-07-25 01:43:12,242 INFO [This_Game#3]       StepMonitoring.java:98   | CHORDS
+2025-07-25 01:43:12,252 INFO [This_Game#3]       StepMonitoring.java:98   | CURVES
+2025-07-25 01:43:12,721 INFO [This_Game#3]         SlursBuilder.java:240  | Slurs: 78
+2025-07-25 01:43:12,732 INFO [This_Game#3]      SegmentsBuilder.java:155  | Segments: 56
+2025-07-25 01:43:12,732 INFO [This_Game#3]       StepMonitoring.java:98   | SYMBOLS
+2025-07-25 01:43:13,029 INFO [This_Game#3]       StepMonitoring.java:98   | LINKS
+2025-07-25 01:43:13,081 INFO [This_Game#3]       StepMonitoring.java:98   | RHYTHMS
+2025-07-25 01:43:13,082 INFO [This_Game#3]           PageRhythm.java:199  | {Page#3.1} Time value reused from sheet#1
+2025-07-25 01:43:13,088 INFO [This_Game#3]                Voice.java:257  | Measure{#3} Voice{#1 excess:1/8} too long
+2025-07-25 01:43:13,088 INFO [This_Game#3]                Voice.java:257  | Measure{#3} Voice{#2 excess:1/8} too long
+2025-07-25 01:43:13,088 INFO [This_Game#3]          StackRhythm.java:224  | S1 MeasureStack#3 no correct rhythm
+2025-07-25 01:43:13,095 INFO [This_Game#3]        MeasureRhythm.java:1045 | Measure{#7} No timeOffset for HeadChordInter#12150{(0.913/0.913) staff:6 slot#2 dur:1/16}
+2025-07-25 01:43:13,095 INFO [This_Game#3]   AbstractChordInter.java:627  | Measure{#7} No timeOffset for HeadChordInter#12154{(0.953/0.953) staff:6 slot#6 dur:1/16}
+2025-07-25 01:43:13,095 INFO [This_Game#3]   AbstractChordInter.java:627  | Measure{#7} No timeOffset for HeadChordInter#12154{(0.953/0.953) staff:6 slot#6 dur:1/16}
+2025-07-25 01:43:13,095 INFO [This_Game#3]   AbstractChordInter.java:627  | Measure{#7} No timeOffset for HeadChordInter#12154{(0.953/0.953) staff:6 slot#6 dur:1/16}
+2025-07-25 01:43:13,096 INFO [This_Game#3]   AbstractChordInter.java:627  | Measure{#7} No timeOffset for HeadChordInter#12154{(0.953/0.953) staff:6 slot#6 dur:1/16}
+2025-07-25 01:43:13,096 INFO [This_Game#3]          StackRhythm.java:224  | S3 MeasureStack#7 no correct rhythm
+2025-07-25 01:43:13,102 INFO [This_Game#3]        MeasureRhythm.java:1277 | Measure{#11} Time inconsistency in {1/16=[HeadChordInter#12207{(0.746/0.746) staff:7 slot#4 off:1/16 dur:1/16}], 3/16=[HeadChordInter#12233{(0.911/0.911) staff:8 slot#4 off:3/16 dur:1/16}]}
+2025-07-25 01:43:13,102 INFO [This_Game#3]        MeasureRhythm.java:1277 | Measure{#11} Time inconsistency in {1/4=[HeadChordInter#12210{(0.748/0.748) staff:7 slot#8 off:1/4 dur:1/16}], 5/16=[HeadChordInter#12237{(0.929/0.929) staff:8 slot#8 off:5/16 dur:1/16}]}
+2025-07-25 01:43:13,105 INFO [This_Game#3]                Voice.java:257  | Measure{#13} Voice{#6 excess:3/8} too long
+2025-07-25 01:43:13,105 INFO [This_Game#3]                Voice.java:257  | Measure{#13} Voice{#7 excess:3/8} too long
+2025-07-25 01:43:13,105 INFO [This_Game#3]          StackRhythm.java:224  | S5 MeasureStack#13 no correct rhythm
+2025-07-25 01:43:13,107 INFO [This_Game#3]        MeasureRhythm.java:1045 | Measure{#14} No timeOffset for HeadChordInter#12290{(0.930/0.930) staff:10 slot#2 dur:1/16}
+2025-07-25 01:43:13,107 INFO [This_Game#3]   AbstractChordInter.java:627  | Measure{#14} No timeOffset for HeadChordInter#12293{(0.950/0.950) staff:10 slot#5 dur:1/8}
+2025-07-25 01:43:13,107 INFO [This_Game#3]        MeasureRhythm.java:1045 | Measure{#14} No timeOffset for HeadChordInter#12255{(0.961/0.961) staff:9 slot#3 dur:3/16}
+2025-07-25 01:43:13,107 INFO [This_Game#3]   AbstractChordInter.java:627  | Measure{#14} No timeOffset for HeadChordInter#12293{(0.950/0.950) staff:10 slot#5 dur:1/8}
+2025-07-25 01:43:13,107 INFO [This_Game#3]   AbstractChordInter.java:627  | Measure{#14} No timeOffset for HeadChordInter#12260{(0.925/0.925) staff:9 slot#11 dur:1/8}
+2025-07-25 01:43:13,108 INFO [This_Game#3]   AbstractChordInter.java:627  | Measure{#14} No timeOffset for HeadChordInter#12297{(0.932/0.932) staff:10 slot#9 dur:1/16}
+2025-07-25 01:43:13,108 INFO [This_Game#3]   AbstractChordInter.java:627  | Measure{#14} No timeOffset for HeadChordInter#12260{(0.925/0.925) staff:9 slot#11 dur:1/8}
+2025-07-25 01:43:13,108 INFO [This_Game#3]          StackRhythm.java:224  | S5 MeasureStack#14 no correct rhythm
+2025-07-25 01:43:13,109 INFO [This_Game#3]        MeasureRhythm.java:1045 | Measure{#15} No timeOffset for HeadChordInter#12300{(0.968/0.968) staff:10 slot#2 dur:1/16}
+2025-07-25 01:43:13,110 INFO [This_Game#3]   AbstractChordInter.java:627  | Measure{#15} No timeOffset for HeadChordInter#12303{(0.949/0.949) staff:10 slot#5 dur:1/8}
+2025-07-25 01:43:13,110 INFO [This_Game#3]        MeasureRhythm.java:1045 | Measure{#15} No timeOffset for HeadChordInter#12261{(0.963/0.963) staff:9 slot#3 dur:3/16}
+2025-07-25 01:43:13,110 INFO [This_Game#3]   AbstractChordInter.java:627  | Measure{#15} No timeOffset for HeadChordInter#12303{(0.949/0.949) staff:10 slot#5 dur:1/8}
+2025-07-25 01:43:13,110 INFO [This_Game#3]   AbstractChordInter.java:627  | Measure{#15} No timeOffset for HeadChordInter#12266{(0.942/0.942) staff:9 slot#11 dur:1/8}
+2025-07-25 01:43:13,110 INFO [This_Game#3]   AbstractChordInter.java:627  | Measure{#15} No timeOffset for HeadChordInter#12307{(0.968/0.968) staff:10 slot#9 dur:1/16}
+2025-07-25 01:43:13,110 INFO [This_Game#3]   AbstractChordInter.java:627  | Measure{#15} No timeOffset for HeadChordInter#12266{(0.942/0.942) staff:9 slot#11 dur:1/8}
+2025-07-25 01:43:13,111 INFO [This_Game#3]          StackRhythm.java:224  | S5 MeasureStack#15 no correct rhythm
+2025-07-25 01:43:13,112 INFO [This_Game#3]        MeasureRhythm.java:1045 | Measure{#16} No timeOffset for HeadChordInter#12310{(0.916/0.916) staff:10 slot#2 dur:1/16}
+2025-07-25 01:43:13,116 INFO [This_Game#3]   AbstractChordInter.java:627  | Measure{#16} No timeOffset for HeadChordInter#12313{(0.948/0.948) staff:10 slot#5 dur:1/8}
+2025-07-25 01:43:13,116 INFO [This_Game#3]        MeasureRhythm.java:1045 | Measure{#16} No timeOffset for HeadChordInter#12267{(0.961/0.961) staff:9 slot#3 dur:3/16}
+2025-07-25 01:43:13,116 INFO [This_Game#3]   AbstractChordInter.java:627  | Measure{#16} No timeOffset for HeadChordInter#12313{(0.948/0.948) staff:10 slot#5 dur:1/8}
+2025-07-25 01:43:13,116 INFO [This_Game#3]   AbstractChordInter.java:627  | Measure{#16} No timeOffset for HeadChordInter#12272{(0.915/0.915) staff:9 slot#11 dur:1/8}
+2025-07-25 01:43:13,116 INFO [This_Game#3]   AbstractChordInter.java:627  | Measure{#16} No timeOffset for HeadChordInter#12317{(0.934/0.934) staff:10 slot#9 dur:1/16}
+2025-07-25 01:43:13,116 INFO [This_Game#3]   AbstractChordInter.java:627  | Measure{#16} No timeOffset for HeadChordInter#12272{(0.915/0.915) staff:9 slot#11 dur:1/8}
+2025-07-25 01:43:13,117 INFO [This_Game#3]          StackRhythm.java:224  | S5 MeasureStack#16 no correct rhythm
+2025-07-25 01:43:13,130 INFO [This_Game#3]        MeasureRhythm.java:1277 | Measure{#21} Time inconsistency in {3/16=[HeadChordInter#12457{(0.773/0.773) staff:13 slot#7 off:3/16 dur:1/8}], 3/8=[HeadChordInter#12455{(0.946/0.946) staff:13 slot#7 off:3/8 dur:1/16}, HeadChordInter#12492{(0.945/0.945) staff:14 slot#7 off:3/8 dur:1/8}]}
+2025-07-25 01:43:13,130 INFO [This_Game#3]        MeasureRhythm.java:1277 | Measure{#21} Time inconsistency in {5/16=[HeadChordInter#12460{(0.751/0.751) staff:13 slot#9 off:5/16 dur:1/2}], 1/2=[HeadChordInter#12493{(0.838/0.838) staff:14 slot#9 off:1/2 dur:3/4}]}
+2025-07-25 01:43:13,130 INFO [This_Game#3]                Voice.java:257  | Measure{#21} Voice{#5 excess:1/4} too long
+2025-07-25 01:43:13,131 INFO [This_Game#3]          StackRhythm.java:224  | S7 MeasureStack#21 no correct rhythm
+2025-07-25 01:43:13,132 INFO [This_Game#3]       StepMonitoring.java:98   | PAGE
+2025-07-25 01:43:13,133 INFO [This_Game#3]       SheetReduction.java:154  | Gutter. Different glyphs 2/3 ArticulationInter#13493{(0.679/0.777) STACCATO} vs SlurInter#12506{(0.588/0.874) SLUR_ABOVE}
+2025-07-25 01:43:13,134 INFO [This_Game#3]                Voice.java:257  | Measure{#3} Voice{#1 excess:1/8} too long
+2025-07-25 01:43:13,135 INFO [This_Game#3]                Voice.java:257  | Measure{#3} Voice{#2 excess:1/8} too long
+2025-07-25 01:43:13,135 INFO [This_Game#3]                Voice.java:257  | Measure{#13} Voice{#6 excess:3/8} too long
+2025-07-25 01:43:13,135 INFO [This_Game#3]                Voice.java:257  | Measure{#13} Voice{#7 excess:3/8} too long
+2025-07-25 01:43:13,135 INFO [This_Game#3]                Voice.java:257  | Measure{#21} Voice{#5 excess:1/4} too long
+2025-07-25 01:43:13,136 INFO [This_Game#3]                 Book.java:2550 | Book{This_Game} storing
+2025-07-25 01:43:13,174 INFO [This_Game#3]                 Book.java:2531 | Stored /book.xml
+2025-07-25 01:43:13,216 INFO [This_Game#3]           DataHolder.java:348  | Stored /sheet#3/BINARY.png
+2025-07-25 01:43:13,723 INFO [This_Game#3]                Sheet.java:1562 | Stored /sheet#3/sheet#3.xml
+2025-07-25 01:43:13,723 INFO [This_Game#3]                 Book.java:2491 | Book stored as .\MXL\This_Game\This_Game.omr
+2025-07-25 01:43:13,726 INFO [This_Game#3]            SheetStub.java:1644 | Disposed sheet#3
+2025-07-25 01:43:13,751 INFO [This_Game#3]                 Book.java:2018 | End of Stub#3 memory: 38,732,696
+2025-07-25 01:43:13,751 INFO [This_Game#4]       StepMonitoring.java:98   | LOAD
+2025-07-25 01:43:13,795 INFO [This_Game#4]            SheetStub.java:1268 | Loaded image #4 2479x3508 from D:\HFU\Master\1. Semester\Machine Learning\OMR_Project\alex\PDF\This_Game.pdf
+2025-07-25 01:43:13,795 INFO [This_Game#4]       StepMonitoring.java:98   | BINARY
+2025-07-25 01:43:14,133 INFO [This_Game#4]       StepMonitoring.java:98   | SCALE
+2025-07-25 01:43:14,135 INFO [This_Game#4]         ScaleBuilder.java:241  | Beam  guessed height:  9 -- 0.50 of 18 interline
+2025-07-25 01:43:14,135 INFO [This_Game#4]         ScaleBuilder.java:264  | Beam measured height:  9 -- 0.31 of [5..18] range at 750% of needed quorum
+2025-07-25 01:43:14,135 INFO [This_Game#4]            ScaleStep.java:65   | Scale{ interline(17,18,18) line(2,2,4) beam(9)}
+2025-07-25 01:43:14,136 INFO [This_Game#4]       StepMonitoring.java:98   | GRID
+2025-07-25 01:43:14,319 INFO [This_Game#4]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-25 01:43:14,332 INFO [This_Game#4]    ClustersRetriever.java:328  | Retrieved raw line clusters: 14 of sizes [5] with interline(17,18,18)
+2025-07-25 01:43:14,397 INFO [This_Game#4]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8] #5[9, 10] #6[11, 12] #7[13, 14]
+2025-07-25 01:43:14,579 INFO [This_Game#4]        SystemManager.java:779  | 1 part along 7 systems
+2025-07-25 01:43:14,579 INFO [This_Game#4]       StepMonitoring.java:98   | HEADERS
+2025-07-25 01:43:15,067 INFO [This_Game#4]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-25 01:43:15,098 INFO [This_Game#4]        StemSeedsStep.java:86   | stem(2 max:3)
+2025-07-25 01:43:15,105 INFO [This_Game#4]       StepMonitoring.java:98   | BEAMS
+2025-07-25 01:43:17,592 INFO [This_Game#4]       StepMonitoring.java:98   | LEDGERS
+2025-07-25 01:43:17,782 INFO [This_Game#4]       StepMonitoring.java:98   | HEADS
+2025-07-25 01:43:23,021 INFO [This_Game#4]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:-0.7,R:-0.5] NOTEHEAD_BLACK[L:-0.6,R:-0.5]}
+2025-07-25 01:43:23,022 INFO [This_Game#4]       StepMonitoring.java:98   | STEMS
+2025-07-25 01:43:23,746 INFO [This_Game#4]       StepMonitoring.java:98   | REDUCTION
+2025-07-25 01:43:23,891 INFO [This_Game#4]        ReductionStep.java:105  | Stems free length median value: 62 pixels, 3.4 interlines
+2025-07-25 01:43:23,894 INFO [This_Game#4]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-25 01:43:23,894 INFO [This_Game#4]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-25 01:43:23,894 INFO [This_Game#4]       StepMonitoring.java:98   | TEXTS
+2025-07-25 01:43:24,616 INFO [This_Game#4]       StepMonitoring.java:98   | MEASURES
+2025-07-25 01:43:24,617 INFO [This_Game#4]                 Page.java:307  | 25 raw measures: [4 in system#1, 3 in system#2, 3 in system#3, 3 in system#4, 4 in system#5, 4 in system#6, 4 in system#7]
+2025-07-25 01:43:24,618 INFO [This_Game#4]       StepMonitoring.java:98   | CHORDS
+2025-07-25 01:43:24,627 INFO [This_Game#4]       StepMonitoring.java:98   | CURVES
+2025-07-25 01:43:25,076 INFO [This_Game#4]         SlursBuilder.java:240  | Slurs: 94
+2025-07-25 01:43:25,099 INFO [This_Game#4]      SegmentsBuilder.java:155  | Segments: 61
+2025-07-25 01:43:25,100 INFO [This_Game#4]       StepMonitoring.java:98   | SYMBOLS
+2025-07-25 01:43:25,456 INFO [This_Game#4]       StepMonitoring.java:98   | LINKS
+2025-07-25 01:43:25,457 INFO [This_Game#4]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#14978{(0.244) staff:2 OTTAVA BASSA}
+2025-07-25 01:43:25,469 INFO [This_Game#4]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#15011{(0.244) staff:3 OTTAVA ALTA}
+2025-07-25 01:43:25,469 INFO [This_Game#4]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#15012{(0.167) staff:4 OTTAVA BASSA}
+2025-07-25 01:43:25,475 INFO [This_Game#4]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#15030{(0.167) staff:5 OTTAVA ALTA}
+2025-07-25 01:43:25,475 INFO [This_Game#4]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#15031{(0.132) staff:6 OTTAVA BASSA}
+2025-07-25 01:43:25,483 INFO [This_Game#4]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#15060{(0.132) staff:7 OTTAVA ALTA}
+2025-07-25 01:43:25,517 INFO [This_Game#4]       StepMonitoring.java:98   | RHYTHMS
+2025-07-25 01:43:25,517 INFO [This_Game#4]           PageRhythm.java:199  | {Page#4.1} Time value reused from sheet#1
+2025-07-25 01:43:25,545 INFO [This_Game#4]        MeasureRhythm.java:1277 | Measure{#15} Time inconsistency in {5/16=[HeadChordInter#13486{(0.959/0.959) staff:9 slot#6 off:5/16 dur:1/8}], 3/8=[HeadChordInter#13513{(0.956/0.956) staff:10 slot#6 off:3/8 dur:1/8}]}
+2025-07-25 01:43:25,546 INFO [This_Game#4]        MeasureRhythm.java:1045 | Measure{#15} No timeOffset for HeadChordInter#13487{(0.568/0.568) staff:9 slot#7 dur:1/8}
+2025-07-25 01:43:25,546 INFO [This_Game#4]        MeasureRhythm.java:1277 | Measure{#15} Time inconsistency in {7/16=[HeadChordInter#13488{(0.956/0.956) staff:9 slot#8 off:7/16 dur:1/8}], 1/2=[HeadChordInter#13514{(0.952/0.952) staff:10 slot#8 off:1/2 dur:1/8}]}
+2025-07-25 01:43:25,546 INFO [This_Game#4]   AbstractChordInter.java:627  | Measure{#15} No timeOffset for HeadChordInter#13487{(0.568/0.568) staff:9 slot#7 dur:1/8}
+2025-07-25 01:43:25,546 INFO [This_Game#4]   AbstractChordInter.java:627  | Measure{#15} No timeOffset for RestChordInter#15261{(0.731/0.731) staff:9 slot#9 dur:1/8}
+2025-07-25 01:43:25,546 INFO [This_Game#4]        MeasureRhythm.java:1045 | Measure{#15} No timeOffset for HeadChordInter#13515{(0.927/0.927) staff:10 slot#10 dur:1/8}
+2025-07-25 01:43:25,547 INFO [This_Game#4]          StackRhythm.java:224  | S5 MeasureStack#15 no correct rhythm
+2025-07-25 01:43:25,552 INFO [This_Game#4]        MeasureRhythm.java:1277 | Measure{#19} Time inconsistency in {5/8=[HeadChordInter#13556{(0.937/0.937) staff:11 slot#11 off:5/8 dur:3/16}], 11/16=[HeadChordInter#13555{(0.910/0.910) staff:11 slot#11 off:11/16 dur:1/16}]}
+2025-07-25 01:43:25,552 INFO [This_Game#4]        MeasureRhythm.java:1277 | Measure{#19} Time inconsistency in {13/16=[HeadChordInter#13557{(0.898/0.898) staff:11 slot#14 off:13/16 dur:1/8}], 7/8=[HeadChordInter#13581{(0.939/0.939) staff:12 slot#14 off:7/8 dur:1/16}]}
+2025-07-25 01:43:25,558 INFO [This_Game#4]       StepMonitoring.java:98   | PAGE
+2025-07-25 01:43:25,563 INFO [This_Game#4]                 Book.java:2550 | Book{This_Game} storing
+2025-07-25 01:43:25,603 INFO [This_Game#4]                 Book.java:2531 | Stored /book.xml
+2025-07-25 01:43:25,645 INFO [This_Game#4]           DataHolder.java:348  | Stored /sheet#4/BINARY.png
+2025-07-25 01:43:26,173 INFO [This_Game#4]                Sheet.java:1562 | Stored /sheet#4/sheet#4.xml
+2025-07-25 01:43:26,173 INFO [This_Game#4]                 Book.java:2491 | Book stored as .\MXL\This_Game\This_Game.omr
+2025-07-25 01:43:26,177 INFO [This_Game#4]            SheetStub.java:1644 | Disposed sheet#4
+2025-07-25 01:43:26,200 INFO [This_Game#4]                 Book.java:2018 | End of Stub#4 memory: 38,505,504
+2025-07-25 01:43:26,200 INFO [This_Game#5]       StepMonitoring.java:98   | LOAD
+2025-07-25 01:43:26,239 INFO [This_Game#5]            SheetStub.java:1268 | Loaded image #5 2479x3508 from D:\HFU\Master\1. Semester\Machine Learning\OMR_Project\alex\PDF\This_Game.pdf
+2025-07-25 01:43:26,239 INFO [This_Game#5]       StepMonitoring.java:98   | BINARY
+2025-07-25 01:43:26,578 INFO [This_Game#5]       StepMonitoring.java:98   | SCALE
+2025-07-25 01:43:26,580 INFO [This_Game#5]         ScaleBuilder.java:241  | Beam  guessed height:  9 -- 0.50 of 18 interline
+2025-07-25 01:43:26,580 INFO [This_Game#5]         ScaleBuilder.java:264  | Beam measured height:  9 -- 0.31 of [5..18] range at 968% of needed quorum
+2025-07-25 01:43:26,580 INFO [This_Game#5]            ScaleStep.java:65   | Scale{ interline(17,18,18) line(2,2,3) beam(9)}
+2025-07-25 01:43:26,580 INFO [This_Game#5]       StepMonitoring.java:98   | GRID
+2025-07-25 01:43:26,722 INFO [This_Game#5]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-25 01:43:26,733 INFO [This_Game#5]    ClustersRetriever.java:328  | Retrieved raw line clusters: 14 of sizes [5] with interline(17,18,18)
+2025-07-25 01:43:26,784 INFO [This_Game#5]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8] #5[9, 10] #6[11, 12] #7[13, 14]
+2025-07-25 01:43:26,909 INFO [This_Game#5]        SystemManager.java:779  | 1 part along 7 systems
+2025-07-25 01:43:26,909 INFO [This_Game#5]       StepMonitoring.java:98   | HEADERS
+2025-07-25 01:43:27,425 INFO [This_Game#5]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-25 01:43:27,451 INFO [This_Game#5]        StemSeedsStep.java:86   | stem(2 max:3)
+2025-07-25 01:43:27,459 INFO [This_Game#5]       StepMonitoring.java:98   | BEAMS
+2025-07-25 01:43:29,974 INFO [This_Game#5]       StepMonitoring.java:98   | LEDGERS
+2025-07-25 01:43:30,147 INFO [This_Game#5]       StepMonitoring.java:98   | HEADS
+2025-07-25 01:43:34,982 INFO [This_Game#5]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[R:-0.5] NOTEHEAD_BLACK[L:-0.5,R:-0.5]}
+2025-07-25 01:43:34,982 INFO [This_Game#5]       StepMonitoring.java:98   | STEMS
+2025-07-25 01:43:35,680 INFO [This_Game#5]       StepMonitoring.java:98   | REDUCTION
+2025-07-25 01:43:35,808 INFO [This_Game#5]        ReductionStep.java:105  | Stems free length median value: 62 pixels, 3.4 interlines
+2025-07-25 01:43:35,810 INFO [This_Game#5]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-25 01:43:35,810 INFO [This_Game#5]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-25 01:43:35,810 INFO [This_Game#5]       StepMonitoring.java:98   | TEXTS
+2025-07-25 01:43:36,304 INFO [This_Game#5]       StepMonitoring.java:98   | MEASURES
+2025-07-25 01:43:36,305 INFO [This_Game#5]                 Page.java:307  | 22 raw measures: [3 in system#1, 3 in system#2, 3 in system#3, 3 in system#4, 3 in system#5, 4 in system#6, 3 in system#7]
+2025-07-25 01:43:36,305 INFO [This_Game#5]       StepMonitoring.java:98   | CHORDS
+2025-07-25 01:43:36,314 INFO [This_Game#5]       StepMonitoring.java:98   | CURVES
+2025-07-25 01:43:36,766 INFO [This_Game#5]         SlursBuilder.java:240  | Slurs: 64
+2025-07-25 01:43:36,775 INFO [This_Game#5]      SegmentsBuilder.java:155  | Segments: 59
+2025-07-25 01:43:36,775 INFO [This_Game#5]       StepMonitoring.java:98   | SYMBOLS
+2025-07-25 01:43:37,100 INFO [This_Game#5]       StepMonitoring.java:98   | LINKS
+2025-07-25 01:43:37,101 INFO [This_Game#5]        SentenceInter.java:461  | No chord near SentenceInter#11763{(0.722) staff:1 mFont:S-42 Direction} 104
+2025-07-25 01:43:37,117 INFO [This_Game#5]        SentenceInter.java:461  | No chord near SentenceInter#11769{(0.700) staff:5 mFont:S-42 Direction} 110
+2025-07-25 01:43:37,124 INFO [This_Game#5]        SentenceInter.java:461  | No chord near SentenceInter#11778{(0.646) staff:7 mFont:S-42 Direction} 113
+2025-07-25 01:43:37,133 INFO [This_Game#5]        SentenceInter.java:461  | No chord near SentenceInter#11786{(0.716) staff:9 mFont:S-42 Direction} 116
+2025-07-25 01:43:37,138 INFO [This_Game#5]        SentenceInter.java:461  | No chord near SentenceInter#11792{(0.700) staff:11 mFont:S-42 Direction} 119
+2025-07-25 01:43:37,145 INFO [This_Game#5]        SentenceInter.java:461  | No chord near SentenceInter#11818{(0.624) staff:13 mFont:S-42 Direction} 123
+2025-07-25 01:43:37,154 INFO [This_Game#5]       StepMonitoring.java:98   | RHYTHMS
+2025-07-25 01:43:37,155 INFO [This_Game#5]           PageRhythm.java:199  | {Page#5.1} Time value reused from sheet#1
+2025-07-25 01:43:37,164 INFO [This_Game#5]        MeasureRhythm.java:1045 | Measure{#6} No timeOffset for HeadChordInter#11962{(0.951/0.951) staff:3 slot#14 dur:1/16}
+2025-07-25 01:43:37,164 INFO [This_Game#5]          StackRhythm.java:224  | S2 MeasureStack#6 no correct rhythm
+2025-07-25 01:43:37,166 INFO [This_Game#5]                Voice.java:257  | Measure{#7} Voice{#1 excess:1/8} too long
+2025-07-25 01:43:37,166 INFO [This_Game#5]                Voice.java:257  | Measure{#7} Voice{#2 excess:1/8} too long
+2025-07-25 01:43:37,166 INFO [This_Game#5]          StackRhythm.java:224  | S3 MeasureStack#7 no correct rhythm
+2025-07-25 01:43:37,170 INFO [This_Game#5]        MeasureRhythm.java:1045 | Measure{#10} No timeOffset for HeadChordInter#12082{(0.917/0.917) staff:8 slot#2 dur:1/16}
+2025-07-25 01:43:37,171 INFO [This_Game#5]   AbstractChordInter.java:627  | Measure{#10} No timeOffset for HeadChordInter#12089{(0.936/0.936) staff:8 slot#9 dur:1/16}
+2025-07-25 01:43:37,171 INFO [This_Game#5]   AbstractChordInter.java:627  | Measure{#10} No timeOffset for HeadChordInter#12089{(0.936/0.936) staff:8 slot#9 dur:1/16}
+2025-07-25 01:43:37,171 INFO [This_Game#5]   AbstractChordInter.java:627  | Measure{#10} No timeOffset for HeadChordInter#12089{(0.936/0.936) staff:8 slot#9 dur:1/16}
+2025-07-25 01:43:37,171 INFO [This_Game#5]                Voice.java:257  | Measure{#10} Voice{#1 excess:5/16} too long
+2025-07-25 01:43:37,171 INFO [This_Game#5]          StackRhythm.java:224  | S4 MeasureStack#10 no correct rhythm
+2025-07-25 01:43:37,172 INFO [This_Game#5]        MeasureRhythm.java:1045 | Measure{#11} No timeOffset for HeadChordInter#12094{(0.907/0.907) staff:8 slot#2 dur:1/16}
+2025-07-25 01:43:37,172 INFO [This_Game#5]   AbstractChordInter.java:627  | Measure{#11} No timeOffset for HeadChordInter#12098{(0.957/0.957) staff:8 slot#6 dur:1/16}
+2025-07-25 01:43:37,173 INFO [This_Game#5]   AbstractChordInter.java:627  | Measure{#11} No timeOffset for HeadChordInter#12098{(0.957/0.957) staff:8 slot#6 dur:1/16}
+2025-07-25 01:43:37,173 INFO [This_Game#5]   AbstractChordInter.java:627  | Measure{#11} No timeOffset for HeadChordInter#12098{(0.957/0.957) staff:8 slot#6 dur:1/16}
+2025-07-25 01:43:37,173 INFO [This_Game#5]   AbstractChordInter.java:627  | Measure{#11} No timeOffset for RestChordInter#13666{(0.775/0.775) staff:8 slot#8 dur:1/8}
+2025-07-25 01:43:37,173 INFO [This_Game#5]   AbstractChordInter.java:627  | Measure{#11} No timeOffset for RestChordInter#13666{(0.775/0.775) staff:8 slot#8 dur:1/8}
+2025-07-25 01:43:37,173 INFO [This_Game#5]          StackRhythm.java:224  | S4 MeasureStack#11 no correct rhythm
+2025-07-25 01:43:37,178 INFO [This_Game#5]                Voice.java:257  | Measure{#14} Voice{#4 excess:1/16} too long
+2025-07-25 01:43:37,178 INFO [This_Game#5]          StackRhythm.java:224  | S5 MeasureStack#14 no correct rhythm
+2025-07-25 01:43:37,182 INFO [This_Game#5]                Voice.java:257  | Measure{#17} Voice{#6 excess:3/8} too long
+2025-07-25 01:43:37,182 INFO [This_Game#5]                Voice.java:257  | Measure{#17} Voice{#7 excess:3/8} too long
+2025-07-25 01:43:37,182 INFO [This_Game#5]          StackRhythm.java:224  | S6 MeasureStack#17 no correct rhythm
+2025-07-25 01:43:37,192 INFO [This_Game#5]        MeasureRhythm.java:1277 | Measure{#22} Time inconsistency in {1/8=[HeadChordInter#12293{(0.917/0.917) staff:13 slot#4 off:1/8 dur:3/16}], 11/16=[HeadChordInter#12341{(0.945/0.945) staff:14 slot#4 off:11/16 dur:1/8}]}
+2025-07-25 01:43:37,192 INFO [This_Game#5]        MeasureRhythm.java:1277 | Measure{#22} Time inconsistency in {13/16=[HeadChordInter#12342{(0.902/0.902) staff:14 slot#6 off:13/16 dur:1/16}], 15/16=[HeadChordInter#12295{(0.900/0.900) staff:13 slot#6 off:15/16 dur:1/16}]}
+2025-07-25 01:43:37,192 INFO [This_Game#5]        MeasureRhythm.java:1277 | Measure{#22} Time inconsistency in {5/16=[HeadChordInter#12298{(0.788/0.788) staff:13 slot#7 off:5/16 dur:3/16}], 7/8=[HeadChordInter#12343{(0.936/0.936) staff:14 slot#7 off:7/8 dur:1/8}], 1=[HeadChordInter#12296{(0.945/0.945) staff:13 slot#7 off:1 dur:1/16}]}
+2025-07-25 01:43:37,192 INFO [This_Game#5]        MeasureRhythm.java:1277 | Measure{#22} Time inconsistency in {1/2=[HeadChordInter#12303{(0.788/0.788) staff:13 slot#10 off:1/2 dur:3/16}], 17/16=[HeadChordInter#12301{(0.938/0.938) staff:13 slot#10 off:17/16 dur:1/16}, HeadChordInter#12345{(0.934/0.934) staff:14 slot#10 off:17/16 dur:1/8}]}
+2025-07-25 01:43:37,192 INFO [This_Game#5]        MeasureRhythm.java:1277 | Measure{#22} Time inconsistency in {11/16=[HeadChordInter#12308{(0.678/0.678) staff:13 slot#13 off:11/16 dur:3/16}], 5/4=[HeadChordInter#12347{(0.946/0.946) staff:14 slot#13 off:5/4 dur:1/8}]}
+2025-07-25 01:43:37,192 INFO [This_Game#5]        MeasureRhythm.java:1277 | Measure{#22} Time inconsistency in {13/16=[HeadChordInter#12310{(0.926/0.926) staff:13 slot#15 off:13/16 dur:1/16}], 11/8=[HeadChordInter#12348{(0.904/0.904) staff:14 slot#15 off:11/8 dur:1/16}]}
+2025-07-25 01:43:37,193 INFO [This_Game#5]        MeasureRhythm.java:1277 | Measure{#22} Time inconsistency in {7/8=[HeadChordInter#12313{(0.712/0.712) staff:13 slot#16 off:7/8 dur:1/16}, HeadChordInter#12311{(0.958/0.958) staff:13 slot#16 off:7/8 dur:1/16}], 23/16=[HeadChordInter#12349{(0.947/0.947) staff:14 slot#16 off:23/16 dur:1/16}]}
+2025-07-25 01:43:37,193 INFO [This_Game#5]                Voice.java:257  | Measure{#22} Voice{#2 excess:1/8} too long
+2025-07-25 01:43:37,193 INFO [This_Game#5]                Voice.java:257  | Measure{#22} Voice{#6 excess:1/2} too long
+2025-07-25 01:43:37,193 INFO [This_Game#5]                Voice.java:257  | Measure{#22} Voice{#3 excess:1/4} too long
+2025-07-25 01:43:37,193 INFO [This_Game#5]          StackRhythm.java:224  | S7 MeasureStack#22 no correct rhythm
+2025-07-25 01:43:37,193 INFO [This_Game#5]       StepMonitoring.java:98   | PAGE
+2025-07-25 01:43:37,194 INFO [This_Game#5]       SheetReduction.java:154  | Gutter. Different glyphs 3/4 ArticulationInter#13568{(0.799/0.888) STACCATO} vs SlurInter#12373{(0.562/0.911) SLUR_ABOVE}
+2025-07-25 01:43:37,196 INFO [This_Game#5]        MeasureRhythm.java:1045 | Measure{#11} No timeOffset for HeadChordInter#12094{(0.907/0.907) staff:8 slot#2 dur:1/16}
+2025-07-25 01:43:37,196 INFO [This_Game#5]   AbstractChordInter.java:627  | Measure{#11} No timeOffset for HeadChordInter#12098{(0.957/0.957) staff:8 slot#6 dur:1/16}
+2025-07-25 01:43:37,196 INFO [This_Game#5]   AbstractChordInter.java:627  | Measure{#11} No timeOffset for HeadChordInter#12098{(0.957/0.957) staff:8 slot#6 dur:1/16}
+2025-07-25 01:43:37,197 INFO [This_Game#5]   AbstractChordInter.java:627  | Measure{#11} No timeOffset for HeadChordInter#12098{(0.957/0.957) staff:8 slot#6 dur:1/16}
+2025-07-25 01:43:37,197 INFO [This_Game#5]   AbstractChordInter.java:627  | Measure{#11} No timeOffset for HeadChordInter#12098{(0.957/0.957) staff:8 slot#6 dur:1/16}
+2025-07-25 01:43:37,197 INFO [This_Game#5]          StackRhythm.java:224  | S4 MeasureStack#11 no correct rhythm
+2025-07-25 01:43:37,197 INFO [This_Game#5]                Voice.java:257  | Measure{#7} Voice{#1 excess:1/8} too long
+2025-07-25 01:43:37,197 INFO [This_Game#5]                Voice.java:257  | Measure{#7} Voice{#2 excess:1/8} too long
+2025-07-25 01:43:37,198 INFO [This_Game#5]                Voice.java:257  | Measure{#10} Voice{#1 excess:5/16} too long
+2025-07-25 01:43:37,198 INFO [This_Game#5]                Voice.java:257  | Measure{#14} Voice{#4 excess:1/16} too long
+2025-07-25 01:43:37,198 INFO [This_Game#5]                Voice.java:257  | Measure{#17} Voice{#6 excess:3/8} too long
+2025-07-25 01:43:37,198 INFO [This_Game#5]                Voice.java:257  | Measure{#17} Voice{#7 excess:3/8} too long
+2025-07-25 01:43:37,198 INFO [This_Game#5]                Voice.java:257  | Measure{#22} Voice{#2 excess:1/8} too long
+2025-07-25 01:43:37,198 INFO [This_Game#5]                Voice.java:257  | Measure{#22} Voice{#4 excess:1/4} too long
+2025-07-25 01:43:37,198 INFO [This_Game#5]                Voice.java:257  | Measure{#22} Voice{#6 excess:1/2} too long
+2025-07-25 01:43:37,198 INFO [This_Game#5]                 Book.java:2550 | Book{This_Game} storing
+2025-07-25 01:43:37,237 INFO [This_Game#5]                 Book.java:2531 | Stored /book.xml
+2025-07-25 01:43:37,278 INFO [This_Game#5]           DataHolder.java:348  | Stored /sheet#5/BINARY.png
+2025-07-25 01:43:37,775 INFO [This_Game#5]                Sheet.java:1562 | Stored /sheet#5/sheet#5.xml
+2025-07-25 01:43:37,775 INFO [This_Game#5]                 Book.java:2491 | Book stored as .\MXL\This_Game\This_Game.omr
+2025-07-25 01:43:37,778 INFO [This_Game#5]            SheetStub.java:1644 | Disposed sheet#5
+2025-07-25 01:43:37,801 INFO [This_Game#5]                 Book.java:2018 | End of Stub#5 memory: 38,404,624
+2025-07-25 01:43:37,801 INFO [This_Game#6]       StepMonitoring.java:98   | LOAD
+2025-07-25 01:43:37,840 INFO [This_Game#6]            SheetStub.java:1268 | Loaded image #6 2479x3508 from D:\HFU\Master\1. Semester\Machine Learning\OMR_Project\alex\PDF\This_Game.pdf
+2025-07-25 01:43:37,840 INFO [This_Game#6]       StepMonitoring.java:98   | BINARY
+2025-07-25 01:43:38,180 INFO [This_Game#6]       StepMonitoring.java:98   | SCALE
+2025-07-25 01:43:38,182 INFO [This_Game#6]         ScaleBuilder.java:241  | Beam  guessed height:  9 -- 0.50 of 18 interline
+2025-07-25 01:43:38,182 INFO [This_Game#6]         ScaleBuilder.java:264  | Beam measured height:  9 -- 0.31 of [5..18] range at 744% of needed quorum
+2025-07-25 01:43:38,182 INFO [This_Game#6]            ScaleStep.java:65   | Scale{ interline(17,18,18) line(2,2,3) beam(9)}
+2025-07-25 01:43:38,182 INFO [This_Game#6]       StepMonitoring.java:98   | GRID
+2025-07-25 01:43:38,336 INFO [This_Game#6]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-25 01:43:38,347 INFO [This_Game#6]    ClustersRetriever.java:328  | Retrieved raw line clusters: 14 of sizes [5] with interline(17,18,18)
+2025-07-25 01:43:38,400 INFO [This_Game#6]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8] #5[9, 10] #6[11, 12] #7[13, 14]
+2025-07-25 01:43:38,531 INFO [This_Game#6]        SystemManager.java:779  | 1 part along 7 systems
+2025-07-25 01:43:38,532 INFO [This_Game#6]       StepMonitoring.java:98   | HEADERS
+2025-07-25 01:43:39,062 INFO [This_Game#6]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-25 01:43:39,093 INFO [This_Game#6]        StemSeedsStep.java:86   | stem(2 max:3)
+2025-07-25 01:43:39,099 INFO [This_Game#6]       StepMonitoring.java:98   | BEAMS
+2025-07-25 01:43:41,536 INFO [This_Game#6]       StepMonitoring.java:98   | LEDGERS
+2025-07-25 01:43:41,699 INFO [This_Game#6]       StepMonitoring.java:98   | HEADS
+2025-07-25 01:43:46,577 INFO [This_Game#6]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:-0.6] NOTEHEAD_BLACK[L:-0.5,R:-0.5]}
+2025-07-25 01:43:46,578 INFO [This_Game#6]       StepMonitoring.java:98   | STEMS
+2025-07-25 01:43:47,248 INFO [This_Game#6]       StepMonitoring.java:98   | REDUCTION
+2025-07-25 01:43:47,370 INFO [This_Game#6]        ReductionStep.java:105  | Stems free length median value: 62 pixels, 3.4 interlines
+2025-07-25 01:43:47,373 INFO [This_Game#6]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-25 01:43:47,373 INFO [This_Game#6]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-25 01:43:47,373 INFO [This_Game#6]       StepMonitoring.java:98   | TEXTS
+2025-07-25 01:43:48,009 INFO [This_Game#6]       StepMonitoring.java:98   | MEASURES
+2025-07-25 01:43:48,010 INFO [This_Game#6]                 Page.java:307  | 28 raw measures: [3 in system#1, 3 in system#2, 4 in system#3, 5 in system#4, 5 in system#5, 4 in system#6, 4 in system#7]
+2025-07-25 01:43:48,010 INFO [This_Game#6]       StepMonitoring.java:98   | CHORDS
+2025-07-25 01:43:48,017 INFO [This_Game#6]       StepMonitoring.java:98   | CURVES
+2025-07-25 01:43:48,456 INFO [This_Game#6]         SlursBuilder.java:240  | Slurs: 69
+2025-07-25 01:43:48,471 INFO [This_Game#6]      SegmentsBuilder.java:155  | Segments: 93
+2025-07-25 01:43:48,474 INFO [This_Game#6]       StepMonitoring.java:98   | SYMBOLS
+2025-07-25 01:43:48,873 INFO [This_Game#6]       StepMonitoring.java:98   | LINKS
+2025-07-25 01:43:48,881 INFO [This_Game#6]        SentenceInter.java:461  | No chord near SentenceInter#12367{(0.669) staff:3 mFont:37 Direction} 129
+2025-07-25 01:43:48,890 INFO [This_Game#6]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#14295{(0.798) staff:5 OTTAVA ALTA}
+2025-07-25 01:43:48,907 INFO [This_Game#6]        SentenceInter.java:461  | No chord near SentenceInter#12379{(0.708) staff:9 mFont:39 Direction} 141
+2025-07-25 01:43:48,919 INFO [This_Game#6]        SentenceInter.java:461  | No chord near SentenceInter#12410{(0.689) staff:13 mFont:37 Direction} 150
+2025-07-25 01:43:48,927 INFO [This_Game#6]       StepMonitoring.java:98   | RHYTHMS
+2025-07-25 01:43:48,927 INFO [This_Game#6]           PageRhythm.java:199  | {Page#6.1} Time value reused from sheet#1
+2025-07-25 01:43:48,934 INFO [This_Game#6]                Voice.java:257  | Measure{#3} Voice{#5 excess:1/8} too long
+2025-07-25 01:43:48,934 INFO [This_Game#6]          StackRhythm.java:224  | S1 MeasureStack#3 no correct rhythm
+2025-07-25 01:43:48,943 INFO [This_Game#6]                Voice.java:257  | Measure{#7} Voice{#6 excess:1/8} too long
+2025-07-25 01:43:48,944 INFO [This_Game#6]          StackRhythm.java:224  | S3 MeasureStack#7 no correct rhythm
+2025-07-25 01:43:48,946 INFO [This_Game#6]        MeasureRhythm.java:1045 | Measure{#8} No timeOffset for HeadChordInter#12670{(0.501/0.501) staff:6 slot#2 dur:1/4}
+2025-07-25 01:43:48,946 INFO [This_Game#6]   AbstractChordInter.java:627  | Measure{#8} No timeOffset for HeadChordInter#12670{(0.501/0.501) staff:6 slot#2 dur:1/4}
+2025-07-25 01:43:48,946 INFO [This_Game#6]   AbstractChordInter.java:627  | Measure{#8} No timeOffset for HeadChordInter#12672{(0.887/0.887) staff:6 slot#4 dur:1/16}
+2025-07-25 01:43:48,947 INFO [This_Game#6]   AbstractChordInter.java:627  | Measure{#8} No timeOffset for HeadChordInter#12676{(0.883/0.883) staff:6 slot#8 dur:1/16}
+2025-07-25 01:43:48,947 INFO [This_Game#6]   AbstractChordInter.java:627  | Measure{#8} No timeOffset for HeadChordInter#12680{(0.955/0.955) staff:6 slot#12 dur:1/16}
+2025-07-25 01:43:48,947 INFO [This_Game#6]          StackRhythm.java:224  | S3 MeasureStack#8 no correct rhythm
+2025-07-25 01:43:48,951 INFO [This_Game#6]        MeasureRhythm.java:1045 | Measure{#14} No timeOffset for HeadChordInter#12751{(0.922/0.922) staff:8 slot#2 dur:1/8}
+2025-07-25 01:43:48,951 INFO [This_Game#6]   AbstractChordInter.java:627  | Measure{#14} No timeOffset for HeadChordInter#12751{(0.922/0.922) staff:8 slot#2 dur:1/8}
+2025-07-25 01:43:48,951 INFO [This_Game#6]   AbstractChordInter.java:627  | Measure{#14} No timeOffset for HeadChordInter#12753{(0.927/0.927) staff:8 slot#4 dur:1/8}
+2025-07-25 01:43:48,951 INFO [This_Game#6]        MeasureRhythm.java:1045 | Measure{#14} No timeOffset for HeadChordInter#12716{(0.893/0.893) staff:7 slot#5 dur:3/16}
+2025-07-25 01:43:48,951 INFO [This_Game#6]          StackRhythm.java:224  | S4 MeasureStack#14 no correct rhythm
+2025-07-25 01:43:48,952 INFO [This_Game#6]                Voice.java:257  | Measure{#15} Voice{#1 excess:1/4} too long
+2025-07-25 01:43:48,952 INFO [This_Game#6]                Voice.java:257  | Measure{#15} Voice{#2 excess:1/8} too long
+2025-07-25 01:43:48,952 INFO [This_Game#6]                Voice.java:257  | Measure{#15} Voice{#3 excess:1/4} too long
+2025-07-25 01:43:48,952 INFO [This_Game#6]          StackRhythm.java:224  | S4 MeasureStack#15 no correct rhythm
+2025-07-25 01:43:48,953 INFO [This_Game#6]        MeasureRhythm.java:1277 | Measure{#16} Time inconsistency in {3/8=[HeadChordInter#12771{(0.937/0.937) staff:9 slot#4 off:3/8 dur:1/8}], 7/16=[HeadChordInter#12808{(0.952/0.952) staff:10 slot#4 off:7/16 dur:1/8}]}
+2025-07-25 01:43:48,954 INFO [This_Game#6]        MeasureRhythm.java:1277 | Measure{#17} Time inconsistency in {3/8=[HeadChordInter#12778{(0.892/0.892) staff:9 slot#5 off:3/8 dur:1/8}], 3/4=[HeadChordInter#12816{(0.928/0.928) staff:10 slot#5 off:3/4 dur:1/8}]}
+2025-07-25 01:43:48,954 INFO [This_Game#6]        MeasureRhythm.java:1045 | Measure{#17} No timeOffset for HeadChordInter#12819{(0.944/0.944) staff:10 slot#8 dur:1/8}
+2025-07-25 01:43:48,954 INFO [This_Game#6]                Voice.java:257  | Measure{#17} Voice{#5 excess:3/8} too long
+2025-07-25 01:43:48,954 INFO [This_Game#6]                Voice.java:257  | Measure{#17} Voice{#2 excess:3/8} too long
+2025-07-25 01:43:48,954 INFO [This_Game#6]                Voice.java:257  | Measure{#17} Voice{#7 excess:3/16} too long
+2025-07-25 01:43:48,954 INFO [This_Game#6]          StackRhythm.java:224  | S5 MeasureStack#17 no correct rhythm
+2025-07-25 01:43:48,956 INFO [This_Game#6]                Voice.java:257  | Measure{#19} Voice{#1 excess:1/2} too long
+2025-07-25 01:43:48,956 INFO [This_Game#6]                Voice.java:257  | Measure{#19} Voice{#2 excess:1/4} too long
+2025-07-25 01:43:48,956 INFO [This_Game#6]          StackRhythm.java:224  | S5 MeasureStack#19 no correct rhythm
+2025-07-25 01:43:48,957 INFO [This_Game#6]                Voice.java:257  | Measure{#20} Voice{#5 excess:1/4} too long
+2025-07-25 01:43:48,957 INFO [This_Game#6]          StackRhythm.java:224  | S5 MeasureStack#20 no correct rhythm
+2025-07-25 01:43:48,962 INFO [This_Game#6]                Voice.java:257  | Measure{#26} Voice{#1 excess:1/8} too long
+2025-07-25 01:43:48,962 INFO [This_Game#6]                Voice.java:257  | Measure{#26} Voice{#2 excess:1/8} too long
+2025-07-25 01:43:48,962 INFO [This_Game#6]          StackRhythm.java:224  | S7 MeasureStack#26 no correct rhythm
+2025-07-25 01:43:48,964 INFO [This_Game#6]        MeasureRhythm.java:1045 | Measure{#27} No timeOffset for HeadChordInter#12922{(0.930/0.930) staff:13 slot#7 dur:1/16}
+2025-07-25 01:43:48,964 INFO [This_Game#6]        MeasureRhythm.java:1045 | Measure{#27} No timeOffset for HeadChordInter#12961{(0.948/0.948) staff:14 slot#7 dur:3/16}
+2025-07-25 01:43:48,964 INFO [This_Game#6]   AbstractChordInter.java:627  | Measure{#27} No timeOffset for HeadChordInter#12925{(0.940/0.940) staff:13 slot#10 dur:1/16}
+2025-07-25 01:43:48,964 INFO [This_Game#6]   AbstractChordInter.java:627  | Measure{#27} No timeOffset for HeadChordInter#12963{(0.910/0.910) staff:14 slot#13 dur:1/8}
+2025-07-25 01:43:48,964 INFO [This_Game#6]          StackRhythm.java:224  | S7 MeasureStack#27 no correct rhythm
+2025-07-25 01:43:48,965 INFO [This_Game#6]                Voice.java:257  | Measure{#28} Voice{#1 excess:1/8} too long
+2025-07-25 01:43:48,965 INFO [This_Game#6]                Voice.java:257  | Measure{#28} Voice{#9 excess:1/8} too long
+2025-07-25 01:43:48,965 INFO [This_Game#6]          StackRhythm.java:224  | S7 MeasureStack#28 no correct rhythm
+2025-07-25 01:43:48,966 INFO [This_Game#6]       StepMonitoring.java:98   | PAGE
+2025-07-25 01:43:48,967 INFO [This_Game#6]       SheetReduction.java:154  | Gutter. Different glyphs 6/7 StemInter#11769{(0.789/0.985) STEM} vs SlurInter#12979{(0.600/0.880) SLUR_ABOVE}
+2025-07-25 01:43:48,967 INFO [This_Game#6]       SheetReduction.java:154  | Gutter. Different glyphs 6/7 BeamInter#3168{(0.691/0.972) BEAM} vs SlurInter#12979{(0.600/0.880) SLUR_ABOVE}
+2025-07-25 01:43:48,968 INFO [This_Game#6]                Voice.java:257  | Measure{#3} Voice{#5 excess:1/8} too long
+2025-07-25 01:43:48,968 INFO [This_Game#6]                Voice.java:257  | Measure{#7} Voice{#6 excess:1/8} too long
+2025-07-25 01:43:48,968 INFO [This_Game#6]                Voice.java:257  | Measure{#15} Voice{#1 excess:1/4} too long
+2025-07-25 01:43:48,968 INFO [This_Game#6]                Voice.java:257  | Measure{#15} Voice{#2 excess:1/8} too long
+2025-07-25 01:43:48,968 INFO [This_Game#6]                Voice.java:257  | Measure{#15} Voice{#3 excess:1/4} too long
+2025-07-25 01:43:48,968 INFO [This_Game#6]                Voice.java:257  | Measure{#17} Voice{#2 excess:3/8} too long
+2025-07-25 01:43:48,968 INFO [This_Game#6]                Voice.java:257  | Measure{#17} Voice{#5 excess:3/8} too long
+2025-07-25 01:43:48,968 INFO [This_Game#6]                Voice.java:257  | Measure{#17} Voice{#7 excess:3/16} too long
+2025-07-25 01:43:48,968 INFO [This_Game#6]                Voice.java:257  | Measure{#19} Voice{#1 excess:1/2} too long
+2025-07-25 01:43:48,968 INFO [This_Game#6]                Voice.java:257  | Measure{#19} Voice{#2 excess:1/4} too long
+2025-07-25 01:43:48,968 INFO [This_Game#6]                Voice.java:257  | Measure{#20} Voice{#5 excess:1/4} too long
+2025-07-25 01:43:48,969 INFO [This_Game#6]                Voice.java:257  | Measure{#26} Voice{#1 excess:1/8} too long
+2025-07-25 01:43:48,969 INFO [This_Game#6]                Voice.java:257  | Measure{#26} Voice{#2 excess:1/8} too long
+2025-07-25 01:43:48,969 INFO [This_Game#6]                Voice.java:257  | Measure{#28} Voice{#1 excess:1/8} too long
+2025-07-25 01:43:48,969 INFO [This_Game#6]                Voice.java:257  | Measure{#28} Voice{#9 excess:1/8} too long
+2025-07-25 01:43:48,969 INFO [This_Game#6]                 Book.java:2550 | Book{This_Game} storing
+2025-07-25 01:43:49,009 INFO [This_Game#6]                 Book.java:2531 | Stored /book.xml
+2025-07-25 01:43:49,051 INFO [This_Game#6]           DataHolder.java:348  | Stored /sheet#6/BINARY.png
+2025-07-25 01:43:49,553 INFO [This_Game#6]                Sheet.java:1562 | Stored /sheet#6/sheet#6.xml
+2025-07-25 01:43:49,553 INFO [This_Game#6]                 Book.java:2491 | Book stored as .\MXL\This_Game\This_Game.omr
+2025-07-25 01:43:49,556 INFO [This_Game#6]            SheetStub.java:1644 | Disposed sheet#6
+2025-07-25 01:43:49,580 INFO [This_Game#6]                 Book.java:2018 | End of Stub#6 memory: 38,973,464
+2025-07-25 01:43:49,580 INFO [This_Game#7]       StepMonitoring.java:98   | LOAD
+2025-07-25 01:43:49,614 INFO [This_Game#7]            SheetStub.java:1268 | Loaded image #7 2479x3508 from D:\HFU\Master\1. Semester\Machine Learning\OMR_Project\alex\PDF\This_Game.pdf
+2025-07-25 01:43:49,614 INFO [This_Game#7]       StepMonitoring.java:98   | BINARY
+2025-07-25 01:43:49,953 INFO [This_Game#7]       StepMonitoring.java:98   | SCALE
+2025-07-25 01:43:49,954 INFO [This_Game#7]         ScaleBuilder.java:241  | Beam  guessed height:  9 -- 0.50 of 18 interline
+2025-07-25 01:43:49,954 INFO [This_Game#7]         ScaleBuilder.java:264  | Beam measured height:  9 -- 0.31 of [5..18] range at 899% of needed quorum
+2025-07-25 01:43:49,954 INFO [This_Game#7]            ScaleStep.java:65   | Scale{ interline(17,18,18) line(2,2,4) beam(9)}
+2025-07-25 01:43:49,954 INFO [This_Game#7]       StepMonitoring.java:98   | GRID
+2025-07-25 01:43:50,249 INFO [This_Game#7]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-25 01:43:50,262 INFO [This_Game#7]    ClustersRetriever.java:328  | Retrieved raw line clusters: 14 of sizes [5] with interline(17,18,18)
+2025-07-25 01:43:50,327 INFO [This_Game#7]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8] #5[9, 10] #6[11, 12] #7[13, 14]
+2025-07-25 01:43:50,477 INFO [This_Game#7]        SystemManager.java:779  | 1 part along 7 systems
+2025-07-25 01:43:50,477 INFO [This_Game#7]       StepMonitoring.java:98   | HEADERS
+2025-07-25 01:43:51,032 INFO [This_Game#7]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-25 01:43:51,058 INFO [This_Game#7]        StemSeedsStep.java:86   | stem(2 max:3)
+2025-07-25 01:43:51,065 INFO [This_Game#7]       StepMonitoring.java:98   | BEAMS
+2025-07-25 01:43:53,500 INFO [This_Game#7]       StepMonitoring.java:98   | LEDGERS
+2025-07-25 01:43:53,676 INFO [This_Game#7]       StepMonitoring.java:98   | HEADS
+2025-07-25 01:43:58,767 INFO [This_Game#7]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:-0.6,R:-0.5] NOTEHEAD_BLACK[L:-0.5,R:-0.5]}
+2025-07-25 01:43:58,767 INFO [This_Game#7]       StepMonitoring.java:98   | STEMS
+2025-07-25 01:43:59,461 INFO [This_Game#7]       StepMonitoring.java:98   | REDUCTION
+2025-07-25 01:43:59,603 INFO [This_Game#7]        ReductionStep.java:105  | Stems free length median value: 62 pixels, 3.4 interlines
+2025-07-25 01:43:59,606 INFO [This_Game#7]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-25 01:43:59,606 INFO [This_Game#7]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-25 01:43:59,606 INFO [This_Game#7]       StepMonitoring.java:98   | TEXTS
+2025-07-25 01:44:00,298 INFO [This_Game#7]       StepMonitoring.java:98   | MEASURES
+2025-07-25 01:44:00,299 INFO [This_Game#7]                 Page.java:307  | 23 raw measures: [4 in system#1, 3 in system#2, 4 in system#3, 3 in system#4, 3 in system#5, 3 in system#6, 3 in system#7]
+2025-07-25 01:44:00,299 INFO [This_Game#7]       StepMonitoring.java:98   | CHORDS
+2025-07-25 01:44:00,307 INFO [This_Game#7]       StepMonitoring.java:98   | CURVES
+2025-07-25 01:44:00,765 INFO [This_Game#7]         SlursBuilder.java:240  | Slurs: 65
+2025-07-25 01:44:00,772 INFO [This_Game#7]      SegmentsBuilder.java:155  | Segments: 54
+2025-07-25 01:44:00,773 INFO [This_Game#7]       StepMonitoring.java:98   | SYMBOLS
+2025-07-25 01:44:01,187 INFO [This_Game#7]       StepMonitoring.java:98   | LINKS
+2025-07-25 01:44:01,188 INFO [This_Game#7]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#13879{(0.579) staff:2 OTTAVA BASSA}
+2025-07-25 01:44:01,188 INFO [This_Game#7]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#13935{(0.771) staff:2 OTTAVA BASSA}
+2025-07-25 01:44:01,197 INFO [This_Game#7]        SentenceInter.java:461  | No chord near SentenceInter#11843{(0.668) staff:3 mFont:38 Direction} 158
+2025-07-25 01:44:01,197 INFO [This_Game#7]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#13999{(0.579) staff:3 OTTAVA ALTA}
+2025-07-25 01:44:01,197 INFO [This_Game#7]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#14008{(0.782) staff:4 OTTAVA BASSA}
+2025-07-25 01:44:01,215 INFO [This_Game#7]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#14127{(0.434) staff:8 OTTAVA BASSA}
+2025-07-25 01:44:01,223 INFO [This_Game#7]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#14185{(0.434) staff:9 OTTAVA ALTA}
+2025-07-25 01:44:01,231 INFO [This_Game#7]        SentenceInter.java:461  | No chord near SentenceInter#11865{(0.746) staff:11 mFont:39 Direction} 171
+2025-07-25 01:44:01,237 INFO [This_Game#7]        SentenceInter.java:461  | No chord near SentenceInter#11912{(0.737) staff:13 mFont:37 Direction} 174
+2025-07-25 01:44:01,238 INFO [This_Game#7]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#14366{(0.797) staff:13 OTTAVA ALTA}
+2025-07-25 01:44:01,245 INFO [This_Game#7]       StepMonitoring.java:98   | RHYTHMS
+2025-07-25 01:44:01,246 INFO [This_Game#7]           PageRhythm.java:199  | {Page#7.1} Time value reused from sheet#1
+2025-07-25 01:44:01,248 INFO [This_Game#7]   AbstractChordInter.java:627  | Measure{#1} No timeOffset for HeadChordInter#11980{(0.951/0.951) staff:1 slot#6 dur:1/16}
+2025-07-25 01:44:01,248 INFO [This_Game#7]   AbstractChordInter.java:627  | Measure{#1} No timeOffset for HeadChordInter#11984{(0.939/0.939) staff:1 slot#10 dur:1/16}
+2025-07-25 01:44:01,248 INFO [This_Game#7]          StackRhythm.java:224  | S1 MeasureStack#1 no correct rhythm
+2025-07-25 01:44:01,249 INFO [This_Game#7]        MeasureRhythm.java:1277 | Measure{#2} Time inconsistency in {1/8=[HeadChordInter#12045{(0.891/0.891) staff:2 slot#3 off:1/8 dur:3/16}], 3/16=[HeadChordInter#11990{(0.929/0.929) staff:1 slot#3 off:3/16 dur:1/16}]}
+2025-07-25 01:44:01,249 INFO [This_Game#7]                Voice.java:257  | Measure{#2} Voice{#5 excess:1/16} too long
+2025-07-25 01:44:01,249 INFO [This_Game#7]          StackRhythm.java:224  | S1 MeasureStack#2 no correct rhythm
+2025-07-25 01:44:01,251 INFO [This_Game#7]        MeasureRhythm.java:1277 | Measure{#3} Time inconsistency in {3/8=[HeadChordInter#12051{(0.903/0.903) staff:2 slot#7 off:3/8 dur:1/8}], 11/16=[HeadChordInter#12007{(0.954/0.954) staff:1 slot#7 off:11/16 dur:1/16}]}
+2025-07-25 01:44:01,252 INFO [This_Game#7]        MeasureRhythm.java:1277 | Measure{#3} Time inconsistency in {1/2=[HeadChordInter#12054{(0.930/0.930) staff:2 slot#9 off:1/2 dur:1/8}], 13/16=[HeadChordInter#12053{(0.613/0.613) staff:2 slot#9 off:13/16 dur:1/2}], 15/16=[HeadChordInter#12012{(0.920/0.920) staff:1 slot#9 off:15/16 dur:1/8}]}
+2025-07-25 01:44:01,252 INFO [This_Game#7]        MeasureRhythm.java:1277 | Measure{#3} Time inconsistency in {5/8=[HeadChordInter#12014{(0.927/0.927) staff:1 slot#11 off:5/8 dur:1/16}], 17/16=[HeadChordInter#12015{(0.901/0.901) staff:1 slot#11 off:17/16 dur:1/8}]}
+2025-07-25 01:44:01,252 INFO [This_Game#7]                Voice.java:257  | Measure{#3} Voice{#1 excess:1/8} too long
+2025-07-25 01:44:01,252 INFO [This_Game#7]                Voice.java:257  | Measure{#3} Voice{#3 excess:7/16} too long
+2025-07-25 01:44:01,252 INFO [This_Game#7]                Voice.java:257  | Measure{#3} Voice{#6 excess:5/16} too long
+2025-07-25 01:44:01,252 INFO [This_Game#7]                Voice.java:257  | Measure{#3} Voice{#7 excess:7/16} too long
+2025-07-25 01:44:01,252 INFO [This_Game#7]          StackRhythm.java:224  | S1 MeasureStack#3 no correct rhythm
+2025-07-25 01:44:01,264 INFO [This_Game#7]        MeasureRhythm.java:1045 | Measure{#8} No timeOffset for HeadChordInter#12152{(0.951/0.951) staff:5 slot#2 dur:1/16}
+2025-07-25 01:44:01,264 INFO [This_Game#7]        MeasureRhythm.java:1045 | Measure{#8} No timeOffset for HeadChordInter#12151{(0.915/0.915) staff:5 slot#2 dur:1/16}
+2025-07-25 01:44:01,264 INFO [This_Game#7]   AbstractChordInter.java:627  | Measure{#8} No timeOffset for HeadChordInter#12154{(0.953/0.953) staff:5 slot#3 dur:1/16}
+2025-07-25 01:44:01,264 INFO [This_Game#7]   AbstractChordInter.java:627  | Measure{#8} No timeOffset for HeadChordInter#12153{(0.889/0.889) staff:5 slot#3 dur:1/16}
+2025-07-25 01:44:01,264 INFO [This_Game#7]   AbstractChordInter.java:627  | Measure{#8} No timeOffset for HeadChordInter#12162{(0.931/0.931) staff:5 slot#7 dur:1/16}
+2025-07-25 01:44:01,264 INFO [This_Game#7]   AbstractChordInter.java:627  | Measure{#8} No timeOffset for HeadChordInter#12161{(0.929/0.929) staff:5 slot#7 dur:1/16}
+2025-07-25 01:44:01,264 INFO [This_Game#7]   AbstractChordInter.java:627  | Measure{#8} No timeOffset for HeadChordInter#12170{(0.927/0.927) staff:5 slot#11 dur:1/16}
+2025-07-25 01:44:01,264 INFO [This_Game#7]   AbstractChordInter.java:627  | Measure{#8} No timeOffset for HeadChordInter#12169{(0.946/0.946) staff:5 slot#11 dur:1/16}
+2025-07-25 01:44:01,265 INFO [This_Game#7]          StackRhythm.java:224  | S3 MeasureStack#8 no correct rhythm
+2025-07-25 01:44:01,269 INFO [This_Game#7]        MeasureRhythm.java:1045 | Measure{#11} No timeOffset for HeadChordInter#12216{(0.915/0.915) staff:6 slot#2 dur:1/16}
+2025-07-25 01:44:01,270 INFO [This_Game#7]   AbstractChordInter.java:627  | Measure{#11} No timeOffset for HeadChordInter#12219{(0.949/0.949) staff:6 slot#5 dur:1/8}
+2025-07-25 01:44:01,270 INFO [This_Game#7]   AbstractChordInter.java:627  | Measure{#11} No timeOffset for HeadChordInter#12219{(0.949/0.949) staff:6 slot#5 dur:1/8}
+2025-07-25 01:44:01,270 INFO [This_Game#7]   AbstractChordInter.java:627  | Measure{#11} No timeOffset for HeadChordInter#12219{(0.949/0.949) staff:6 slot#5 dur:1/8}
+2025-07-25 01:44:01,270 INFO [This_Game#7]          StackRhythm.java:224  | S3 MeasureStack#11 no correct rhythm
+2025-07-25 01:44:01,284 INFO [This_Game#7]                Voice.java:257  | Measure{#20} Voice{#1 excess:1/16} too long
+2025-07-25 01:44:01,284 INFO [This_Game#7]                Voice.java:257  | Measure{#20} Voice{#5 excess:1/16} too long
+2025-07-25 01:44:01,284 INFO [This_Game#7]          StackRhythm.java:224  | S6 MeasureStack#20 no correct rhythm
+2025-07-25 01:44:01,287 INFO [This_Game#7]       StepMonitoring.java:98   | PAGE
+2025-07-25 01:44:01,290 INFO [This_Game#7]                Voice.java:257  | Measure{#2} Voice{#5 excess:1/16} too long
+2025-07-25 01:44:01,290 INFO [This_Game#7]                Voice.java:257  | Measure{#3} Voice{#1 excess:1/8} too long
+2025-07-25 01:44:01,290 INFO [This_Game#7]                Voice.java:257  | Measure{#3} Voice{#3 excess:7/16} too long
+2025-07-25 01:44:01,290 INFO [This_Game#7]                Voice.java:257  | Measure{#3} Voice{#6 excess:5/16} too long
+2025-07-25 01:44:01,290 INFO [This_Game#7]                Voice.java:257  | Measure{#3} Voice{#7 excess:7/16} too long
+2025-07-25 01:44:01,291 INFO [This_Game#7]                Voice.java:257  | Measure{#20} Voice{#1 excess:1/16} too long
+2025-07-25 01:44:01,291 INFO [This_Game#7]                Voice.java:257  | Measure{#20} Voice{#5 excess:1/16} too long
+2025-07-25 01:44:01,291 INFO [This_Game#7]                 Book.java:2550 | Book{This_Game} storing
+2025-07-25 01:44:01,326 INFO [This_Game#7]                 Book.java:2531 | Stored /book.xml
+2025-07-25 01:44:01,367 INFO [This_Game#7]           DataHolder.java:348  | Stored /sheet#7/BINARY.png
+2025-07-25 01:44:01,876 INFO [This_Game#7]                Sheet.java:1562 | Stored /sheet#7/sheet#7.xml
+2025-07-25 01:44:01,876 INFO [This_Game#7]                 Book.java:2491 | Book stored as .\MXL\This_Game\This_Game.omr
+2025-07-25 01:44:01,880 INFO [This_Game#7]            SheetStub.java:1644 | Disposed sheet#7
+2025-07-25 01:44:01,903 INFO [This_Game#7]                 Book.java:2018 | End of Stub#7 memory: 38,622,216
+2025-07-25 01:44:01,904 INFO [This_Game]                 Book.java:2025 | Book processed.
+2025-07-25 01:44:02,412 INFO [This_Game]            SheetStub.java:995  | Loaded /sheet#1/sheet#1.xml
+2025-07-25 01:44:02,604 INFO [This_Game]            SheetStub.java:995  | Loaded /sheet#2/sheet#2.xml
+2025-07-25 01:44:02,796 INFO [This_Game]            SheetStub.java:995  | Loaded /sheet#3/sheet#3.xml
+2025-07-25 01:44:02,938 INFO [This_Game]            SheetStub.java:995  | Loaded /sheet#4/sheet#4.xml
+2025-07-25 01:44:03,076 INFO [This_Game]            SheetStub.java:995  | Loaded /sheet#5/sheet#5.xml
+2025-07-25 01:44:03,222 INFO [This_Game]            SheetStub.java:995  | Loaded /sheet#6/sheet#6.xml
+2025-07-25 01:44:03,360 INFO [This_Game]            SheetStub.java:995  | Loaded /sheet#7/sheet#7.xml
+2025-07-25 01:44:03,631 INFO [This_Game]      PartwiseBuilder.java:2661 | Exporting sheet(s): [#1#2#3#4#5#6#7]
+2025-07-25 01:44:03,850 INFO [This_Game]        ScoreExporter.java:164  | Score This_Game exported to .\MXL\This_Game\This_Game.mxl
+2025-07-25 01:44:03,884 INFO [This_Game]                Score.java:181  | Closing {Score 1}
