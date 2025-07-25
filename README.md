@@ -16,7 +16,7 @@ Dieses Tool kombiniert die Leistungsfähigkeit von Audiveris (optische Musikerke
 ## Projektstruktur
 
 ```
-ML-2025-PDF2MIDI/
+ML-2025-PDF2MIDI
 ├── README.md           # Diese Dokumentation
 ├── tool.py             # Haupt-GUI-Anwendung
 ├── tomidi.py           # MusicXML zu MIDI Konvertierungslogik
