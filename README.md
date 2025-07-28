@@ -25,6 +25,7 @@ ML-2025-PDF2MIDI
 │   └── ...
 ├── MXL/                # Ausgabeordner für MusicXML-Dateien
 ├── XML/                # Temporäre XML-Dateien
+├── PDF/                # Eingabeordner für PDF-Dateien
 └── MIDI/               # Ausgabeordner für MIDI-Dateien
 ```
 

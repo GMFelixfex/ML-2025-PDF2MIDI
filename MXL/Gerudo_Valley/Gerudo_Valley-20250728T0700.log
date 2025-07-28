@@ -1,0 +1,394 @@
+2025-07-28 07:00:19,148 ERROR [Gerudo_Valley]              IOUtils.java:278  | Unmapping is not supported.
+java.lang.reflect.InaccessibleObjectException: Unable to make public jdk.internal.ref.Cleaner java.nio.DirectByteBuffer.cleaner() accessible: module java.base does not "opens java.nio" to unnamed module @1a18644
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(Unknown Source)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(Unknown Source)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(Unknown Source)
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Unknown Source)
+	at java.base/java.lang.reflect.Method.setAccessible(Unknown Source)
+	at org.apache.pdfbox.io.IOUtils.unmapper(IOUtils.java:244)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at org.apache.pdfbox.io.IOUtils.<clinit>(IOUtils.java:69)
+	at org.apache.pdfbox.Loader.loadPDF(Loader.java:378)
+	at org.audiveris.omr.image.ImageLoading.getPdfLoader(ImageLoading.java:159)
+	at org.audiveris.omr.image.ImageLoading.getLoader(ImageLoading.java:209)
+	at org.audiveris.omr.sheet.Book.createStubs(Book.java:557)
+	at org.audiveris.omr.CLI$ProcessingTask.processBook(CLI.java:830)
+	at org.audiveris.omr.CLI$CliTask.call(CLI.java:504)
+	at org.audiveris.omr.Main.runBatchTasks(Main.java:371)
+	at org.audiveris.omr.Main.main(Main.java:260)
+	at Audiveris.main(Audiveris.java:50)
+2025-07-28 07:00:19,199 INFO [Gerudo_Valley]                 Book.java:562  | 5 sheets in C:\Uni\OMR_Project\TOOL\PDF\Gerudo_Valley.pdf
+2025-07-28 07:00:19,370 INFO []                 Book.java:2531 | Stored /book.xml
+2025-07-28 07:00:19,371 INFO []                 Book.java:2491 | Book stored as .\MXL\Gerudo_Valley\Gerudo_Valley.omr
+2025-07-28 07:00:19,377 INFO []                 Book.java:1933 | Book reaching PAGE on sheets:[#1#2#3#4#5]
+2025-07-28 07:00:19,379 INFO [Gerudo_Valley#1]       StepMonitoring.java:98   | LOAD
+2025-07-28 07:00:19,716 INFO [Gerudo_Valley#1]            SheetStub.java:1268 | Loaded image #1 2550x3299 from C:\Uni\OMR_Project\TOOL\PDF\Gerudo_Valley.pdf
+2025-07-28 07:00:19,720 INFO [Gerudo_Valley#1]       StepMonitoring.java:98   | BINARY
+2025-07-28 07:00:20,065 INFO [Gerudo_Valley#1]       StepMonitoring.java:98   | SCALE
+2025-07-28 07:00:20,089 INFO [Gerudo_Valley#1]         ScaleBuilder.java:241  | Beam  guessed height: 10 -- 0.50 of 21 interline
+2025-07-28 07:00:20,090 INFO [Gerudo_Valley#1]         ScaleBuilder.java:264  | Beam measured height: 11 -- 0.33 of [6..21] range at 399% of needed quorum
+2025-07-28 07:00:20,090 INFO [Gerudo_Valley#1]            ScaleStep.java:65   | Scale{ interline(20,21,21) line(3,3,3) beam(11)}
+2025-07-28 07:00:20,091 INFO [Gerudo_Valley#1]       StepMonitoring.java:98   | GRID
+2025-07-28 07:00:20,430 INFO [Gerudo_Valley#1]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-28 07:00:20,454 INFO [Gerudo_Valley#1]    ClustersRetriever.java:328  | Retrieved raw line clusters: 8 of sizes [5] with interline(20,21,21)
+2025-07-28 07:00:20,569 INFO [Gerudo_Valley#1]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8]
+2025-07-28 07:00:20,797 INFO [Gerudo_Valley#1]        SystemManager.java:134  | Indentation detected for system #1
+2025-07-28 07:00:20,798 INFO [Gerudo_Valley#1]        SystemManager.java:779  | 2 parts along 4 systems
+2025-07-28 07:00:20,799 INFO [Gerudo_Valley#1]                 Book.java:545  | Created scores: [{Score 1}]
+2025-07-28 07:00:20,799 INFO [Gerudo_Valley#1]       StepMonitoring.java:98   | HEADERS
+2025-07-28 07:00:21,012 INFO [Gerudo_Valley#1]      BasicClassifier.java:277  | Classifier loaded XML norms.
+2025-07-28 07:00:21,017 INFO [Gerudo_Valley#1]   AbstractClassifier.java:396  | Classifier data loaded from default uri jar:file:/C:/Uni/OMR_Project/TOOL/Audiveris/app/audiveris.jar!/res/basic-classifier.zip
+2025-07-28 07:00:21,872 INFO [Gerudo_Valley#1]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-28 07:00:21,914 INFO [Gerudo_Valley#1]        StemSeedsStep.java:86   | stem(2 max:3)
+2025-07-28 07:00:21,957 INFO [Gerudo_Valley#1]       StepMonitoring.java:98   | BEAMS
+2025-07-28 07:00:24,341 INFO [Gerudo_Valley#1]       StepMonitoring.java:98   | LEDGERS
+2025-07-28 07:00:24,478 INFO [Gerudo_Valley#1]       StepMonitoring.java:98   | HEADS
+2025-07-28 07:00:27,410 INFO [Gerudo_Valley#1]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_BLACK[R:-0.4]}
+2025-07-28 07:00:27,410 INFO [Gerudo_Valley#1]       StepMonitoring.java:98   | STEMS
+2025-07-28 07:00:27,846 INFO [Gerudo_Valley#1]       StepMonitoring.java:98   | REDUCTION
+2025-07-28 07:00:27,939 INFO [Gerudo_Valley#1]        ReductionStep.java:105  | Stems free length median value: 73 pixels, 3.5 interlines
+2025-07-28 07:00:27,942 INFO [Gerudo_Valley#1]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-28 07:00:27,942 INFO [Gerudo_Valley#1]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-28 07:00:27,942 INFO [Gerudo_Valley#1]       StepMonitoring.java:98   | TEXTS
+2025-07-28 07:00:28,723 INFO [Gerudo_Valley#1]       StepMonitoring.java:98   | MEASURES
+2025-07-28 07:00:28,735 INFO [Gerudo_Valley#1]                 Page.java:307  | 8 raw measures: [2 in system#1, 2 in system#2, 2 in system#3, 2 in system#4]
+2025-07-28 07:00:28,735 INFO [Gerudo_Valley#1]       StepMonitoring.java:98   | CHORDS
+2025-07-28 07:00:28,750 INFO [Gerudo_Valley#1]       StepMonitoring.java:98   | CURVES
+2025-07-28 07:00:29,422 INFO [Gerudo_Valley#1]         SlursBuilder.java:240  | Slurs: 1
+2025-07-28 07:00:29,427 INFO [Gerudo_Valley#1]      SegmentsBuilder.java:155  | Segments: 0
+2025-07-28 07:00:29,433 INFO [Gerudo_Valley#1]       StepMonitoring.java:98   | SYMBOLS
+2025-07-28 07:00:29,811 INFO [Gerudo_Valley#1]       StepMonitoring.java:98   | LINKS
+2025-07-28 07:00:29,851 INFO [Gerudo_Valley#1]       StepMonitoring.java:98   | RHYTHMS
+2025-07-28 07:00:29,883 INFO [Gerudo_Valley#1]                Voice.java:257  | Measure{#1} Voice{#5 excess:1/16} too long
+2025-07-28 07:00:29,885 INFO [Gerudo_Valley#1]          StackRhythm.java:224  | S1 MeasureStack#1 no correct rhythm
+2025-07-28 07:00:29,890 INFO [Gerudo_Valley#1]                Voice.java:257  | Measure{#2} Voice{#2 excess:1/16} too long
+2025-07-28 07:00:29,890 INFO [Gerudo_Valley#1]                Voice.java:257  | Measure{#2} Voice{#6 excess:1/16} too long
+2025-07-28 07:00:29,891 INFO [Gerudo_Valley#1]          StackRhythm.java:224  | S1 MeasureStack#2 no correct rhythm
+2025-07-28 07:00:29,896 INFO [Gerudo_Valley#1]        MeasureRhythm.java:1045 | Measure{#3} No timeOffset for HeadChordInter#3746{(0.948/0.948) staff:3 slot#14 dur:1/8}
+2025-07-28 07:00:29,897 INFO [Gerudo_Valley#1]   AbstractChordInter.java:627  | Measure{#3} No timeOffset for HeadChordInter#3747{(0.959/0.959) staff:3 slot#16 dur:1/16}
+2025-07-28 07:00:29,897 INFO [Gerudo_Valley#1]        MeasureRhythm.java:1045 | Measure{#3} No timeOffset for RestChordInter#4232{(0.707/0.707) staff:4 slot#15 dur:1/8}
+2025-07-28 07:00:29,897 INFO [Gerudo_Valley#1]                Voice.java:257  | Measure{#3} Voice{#6 excess:1/16} too long
+2025-07-28 07:00:29,897 INFO [Gerudo_Valley#1]          StackRhythm.java:224  | S2 MeasureStack#3 no correct rhythm
+2025-07-28 07:00:29,901 INFO [Gerudo_Valley#1]        MeasureRhythm.java:1045 | Measure{#4} No timeOffset for RestChordInter#4237{(0.799/0.799) staff:4 slot#15 dur:1/8}
+2025-07-28 07:00:29,901 INFO [Gerudo_Valley#1]                Voice.java:257  | Measure{#4} Voice{#5 excess:1/16} too long
+2025-07-28 07:00:29,901 INFO [Gerudo_Valley#1]          StackRhythm.java:224  | S2 MeasureStack#4 no correct rhythm
+2025-07-28 07:00:29,905 INFO [Gerudo_Valley#1]        MeasureRhythm.java:1045 | Measure{#5} No timeOffset for RestChordInter#4260{(0.799/0.799) staff:6 slot#15 dur:1/8}
+2025-07-28 07:00:29,905 INFO [Gerudo_Valley#1]                Voice.java:257  | Measure{#5} Voice{#5 excess:1/16} too long
+2025-07-28 07:00:29,905 INFO [Gerudo_Valley#1]          StackRhythm.java:224  | S3 MeasureStack#5 no correct rhythm
+2025-07-28 07:00:29,909 INFO [Gerudo_Valley#1]        MeasureRhythm.java:1045 | Measure{#6} No timeOffset for RestChordInter#4261{(0.787/0.787) staff:6 slot#7 dur:1/8}
+2025-07-28 07:00:29,910 INFO [Gerudo_Valley#1]   AbstractChordInter.java:627  | Measure{#6} No timeOffset for RestChordInter#4261{(0.787/0.787) staff:6 slot#7 dur:1/8}
+2025-07-28 07:00:29,910 INFO [Gerudo_Valley#1]   AbstractChordInter.java:627  | Measure{#6} No timeOffset for HeadChordInter#3792{(0.919/0.919) staff:6 slot#9 dur:1/4}
+2025-07-28 07:00:29,911 INFO [Gerudo_Valley#1]   AbstractChordInter.java:627  | Measure{#6} No timeOffset for HeadChordInter#3792{(0.919/0.919) staff:6 slot#9 dur:1/4}
+2025-07-28 07:00:29,911 INFO [Gerudo_Valley#1]   AbstractChordInter.java:627  | Measure{#6} No timeOffset for HeadChordInter#3793{(0.916/0.916) staff:6 slot#13 dur:1/8}
+2025-07-28 07:00:29,911 INFO [Gerudo_Valley#1]   AbstractChordInter.java:627  | Measure{#6} No timeOffset for HeadChordInter#3785{(0.955/0.955) staff:5 slot#16 dur:1/16}
+2025-07-28 07:00:29,912 INFO [Gerudo_Valley#1]        MeasureRhythm.java:1045 | Measure{#6} No timeOffset for RestChordInter#4264{(0.800/0.800) staff:6 slot#15 dur:1/8}
+2025-07-28 07:00:29,912 INFO [Gerudo_Valley#1]          StackRhythm.java:224  | S3 MeasureStack#6 no correct rhythm
+2025-07-28 07:00:29,921 INFO [Gerudo_Valley#1]       StepMonitoring.java:98   | PAGE
+2025-07-28 07:00:29,928 INFO [Gerudo_Valley#1]                Voice.java:257  | Measure{#1} Voice{#5 excess:1/16} too long
+2025-07-28 07:00:29,928 INFO [Gerudo_Valley#1]                Voice.java:257  | Measure{#2} Voice{#2 excess:1/16} too long
+2025-07-28 07:00:29,928 INFO [Gerudo_Valley#1]                Voice.java:257  | Measure{#2} Voice{#6 excess:1/16} too long
+2025-07-28 07:00:29,929 INFO [Gerudo_Valley#1]                Voice.java:257  | Measure{#3} Voice{#6 excess:1/16} too long
+2025-07-28 07:00:29,929 INFO [Gerudo_Valley#1]                Voice.java:257  | Measure{#4} Voice{#5 excess:1/16} too long
+2025-07-28 07:00:29,929 INFO [Gerudo_Valley#1]                Voice.java:257  | Measure{#5} Voice{#5 excess:1/16} too long
+2025-07-28 07:00:29,930 INFO [Gerudo_Valley#1]                 Book.java:2550 | Book{Gerudo_Valley} storing
+2025-07-28 07:00:29,971 INFO [Gerudo_Valley#1]                 Book.java:2531 | Stored /book.xml
+2025-07-28 07:00:30,068 INFO [Gerudo_Valley#1]           DataHolder.java:348  | Stored /sheet#1/BINARY.png
+2025-07-28 07:00:30,489 INFO [Gerudo_Valley#1]                Sheet.java:1562 | Stored /sheet#1/sheet#1.xml
+2025-07-28 07:00:30,489 INFO [Gerudo_Valley#1]                 Book.java:2491 | Book stored as .\MXL\Gerudo_Valley\Gerudo_Valley.omr
+2025-07-28 07:00:30,493 INFO [Gerudo_Valley#1]            SheetStub.java:1644 | Disposed sheet#1
+2025-07-28 07:00:30,547 INFO [Gerudo_Valley#1]                 Book.java:2018 | End of Stub#1 memory: 39,464,272
+2025-07-28 07:00:30,548 INFO [Gerudo_Valley#2]       StepMonitoring.java:98   | LOAD
+2025-07-28 07:00:30,604 INFO [Gerudo_Valley#2]            SheetStub.java:1268 | Loaded image #2 2550x3299 from C:\Uni\OMR_Project\TOOL\PDF\Gerudo_Valley.pdf
+2025-07-28 07:00:30,605 INFO [Gerudo_Valley#2]       StepMonitoring.java:98   | BINARY
+2025-07-28 07:00:30,917 INFO [Gerudo_Valley#2]       StepMonitoring.java:98   | SCALE
+2025-07-28 07:00:30,938 INFO [Gerudo_Valley#2]         ScaleBuilder.java:241  | Beam  guessed height: 10 -- 0.50 of 21 interline
+2025-07-28 07:00:30,939 INFO [Gerudo_Valley#2]         ScaleBuilder.java:264  | Beam measured height: 10 -- 0.27 of [6..21] range at 726% of needed quorum
+2025-07-28 07:00:30,939 INFO [Gerudo_Valley#2]            ScaleStep.java:65   | Scale{ interline(20,21,21) line(3,3,3) beam(10)}
+2025-07-28 07:00:30,939 INFO [Gerudo_Valley#2]       StepMonitoring.java:98   | GRID
+2025-07-28 07:00:31,047 INFO [Gerudo_Valley#2]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-28 07:00:31,059 INFO [Gerudo_Valley#2]    ClustersRetriever.java:328  | Retrieved raw line clusters: 10 of sizes [5] with interline(20,21,21)
+2025-07-28 07:00:31,141 INFO [Gerudo_Valley#2]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8] #5[9, 10]
+2025-07-28 07:00:31,279 INFO [Gerudo_Valley#2]        SystemManager.java:779  | 1 part along 5 systems
+2025-07-28 07:00:31,279 INFO [Gerudo_Valley#2]       StepMonitoring.java:98   | HEADERS
+2025-07-28 07:00:31,665 INFO [Gerudo_Valley#2]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-28 07:00:31,695 INFO [Gerudo_Valley#2]        StemSeedsStep.java:86   | stem(2 max:3)
+2025-07-28 07:00:31,716 INFO [Gerudo_Valley#2]       StepMonitoring.java:98   | BEAMS
+2025-07-28 07:00:34,222 INFO [Gerudo_Valley#2]       StepMonitoring.java:98   | LEDGERS
+2025-07-28 07:00:34,307 INFO [Gerudo_Valley#2]       StepMonitoring.java:98   | HEADS
+2025-07-28 07:00:37,574 INFO [Gerudo_Valley#2]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_BLACK[L:-0.5,R:-0.4]}
+2025-07-28 07:00:37,575 INFO [Gerudo_Valley#2]       StepMonitoring.java:98   | STEMS
+2025-07-28 07:00:38,018 INFO [Gerudo_Valley#2]       StepMonitoring.java:98   | REDUCTION
+2025-07-28 07:00:38,106 INFO [Gerudo_Valley#2]        ReductionStep.java:105  | Stems free length median value: 72 pixels, 3.4 interlines
+2025-07-28 07:00:38,109 INFO [Gerudo_Valley#2]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-28 07:00:38,109 INFO [Gerudo_Valley#2]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-28 07:00:38,109 INFO [Gerudo_Valley#2]       StepMonitoring.java:98   | TEXTS
+2025-07-28 07:00:38,504 INFO [Gerudo_Valley#2]       StepMonitoring.java:98   | MEASURES
+2025-07-28 07:00:38,505 INFO [Gerudo_Valley#2]                 Page.java:307  | 12 raw measures: [2 in system#1, 2 in system#2, 3 in system#3, 2 in system#4, 3 in system#5]
+2025-07-28 07:00:38,505 INFO [Gerudo_Valley#2]       StepMonitoring.java:98   | CHORDS
+2025-07-28 07:00:38,514 INFO [Gerudo_Valley#2]       StepMonitoring.java:98   | CURVES
+2025-07-28 07:00:39,015 INFO [Gerudo_Valley#2]         SlursBuilder.java:240  | Slurs: 0
+2025-07-28 07:00:39,017 INFO [Gerudo_Valley#2]      SegmentsBuilder.java:155  | Segments: 2
+2025-07-28 07:00:39,018 INFO [Gerudo_Valley#2]       StepMonitoring.java:98   | SYMBOLS
+2025-07-28 07:00:39,220 INFO [Gerudo_Valley#2]       StepMonitoring.java:98   | LINKS
+2025-07-28 07:00:39,237 INFO [Gerudo_Valley#2]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#6213{(0.696) staff:8 OTTAVA BASSA}
+2025-07-28 07:00:39,244 INFO [Gerudo_Valley#2]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#6249{(0.696) staff:9 OTTAVA ALTA}
+2025-07-28 07:00:39,253 INFO [Gerudo_Valley#2]       StepMonitoring.java:98   | RHYTHMS
+2025-07-28 07:00:39,254 INFO [Gerudo_Valley#2]           PageRhythm.java:199  | {Page#2.1} Time value reused from sheet#1
+2025-07-28 07:00:39,285 INFO [Gerudo_Valley#2]        MeasureRhythm.java:1045 | Measure{#6} No timeOffset for RestChordInter#6199{(0.799/0.799) staff:5 slot#2 dur:1/4}
+2025-07-28 07:00:39,286 INFO [Gerudo_Valley#2]   AbstractChordInter.java:627  | Measure{#6} No timeOffset for RestChordInter#6199{(0.799/0.799) staff:5 slot#2 dur:1/4}
+2025-07-28 07:00:39,286 INFO [Gerudo_Valley#2]   AbstractChordInter.java:627  | Measure{#6} No timeOffset for RestChordInter#6199{(0.799/0.799) staff:5 slot#2 dur:1/4}
+2025-07-28 07:00:39,286 INFO [Gerudo_Valley#2]   AbstractChordInter.java:627  | Measure{#6} No timeOffset for RestChordInter#6199{(0.799/0.799) staff:5 slot#2 dur:1/4}
+2025-07-28 07:00:39,287 INFO [Gerudo_Valley#2]   AbstractChordInter.java:627  | Measure{#6} No timeOffset for RestChordInter#6199{(0.799/0.799) staff:5 slot#2 dur:1/4}
+2025-07-28 07:00:39,287 INFO [Gerudo_Valley#2]   AbstractChordInter.java:627  | Measure{#6} No timeOffset for RestChordInter#6199{(0.799/0.799) staff:5 slot#2 dur:1/4}
+2025-07-28 07:00:39,287 INFO [Gerudo_Valley#2]   AbstractChordInter.java:627  | Measure{#6} No timeOffset for RestChordInter#6199{(0.799/0.799) staff:5 slot#2 dur:1/4}
+2025-07-28 07:00:39,288 INFO [Gerudo_Valley#2]   AbstractChordInter.java:627  | Measure{#6} No timeOffset for RestChordInter#6199{(0.799/0.799) staff:5 slot#2 dur:1/4}
+2025-07-28 07:00:39,288 INFO [Gerudo_Valley#2]                Voice.java:257  | Measure{#6} Voice{#3 excess:1/16} too long
+2025-07-28 07:00:39,288 INFO [Gerudo_Valley#2]          StackRhythm.java:224  | S3 MeasureStack#6 no correct rhythm
+2025-07-28 07:00:39,296 INFO [Gerudo_Valley#2]                Voice.java:257  | Measure{#8} Voice{#2 excess:3/16} too long
+2025-07-28 07:00:39,297 INFO [Gerudo_Valley#2]          StackRhythm.java:224  | S4 MeasureStack#8 no correct rhythm
+2025-07-28 07:00:39,300 INFO [Gerudo_Valley#2]        MeasureRhythm.java:1045 | Measure{#9} No timeOffset for HeadChordInter#5803{(0.949/0.949) staff:7 slot#15 dur:1/8}
+2025-07-28 07:00:39,301 INFO [Gerudo_Valley#2]                Voice.java:257  | Measure{#9} Voice{#2 excess:1/8} too long
+2025-07-28 07:00:39,301 INFO [Gerudo_Valley#2]          StackRhythm.java:224  | S4 MeasureStack#9 no correct rhythm
+2025-07-28 07:00:39,309 INFO [Gerudo_Valley#2]                Voice.java:257  | Measure{#11} Voice{#4 excess:3/16} too long
+2025-07-28 07:00:39,309 INFO [Gerudo_Valley#2]          StackRhythm.java:224  | S5 MeasureStack#11 no correct rhythm
+2025-07-28 07:00:39,313 INFO [Gerudo_Valley#2]       StepMonitoring.java:98   | PAGE
+2025-07-28 07:00:39,349 INFO [Gerudo_Valley#2]                 Book.java:2550 | Book{Gerudo_Valley} storing
+2025-07-28 07:00:39,391 INFO [Gerudo_Valley#2]                 Book.java:2531 | Stored /book.xml
+2025-07-28 07:00:39,468 INFO [Gerudo_Valley#2]           DataHolder.java:348  | Stored /sheet#2/BINARY.png
+2025-07-28 07:00:39,773 INFO [Gerudo_Valley#2]                Sheet.java:1562 | Stored /sheet#2/sheet#2.xml
+2025-07-28 07:00:39,773 INFO [Gerudo_Valley#2]                 Book.java:2491 | Book stored as .\MXL\Gerudo_Valley\Gerudo_Valley.omr
+2025-07-28 07:00:39,780 INFO [Gerudo_Valley#2]            SheetStub.java:1644 | Disposed sheet#2
+2025-07-28 07:00:39,825 INFO [Gerudo_Valley#2]                 Book.java:2018 | End of Stub#2 memory: 38,537,352
+2025-07-28 07:00:39,825 INFO [Gerudo_Valley#3]       StepMonitoring.java:98   | LOAD
+2025-07-28 07:00:39,872 INFO [Gerudo_Valley#3]            SheetStub.java:1268 | Loaded image #3 2550x3299 from C:\Uni\OMR_Project\TOOL\PDF\Gerudo_Valley.pdf
+2025-07-28 07:00:39,874 INFO [Gerudo_Valley#3]       StepMonitoring.java:98   | BINARY
+2025-07-28 07:00:40,183 INFO [Gerudo_Valley#3]       StepMonitoring.java:98   | SCALE
+2025-07-28 07:00:40,185 INFO [Gerudo_Valley#3]         ScaleBuilder.java:241  | Beam  guessed height: 10 -- 0.50 of 21 interline
+2025-07-28 07:00:40,186 INFO [Gerudo_Valley#3]         ScaleBuilder.java:264  | Beam measured height: 10 -- 0.27 of [6..21] range at 676% of needed quorum
+2025-07-28 07:00:40,186 INFO [Gerudo_Valley#3]            ScaleStep.java:65   | Scale{ interline(20,21,21) line(3,3,3) beam(10)}
+2025-07-28 07:00:40,186 INFO [Gerudo_Valley#3]       StepMonitoring.java:98   | GRID
+2025-07-28 07:00:40,253 INFO [Gerudo_Valley#3]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-28 07:00:40,261 INFO [Gerudo_Valley#3]    ClustersRetriever.java:328  | Retrieved raw line clusters: 10 of sizes [5] with interline(20,21,21)
+2025-07-28 07:00:40,299 INFO [Gerudo_Valley#3]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8] #5[9, 10]
+2025-07-28 07:00:40,434 INFO [Gerudo_Valley#3]        SystemManager.java:779  | 1 part along 5 systems
+2025-07-28 07:00:40,434 INFO [Gerudo_Valley#3]       StepMonitoring.java:98   | HEADERS
+2025-07-28 07:00:40,841 INFO [Gerudo_Valley#3]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-28 07:00:40,866 INFO [Gerudo_Valley#3]        StemSeedsStep.java:86   | stem(2 max:3)
+2025-07-28 07:00:40,874 INFO [Gerudo_Valley#3]       StepMonitoring.java:98   | BEAMS
+2025-07-28 07:00:43,110 INFO [Gerudo_Valley#3]       StepMonitoring.java:98   | LEDGERS
+2025-07-28 07:00:43,167 INFO [Gerudo_Valley#3]       StepMonitoring.java:98   | HEADS
+2025-07-28 07:00:46,200 INFO [Gerudo_Valley#3]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[R:-0.0] NOTEHEAD_BLACK[L:-0.5,R:-0.4]}
+2025-07-28 07:00:46,201 INFO [Gerudo_Valley#3]       StepMonitoring.java:98   | STEMS
+2025-07-28 07:00:46,490 INFO [Gerudo_Valley#3]       StepMonitoring.java:98   | REDUCTION
+2025-07-28 07:00:46,554 INFO [Gerudo_Valley#3]        ReductionStep.java:105  | Stems free length median value: 73 pixels, 3.5 interlines
+2025-07-28 07:00:46,556 INFO [Gerudo_Valley#3]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-28 07:00:46,556 INFO [Gerudo_Valley#3]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-28 07:00:46,556 INFO [Gerudo_Valley#3]       StepMonitoring.java:98   | TEXTS
+2025-07-28 07:00:46,900 INFO [Gerudo_Valley#3]       StepMonitoring.java:98   | MEASURES
+2025-07-28 07:00:46,901 INFO [Gerudo_Valley#3]                 Page.java:307  | 11 raw measures: [3 in system#1, 2 in system#2, 2 in system#3, 2 in system#4, 2 in system#5]
+2025-07-28 07:00:46,901 INFO [Gerudo_Valley#3]       StepMonitoring.java:98   | CHORDS
+2025-07-28 07:00:46,905 INFO [Gerudo_Valley#3]       StepMonitoring.java:98   | CURVES
+2025-07-28 07:00:47,373 INFO [Gerudo_Valley#3]         SlursBuilder.java:240  | Slurs: 0
+2025-07-28 07:00:47,374 INFO [Gerudo_Valley#3]      SegmentsBuilder.java:155  | Segments: 0
+2025-07-28 07:00:47,375 INFO [Gerudo_Valley#3]       StepMonitoring.java:98   | SYMBOLS
+2025-07-28 07:00:47,624 INFO [Gerudo_Valley#3]       StepMonitoring.java:98   | LINKS
+2025-07-28 07:00:47,636 INFO [Gerudo_Valley#3]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#4910{(0.387) staff:6 OTTAVA BASSA}
+2025-07-28 07:00:47,641 INFO [Gerudo_Valley#3]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#4941{(0.387) staff:7 OTTAVA ALTA}
+2025-07-28 07:00:47,653 INFO [Gerudo_Valley#3]       StepMonitoring.java:98   | RHYTHMS
+2025-07-28 07:00:47,653 INFO [Gerudo_Valley#3]           PageRhythm.java:199  | {Page#3.1} Time value reused from sheet#1
+2025-07-28 07:00:47,668 INFO [Gerudo_Valley#3]                Voice.java:257  | Measure{#4} Voice{#2 excess:3/16} too long
+2025-07-28 07:00:47,669 INFO [Gerudo_Valley#3]          StackRhythm.java:224  | S2 MeasureStack#4 no correct rhythm
+2025-07-28 07:00:47,671 INFO [Gerudo_Valley#3]        MeasureRhythm.java:1045 | Measure{#5} No timeOffset for HeadChordInter#4564{(0.966/0.966) staff:4 slot#6 dur:1/16}
+2025-07-28 07:00:47,672 INFO [Gerudo_Valley#3]        MeasureRhythm.java:1045 | Measure{#5} No timeOffset for RestChordInter#4901{(0.799/0.799) staff:4 slot#6 dur:1/4}
+2025-07-28 07:00:47,672 INFO [Gerudo_Valley#3]   AbstractChordInter.java:627  | Measure{#5} No timeOffset for HeadChordInter#4566{(0.954/0.954) staff:4 slot#8 dur:1/16}
+2025-07-28 07:00:47,672 INFO [Gerudo_Valley#3]   AbstractChordInter.java:627  | Measure{#5} No timeOffset for RestChordInter#4901{(0.799/0.799) staff:4 slot#6 dur:1/4}
+2025-07-28 07:00:47,672 INFO [Gerudo_Valley#3]   AbstractChordInter.java:627  | Measure{#5} No timeOffset for HeadChordInter#4566{(0.954/0.954) staff:4 slot#8 dur:1/16}
+2025-07-28 07:00:47,672 INFO [Gerudo_Valley#3]   AbstractChordInter.java:627  | Measure{#5} No timeOffset for RestChordInter#4901{(0.799/0.799) staff:4 slot#6 dur:1/4}
+2025-07-28 07:00:47,673 INFO [Gerudo_Valley#3]   AbstractChordInter.java:627  | Measure{#5} No timeOffset for HeadChordInter#4572{(0.952/0.952) staff:4 slot#12 dur:1/16}
+2025-07-28 07:00:47,673 INFO [Gerudo_Valley#3]   AbstractChordInter.java:627  | Measure{#5} No timeOffset for HeadChordInter#4567{(0.972/0.972) staff:4 slot#9 dur:1/4}
+2025-07-28 07:00:47,673 INFO [Gerudo_Valley#3]   AbstractChordInter.java:627  | Measure{#5} No timeOffset for HeadChordInter#4575{(0.947/0.947) staff:4 slot#17 dur:1/16}
+2025-07-28 07:00:47,673 INFO [Gerudo_Valley#3]   AbstractChordInter.java:627  | Measure{#5} No timeOffset for RestChordInter#4903{(0.799/0.799) staff:4 slot#13 dur:1/4}
+2025-07-28 07:00:47,673 INFO [Gerudo_Valley#3]        MeasureRhythm.java:1045 | Measure{#5} No timeOffset for RestChordInter#4904{(0.800/0.800) staff:3 slot#15 dur:1/4}
+2025-07-28 07:00:47,673 INFO [Gerudo_Valley#3]   AbstractChordInter.java:627  | Measure{#5} No timeOffset for HeadChordInter#4575{(0.947/0.947) staff:4 slot#17 dur:1/16}
+2025-07-28 07:00:47,674 INFO [Gerudo_Valley#3]   AbstractChordInter.java:627  | Measure{#5} No timeOffset for RestChordInter#4903{(0.799/0.799) staff:4 slot#13 dur:1/4}
+2025-07-28 07:00:47,674 INFO [Gerudo_Valley#3]   AbstractChordInter.java:627  | Measure{#5} No timeOffset for RestChordInter#4904{(0.800/0.800) staff:3 slot#15 dur:1/4}
+2025-07-28 07:00:47,674 INFO [Gerudo_Valley#3]                Voice.java:257  | Measure{#5} Voice{#1 excess:5/16} too long
+2025-07-28 07:00:47,674 INFO [Gerudo_Valley#3]                Voice.java:257  | Measure{#5} Voice{#2 excess:3/16} too long
+2025-07-28 07:00:47,674 INFO [Gerudo_Valley#3]          StackRhythm.java:224  | S2 MeasureStack#5 no correct rhythm
+2025-07-28 07:00:47,703 INFO [Gerudo_Valley#3]       StepMonitoring.java:98   | PAGE
+2025-07-28 07:00:47,729 INFO [Gerudo_Valley#3]                 Book.java:2550 | Book{Gerudo_Valley} storing
+2025-07-28 07:00:47,772 INFO [Gerudo_Valley#3]                 Book.java:2531 | Stored /book.xml
+2025-07-28 07:00:47,845 INFO [Gerudo_Valley#3]           DataHolder.java:348  | Stored /sheet#3/BINARY.png
+2025-07-28 07:00:48,095 INFO [Gerudo_Valley#3]                Sheet.java:1562 | Stored /sheet#3/sheet#3.xml
+2025-07-28 07:00:48,095 INFO [Gerudo_Valley#3]                 Book.java:2491 | Book stored as .\MXL\Gerudo_Valley\Gerudo_Valley.omr
+2025-07-28 07:00:48,100 INFO [Gerudo_Valley#3]            SheetStub.java:1644 | Disposed sheet#3
+2025-07-28 07:00:48,146 INFO [Gerudo_Valley#3]                 Book.java:2018 | End of Stub#3 memory: 38,394,080
+2025-07-28 07:00:48,147 INFO [Gerudo_Valley#4]       StepMonitoring.java:98   | LOAD
+2025-07-28 07:00:48,190 INFO [Gerudo_Valley#4]            SheetStub.java:1268 | Loaded image #4 2550x3299 from C:\Uni\OMR_Project\TOOL\PDF\Gerudo_Valley.pdf
+2025-07-28 07:00:48,191 INFO [Gerudo_Valley#4]       StepMonitoring.java:98   | BINARY
+2025-07-28 07:00:48,502 INFO [Gerudo_Valley#4]       StepMonitoring.java:98   | SCALE
+2025-07-28 07:00:48,504 INFO [Gerudo_Valley#4]         ScaleBuilder.java:241  | Beam  guessed height: 10 -- 0.50 of 21 interline
+2025-07-28 07:00:48,504 INFO [Gerudo_Valley#4]         ScaleBuilder.java:264  | Beam measured height: 10 -- 0.27 of [6..21] range at 831% of needed quorum
+2025-07-28 07:00:48,504 INFO [Gerudo_Valley#4]            ScaleStep.java:65   | Scale{ interline(20,21,21) line(3,3,3) beam(10)}
+2025-07-28 07:00:48,504 INFO [Gerudo_Valley#4]       StepMonitoring.java:98   | GRID
+2025-07-28 07:00:48,590 INFO [Gerudo_Valley#4]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-28 07:00:48,596 INFO [Gerudo_Valley#4]    ClustersRetriever.java:328  | Retrieved raw line clusters: 10 of sizes [5] with interline(20,21,21)
+2025-07-28 07:00:48,635 INFO [Gerudo_Valley#4]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8] #5[9, 10]
+2025-07-28 07:00:48,754 INFO [Gerudo_Valley#4]        SystemManager.java:779  | 1 part along 5 systems
+2025-07-28 07:00:48,754 INFO [Gerudo_Valley#4]       StepMonitoring.java:98   | HEADERS
+2025-07-28 07:00:49,107 INFO [Gerudo_Valley#4]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-28 07:00:49,134 INFO [Gerudo_Valley#4]        StemSeedsStep.java:86   | stem(2 max:3)
+2025-07-28 07:00:49,141 INFO [Gerudo_Valley#4]       StepMonitoring.java:98   | BEAMS
+2025-07-28 07:00:51,441 INFO [Gerudo_Valley#4]       StepMonitoring.java:98   | LEDGERS
+2025-07-28 07:00:51,501 INFO [Gerudo_Valley#4]       StepMonitoring.java:98   | HEADS
+2025-07-28 07:00:54,730 INFO [Gerudo_Valley#4]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_BLACK[L:-0.5,R:-0.4]}
+2025-07-28 07:00:54,731 INFO [Gerudo_Valley#4]       StepMonitoring.java:98   | STEMS
+2025-07-28 07:00:55,092 INFO [Gerudo_Valley#4]       StepMonitoring.java:98   | REDUCTION
+2025-07-28 07:00:55,156 INFO [Gerudo_Valley#4]        ReductionStep.java:105  | Stems free length median value: 72 pixels, 3.4 interlines
+2025-07-28 07:00:55,162 INFO [Gerudo_Valley#4]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-28 07:00:55,163 INFO [Gerudo_Valley#4]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-28 07:00:55,163 INFO [Gerudo_Valley#4]       StepMonitoring.java:98   | TEXTS
+2025-07-28 07:00:55,611 INFO [Gerudo_Valley#4]       StepMonitoring.java:98   | MEASURES
+2025-07-28 07:00:55,611 INFO [Gerudo_Valley#4]                 Page.java:307  | 11 raw measures: [2 in system#1, 2 in system#2, 2 in system#3, 3 in system#4, 2 in system#5]
+2025-07-28 07:00:55,612 INFO [Gerudo_Valley#4]       StepMonitoring.java:98   | CHORDS
+2025-07-28 07:00:55,616 INFO [Gerudo_Valley#4]       StepMonitoring.java:98   | CURVES
+2025-07-28 07:00:56,071 INFO [Gerudo_Valley#4]         SlursBuilder.java:240  | Slurs: 13
+2025-07-28 07:00:56,072 INFO [Gerudo_Valley#4]      SegmentsBuilder.java:155  | Segments: 1
+2025-07-28 07:00:56,077 INFO [Gerudo_Valley#4]       StepMonitoring.java:98   | SYMBOLS
+2025-07-28 07:00:56,323 INFO [Gerudo_Valley#4]       StepMonitoring.java:98   | LINKS
+2025-07-28 07:00:56,336 INFO [Gerudo_Valley#4]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#5908{(0.481) staff:6 OTTAVA BASSA}
+2025-07-28 07:00:56,343 INFO [Gerudo_Valley#4]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#5937{(0.481) staff:7 OTTAVA ALTA}
+2025-07-28 07:00:56,344 INFO [Gerudo_Valley#4]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#5945{(0.795) staff:7 OTTAVA BASSA}
+2025-07-28 07:00:56,358 INFO [Gerudo_Valley#4]       StepMonitoring.java:98   | RHYTHMS
+2025-07-28 07:00:56,359 INFO [Gerudo_Valley#4]           PageRhythm.java:199  | {Page#4.1} Time value reused from sheet#1
+2025-07-28 07:00:56,367 INFO [Gerudo_Valley#4]        MeasureRhythm.java:1045 | Measure{#3} No timeOffset for HeadChordInter#5417{(0.759/0.759) staff:4 slot#8 dur:1/16}
+2025-07-28 07:00:56,367 INFO [Gerudo_Valley#4]        MeasureRhythm.java:1045 | Measure{#3} No timeOffset for HeadChordInter#5415{(0.972/0.972) staff:4 slot#8 dur:1/4}
+2025-07-28 07:00:56,367 INFO [Gerudo_Valley#4]   AbstractChordInter.java:627  | Measure{#3} No timeOffset for HeadChordInter#5420{(0.953/0.953) staff:4 slot#11 dur:1/16}
+2025-07-28 07:00:56,368 INFO [Gerudo_Valley#4]   AbstractChordInter.java:627  | Measure{#3} No timeOffset for HeadChordInter#5415{(0.972/0.972) staff:4 slot#8 dur:1/4}
+2025-07-28 07:00:56,368 INFO [Gerudo_Valley#4]   AbstractChordInter.java:627  | Measure{#3} No timeOffset for HeadChordInter#5420{(0.953/0.953) staff:4 slot#11 dur:1/16}
+2025-07-28 07:00:56,368 INFO [Gerudo_Valley#4]   AbstractChordInter.java:627  | Measure{#3} No timeOffset for HeadChordInter#5415{(0.972/0.972) staff:4 slot#8 dur:1/4}
+2025-07-28 07:00:56,368 INFO [Gerudo_Valley#4]        MeasureRhythm.java:1045 | Measure{#3} No timeOffset for RestChordInter#5899{(0.800/0.800) staff:3 slot#12 dur:1/4}
+2025-07-28 07:00:56,369 INFO [Gerudo_Valley#4]                Voice.java:257  | Measure{#3} Voice{#1 excess:3/16} too long
+2025-07-28 07:00:56,369 INFO [Gerudo_Valley#4]          StackRhythm.java:224  | S2 MeasureStack#3 no correct rhythm
+2025-07-28 07:00:56,386 INFO [Gerudo_Valley#4]        MeasureRhythm.java:1045 | Measure{#8} No timeOffset for HeadChordInter#5545{(0.966/0.966) staff:8 slot#14 dur:1/16}
+2025-07-28 07:00:56,386 INFO [Gerudo_Valley#4]        MeasureRhythm.java:1045 | Measure{#8} No timeOffset for RestChordInter#5972{(0.800/0.800) staff:8 slot#14 dur:1/4}
+2025-07-28 07:00:56,386 INFO [Gerudo_Valley#4]   AbstractChordInter.java:627  | Measure{#8} No timeOffset for HeadChordInter#5547{(0.943/0.943) staff:8 slot#17 dur:1/16}
+2025-07-28 07:00:56,387 INFO [Gerudo_Valley#4]   AbstractChordInter.java:627  | Measure{#8} No timeOffset for RestChordInter#5972{(0.800/0.800) staff:8 slot#14 dur:1/4}
+2025-07-28 07:00:56,387 INFO [Gerudo_Valley#4]        MeasureRhythm.java:1045 | Measure{#8} No timeOffset for RestChordInter#5973{(0.800/0.800) staff:7 slot#16 dur:1/4}
+2025-07-28 07:00:56,387 INFO [Gerudo_Valley#4]        MeasureRhythm.java:1045 | Measure{#8} No timeOffset for HeadChordInter#5503{(0.949/0.949) staff:7 slot#16 dur:1/8}
+2025-07-28 07:00:56,387 INFO [Gerudo_Valley#4]                Voice.java:257  | Measure{#8} Voice{#1 excess:1/8} too long
+2025-07-28 07:00:56,387 INFO [Gerudo_Valley#4]          StackRhythm.java:224  | S4 MeasureStack#8 no correct rhythm
+2025-07-28 07:00:56,393 INFO [Gerudo_Valley#4]        MeasureRhythm.java:1045 | Measure{#10} No timeOffset for RestChordInter#6007{(0.799/0.799) staff:9 slot#11 dur:1/4}
+2025-07-28 07:00:56,393 INFO [Gerudo_Valley#4]   AbstractChordInter.java:627  | Measure{#10} No timeOffset for RestChordInter#6007{(0.799/0.799) staff:9 slot#11 dur:1/4}
+2025-07-28 07:00:56,393 INFO [Gerudo_Valley#4]        MeasureRhythm.java:1045 | Measure{#10} No timeOffset for HeadChordInter#5594{(0.966/0.966) staff:10 slot#14 dur:1/16}
+2025-07-28 07:00:56,393 INFO [Gerudo_Valley#4]        MeasureRhythm.java:1045 | Measure{#10} No timeOffset for RestChordInter#6008{(0.800/0.800) staff:10 slot#14 dur:1/4}
+2025-07-28 07:00:56,393 INFO [Gerudo_Valley#4]   AbstractChordInter.java:627  | Measure{#10} No timeOffset for RestChordInter#6007{(0.799/0.799) staff:9 slot#11 dur:1/4}
+2025-07-28 07:00:56,394 INFO [Gerudo_Valley#4]   AbstractChordInter.java:627  | Measure{#10} No timeOffset for HeadChordInter#5596{(0.952/0.952) staff:10 slot#17 dur:1/16}
+2025-07-28 07:00:56,394 INFO [Gerudo_Valley#4]   AbstractChordInter.java:627  | Measure{#10} No timeOffset for RestChordInter#6008{(0.800/0.800) staff:10 slot#14 dur:1/4}
+2025-07-28 07:00:56,394 INFO [Gerudo_Valley#4]   AbstractChordInter.java:627  | Measure{#10} No timeOffset for HeadChordInter#5573{(0.940/0.940) staff:9 slot#16 dur:1/8}
+2025-07-28 07:00:56,394 INFO [Gerudo_Valley#4]   AbstractChordInter.java:627  | Measure{#10} No timeOffset for HeadChordInter#5596{(0.952/0.952) staff:10 slot#17 dur:1/16}
+2025-07-28 07:00:56,394 INFO [Gerudo_Valley#4]   AbstractChordInter.java:627  | Measure{#10} No timeOffset for RestChordInter#6008{(0.800/0.800) staff:10 slot#14 dur:1/4}
+2025-07-28 07:00:56,394 INFO [Gerudo_Valley#4]                Voice.java:257  | Measure{#10} Voice{#1 excess:1/8} too long
+2025-07-28 07:00:56,394 INFO [Gerudo_Valley#4]          StackRhythm.java:224  | S5 MeasureStack#10 no correct rhythm
+2025-07-28 07:00:56,397 INFO [Gerudo_Valley#4]        MeasureRhythm.java:1045 | Measure{#11} No timeOffset for RestChordInter#6015{(0.799/0.799) staff:9 slot#14 dur:1/4}
+2025-07-28 07:00:56,397 INFO [Gerudo_Valley#4]          StackRhythm.java:224  | S5 MeasureStack#11 no correct rhythm
+2025-07-28 07:00:56,397 INFO [Gerudo_Valley#4]       StepMonitoring.java:98   | PAGE
+2025-07-28 07:00:56,426 INFO [Gerudo_Valley#4]                 Book.java:2550 | Book{Gerudo_Valley} storing
+2025-07-28 07:00:56,467 INFO [Gerudo_Valley#4]                 Book.java:2531 | Stored /book.xml
+2025-07-28 07:00:56,543 INFO [Gerudo_Valley#4]           DataHolder.java:348  | Stored /sheet#4/BINARY.png
+2025-07-28 07:00:56,832 INFO [Gerudo_Valley#4]                Sheet.java:1562 | Stored /sheet#4/sheet#4.xml
+2025-07-28 07:00:56,832 INFO [Gerudo_Valley#4]                 Book.java:2491 | Book stored as .\MXL\Gerudo_Valley\Gerudo_Valley.omr
+2025-07-28 07:00:56,838 INFO [Gerudo_Valley#4]            SheetStub.java:1644 | Disposed sheet#4
+2025-07-28 07:00:56,883 INFO [Gerudo_Valley#4]                 Book.java:2018 | End of Stub#4 memory: 38,421,672
+2025-07-28 07:00:56,884 INFO [Gerudo_Valley#5]       StepMonitoring.java:98   | LOAD
+2025-07-28 07:00:56,896 INFO [Gerudo_Valley#5]            SheetStub.java:1268 | Loaded image #5 2550x3299 from C:\Uni\OMR_Project\TOOL\PDF\Gerudo_Valley.pdf
+2025-07-28 07:00:56,897 INFO [Gerudo_Valley#5]       StepMonitoring.java:98   | BINARY
+2025-07-28 07:00:57,190 INFO [Gerudo_Valley#5]       StepMonitoring.java:98   | SCALE
+2025-07-28 07:00:57,190 INFO [Gerudo_Valley#5]         ScaleBuilder.java:241  | Beam  guessed height: 10 -- 0.50 of 21 interline
+2025-07-28 07:00:57,191 INFO [Gerudo_Valley#5]         ScaleBuilder.java:264  | Beam measured height: 11 -- 0.33 of [6..21] range at 479% of needed quorum
+2025-07-28 07:00:57,191 INFO [Gerudo_Valley#5]            ScaleStep.java:65   | Scale{ interline(20,21,21) line(3,3,3) beam(11)}
+2025-07-28 07:00:57,191 INFO [Gerudo_Valley#5]       StepMonitoring.java:98   | GRID
+2025-07-28 07:00:57,212 INFO [Gerudo_Valley#5]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-07-28 07:00:57,214 INFO [Gerudo_Valley#5]    ClustersRetriever.java:328  | Retrieved raw line clusters: 2 of sizes [5] with interline(20,21,21)
+2025-07-28 07:00:57,217 INFO [Gerudo_Valley#5]            PeakGraph.java:310  | Systems: #1[1, 2]
+2025-07-28 07:00:57,275 INFO [Gerudo_Valley#5]        SystemManager.java:779  | 1 part along 1 system
+2025-07-28 07:00:57,276 INFO [Gerudo_Valley#5]       StepMonitoring.java:98   | HEADERS
+2025-07-28 07:00:57,346 INFO [Gerudo_Valley#5]       StepMonitoring.java:98   | STEM_SEEDS
+2025-07-28 07:00:57,369 INFO [Gerudo_Valley#5]        StemSeedsStep.java:86   | stem(2 max:3)
+2025-07-28 07:00:57,370 INFO [Gerudo_Valley#5]       StepMonitoring.java:98   | BEAMS
+2025-07-28 07:00:59,404 INFO [Gerudo_Valley#5]       StepMonitoring.java:98   | LEDGERS
+2025-07-28 07:00:59,422 INFO [Gerudo_Valley#5]       StepMonitoring.java:98   | HEADS
+2025-07-28 07:00:59,825 INFO [Gerudo_Valley#5]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_BLACK[R:-0.4]}
+2025-07-28 07:00:59,826 INFO [Gerudo_Valley#5]       StepMonitoring.java:98   | STEMS
+2025-07-28 07:00:59,840 INFO [Gerudo_Valley#5]       StepMonitoring.java:98   | REDUCTION
+2025-07-28 07:00:59,844 INFO [Gerudo_Valley#5]        ReductionStep.java:105  | Stems free length median value: 72 pixels, 3.4 interlines
+2025-07-28 07:00:59,844 INFO [Gerudo_Valley#5]       StepMonitoring.java:98   | CUE_BEAMS
+2025-07-28 07:00:59,844 INFO [Gerudo_Valley#5]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-07-28 07:00:59,844 INFO [Gerudo_Valley#5]       StepMonitoring.java:98   | TEXTS
+2025-07-28 07:01:00,143 INFO [Gerudo_Valley#5]       StepMonitoring.java:98   | MEASURES
+2025-07-28 07:01:00,144 INFO [Gerudo_Valley#5]                 Page.java:307  | 1 raw measure: [1 in system#1]
+2025-07-28 07:01:00,144 INFO [Gerudo_Valley#5]       StepMonitoring.java:98   | CHORDS
+2025-07-28 07:01:00,145 INFO [Gerudo_Valley#5]       StepMonitoring.java:98   | CURVES
+2025-07-28 07:01:00,451 INFO [Gerudo_Valley#5]         SlursBuilder.java:240  | Slurs: 1
+2025-07-28 07:01:00,452 INFO [Gerudo_Valley#5]      SegmentsBuilder.java:155  | Segments: 1
+2025-07-28 07:01:00,453 INFO [Gerudo_Valley#5]       StepMonitoring.java:98   | SYMBOLS
+2025-07-28 07:01:00,513 INFO [Gerudo_Valley#5]       StepMonitoring.java:98   | LINKS
+2025-07-28 07:01:00,514 INFO [Gerudo_Valley#5]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#462{(0.153) staff:1 QUINDICESIMA ALTA}
+2025-07-28 07:01:00,516 INFO [Gerudo_Valley#5]       StepMonitoring.java:98   | RHYTHMS
+2025-07-28 07:01:00,517 INFO [Gerudo_Valley#5]           PageRhythm.java:199  | {Page#5.1} Time value reused from sheet#1
+2025-07-28 07:01:00,519 INFO [Gerudo_Valley#5]       StepMonitoring.java:98   | PAGE
+2025-07-28 07:01:00,519 INFO [Gerudo_Valley#5]                 Book.java:2550 | Book{Gerudo_Valley} storing
+2025-07-28 07:01:00,546 INFO [Gerudo_Valley#5]                 Book.java:2531 | Stored /book.xml
+2025-07-28 07:01:00,610 INFO [Gerudo_Valley#5]           DataHolder.java:348  | Stored /sheet#5/BINARY.png
+2025-07-28 07:01:00,641 INFO [Gerudo_Valley#5]                Sheet.java:1562 | Stored /sheet#5/sheet#5.xml
+2025-07-28 07:01:00,641 INFO [Gerudo_Valley#5]                 Book.java:2491 | Book stored as .\MXL\Gerudo_Valley\Gerudo_Valley.omr
+2025-07-28 07:01:00,647 INFO [Gerudo_Valley#5]            SheetStub.java:1644 | Disposed sheet#5
+2025-07-28 07:01:00,689 INFO [Gerudo_Valley#5]                 Book.java:2018 | End of Stub#5 memory: 38,438,432
+2025-07-28 07:01:00,690 INFO [Gerudo_Valley]                 Book.java:2025 | Book processed.
+2025-07-28 07:01:01,106 INFO [Gerudo_Valley]            SheetStub.java:995  | Loaded /sheet#1/sheet#1.xml
+2025-07-28 07:01:01,421 INFO [Gerudo_Valley]            SheetStub.java:995  | Loaded /sheet#2/sheet#2.xml
+2025-07-28 07:01:01,676 INFO [Gerudo_Valley]            SheetStub.java:995  | Loaded /sheet#3/sheet#3.xml
+2025-07-28 07:01:01,896 INFO [Gerudo_Valley]            SheetStub.java:995  | Loaded /sheet#4/sheet#4.xml
+2025-07-28 07:01:01,988 INFO [Gerudo_Valley]            SheetStub.java:995  | Loaded /sheet#5/sheet#5.xml
+2025-07-28 07:01:02,362 INFO [Gerudo_Valley]      PartwiseBuilder.java:2661 | Exporting sheet(s): [#1#2#3#4#5]
+2025-07-28 07:01:02,363 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#1 System#1 Part#3{name:Grand P1ano staves[1,2] configs:[5,5]} dummyPart id: 1
+2025-07-28 07:01:02,371 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#1 System#2 Part#3{ staves[3,4] configs:[5,5]} dummyPart id: 1
+2025-07-28 07:01:02,372 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#1 System#3 Part#3{ staves[5,6] configs:[5,5]} dummyPart id: 1
+2025-07-28 07:01:02,374 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#1 System#1 Part#3{name:Grand P1ano staves[1,2] configs:[5,5]} dummyPart id: 2
+2025-07-28 07:01:02,375 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#1 System#2 Part#3{ staves[3,4] configs:[5,5]} dummyPart id: 2
+2025-07-28 07:01:02,376 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#1 System#3 Part#3{ staves[5,6] configs:[5,5]} dummyPart id: 2
+2025-07-28 07:01:02,393 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#1 System#4 Part#1{ staves[7] configs:[5]} dummyPart id: 3
+2025-07-28 07:01:02,394 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#2 System#1 Part#3{ staves[1,2] configs:[5,5]} dummyPart id: 1
+2025-07-28 07:01:02,397 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#2 System#2 Part#3{ staves[3,4] configs:[5,5]} dummyPart id: 1
+2025-07-28 07:01:02,397 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#2 System#3 Part#3{ staves[5,6] configs:[5,5]} dummyPart id: 1
+2025-07-28 07:01:02,397 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#2 System#4 Part#3{ staves[7,8] configs:[5,5]} dummyPart id: 1
+2025-07-28 07:01:02,398 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#2 System#5 Part#3{ staves[9,10] configs:[5,5]} dummyPart id: 1
+2025-07-28 07:01:02,398 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#2 System#1 Part#3{ staves[1,2] configs:[5,5]} dummyPart id: 2
+2025-07-28 07:01:02,399 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#2 System#2 Part#3{ staves[3,4] configs:[5,5]} dummyPart id: 2
+2025-07-28 07:01:02,399 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#2 System#3 Part#3{ staves[5,6] configs:[5,5]} dummyPart id: 2
+2025-07-28 07:01:02,399 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#2 System#4 Part#3{ staves[7,8] configs:[5,5]} dummyPart id: 2
+2025-07-28 07:01:02,400 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#2 System#5 Part#3{ staves[9,10] configs:[5,5]} dummyPart id: 2
+2025-07-28 07:01:02,421 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#3 System#1 Part#3{ staves[1,2] configs:[5,5]} dummyPart id: 1
+2025-07-28 07:01:02,424 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#3 System#2 Part#3{ staves[3,4] configs:[5,5]} dummyPart id: 1
+2025-07-28 07:01:02,425 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#3 System#3 Part#3{ staves[5,6] configs:[5,5]} dummyPart id: 1
+2025-07-28 07:01:02,425 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#3 System#4 Part#3{ staves[7,8] configs:[5,5]} dummyPart id: 1
+2025-07-28 07:01:02,425 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#3 System#5 Part#3{ staves[9,10] configs:[5,5]} dummyPart id: 1
+2025-07-28 07:01:02,426 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#3 System#1 Part#3{ staves[1,2] configs:[5,5]} dummyPart id: 2
+2025-07-28 07:01:02,426 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#3 System#2 Part#3{ staves[3,4] configs:[5,5]} dummyPart id: 2
+2025-07-28 07:01:02,426 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#3 System#3 Part#3{ staves[5,6] configs:[5,5]} dummyPart id: 2
+2025-07-28 07:01:02,427 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#3 System#4 Part#3{ staves[7,8] configs:[5,5]} dummyPart id: 2
+2025-07-28 07:01:02,427 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#3 System#5 Part#3{ staves[9,10] configs:[5,5]} dummyPart id: 2
+2025-07-28 07:01:02,441 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#4 System#1 Part#3{ staves[1,2] configs:[5,5]} dummyPart id: 1
+2025-07-28 07:01:02,443 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#4 System#2 Part#3{ staves[3,4] configs:[5,5]} dummyPart id: 1
+2025-07-28 07:01:02,444 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#4 System#3 Part#3{ staves[5,6] configs:[5,5]} dummyPart id: 1
+2025-07-28 07:01:02,444 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#4 System#4 Part#3{ staves[7,8] configs:[5,5]} dummyPart id: 1
+2025-07-28 07:01:02,445 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#4 System#5 Part#3{ staves[9,10] configs:[5,5]} dummyPart id: 1
+2025-07-28 07:01:02,445 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#4 System#1 Part#3{ staves[1,2] configs:[5,5]} dummyPart id: 2
+2025-07-28 07:01:02,446 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#4 System#2 Part#3{ staves[3,4] configs:[5,5]} dummyPart id: 2
+2025-07-28 07:01:02,446 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#4 System#3 Part#3{ staves[5,6] configs:[5,5]} dummyPart id: 2
+2025-07-28 07:01:02,446 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#4 System#4 Part#3{ staves[7,8] configs:[5,5]} dummyPart id: 2
+2025-07-28 07:01:02,446 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#4 System#5 Part#3{ staves[9,10] configs:[5,5]} dummyPart id: 2
+2025-07-28 07:01:02,464 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#5 System#1 Part#3{ staves[1,2] configs:[5,5]} dummyPart id: 1
+2025-07-28 07:01:02,465 INFO [Gerudo_Valley]                 Part.java:351  | Sheet#5 System#1 Part#3{ staves[1,2] configs:[5,5]} dummyPart id: 2
+2025-07-28 07:01:02,612 INFO [Gerudo_Valley]        ScoreExporter.java:164  | Score Gerudo_Valley exported to .\MXL\Gerudo_Valley\Gerudo_Valley.mxl
+2025-07-28 07:01:02,687 INFO [Gerudo_Valley]                Score.java:181  | Closing {Score 1}
